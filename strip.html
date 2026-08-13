@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frontline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#E6E7E1;
+  --ground-deep:#DBDDD5;
+  --ground-sunk:#D0D3C9;
+  --ink:#171F1D;
+  --ink-soft:#4E5854;
+  --ink-faint:#7C857F;
+  --verdigris:#2E6B5E;
+  --iron:#9A4527;
+  --brass:#8A6A22;
+  --rule:#C2C6BB;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --ground:#141816; --ground-deep:#1B211E; --ground-sunk:#232A26;
+    --ink:#E4E7E0; --ink-soft:#A3ACA5; --ink-faint:#77817A;
+    --verdigris:#6FBFA9; --iron:#D8815C; --brass:#C8A44E; --rule:#2E3733;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--ground);color:var(--ink);
+  font-family:'Newsreader',Georgia,serif;
+  -webkit-font-smoothing:antialiased;
+}
+.strip{display:flex;flex-direction:column;height:100vh;min-height:340px}
+
+/* ── Header ─────────────────────────────────────────── */
+.bar{
+  flex:0 0 auto;background:var(--ground-deep);
+  border-bottom:1px solid var(--rule);
+  padding:10px 14px 0;
+}
+.bar-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.mark{
+  font-family:'Archivo Narrow',sans-serif;font-weight:700;
+  font-size:15px;letter-spacing:.14em;text-transform:uppercase;
+}
+.meta{
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  color:var(--ink-faint);letter-spacing:.05em;margin-left:auto;
+}
+.chips{display:flex;gap:5px;overflow-x:auto;padding:9px 0 10px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex:0 0 auto;background:transparent;border:1px solid var(--rule);
+  color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;
+  font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  padding:4px 9px;cursor:pointer;border-radius:0;
+}
+.chip:hover{border-color:var(--ink-soft)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip:focus-visible{outline:2px solid var(--verdigris);outline-offset:1px}
+
+/* ── Rows ───────────────────────────────────────────── */
+.rows{flex:1 1 auto;overflow-y:auto;overscroll-behavior:contain}
+.row{
+  display:grid;grid-template-columns:3px 1fr;gap:0 12px;
+  border-bottom:1px solid var(--rule);cursor:pointer;
+}
+.row:hover{background:var(--ground-deep)}
+.row:focus-visible{outline:2px solid var(--verdigris);outline-offset:-2px}
+
+/* Signature: the rail encodes evidence tier by texture, not by colour. */
+.rail{background-repeat:repeat-y;background-size:3px 100%}
+.t-peer_reviewed .rail{background-image:linear-gradient(var(--verdigris),var(--verdigris))}
+.t-institutional .rail{background:linear-gradient(90deg,var(--verdigris) 0 1px,transparent 1px 2px,var(--verdigris) 2px 3px)}
+.t-preprint .rail{background-image:repeating-linear-gradient(180deg,var(--verdigris) 0 7px,transparent 7px 12px)}
+.t-journalism .rail{background-image:repeating-linear-gradient(180deg,var(--verdigris) 0 2px,transparent 2px 6px)}
+
+.body{padding:11px 14px 12px 0}
+.fact{
+  font-family:'Archivo Narrow',sans-serif;font-weight:600;
+  font-size:16px;line-height:1.28;letter-spacing:.004em;
+}
+.ctx{
+  font-family:'Newsreader',serif;font-size:13.5px;line-height:1.45;
+  color:var(--ink-soft);margin-top:5px;
+  padding-left:9px;border-left:1px solid var(--rule);
+}
+.ctx.d-worsening{border-left-color:var(--iron)}
+.ctx.d-contested{border-left-color:var(--brass)}
+.ctx.d-leverage{border-left-color:var(--verdigris)}
+
+.tail{
+  display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:7px;
+  font-family:'IBM Plex Mono',monospace;font-size:9.5px;
+  letter-spacing:.05em;color:var(--ink-faint);text-transform:uppercase;
+}
+.tag{border:1px solid var(--rule);padding:1px 5px}
+.tag.proj{border-color:var(--brass);color:var(--brass)}
+
+.expand{display:none;margin-top:9px;padding:9px 11px;background:var(--ground-sunk)}
+.row.open .expand{display:block}
+.anchor-label{
+  font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:4px;
+}
+.anchor{font-size:13px;line-height:1.45;color:var(--ink-soft)}
+.links{margin-top:8px;display:flex;gap:12px;flex-wrap:wrap}
+.links a{
+  font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.05em;
+  color:var(--verdigris);text-decoration:none;border-bottom:1px solid currentColor;
+}
+.links a:hover{color:var(--ink)}
+
+/* ── Coverage footer ────────────────────────────────── */
+.foot{
+  flex:0 0 auto;background:var(--ground-deep);border-top:1px solid var(--rule);
+  padding:8px 14px;
+}
+.foot-head{
+  display:flex;align-items:center;gap:8px;width:100%;
+  background:none;border:0;cursor:pointer;color:var(--ink-soft);
+  font-family:'IBM Plex Mono',monospace;font-size:9.5px;
+  letter-spacing:.07em;text-transform:uppercase;padding:0;
+}
+.foot-head:focus-visible{outline:2px solid var(--verdigris);outline-offset:2px}
+.ticks{display:flex;gap:2px;align-items:flex-end;height:15px;flex:1;margin-left:4px}
+.tick{flex:1;background:var(--rule);min-height:1px}
+.tick.has{background:var(--verdigris)}
+.foot-detail{display:none;margin-top:9px}
+.foot.open .foot-detail{display:block}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));
+  gap:2px 12px;font-family:'IBM Plex Mono',monospace;font-size:10px;
+}
+.cell{display:flex;justify-content:space-between;color:var(--ink-soft);padding:1px 0}
+.cell.zero{color:var(--ink-faint)}
+.cell b{font-weight:500;color:var(--ink)}
+.note{font-size:12.5px;line-height:1.5;color:var(--ink-soft);margin-top:10px;max-width:62ch}
+.key{
+  display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;
+  font-family:'IBM Plex Mono',monospace;font-size:9px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);
+}
+.key i{display:inline-block;width:14px;height:3px;margin-right:5px;vertical-align:middle}
+.k1{background:var(--verdigris)}
+.k2{background:linear-gradient(90deg,var(--verdigris) 0 3px,transparent 3px 5px,var(--verdigris) 5px 8px,transparent 8px 10px,var(--verdigris) 10px 14px)}
+.k3{background:repeating-linear-gradient(90deg,var(--verdigris) 0 6px,transparent 6px 10px)}
+.k4{background:repeating-linear-gradient(90deg,var(--verdigris) 0 2px,transparent 2px 5px)}
+
+.state{padding:26px 16px;color:var(--ink-soft);font-size:14px;line-height:1.5}
+.state b{font-family:'Archivo Narrow',sans-serif;display:block;margin-bottom:4px;color:var(--ink)}
+
+@media (prefers-reduced-motion:no-preference){
+  .row{animation:in .22s ease-out both}
+  @keyframes in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+}
+@media (max-width:520px){
+  .fact{font-size:15px}
+  .body{padding-right:12px}
+}
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <header class="bar">
+    <div class="bar-top">
+      <span class="mark">Frontline</span>
+      <span class="meta" id="meta">loading</span>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter facts"></div>
+  </header>
+
+  <main class="rows" id="rows">
+    <div class="state"><b>Loading</b>Reading the latest run.</div>
+  </main>
+
+  <footer class="foot" id="foot">
+    <button class="foot-head" id="footBtn" aria-expanded="false">
+      <span>Coverage</span>
+      <span class="ticks" id="ticks" aria-hidden="true"></span>
+      <span id="footCount"></span>
+    </button>
+    <div class="foot-detail">
+      <div class="grid" id="grid"></div>
+      <div class="key">
+        <span><i class="k1"></i>peer-reviewed</span>
+        <span><i class="k2"></i>institutional</span>
+        <span><i class="k3"></i>preprint</span>
+        <span><i class="k4"></i>journalism</span>
+      </div>
+      <p class="note">
+        These counts are the sample this feed reached, not the distribution of
+        environmental destruction. Regions showing zero are regions where no
+        harvestable source published in the window — most often because
+        independent environmental reporting there is thin, intermittent, or
+        dangerous to produce. Every row links to its source and to the sentence
+        it was taken from.
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  const FEED = document.currentScript.dataset.feed || 'feed.json';
+  const rowsEl = document.getElementById('rows');
+  const chipsEl = document.getElementById('chips');
+  const metaEl = document.getElementById('meta');
+  const gridEl = document.getElementById('grid');
+  const ticksEl = document.getElementById('ticks');
+  const footEl = document.getElementById('foot');
+  const footBtn = document.getElementById('footBtn');
+  const footCount = document.getElementById('footCount');
+
+  let data = null, filter = {key:'all', value:null};
+
+  const GROUPS = {
+    africa:['northern_africa','western_africa','middle_africa','eastern_africa','southern_africa'],
+    americas:['northern_america','central_america','caribbean','south_america'],
+    asia:['central_asia','eastern_asia','southern_asia','south_eastern_asia','western_asia'],
+    europe:['eastern_europe','northern_europe','southern_europe','western_europe'],
+    oceania:['australia_nz','melanesia','micronesia','polynesia'],
+    polar:['polar'], ocean:['ocean']
+  };
+
+  const esc = s => String(s==null?'':s).replace(/[&<>"']/g,
+    c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const when = iso => {
+    if(!iso) return '';
+    const days = Math.floor((Date.now() - new Date(iso)) / 864e5);
+    if(isNaN(days)) return '';
+    if(days <= 0) return 'today';
+    if(days === 1) return '1d';
+    if(days < 31) return days + 'd';
+    return Math.floor(days/30) + 'mo';
+  };
+
+  function chips(){
+    const topics = [...new Set(data.rows.flatMap(r => r.topics))].sort();
+    const items = [{k:'all',v:null,label:'All'}]
+      .concat(Object.keys(GROUPS).map(g => ({k:'group', v:g, label:g})))
+      .concat(topics.map(t => ({k:'topic', v:t, label:t.replace('_',' ')})));
+    chipsEl.innerHTML = items.map(i => {
+      const on = filter.key === i.k && filter.value === i.v;
+      return `<button class="chip" aria-pressed="${on}" data-k="${i.k}" data-v="${esc(i.v)}">${esc(i.label)}</button>`;
+    }).join('');
+  }
+
+  function visible(){
+    if(filter.key === 'all') return data.rows;
+    if(filter.key === 'group'){
+      const set = GROUPS[filter.value] || [];
+      return data.rows.filter(r => set.includes(r.region));
+    }
+    return data.rows.filter(r => r.topics.includes(filter.value));
+  }
+
+  function render(){
+    const rows = visible();
+    if(!rows.length){
+      rowsEl.innerHTML = '<div class="state"><b>Nothing in this filter</b>'
+        + 'No fact from the current run matches. Clear the filter to see everything held.</div>';
+      return;
+    }
+    rowsEl.innerHTML = rows.map(r => {
+      const proj = r.fact_type === 'projection';
+      const also = r.also_reported_by && r.also_reported_by.length
+        ? `<span class="tag">+${r.also_reported_by.length} outlets</span>` : '';
+      const ctx = r.context
+        ? `<p class="ctx d-${esc(r.context_direction)}">${esc(r.context)}</p>` : '';
+      const ctxLink = r.context_url
+        ? `<a href="${esc(r.context_url)}" target="_blank" rel="noopener">Context source</a>` : '';
+      return `<article class="row t-${esc(r.tier)}" tabindex="0" data-id="${esc(r.id)}">
+        <div class="rail"></div>
+        <div class="body">
+          <p class="fact">${esc(r.fact)}</p>
+          ${ctx}
+          <div class="tail">
+            ${proj ? '<span class="tag proj">projection</span>' : `<span class="tag">${esc(r.fact_type)}</span>`}
+            <span>${esc(r.region_label)}</span>
+            <span>${esc(r.source_name)}</span>
+            <span>${when(r.published)}</span>
+            ${also}
+          </div>
+          <div class="expand">
+            <span class="anchor-label">Source sentence${r.lang !== 'en' ? ' — original language' : ''}</span>
+            <p class="anchor">${esc(r.anchor)}</p>
+            <div class="links">
+              ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Open source</a>` : ''}
+              ${ctxLink}
+            </div>
+          </div>
+        </div>
+      </article>`;
+    }).join('');
+  }
+
+  function coverage(){
+    const cov = data.coverage;
+    const max = Math.max(1, ...cov.map(c => c.count));
+    ticksEl.innerHTML = cov.map(c =>
+      `<span class="tick ${c.count ? 'has' : ''}" style="height:${
+        c.count ? Math.max(2, Math.round(c.count / max * 15)) : 1}px"></span>`).join('');
+    gridEl.innerHTML = cov.map(c => {
+      const held = (c.available || 0) - c.count;
+      const extra = held > 0 ? ` <i style="font-style:normal;opacity:.55">+${held}</i>` : '';
+      return `<span class="cell ${c.count ? '' : 'zero'}">${esc(c.label)}`
+           + `<b>${c.count}${extra}</b></span>`;
+    }).join('');
+    const present = cov.filter(c => c.count).length;
+    footCount.textContent = present + '/' + cov.length + ' regions';
+  }
+
+  chipsEl.addEventListener('click', e => {
+    const b = e.target.closest('.chip'); if(!b) return;
+    filter = {key:b.dataset.k, value:b.dataset.v === 'null' ? null : b.dataset.v};
+    chips(); render(); rowsEl.scrollTop = 0;
+  });
+
+  rowsEl.addEventListener('click', e => {
+    if(e.target.closest('a')) return;
+    const row = e.target.closest('.row'); if(row) row.classList.toggle('open');
+  });
+  rowsEl.addEventListener('keydown', e => {
+    if(e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('.row'); if(!row) return;
+    e.preventDefault(); row.classList.toggle('open');
+  });
+
+  footBtn.addEventListener('click', () => {
+    const open = footEl.classList.toggle('open');
+    footBtn.setAttribute('aria-expanded', open);
+  });
+
+  fetch(FEED, {cache:'no-store'})
+    .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(json => {
+      data = json;
+      const s = json.stats || {};
+      metaEl.textContent = `${s.facts_published || json.rows.length} facts · updated ${when(json.generated_at) || 'today'}`;
+      chips(); render(); coverage();
+    })
+    .catch(err => {
+      rowsEl.innerHTML = '<div class="state"><b>Feed unavailable</b>'
+        + 'The last run did not publish a readable file. Check the pipeline logs, '
+        + 'then reload. Details: ' + esc(err.message) + '</div>';
+      metaEl.textContent = 'not loaded';
+    });
+})();
+</script>
+</body>
+</html>

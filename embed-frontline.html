@@ -1,0 +1,304 @@
+<!--
+  FRONTLINE FEED — Weebly embed
+  ─────────────────────────────
+  Paste this whole block into a Weebly "Embed Code" element.
+
+  Nothing to host. It reads feed.json straight out of your GitHub repo, which
+  the scheduled workflow rewrites four times a day, so the page is live without
+  GitHub Pages or any file upload.
+
+  Already pointed at WelcomeToYourGalaxy/Earth-feed on the main branch. The
+  repository must be public for a browser to read these files.
+
+  Weebly strips <style> blocks it doesn't like and rewrites some class names,
+  so every rule here is inline or scoped under #wtyg-frontline. That is why the
+  markup looks heavier than it needs to.
+-->
+<div id="wtyg-frontline">
+  <div class="wf-bar">
+    <span class="wf-mark">Frontline</span>
+    <span class="wf-meta" id="wf-meta">loading</span>
+  </div>
+  <div class="wf-chips" id="wf-chips"></div>
+  <div class="wf-rows" id="wf-rows">
+    <div class="wf-state">Reading the latest run…</div>
+  </div>
+  <div class="wf-foot">
+    <button class="wf-footbtn" id="wf-footbtn" aria-expanded="false">
+      Coverage <span id="wf-footcount"></span>
+    </button>
+    <div class="wf-footdetail" id="wf-footdetail">
+      <div class="wf-grid" id="wf-grid"></div>
+      <p class="wf-note">
+        These counts are the sample this feed reached, not the distribution of
+        environmental destruction. A grey figure is how many further facts that
+        region held back this run. Regions at zero are regions where no
+        harvestable source published in the window. Every row links to its
+        source and to the sentence it was taken from.
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+#wtyg-frontline{
+  --wf-ground:#E6E7E1; --wf-deep:#DBDDD5; --wf-sunk:#D0D3C9;
+  --wf-ink:#171F1D; --wf-soft:#4E5854; --wf-faint:#7C857F;
+  --wf-verd:#2E6B5E; --wf-iron:#9A4527; --wf-brass:#8A6A22; --wf-rule:#C2C6BB;
+  background:var(--wf-ground); color:var(--wf-ink);
+  font-family:Georgia,'Times New Roman',serif;
+  border:1px solid var(--wf-rule); max-width:100%;
+  display:flex; flex-direction:column; height:640px;
+  -webkit-font-smoothing:antialiased;
+}
+#wtyg-frontline *{box-sizing:border-box; margin:0; padding:0}
+#wtyg-frontline .wf-bar{
+  flex:0 0 auto; background:var(--wf-deep);
+  border-bottom:1px solid var(--wf-rule);
+  padding:10px 14px 8px; display:flex; align-items:baseline; gap:10px;
+}
+#wtyg-frontline .wf-mark{
+  font-family:'Helvetica Neue',Arial,sans-serif; font-weight:700;
+  font-size:14px; letter-spacing:.15em; text-transform:uppercase;
+}
+#wtyg-frontline .wf-meta{
+  font-family:'SF Mono',Menlo,Consolas,monospace; font-size:10px;
+  color:var(--wf-faint); letter-spacing:.05em; margin-left:auto;
+}
+#wtyg-frontline .wf-chips{
+  flex:0 0 auto; background:var(--wf-deep); display:flex; gap:5px;
+  overflow-x:auto; padding:0 14px 10px; border-bottom:1px solid var(--wf-rule);
+}
+#wtyg-frontline .wf-chip{
+  flex:0 0 auto; background:transparent; border:1px solid var(--wf-rule);
+  color:var(--wf-soft); font-family:'SF Mono',Menlo,monospace;
+  font-size:10px; letter-spacing:.06em; text-transform:uppercase;
+  padding:4px 9px; cursor:pointer; border-radius:0; line-height:1.4;
+}
+#wtyg-frontline .wf-chip[aria-pressed="true"]{
+  background:var(--wf-ink); color:var(--wf-ground); border-color:var(--wf-ink);
+}
+#wtyg-frontline .wf-rows{flex:1 1 auto; overflow-y:auto}
+#wtyg-frontline .wf-row{
+  display:grid; grid-template-columns:3px 1fr; gap:0 12px;
+  border-bottom:1px solid var(--wf-rule); cursor:pointer;
+}
+#wtyg-frontline .wf-row:hover{background:var(--wf-deep)}
+#wtyg-frontline .wf-rail{background:var(--wf-verd)}
+#wtyg-frontline .wf-t-institutional .wf-rail{
+  background:linear-gradient(90deg,var(--wf-verd) 0 1px,transparent 1px 2px,var(--wf-verd) 2px 3px);
+}
+#wtyg-frontline .wf-t-preprint .wf-rail{
+  background:repeating-linear-gradient(180deg,var(--wf-verd) 0 7px,transparent 7px 12px);
+}
+#wtyg-frontline .wf-t-journalism .wf-rail{
+  background:repeating-linear-gradient(180deg,var(--wf-verd) 0 2px,transparent 2px 6px);
+}
+#wtyg-frontline .wf-body{padding:11px 14px 12px 0}
+#wtyg-frontline .wf-fact{
+  font-family:'Helvetica Neue',Arial,sans-serif; font-weight:600;
+  font-size:16px; line-height:1.3;
+}
+#wtyg-frontline .wf-ctx{
+  font-size:13.5px; line-height:1.45; color:var(--wf-soft);
+  margin-top:5px; padding-left:9px; border-left:1px solid var(--wf-rule);
+}
+#wtyg-frontline .wf-d-worsening{border-left-color:var(--wf-iron)}
+#wtyg-frontline .wf-d-contested{border-left-color:var(--wf-brass)}
+#wtyg-frontline .wf-d-leverage{border-left-color:var(--wf-verd)}
+#wtyg-frontline .wf-tail{
+  display:flex; gap:9px; flex-wrap:wrap; margin-top:7px;
+  font-family:'SF Mono',Menlo,monospace; font-size:9.5px;
+  letter-spacing:.05em; color:var(--wf-faint); text-transform:uppercase;
+}
+#wtyg-frontline .wf-tag{border:1px solid var(--wf-rule); padding:1px 5px}
+#wtyg-frontline .wf-tag.wf-proj{border-color:var(--wf-brass); color:var(--wf-brass)}
+#wtyg-frontline .wf-expand{display:none; margin-top:9px; padding:9px 11px; background:var(--wf-sunk)}
+#wtyg-frontline .wf-row.wf-open .wf-expand{display:block}
+#wtyg-frontline .wf-alabel{
+  font-family:'SF Mono',Menlo,monospace; font-size:9px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--wf-faint); display:block; margin-bottom:4px;
+}
+#wtyg-frontline .wf-anchor{font-size:13px; line-height:1.45; color:var(--wf-soft)}
+#wtyg-frontline .wf-links{margin-top:8px; display:flex; gap:12px; flex-wrap:wrap}
+#wtyg-frontline .wf-links a{
+  font-family:'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:.05em;
+  color:var(--wf-verd); text-decoration:none; border-bottom:1px solid currentColor;
+}
+#wtyg-frontline .wf-foot{
+  flex:0 0 auto; background:var(--wf-deep); border-top:1px solid var(--wf-rule);
+  padding:8px 14px;
+}
+#wtyg-frontline .wf-footbtn{
+  background:none; border:0; cursor:pointer; color:var(--wf-soft);
+  font-family:'SF Mono',Menlo,monospace; font-size:9.5px;
+  letter-spacing:.07em; text-transform:uppercase; padding:0;
+}
+#wtyg-frontline .wf-footdetail{display:none; margin-top:9px}
+#wtyg-frontline .wf-foot.wf-open .wf-footdetail{display:block}
+#wtyg-frontline .wf-grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(128px,1fr));
+  gap:2px 12px; font-family:'SF Mono',Menlo,monospace; font-size:10px;
+}
+#wtyg-frontline .wf-cell{
+  display:flex; justify-content:space-between; color:var(--wf-soft); padding:1px 0;
+}
+#wtyg-frontline .wf-cell.wf-zero{color:var(--wf-faint)}
+#wtyg-frontline .wf-cell b{font-weight:500; color:var(--wf-ink)}
+#wtyg-frontline .wf-note{
+  font-size:12.5px; line-height:1.5; color:var(--wf-soft);
+  margin-top:10px; max-width:62ch;
+}
+#wtyg-frontline .wf-state{padding:26px 16px; color:var(--wf-soft); font-size:14px; line-height:1.5}
+@media (max-width:520px){
+  #wtyg-frontline{height:560px}
+  #wtyg-frontline .wf-fact{font-size:15px}
+}
+</style>
+
+<script>
+(function(){
+  // Source of truth: the repository the workflow commits to.
+  var FEED_URL = "https://raw.githubusercontent.com/WelcomeToYourGalaxy/Earth-feed/main/feed.json";
+
+  var root = document.getElementById('wtyg-frontline');
+  if (!root) return;
+  var rowsEl = root.querySelector('#wf-rows'),
+      chipsEl = root.querySelector('#wf-chips'),
+      metaEl = root.querySelector('#wf-meta'),
+      gridEl = root.querySelector('#wf-grid'),
+      footEl = root.querySelector('.wf-foot'),
+      footBtn = root.querySelector('#wf-footbtn'),
+      footCount = root.querySelector('#wf-footcount');
+
+  var data = null, filter = {k:'all', v:null};
+
+  var GROUPS = {
+    africa:['northern_africa','western_africa','middle_africa','eastern_africa','southern_africa'],
+    americas:['northern_america','central_america','caribbean','south_america'],
+    asia:['central_asia','eastern_asia','southern_asia','south_eastern_asia','western_asia'],
+    europe:['eastern_europe','northern_europe','southern_europe','western_europe'],
+    oceania:['australia_nz','melanesia','micronesia','polynesia'],
+    polar:['polar'], ocean:['ocean']
+  };
+
+  function esc(s){
+    return String(s==null?'':s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function when(iso){
+    if(!iso) return '';
+    var d = Math.floor((Date.now() - new Date(iso))/864e5);
+    if(isNaN(d)) return '';
+    if(d<=0) return 'today';
+    if(d===1) return '1d';
+    if(d<31) return d+'d';
+    return Math.floor(d/30)+'mo';
+  }
+
+  function chips(){
+    var topics = [];
+    data.rows.forEach(function(r){
+      (r.topics||[]).forEach(function(t){ if(topics.indexOf(t)<0) topics.push(t); });
+    });
+    topics.sort();
+    var items = [{k:'all',v:null,label:'All'}];
+    Object.keys(GROUPS).forEach(function(g){ items.push({k:'group',v:g,label:g}); });
+    topics.forEach(function(t){ items.push({k:'topic',v:t,label:t.replace('_',' ')}); });
+    chipsEl.innerHTML = items.map(function(i){
+      var on = filter.k===i.k && filter.v===i.v;
+      return '<button class="wf-chip" aria-pressed="'+on+'" data-k="'+i.k+
+             '" data-v="'+esc(i.v)+'">'+esc(i.label)+'</button>';
+    }).join('');
+  }
+
+  function visible(){
+    if(filter.k==='all') return data.rows;
+    if(filter.k==='group'){
+      var set = GROUPS[filter.v]||[];
+      return data.rows.filter(function(r){ return set.indexOf(r.region)>=0; });
+    }
+    return data.rows.filter(function(r){ return (r.topics||[]).indexOf(filter.v)>=0; });
+  }
+
+  function render(){
+    var rows = visible();
+    if(!rows.length){
+      rowsEl.innerHTML = '<div class="wf-state">Nothing in this filter. '+
+        'Clear it to see everything held.</div>';
+      return;
+    }
+    rowsEl.innerHTML = rows.map(function(r){
+      var proj = r.fact_type === 'projection';
+      var also = (r.also_reported_by && r.also_reported_by.length)
+        ? '<span class="wf-tag">+'+r.also_reported_by.length+' outlets</span>' : '';
+      var ctx = r.context
+        ? '<p class="wf-ctx wf-d-'+esc(r.context_direction)+'">'+esc(r.context)+'</p>' : '';
+      var ctxLink = r.context_url
+        ? '<a href="'+esc(r.context_url)+'" target="_blank" rel="noopener">Context source</a>' : '';
+      return '<article class="wf-row wf-t-'+esc(r.tier)+'" tabindex="0">'+
+        '<div class="wf-rail"></div><div class="wf-body">'+
+        '<p class="wf-fact">'+esc(r.fact)+'</p>'+ ctx +
+        '<div class="wf-tail">'+
+          (proj ? '<span class="wf-tag wf-proj">projection</span>'
+                : '<span class="wf-tag">'+esc(r.fact_type)+'</span>')+
+          '<span>'+esc(r.region_label)+'</span>'+
+          '<span>'+esc(r.source_name)+'</span>'+
+          '<span>'+when(r.published)+'</span>'+ also +
+        '</div>'+
+        '<div class="wf-expand"><span class="wf-alabel">Source sentence'+
+          (r.lang!=='en' ? ' — original language' : '')+'</span>'+
+          '<p class="wf-anchor">'+esc(r.anchor)+'</p><div class="wf-links">'+
+          (r.url ? '<a href="'+esc(r.url)+'" target="_blank" rel="noopener">Open source</a>' : '')+
+          ctxLink +'</div></div>'+
+        '</div></article>';
+    }).join('');
+  }
+
+  function coverage(){
+    var cov = data.coverage || [];
+    gridEl.innerHTML = cov.map(function(c){
+      var held = (c.available||0) - c.count;
+      var extra = held>0 ? ' <i style="font-style:normal;opacity:.55">+'+held+'</i>' : '';
+      return '<span class="wf-cell '+(c.count?'':'wf-zero')+'">'+esc(c.label)+
+             '<b>'+c.count+extra+'</b></span>';
+    }).join('');
+    var present = cov.filter(function(c){ return c.count; }).length;
+    footCount.textContent = present+'/'+cov.length+' regions';
+  }
+
+  chipsEl.addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('.wf-chip') : null;
+    if(!b) return;
+    filter = {k:b.getAttribute('data-k'),
+              v:b.getAttribute('data-v')==='null' ? null : b.getAttribute('data-v')};
+    chips(); render(); rowsEl.scrollTop = 0;
+  });
+  rowsEl.addEventListener('click', function(e){
+    if(e.target.closest && e.target.closest('a')) return;
+    var row = e.target.closest ? e.target.closest('.wf-row') : null;
+    if(row) row.classList.toggle('wf-open');
+  });
+  footBtn.addEventListener('click', function(){
+    var open = footEl.classList.toggle('wf-open');
+    footBtn.setAttribute('aria-expanded', open);
+  });
+
+  fetch(FEED_URL, {cache:'no-store'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(json){
+      data = json;
+      var s = json.stats || {};
+      metaEl.textContent = (s.facts_published || json.rows.length)+' facts · updated '+
+                           (when(json.generated_at) || 'today');
+      chips(); render(); coverage();
+    })
+    .catch(function(err){
+      rowsEl.innerHTML = '<div class="wf-state"><b>Feed unavailable.</b><br>'+
+        'The repository may be private, or the workflow has not committed feed.json yet. '+
+        'Details: '+esc(err.message)+'</div>';
+      metaEl.textContent = 'not loaded';
+    });
+})();
+</script>

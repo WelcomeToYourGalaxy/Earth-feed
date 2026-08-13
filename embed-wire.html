@@ -1,0 +1,215 @@
+<!--
+  RAW WIRE — Weebly embed
+  ───────────────────────
+  Every item the harvester pulled, exactly as it arrived. No extraction, no
+  fact gate, no context. Original headline, source, language and link.
+
+  This is the counterpart to the Frontline embed: that one shows what survived
+  the filters, this one shows the whole intake. Useful for checking what the
+  filters removed, and honest about the fact that the processed feed is a
+  small selection.
+
+  Paste this whole block into a Weebly "Embed Code" element.
+
+  Already pointed at WelcomeToYourGalaxy/Earth-feed on the main branch. The
+  scheduled workflow commits wire.json alongside feed.json, so this stays live
+  with nothing hosted.
+
+  Note: this reads wire.json, a trimmed copy of the full intake — every item,
+  with the article body cut to a snippet so the file stays a few MB rather than
+  nineteen. The embed loads it once and pages through it in the browser.
+-->
+<div id="wtyg-wire">
+  <div class="ww-bar">
+    <span class="ww-mark">Wire</span>
+    <span class="ww-meta" id="ww-meta">loading</span>
+  </div>
+  <div class="ww-tools">
+    <input class="ww-search" id="ww-search" type="search"
+           placeholder="filter by word, source or language" aria-label="Filter the wire">
+    <select class="ww-select" id="ww-tier" aria-label="Filter by evidence tier">
+      <option value="">all tiers</option>
+      <option value="peer_reviewed">peer-reviewed</option>
+      <option value="preprint">preprint</option>
+      <option value="institutional">institutional</option>
+      <option value="journalism">journalism</option>
+    </select>
+  </div>
+  <div class="ww-rows" id="ww-rows">
+    <div class="ww-state">Loading the full intake — this file is large.</div>
+  </div>
+  <div class="ww-foot">
+    <button class="ww-more" id="ww-more" hidden>Show more</button>
+    <span class="ww-count" id="ww-count"></span>
+  </div>
+</div>
+
+<style>
+#wtyg-wire{
+  --ww-ground:#E6E7E1; --ww-deep:#DBDDD5; --ww-ink:#171F1D;
+  --ww-soft:#4E5854; --ww-faint:#7C857F; --ww-verd:#2E6B5E; --ww-rule:#C2C6BB;
+  background:var(--ww-ground); color:var(--ww-ink);
+  font-family:Georgia,'Times New Roman',serif;
+  border:1px solid var(--ww-rule); max-width:100%;
+  display:flex; flex-direction:column; height:640px;
+  -webkit-font-smoothing:antialiased;
+}
+#wtyg-wire *{box-sizing:border-box; margin:0; padding:0}
+#wtyg-wire .ww-bar{
+  flex:0 0 auto; background:var(--ww-deep); border-bottom:1px solid var(--ww-rule);
+  padding:10px 14px; display:flex; align-items:baseline; gap:10px;
+}
+#wtyg-wire .ww-mark{
+  font-family:'Helvetica Neue',Arial,sans-serif; font-weight:700;
+  font-size:14px; letter-spacing:.15em; text-transform:uppercase;
+}
+#wtyg-wire .ww-meta{
+  font-family:'SF Mono',Menlo,Consolas,monospace; font-size:10px;
+  color:var(--ww-faint); letter-spacing:.05em; margin-left:auto;
+}
+#wtyg-wire .ww-tools{
+  flex:0 0 auto; background:var(--ww-deep); border-bottom:1px solid var(--ww-rule);
+  padding:0 14px 10px; display:flex; gap:8px;
+}
+#wtyg-wire .ww-search,#wtyg-wire .ww-select{
+  font-family:'SF Mono',Menlo,monospace; font-size:11px;
+  background:var(--ww-ground); color:var(--ww-ink);
+  border:1px solid var(--ww-rule); padding:5px 8px; border-radius:0;
+}
+#wtyg-wire .ww-search{flex:1 1 auto; min-width:0}
+#wtyg-wire .ww-rows{flex:1 1 auto; overflow-y:auto}
+#wtyg-wire .ww-item{
+  border-bottom:1px solid var(--ww-rule); padding:10px 14px;
+  display:block; text-decoration:none; color:inherit;
+}
+#wtyg-wire .ww-item:hover{background:var(--ww-deep)}
+#wtyg-wire .ww-title{
+  font-family:'Helvetica Neue',Arial,sans-serif; font-weight:600;
+  font-size:14.5px; line-height:1.32;
+}
+#wtyg-wire .ww-snip{
+  font-size:13px; line-height:1.45; color:var(--ww-soft); margin-top:4px;
+}
+#wtyg-wire .ww-tail{
+  display:flex; gap:9px; flex-wrap:wrap; margin-top:6px;
+  font-family:'SF Mono',Menlo,monospace; font-size:9.5px;
+  letter-spacing:.05em; color:var(--ww-faint); text-transform:uppercase;
+}
+#wtyg-wire .ww-tag{border:1px solid var(--ww-rule); padding:1px 5px}
+#wtyg-wire .ww-foot{
+  flex:0 0 auto; background:var(--ww-deep); border-top:1px solid var(--ww-rule);
+  padding:8px 14px; display:flex; align-items:center; gap:12px;
+}
+#wtyg-wire .ww-more{
+  background:transparent; border:1px solid var(--ww-rule); color:var(--ww-soft);
+  font-family:'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:.06em;
+  text-transform:uppercase; padding:4px 10px; cursor:pointer; border-radius:0;
+}
+#wtyg-wire .ww-more:hover{border-color:var(--ww-ink); color:var(--ww-ink)}
+#wtyg-wire .ww-count{
+  font-family:'SF Mono',Menlo,monospace; font-size:9.5px;
+  color:var(--ww-faint); letter-spacing:.05em; margin-left:auto;
+}
+#wtyg-wire .ww-state{padding:26px 16px; color:var(--ww-soft); font-size:14px; line-height:1.5}
+@media (max-width:520px){
+  #wtyg-wire{height:560px}
+  #wtyg-wire .ww-tools{flex-direction:column}
+}
+</style>
+
+<script>
+(function(){
+  // Source of truth: the repository the workflow commits to.
+  var WIRE_URL = "https://raw.githubusercontent.com/WelcomeToYourGalaxy/Earth-feed/main/wire.json";
+
+  var PAGE = 60;
+  var root = document.getElementById('wtyg-wire');
+  if (!root) return;
+  var rowsEl = root.querySelector('#ww-rows'),
+      metaEl = root.querySelector('#ww-meta'),
+      searchEl = root.querySelector('#ww-search'),
+      tierEl = root.querySelector('#ww-tier'),
+      moreEl = root.querySelector('#ww-more'),
+      countEl = root.querySelector('#ww-count');
+
+  var all = [], shown = 0;
+
+  function esc(s){
+    return String(s==null?'':s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function when(iso){
+    if(!iso) return '';
+    var d = Math.floor((Date.now() - new Date(iso))/864e5);
+    if(isNaN(d)) return '';
+    if(d<=0) return 'today';
+    if(d===1) return '1d';
+    if(d<31) return d+'d';
+    return Math.floor(d/30)+'mo';
+  }
+
+  function matching(){
+    var q = (searchEl.value||'').toLowerCase().trim();
+    var tier = tierEl.value;
+    return all.filter(function(it){
+      if(tier && it.tier !== tier) return false;
+      if(!q) return true;
+      return (it.title+' '+it.source_name+' '+it.lang+' '+(it.body||'').slice(0,400))
+             .toLowerCase().indexOf(q) >= 0;
+    });
+  }
+
+  function render(reset){
+    var list = matching();
+    if(reset) shown = 0;
+    shown = Math.min(list.length, shown + PAGE);
+    if(!list.length){
+      rowsEl.innerHTML = '<div class="ww-state">No item matches that filter.</div>';
+      moreEl.hidden = true;
+      countEl.textContent = '0 of '+all.length;
+      return;
+    }
+    rowsEl.innerHTML = list.slice(0, shown).map(function(it){
+      // Body is the article or abstract text as harvested — trimmed here only
+      // so the row stays scannable. Nothing is rewritten.
+      var snip = (it.body||'').slice(0, 220);
+      if((it.body||'').length > 220) snip += '…';
+      return '<a class="ww-item" href="'+esc(it.url||'#')+'" target="_blank" rel="noopener">'+
+        '<div class="ww-title">'+esc(it.title)+'</div>'+
+        (snip ? '<div class="ww-snip">'+esc(snip)+'</div>' : '')+
+        '<div class="ww-tail">'+
+          '<span class="ww-tag">'+esc((it.tier||'').replace('_','-'))+'</span>'+
+          '<span>'+esc(it.source_name)+'</span>'+
+          (it.lang && it.lang!=='en' ? '<span class="ww-tag">'+esc(it.lang)+'</span>' : '')+
+          '<span>'+when(it.published)+'</span>'+
+        '</div></a>';
+    }).join('');
+    moreEl.hidden = shown >= list.length;
+    countEl.textContent = shown+' of '+list.length+
+      (list.length !== all.length ? ' matching · '+all.length+' total' : ' items');
+  }
+
+  searchEl.addEventListener('input', function(){ render(true); rowsEl.scrollTop = 0; });
+  tierEl.addEventListener('change', function(){ render(true); rowsEl.scrollTop = 0; });
+  moreEl.addEventListener('click', function(){ render(false); });
+
+  fetch(WIRE_URL, {cache:'no-store'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(items){
+      // Newest first; items without a date sort to the end rather than the top.
+      all = items.slice().sort(function(a,b){
+        return (b.published||'') < (a.published||'') ? -1 : 1;
+      });
+      metaEl.textContent = all.length+' items harvested · unfiltered';
+      render(true);
+    })
+    .catch(function(err){
+      rowsEl.innerHTML = '<div class="ww-state"><b>Wire unavailable.</b><br>'+
+        'The repository may be private, or '+
+        'the workflow has committed wire.json at least once. '+
+        'Details: '+esc(err.message)+'</div>';
+      metaEl.textContent = 'not loaded';
+    });
+})();
+</script>
