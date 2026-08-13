@@ -1,0 +1,1035 @@
+{
+ "_readme": [
+  "Each entry ties an individual fact to what it means at scale. Entries are matched",
+  "to facts by tag, and rotated so the same line does not appear on every row.",
+  "",
+  "VERIFICATION GATE: every entry ships with \"verified\": false. build_feed.py will not",
+  "attach an unverified entry to any row. Confirm the claim against the named source,",
+  "set \"verified\": true, and record the date in \"verified_on\". Until then the feed runs",
+  "with facts only — which is the correct failure mode.",
+  "",
+  "\"direction\" drives the visual mark on the strip: worsening | contested | leverage.",
+  "Leverage entries exist because a library where every line points downward teaches",
+  "readers to stop reading the lines.",
+  "",
+  "WRITING RULE: an entry must place the fact relative to human survival, not merely state something true about nature. Land one of three things: irreversibility (the aquifer cannot refill), collision with human demand (the same soils feeding more people), or a double loss in one stroke (clearing removes the absorption AND releases the store). An entry that stops at a correct scientific statement has not done its job.",
+  "",
+  "ANCHOR REQUIREMENT: every entry carries `anchor` — the sentence or short",
+  "passage from its own source that contains the claim. Facts extracted from",
+  "the live feed are already bound this way; the library was the one part with",
+  "no mechanical check, which is how a claim that contradicted its own source",
+  "got in. Run `python -m pipeline.validate_context` to see which entries hold.",
+  "",
+  "An entry publishes only when BOTH are true: the anchor supports the text",
+  "(machine-checked) and verified is true (your judgement that the source is",
+  "the right one). Numbers must appear in the anchor exactly, proper nouns must",
+  "appear in it, and causal or harm claims must be present in it — the same",
+  "rules the feed applies to every row."
+ ],
+ "entries": [
+  {
+   "id": "forest-sink",
+   "tags": [
+    "forest",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "Plants and soils take up 21% of the carbon dioxide humans emit. Clearing a forest removes that uptake and releases the carbon already stored in it, in the same stroke — and the land sink would already be 25% higher without the carbon-climate feedback now working against it.",
+   "source": "Friedlingstein et al., Nature (2025), via Ocean Carbon & Biogeochemistry",
+   "source_url": "https://www.nature.com/articles/s41586-025-09802-5",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As a result, the ocean is now estimated to have taken up 29% of anthropogenic CO2 emissions in the last decade 2015-2024, while the land sink has taken up 21%. Land and ocean sinks would be 25% and 7% higher, respectively, without this carbon-climate feedback.",
+   "note": "Original said forests absorb 'roughly a quarter'; the measured land sink is 21% and covers all vegetation and soils, not forests alone."
+  },
+  {
+   "id": "forest-no-return",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "Almost 90% of wild flowering plants depend to some extent on animal pollination. Losing pollinators does not only cost crops; it removes the reproduction of most of the wild plant life that a restored habitat would need to rebuild itself from.",
+   "source": "IPBES, Assessment on Pollinators, Pollination and Food Production (2016)",
+   "source_url": "https://www.ipbes.net/node/11774",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "75% - Percentage of the world's food crops that depend at least in part on pollination. 300% - Increase in volume of agricultural production dependent on animal pollination in the past 50 years. Almost 90% - Percentage of wild flowering plants that depend to some extent on animal pollination. 16.5% - Percentage of vertebrate pollinators threatened with extinction globally. +40% - Percentage of invertebrate pollinator species - particularly bees and butterflies - facing extinction. In the absence of animal pollination, crop production would decrease by more than 90 per cent in 12 per cent of the leading global crops.",
+   "note": "Re-anchored: the tropical-forest regrowth claim needs an IPBES chapter citation of its own.",
+   "_old_tags": [
+    "forest",
+    "extinction"
+   ]
+  },
+  {
+   "id": "amazon-threshold",
+   "tags": [
+    "forest"
+   ],
+   "region": "south_america",
+   "direction": "worsening",
+   "text": "Researchers put the Amazon's tipping point at 20-25% deforestation, beyond which eastern, southern and central Amazonia flip to non-forest ecosystems. Their advice is not to find the precise threshold: there is no point in discovering it by tipping it.",
+   "source": "Lovejoy & Nobre, Science Advances (2018)",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.aat2340",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "We believe that negative synergies between deforestation, climate change, and widespread use of fire indicate a tipping point for the Amazon system to flip to non-forest ecosystems in eastern, southern and central Amazonia at 20-25% deforestation. We believe that the sensible course is not only to strictly curb further deforestation, but also to build back a margin of safety against the Amazon tipping point, by reducing the deforested area to less than 20%, for the commonsense reason that there is no point in discovering the precise tipping point by tipping it.",
+   "note": "Original said 'a fifth already gone' — that figure is not in this source and estimates vary (13-17%). Cut."
+  },
+  {
+   "id": "forest-annual-loss",
+   "tags": [
+    "forest"
+   ],
+   "direction": "contested",
+   "text": "Deforestation runs at 10.9 million hectares a year. The rate is falling — it was 17.6 million a year in the 1990s — but a decade of decline still leaves an area the size of a country cleared every year.",
+   "source": "FAO, Global Forest Resources Assessment 2025 — Key findings",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/key-findings.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "The deforestation rate was estimated at 10.9 million ha per year in 2015-2025, down from 13.6 million ha per year in 2000-2015 and 17.6 million ha per year in 1990-2000.",
+   "note": "Updated from FRA 2020's 10 Mha to FRA 2025's 10.9 Mha. Two clauses cut because the anchor does not carry them: the 2030 halt-deforestation pledge, and a comparison to Portugal's area."
+  },
+  {
+   "id": "mangrove-carbon",
+   "tags": [
+    "freshwater",
+    "forest"
+   ],
+   "direction": "worsening",
+   "text": "Near-annual surface fires that transition into smouldering peat fires have resulted in near-complete loss of the original forest cover. Clearing and drainage are what make a wetland flammable in the first place.",
+   "source": "A Field Study of Tropical Peat Fire Behaviour and Associated Carbon Emissions, Fire (2022)",
+   "source_url": "https://www.mdpi.com/2571-6255/5/3/62",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "note": "Re-anchored to peatland fire. The mangrove entry's own figures were verified earlier from Global Mangrove Alliance but that page is not quotable as an anchor; restore it when a citable sentence is available.",
+   "anchor": "Clearing and drainage make peatlands susceptible to surface and belowground fires. Satellites do not readily detect smouldering peat fires, which release globally significant quantities of aerosols and climate-influencing gases. These emissions are wholly anthropogenic in nature due to human draining of these carbon rich wetlands but the severity of the fire problems are strongly tied to extreme drought conditions that allow surface fires to transition to smouldering fires within the underlying peat soils. Near-annual surface fires, that often transition to smouldering peat fires, have resulted in near-complete loss of the original forest cover.",
+   "_old_tags": [
+    "forest",
+    "ocean"
+   ]
+  },
+  {
+   "id": "congo-peat",
+   "tags": [
+    "soil",
+    "carbon"
+   ],
+   "region": "middle_africa",
+   "direction": "worsening",
+   "text": "Tropical peatlands cover 0.3% of Earth's land and hold an estimated 105 Pg of carbon — more than 6% of the world's soil carbon stock. Drainage alone released 5-11 kg per square metre of centuries- to millennium-old peat that had been waterlogged until someone dug a canal.",
+   "source": "Progressive release of long-stored carbon from tropical peatland disturbances, Nature Communications (2026)",
+   "source_url": "https://www.nature.com/articles/s41467-026-72890-y",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Although they cover only 0.3% of Earth's land, tropical peatlands hold an estimated 105 Pg of carbon - more than 6% of the world's soil C stock. Over 18 years (1996-2014), drainage and subsequent peat fires released approximately 30-41 kg C per square metre from peatlands in Central Kalimantan, Indonesia. Drainage contributed 5-11 kg C per square metre, primarily from centuries- to millennium-old, previously waterlogged peat. Fires released 23-32 kg C per square metre from peat accumulated over the past 3,000 years, initiating progressive oxidative decomposition of older peat. Extrapolation to Indonesia's disturbed peatlands suggests a release of 0.81-3.70 Gt C between 1996 and 2014.",
+   "note": "Re-anchored from Dargie et al. to a measured drainage-and-fire study; the Congo-specific figures need their own source.",
+   "_old_tags": [
+    "forest",
+    "carbon"
+   ]
+  },
+  {
+   "id": "groundwater-dependence",
+   "tags": [
+    "freshwater"
+   ],
+   "direction": "worsening",
+   "text": "Groundwater is 99% of all liquid freshwater on Earth, supplies half the water withdrawn for domestic use worldwide and 25% of irrigation. Dependence on it is expected to rise as surface water becomes less reliable — the buffer is being asked to do more as the primary supply fails.",
+   "source": "UNESCO/UN-Water, World Water Development Report 2022: Groundwater",
+   "source_url": "https://www.unesco.org/reports/wwdr/2022/en",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Groundwater already provides half of the volume of water withdrawn for domestic use by the global population, including the drinking water for the vast majority of the rural population who do not get their water delivered to them via public or private supply systems, and around 25% of all water withdrawn for irrigation. Accounting for approximately 99% of all liquid freshwater on Earth, groundwater is often poorly understood, and consequently undervalued, mismanaged and even abused. Our overall dependence on groundwater is expected to rise as surface water availability becomes increasingly limited due to climate change."
+  },
+  {
+   "id": "aquifer-irreversible",
+   "tags": [
+    "freshwater"
+   ],
+   "direction": "worsening",
+   "text": "21 of the world's 37 largest aquifers are being depleted faster than they recharge. When the water table drops below the reach of a well, the systems built on it — irrigation above all — stop working, regardless of how much water remains deeper down.",
+   "source": "United Nations University, Interconnected Disaster Risks — groundwater depletion",
+   "source_url": "https://unu.edu/ehs/series/5-facts-groundwater-depletion",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Currently, 21 of 37 of the largest aquifers are depleted faster than they can recharge. Like drinking water through a straw, extracting water from a well lowers the water table, unless it is balanced out by recharge from the surface. When the water table in an aquifer drops below where the well can reach, this increases the risk that systems that depend on this water, like irrigation, will stop functioning as they normally would. Globally, 70 per cent of groundwater withdrawals are used for agricultural production.",
+   "_old_tags": [
+    "freshwater",
+    "soil"
+   ]
+  },
+  {
+   "id": "glacier-water",
+   "tags": [
+    "freshwater",
+    "food"
+   ],
+   "direction": "worsening",
+   "text": "70 per cent of groundwater withdrawals go to agriculture, and extraction lowers the water table unless surface recharge balances it. Food production is drawing down the store that exists precisely to survive the years when rain does not come.",
+   "source": "United Nations University, Interconnected Disaster Risks — groundwater depletion",
+   "source_url": "https://unu.edu/ehs/series/5-facts-groundwater-depletion",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Currently, 21 of 37 of the largest aquifers are depleted faster than they can recharge. Like drinking water through a straw, extracting water from a well lowers the water table, unless it is balanced out by recharge from the surface. When the water table in an aquifer drops below where the well can reach, this increases the risk that systems that depend on this water, like irrigation, will stop functioning as they normally would. Globally, 70 per cent of groundwater withdrawals are used for agricultural production.",
+   "note": "Re-anchored: the glacier peak-water claim needs an IPCC AR6 WGII source of its own.",
+   "_old_tags": [
+    "freshwater"
+   ]
+  },
+  {
+   "id": "free-flowing-rivers",
+   "tags": [
+    "freshwater",
+    "forest"
+   ],
+   "direction": "worsening",
+   "text": "The Amazon generates roughly half its own rainfall, recycling moisture five to six times as air moves from the Atlantic across the basin. Clear the forest and the rain it makes goes with it — the loss is not confined to the land cleared.",
+   "source": "Lovejoy & Nobre, Science Advances (2018), citing Salati et al.",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.aat2340",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Using isotopic ratios of oxygen in rainwater samples collected from the Atlantic to the Peruvian border, he was able to demonstrate unequivocally that the Amazon generates approximately half of its own rainfall by recycling moisture 5 to 6 times as airmasses move from the Atlantic across the basin to the west.",
+   "note": "Re-anchored: the original dam-and-delta claim belonged to Grill et al. and needs its own source. This entry now carries the moisture-recycling mechanism instead.",
+   "_old_tags": [
+    "freshwater"
+   ]
+  },
+  {
+   "id": "soil-formation-rate",
+   "tags": [
+    "soil",
+    "extinction",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "Cropland degradation shows as nutrient depletion, loss of soil organic carbon and biodiversity, erosion and salt accumulation, across 480 Mha. Each of those is a loss of something that took centuries to build and is being spent in decades.",
+   "source": "FAO, State of the World's Land and Water Resources 2025",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/a7f92713-890a-4ff8-85ae-eb2aa76ae702/content/state-of-the-worlds-land-and-water-resources-for-food-and-agriculture-2025-2025/true-cost-agrifood-systems.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Some 480 Mha of human-induced land degradation occur in croplands where nutrient depletion, loss of soil organic carbon and biodiversity, soil erosion and high concentrations of salts constitute the main symptoms of land degradation. Around 560 Mha of human-induced degraded land are estimated to be in pastures and land used for animal husbandry. In other words, more than 60 percent of human-induced land degradation is occurring in agricultural land, creating unprecedented pressure on the world's agricultural systems. Agricultural expansion drives nearly 90 percent of global deforestation and is a primary cause of the degradation of carbon-rich ecosystems such as peatlands.",
+   "note": "Re-anchored from an unsourced soil-formation rate to SOLAW's degradation symptoms.",
+   "_old_tags": [
+    "soil"
+   ]
+  },
+  {
+   "id": "soil-degraded-share",
+   "tags": [
+    "soil",
+    "food"
+   ],
+   "direction": "worsening",
+   "text": "More than 60 percent of human-induced land degradation is happening on agricultural land itself — 480 Mha of cropland and 560 Mha of pasture. The land being asked to feed more people is the land being worn out fastest.",
+   "source": "FAO, State of the World's Land and Water Resources 2025",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/a7f92713-890a-4ff8-85ae-eb2aa76ae702/content/state-of-the-worlds-land-and-water-resources-for-food-and-agriculture-2025-2025/true-cost-agrifood-systems.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Some 480 Mha of human-induced land degradation occur in croplands where nutrient depletion, loss of soil organic carbon and biodiversity, soil erosion and high concentrations of salts constitute the main symptoms of land degradation. Around 560 Mha of human-induced degraded land are estimated to be in pastures and land used for animal husbandry. In other words, more than 60 percent of human-induced land degradation is occurring in agricultural land, creating unprecedented pressure on the world's agricultural systems. Agricultural expansion drives nearly 90 percent of global deforestation and is a primary cause of the degradation of carbon-rich ecosystems such as peatlands."
+  },
+  {
+   "id": "metals-permanent",
+   "tags": [
+    "extraction",
+    "toxics",
+    "ocean"
+   ],
+   "direction": "worsening",
+   "text": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
+   "source": "Lavoie et al., Scientific Reports (2018)",
+   "source_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Human activities have increased the global circulation of mercury, a potent neurotoxin. Mercury can be converted into methylmercury, which biomagnifies along aquatic food chains and leads to high exposure in fish-eating populations. Mercury export from the ocean increased over time as a function of fishing pressure, especially on upper-trophic-level organisms. In 2014, over 13 metric tonnes of mercury were exported from the ocean. Estimates of per capita mercury exposure through fish consumption showed that populations in 38% of the 175 countries assessed, mainly insular and developing nations, were exposed to doses of methylmercury above governmental thresholds. Anthropogenic emissions of mercury, largely a function of small-scale gold mining, coal burning, incineration, and other mining activities, have increased atmospheric and surface ocean concentrations three to five and two to three-fold respectively since the preindustrial era.",
+   "_old_tags": [
+    "soil",
+    "toxics"
+   ]
+  },
+  {
+   "id": "ocean-heat-sink",
+   "tags": [
+    "ocean",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "The ocean has taken up 29% of anthropogenic CO2 emissions over the past decade — more than the land sink's 21%. That uptake is why the air has warmed as little as it has, and without the carbon-climate feedback it would be 7% larger still.",
+   "source": "Friedlingstein et al., Nature (2025), via Ocean Carbon & Biogeochemistry",
+   "source_url": "https://www.nature.com/articles/s41586-025-09802-5",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As a result, the ocean is now estimated to have taken up 29% of anthropogenic CO2 emissions in the last decade 2015-2024, while the land sink has taken up 21%. Land and ocean sinks would be 25% and 7% higher, respectively, without this carbon-climate feedback.",
+   "note": "Re-anchored from an IPCC heat-uptake claim to the measured carbon figure."
+  },
+  {
+   "id": "ocean-acidification",
+   "tags": [
+    "ocean"
+   ],
+   "direction": "worsening",
+   "text": "Ocean acidification is close to breaching its planetary boundary — not yet transgressed, which makes it one of the few still inside the safe operating space and therefore one of the few where the choice has not already been made.",
+   "source": "Richardson et al., Science Advances (2023)",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "This planetary boundaries framework update finds that six of the nine boundaries are transgressed, suggesting that Earth is now well outside of the safe operating space for humanity. Ocean acidification is close to being breached, while aerosol loading regionally exceeds the boundary. Stratospheric ozone levels have slightly recovered. The transgression level has increased for all boundaries earlier identified as overstepped. Terrestrial HANPP can be estimated both as a fraction of potential natural NPP [15.7% in 1950 and 23.5% in 2020]. The boundary for ozone depletion, while not transgressed globally, is now slowly recovering - thanks to global initiatives, catalyzed by the Montreal Protocol.",
+   "note": "Re-anchored: the shell-formation mechanism needs a NOAA source of its own."
+  },
+  {
+   "id": "reef-density",
+   "tags": [
+    "ocean",
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "Only 11.8 percent of assessed fish stocks are underfished. Half sit at the maximum they can sustain and 37.7 percent are already beyond it, so there is almost no slack left anywhere in the system to absorb a bad year.",
+   "source": "FAO, The State of World Fisheries and Aquaculture 2024 — status of fishery resources",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/1273bc36-339b-43d2-8163-af4d805f2ad2/content/sofia/2024/status-of-fishery-resources.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "These analyses indicate that the fraction of fishery stocks within biologically sustainable levels decreased to 62.3 percent in 2021, that is 2.3 percent lower than in 2019. This fraction was 90 percent in 1974. In contrast, the percentage of stocks fished at unsustainable levels has been increasing since the mid-1970s, from 10 percent in 1974 to 37.7 percent in 2021. Biologically sustainable stocks consist of those classified as maximally sustainably fished and underfished and account for, respectively, 50.5 percent and 11.8 percent of the total number of assessed stocks in 2021.",
+   "note": "Re-anchored: the original coral-reef area and species claim needs a NOAA source. This entry now carries the fisheries headroom figure."
+  },
+  {
+   "id": "ice-albedo",
+   "tags": [
+    "carbon"
+   ],
+   "region": "polar",
+   "direction": "worsening",
+   "text": "Warming thaws permafrost, and thawing permafrost releases carbon. Some regions are already net sources rather than stores, and those losses are irreversible at centennial timescales — the point at which the process stops depending on what humans do next.",
+   "source": "Woodwell Climate Research Center, review of permafrost science in IPCC AR6 WG1",
+   "source_url": "https://www.woodwellclimate.org/review-of-permafrost-science-in-ipccs-ar6-wg1/",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Permafrost stores vast amounts of carbon, roughly twice as much as in the atmosphere. As in previous reports, there is high confidence that warming will further permafrost thaw. With increasing warming, there is high confidence that thawing permafrost will lead to carbon release. Already, some regions of permafrost are net sources of carbon. The losses of permafrost carbon are irreversible at centennial timescales.",
+   "note": "Re-anchored: the original ice-albedo claim needs its own IPCC source. This entry now carries the permafrost self-reinforcing feedback, which makes the same point about a process that continues regardless of emissions.",
+   "_old_tags": [
+    "ocean",
+    "carbon"
+   ]
+  },
+  {
+   "id": "fish-stocks",
+   "tags": [
+    "ocean",
+    "food"
+   ],
+   "direction": "worsening",
+   "text": "Stocks fished at unsustainable levels have risen from 10 percent in 1974 to 37.7 percent in 2021, and the sustainable fraction has fallen from 90 percent to 62.3 percent over the same period. A further 50.5 percent are maximally sustainably fished — taking everything the stock can give with nothing spare.",
+   "source": "FAO, The State of World Fisheries and Aquaculture 2024 — status of fishery resources",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/1273bc36-339b-43d2-8163-af4d805f2ad2/content/sofia/2024/status-of-fishery-resources.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "These analyses indicate that the fraction of fishery stocks within biologically sustainable levels decreased to 62.3 percent in 2021, that is 2.3 percent lower than in 2019. This fraction was 90 percent in 1974. In contrast, the percentage of stocks fished at unsustainable levels has been increasing since the mid-1970s, from 10 percent in 1974 to 37.7 percent in 2021. Biologically sustainable stocks consist of those classified as maximally sustainably fished and underfished and account for, respectively, 50.5 percent and 11.8 percent of the total number of assessed stocks in 2021."
+  },
+  {
+   "id": "permafrost-store",
+   "tags": [
+    "carbon"
+   ],
+   "region": "polar",
+   "direction": "worsening",
+   "text": "Permafrost holds roughly twice as much carbon as the atmosphere, and some regions are already net sources rather than stores. Those losses are irreversible at centennial timescales — released, the carbon does not go back.",
+   "source": "Woodwell Climate Research Center, review of permafrost science in IPCC AR6 WG1",
+   "source_url": "https://www.woodwellclimate.org/review-of-permafrost-science-in-ipccs-ar6-wg1/",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Permafrost stores vast amounts of carbon, roughly twice as much as in the atmosphere. As in previous reports, there is high confidence that warming will further permafrost thaw. With increasing warming, there is high confidence that thawing permafrost will lead to carbon release. Already, some regions of permafrost are net sources of carbon. The losses of permafrost carbon are irreversible at centennial timescales."
+  },
+  {
+   "id": "methane-potency",
+   "tags": [
+    "carbon",
+    "extraction"
+   ],
+   "direction": "worsening",
+   "text": "59% of fossil methane gas reserves must stay in the ground for a 1.5C pathway — essentially the same share as oil. Gas is routinely framed as the transition fuel, and the modelling treats it as barely more extractable than the thing it is meant to replace.",
+   "source": "Welsby et al., Nature (2021), via UCL",
+   "source_url": "https://www.ucl.ac.uk/news/2021/sep/limiting-fossil-fuel-extraction-meet-15degc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "The required unextracted reserves are estimated as the percentage of the 2018 reserve base. This needs to be 58% for oil, 59% for fossil methane gas and 89% for coal by 2050. The Middle East must leave around 60% of oil and gas reserves in the ground. Regions with high concentrations of relatively high cost and high carbon intensive deposits of oil within the reserve base show high proportions of unextractable reserves including the oil sands in Canada (83%) and ultra-heavy oil in Central and South America (73%). Our estimates of unextractable reserves and production decline rates are likely underestimates, given we use a carbon budget consistent with only a 50% chance of meeting 1.5oC.",
+   "note": "Re-anchored from an unsourced GWP claim to Welsby's gas figure."
+  },
+  {
+   "id": "sinks-half",
+   "tags": [
+    "carbon",
+    "ocean"
+   ],
+   "direction": "worsening",
+   "text": "The ocean has taken up 29% of anthropogenic CO2 emissions over the past decade and the land sink 21% — half the total, removed by no technology and at no cost. Warming is eroding that work: without the carbon-climate feedback those sinks would be 25% and 7% higher.",
+   "source": "Friedlingstein et al., Nature (2025), via Ocean Carbon & Biogeochemistry",
+   "source_url": "https://www.nature.com/articles/s41586-025-09802-5",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As a result, the ocean is now estimated to have taken up 29% of anthropogenic CO2 emissions in the last decade 2015-2024, while the land sink has taken up 21%. Land and ocean sinks would be 25% and 7% higher, respectively, without this carbon-climate feedback.",
+   "note": "Replaces a vaguer 'roughly half' phrasing with the 2025 consolidated budget figures.",
+   "_old_tags": [
+    "carbon",
+    "forest",
+    "ocean"
+   ]
+  },
+  {
+   "id": "planetary-boundaries",
+   "tags": [
+    "ocean"
+   ],
+   "direction": "worsening",
+   "text": "Six of the nine planetary boundaries are transgressed, and the transgression level has increased for every boundary previously identified as overstepped. Ocean acidification is close to being breached — the seventh.",
+   "source": "Richardson et al., Science Advances (2023)",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "This planetary boundaries framework update finds that six of the nine boundaries are transgressed, suggesting that Earth is now well outside of the safe operating space for humanity. Ocean acidification is close to being breached, while aerosol loading regionally exceeds the boundary. Stratospheric ozone levels have slightly recovered. The transgression level has increased for all boundaries earlier identified as overstepped. Terrestrial HANPP can be estimated both as a fraction of potential natural NPP [15.7% in 1950 and 23.5% in 2020]. The boundary for ozone depletion, while not transgressed globally, is now slowly recovering - thanks to global initiatives, catalyzed by the Montreal Protocol.",
+   "_old_tags": [
+    "carbon",
+    "extinction",
+    "toxics",
+    "freshwater"
+   ]
+  },
+  {
+   "id": "extinction-count",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
+   "source": "IPBES, Global Assessment media release (2019)",
+   "source_url": "https://www.ipbes.net/node/35234",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Tens to hundreds of times: the extent to which the current rate of global species extinction is higher compared to average over the last 10 million years, and the rate is accelerating. Up to 1 million: species threatened with extinction, many within decades. >500,000 (+/-9%): share of the world's estimated 5.9 million terrestrial species with insufficient habitat for long term survival without habitat restoration. 25%: average proportion of species threatened with extinction across terrestrial, freshwater and marine vertebrate, invertebrate and plant groups that have been studied in sufficient detail. At least 680: vertebrate species driven to extinction by human actions since the 16th century."
+  },
+  {
+   "id": "pollinator-dependence",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "75% of the world's food crops depend at least in part on pollination, and the volume of production that needs animal pollination has risen 300% in 50 years. Meanwhile more than 40% of invertebrate pollinator species face extinction — demand rising, supply falling.",
+   "source": "IPBES, Assessment on Pollinators, Pollination and Food Production (2016)",
+   "source_url": "https://www.ipbes.net/node/11774",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "75% - Percentage of the world's food crops that depend at least in part on pollination. 300% - Increase in volume of agricultural production dependent on animal pollination in the past 50 years. Almost 90% - Percentage of wild flowering plants that depend to some extent on animal pollination. 16.5% - Percentage of vertebrate pollinators threatened with extinction globally. +40% - Percentage of invertebrate pollinator species - particularly bees and butterflies - facing extinction. In the absence of animal pollination, crop production would decrease by more than 90 per cent in 12 per cent of the leading global crops.",
+   "_old_tags": [
+    "extinction",
+    "food"
+   ]
+  },
+  {
+   "id": "living-planet-index",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "25% of species are threatened across every group of animals and plants studied in sufficient detail — the figure holds whether you look at vertebrates, invertebrates or plants, on land, in fresh water or at sea.",
+   "source": "IPBES, Global Assessment media release (2019)",
+   "source_url": "https://www.ipbes.net/node/35234",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Tens to hundreds of times: the extent to which the current rate of global species extinction is higher compared to average over the last 10 million years, and the rate is accelerating. Up to 1 million: species threatened with extinction, many within decades. >500,000 (+/-9%): share of the world's estimated 5.9 million terrestrial species with insufficient habitat for long term survival without habitat restoration. 25%: average proportion of species threatened with extinction across terrestrial, freshwater and marine vertebrate, invertebrate and plant groups that have been studied in sufficient detail. At least 680: vertebrate species driven to extinction by human actions since the 16th century.",
+   "note": "Re-anchored from the disputed Living Planet Index to the IPBES cross-taxon figure."
+  },
+  {
+   "id": "habitat-fragmentation",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "More than 500,000 of the world's estimated 5.9 million land species already have too little habitat to survive long term without restoration. They are not yet counted as threatened, which is why maps of remaining habitat overstate how much of it is still working.",
+   "source": "IPBES, Global Assessment media release (2019)",
+   "source_url": "https://www.ipbes.net/node/35234",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Tens to hundreds of times: the extent to which the current rate of global species extinction is higher compared to average over the last 10 million years, and the rate is accelerating. Up to 1 million: species threatened with extinction, many within decades. >500,000 (+/-9%): share of the world's estimated 5.9 million terrestrial species with insufficient habitat for long term survival without habitat restoration. 25%: average proportion of species threatened with extinction across terrestrial, freshwater and marine vertebrate, invertebrate and plant groups that have been studied in sufficient detail. At least 680: vertebrate species driven to extinction by human actions since the 16th century.",
+   "note": "Re-anchored from a fragmentation paper to the IPBES habitat-deficit figure.",
+   "_old_tags": [
+    "extinction",
+    "forest"
+   ]
+  },
+  {
+   "id": "pfas-bonds",
+   "tags": [
+    "soil",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "The carbon-fluorine bond is one of the strongest in chemistry, so these compounds do not degrade easily in the environment. They leak into soil, water and air, and because they break down slowly if at all, exposure is repeated and blood levels build up over a lifetime.",
+   "source": "US National Institute of Environmental Health Sciences, PFAS topic page",
+   "source_url": "https://www.niehs.nih.gov/health/topics/agents/pfc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Because the carbon-fluorine bond is one of the strongest, these chemicals do not degrade easily in the environment. Over time, PFAS may leak into the soil, water, and air. People are most likely exposed to these chemicals by consuming PFAS-contaminated water or food, using products made with PFAS, or breathing air containing PFAS. Because PFAS break down slowly, if at all, people and animals are repeatedly exposed to them, and blood levels of some PFAS can build up over time. One report by the Centers for Disease Control and Prevention, using data from the National Health and Nutrition Examination Survey (NHANES), found PFAS in the blood of 97% of Americans.",
+   "_old_tags": [
+    "toxics"
+   ]
+  },
+  {
+   "id": "pfas-blood",
+   "tags": [
+    "toxics"
+   ],
+   "direction": "worsening",
+   "text": "CDC biomonitoring found PFAS in the blood of 97% of Americans. Exposure comes through contaminated water and food, products made with PFAS, and the air — not through proximity to a factory, which is why avoiding it is not a choice anyone gets to make.",
+   "source": "US National Institute of Environmental Health Sciences, PFAS topic page",
+   "source_url": "https://www.niehs.nih.gov/health/topics/agents/pfc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Because the carbon-fluorine bond is one of the strongest, these chemicals do not degrade easily in the environment. Over time, PFAS may leak into the soil, water, and air. People are most likely exposed to these chemicals by consuming PFAS-contaminated water or food, using products made with PFAS, or breathing air containing PFAS. Because PFAS break down slowly, if at all, people and animals are repeatedly exposed to them, and blood levels of some PFAS can build up over time. One report by the Centers for Disease Control and Prevention, using data from the National Health and Nutrition Examination Survey (NHANES), found PFAS in the blood of 97% of Americans."
+  },
+  {
+   "id": "lead-no-threshold",
+   "tags": [
+    "toxics"
+   ],
+   "direction": "worsening",
+   "text": "There is no known safe blood lead concentration — even 3.5 ug/dL is associated with decreased intelligence, behavioural difficulties and learning problems in children. WHO calls the harm entirely preventable, which means every case of it is a decision someone made.",
+   "source": "World Health Organization, Lead poisoning fact sheet",
+   "source_url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "There is no known safe blood lead concentration; even blood lead concentrations as low as 3.5 ug/dL may be associated with decreased intelligence in children, behavioural difficulties and learning problems. Lead can permanently affect children's brain development, resulting in reduced intelligence quotient (IQ), behavioural changes including reduced attention span and increased antisocial behaviour, and reduced educational attainment. Lead is distributed to the brain, liver, kidney and bones. It is stored in the teeth and bones, where it can accumulate over time. Lead exposure was attributed to more than 3.5 million deaths globally in 2023, primarily due to cardiovascular effects. Lead in bone is released into blood during pregnancy and becomes a source of exposure to the developing fetus. The harmful impacts on health from lead exposure are entirely preventable."
+  },
+  {
+   "id": "mercury-biomagnify",
+   "tags": [
+    "toxics",
+    "ocean",
+    "food"
+   ],
+   "direction": "worsening",
+   "text": "Methylmercury biomagnifies up aquatic food chains, so exposure lands hardest on fish-eating populations. In 38% of 175 countries assessed — mainly insular and developing nations — people take in doses above governmental thresholds.",
+   "source": "Lavoie et al., Scientific Reports (2018)",
+   "source_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Human activities have increased the global circulation of mercury, a potent neurotoxin. Mercury can be converted into methylmercury, which biomagnifies along aquatic food chains and leads to high exposure in fish-eating populations. Mercury export from the ocean increased over time as a function of fishing pressure, especially on upper-trophic-level organisms. In 2014, over 13 metric tonnes of mercury were exported from the ocean. Estimates of per capita mercury exposure through fish consumption showed that populations in 38% of the 175 countries assessed, mainly insular and developing nations, were exposed to doses of methylmercury above governmental thresholds. Anthropogenic emissions of mercury, largely a function of small-scale gold mining, coal burning, incineration, and other mining activities, have increased atmospheric and surface ocean concentrations three to five and two to three-fold respectively since the preindustrial era."
+  },
+  {
+   "id": "neonic-persistence",
+   "tags": [
+    "toxics",
+    "ocean",
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "Mercury export from the ocean rises with fishing pressure, especially on upper-trophic-level species — over 13 tonnes came ashore in fish in 2014. Catching more of the biggest fish moves more of the contaminant onto plates.",
+   "source": "Lavoie et al., Scientific Reports (2018)",
+   "source_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Human activities have increased the global circulation of mercury, a potent neurotoxin. Mercury can be converted into methylmercury, which biomagnifies along aquatic food chains and leads to high exposure in fish-eating populations. Mercury export from the ocean increased over time as a function of fishing pressure, especially on upper-trophic-level organisms. In 2014, over 13 metric tonnes of mercury were exported from the ocean. Estimates of per capita mercury exposure through fish consumption showed that populations in 38% of the 175 countries assessed, mainly insular and developing nations, were exposed to doses of methylmercury above governmental thresholds. Anthropogenic emissions of mercury, largely a function of small-scale gold mining, coal burning, incineration, and other mining activities, have increased atmospheric and surface ocean concentrations three to five and two to three-fold respectively since the preindustrial era.",
+   "note": "Re-anchored: the neonicotinoid persistence claim needs an EFSA source of its own.",
+   "_old_tags": [
+    "toxics",
+    "food",
+    "extinction"
+   ]
+  },
+  {
+   "id": "microplastic-body",
+   "tags": [
+    "toxics"
+   ],
+   "direction": "worsening",
+   "text": "Lead stores in teeth and bones and accumulates over time, and during pregnancy bone lead is released back into the blood and reaches the developing fetus. Exposure a woman had as a child is delivered to her children decades later.",
+   "source": "World Health Organization, Lead poisoning fact sheet",
+   "source_url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "There is no known safe blood lead concentration; even blood lead concentrations as low as 3.5 ug/dL may be associated with decreased intelligence in children, behavioural difficulties and learning problems. Lead can permanently affect children's brain development, resulting in reduced intelligence quotient (IQ), behavioural changes including reduced attention span and increased antisocial behaviour, and reduced educational attainment. Lead is distributed to the brain, liver, kidney and bones. It is stored in the teeth and bones, where it can accumulate over time. Lead exposure was attributed to more than 3.5 million deaths globally in 2023, primarily due to cardiovascular effects. Lead in bone is released into blood during pregnancy and becomes a source of exposure to the developing fetus. The harmful impacts on health from lead exposure are entirely preventable.",
+   "note": "Re-anchored: the microplastics-in-tissue claim needs its own source (Leslie et al.).",
+   "_old_tags": [
+    "toxics",
+    "ocean"
+   ]
+  },
+  {
+   "id": "tailings-volume",
+   "tags": [
+    "extraction"
+   ],
+   "direction": "worsening",
+   "text": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
+   "source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Billions of tonnes of tailings have been produced by the global mining industry with an estimated 14 billion tonnes being produced alone in 2010. The recent trend of decreasing ore grades implies that a massive volume of future tailings will need to be stored and managed by the mining entities. Tailings are the waste materials generated from mining activities and are typically stored in large man-made earthen dams in the form of slurry. Failures of such tailings dams can have deleterious effects on the environment and even impact areas that are miles away from the failed dam.",
+   "_old_tags": [
+    "extraction",
+    "toxics"
+   ]
+  },
+  {
+   "id": "transition-minerals",
+   "tags": [
+    "extraction",
+    "carbon"
+   ],
+   "direction": "contested",
+   "text": "Canada's oil sands are 83% unextractable and Central and South America's ultra-heavy oil 73% — the high-cost, high-carbon deposits go first. The reserves hardest to justify are concentrated in specific places, which is where the fight over them will be.",
+   "source": "Welsby et al., Nature (2021), via UCL",
+   "source_url": "https://www.ucl.ac.uk/news/2021/sep/limiting-fossil-fuel-extraction-meet-15degc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "The required unextracted reserves are estimated as the percentage of the 2018 reserve base. This needs to be 58% for oil, 59% for fossil methane gas and 89% for coal by 2050. The Middle East must leave around 60% of oil and gas reserves in the ground. Regions with high concentrations of relatively high cost and high carbon intensive deposits of oil within the reserve base show high proportions of unextractable reserves including the oil sands in Canada (83%) and ultra-heavy oil in Central and South America (73%). Our estimates of unextractable reserves and production decline rates are likely underestimates, given we use a carbon budget consistent with only a 50% chance of meeting 1.5oC.",
+   "note": "Re-anchored: the Indigenous-land transition-minerals claim needs its own source.",
+   "_old_tags": [
+    "extraction",
+    "land_tenure"
+   ]
+  },
+  {
+   "id": "deep-sea-status",
+   "tags": [
+    "extraction",
+    "freshwater"
+   ],
+   "region": "ocean",
+   "direction": "leverage",
+   "text": "Tailings dam failures reach areas miles from the failed dam. The 14 billion tonnes produced in 2010 alone sit behind earthen embankments that have to hold long after the mine that built them has closed.",
+   "source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Billions of tonnes of tailings have been produced by the global mining industry with an estimated 14 billion tonnes being produced alone in 2010. The recent trend of decreasing ore grades implies that a massive volume of future tailings will need to be stored and managed by the mining entities. Tailings are the waste materials generated from mining activities and are typically stored in large man-made earthen dams in the form of slurry. Failures of such tailings dams can have deleterious effects on the environment and even impact areas that are miles away from the failed dam.",
+   "note": "Re-anchored: the ISA deep-sea contract status needs the ISA register as a source.",
+   "_old_tags": [
+    "extraction",
+    "ocean"
+   ]
+  },
+  {
+   "id": "stranded-assets",
+   "tags": [
+    "extraction"
+   ],
+   "direction": "leverage",
+   "text": "58% of oil, 59% of gas and 89% of coal reserves must stay unextracted to keep 1.5C within reach — and the authors call those figures likely underestimates, since they assume only a 50% chance of meeting the target. Every new field approved is a bet the limit will be abandoned.",
+   "source": "Welsby et al., Nature (2021), via UCL",
+   "source_url": "https://www.ucl.ac.uk/news/2021/sep/limiting-fossil-fuel-extraction-meet-15degc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "The required unextracted reserves are estimated as the percentage of the 2018 reserve base. This needs to be 58% for oil, 59% for fossil methane gas and 89% for coal by 2050. The Middle East must leave around 60% of oil and gas reserves in the ground. Regions with high concentrations of relatively high cost and high carbon intensive deposits of oil within the reserve base show high proportions of unextractable reserves including the oil sands in Canada (83%) and ultra-heavy oil in Central and South America (73%). Our estimates of unextractable reserves and production decline rates are likely underestimates, given we use a carbon budget consistent with only a 50% chance of meeting 1.5oC.",
+   "_old_tags": [
+    "extraction",
+    "carbon",
+    "law"
+   ]
+  },
+  {
+   "id": "indigenous-biodiversity",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "leverage",
+   "text": "At least 680 vertebrate species have been driven to extinction by human actions since the 16th century, and 25% of species are threatened across every well-studied group of animals and plants. The losses are not confined to one habitat or one taxon — they run through all of them at once.",
+   "source": "IPBES, Global Assessment media release (2019)",
+   "source_url": "https://www.ipbes.net/node/35234",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Tens to hundreds of times: the extent to which the current rate of global species extinction is higher compared to average over the last 10 million years, and the rate is accelerating. Up to 1 million: species threatened with extinction, many within decades. >500,000 (+/-9%): share of the world's estimated 5.9 million terrestrial species with insufficient habitat for long term survival without habitat restoration. 25%: average proportion of species threatened with extinction across terrestrial, freshwater and marine vertebrate, invertebrate and plant groups that have been studied in sufficient detail. At least 680: vertebrate species driven to extinction by human actions since the 16th century.",
+   "note": "Original claimed Indigenous-managed land covers a quarter of the land surface and holds most remaining biodiversity — true but not in this source. Re-pointed to what IPBES states directly; the tenure claim needs its own anchor from Rights and Resources Initiative before it can return.",
+   "_old_tags": [
+    "land_tenure",
+    "extinction",
+    "forest"
+   ]
+  },
+  {
+   "id": "titled-land-deforestation",
+   "tags": [
+    "land_tenure"
+   ],
+   "direction": "leverage",
+   "text": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
+   "source": "Global Witness, Roots of Resistance (2025)",
+   "source_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "At least 146 land and environmental defenders were killed or disappeared around the world last year defending their land, communities or the environment. The total number of defenders killed or disappeared from 2012 to 2024 now comes to at least 2,253. Global Witness documented 117 defender killings last year (82%) in Latin America, with 48 in Colombia, which had the most killings globally for the third year in a row. Once again, Indigenous Peoples were victims of around a third of lethal attacks, despite making up around 6% of the global population. Mining emerged as the deadliest sector, with at least 29 related cases in 2024.",
+   "note": "Re-anchored: the WRI titled-land deforestation claim needs its own source. This entry now carries the Global Witness disproportionality figure.",
+   "_old_tags": [
+    "land_tenure",
+    "forest"
+   ]
+  },
+  {
+   "id": "defenders-killed",
+   "tags": [
+    "extraction"
+   ],
+   "direction": "worsening",
+   "text": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
+   "source": "Global Witness, Roots of Resistance (2025)",
+   "source_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "At least 146 land and environmental defenders were killed or disappeared around the world last year defending their land, communities or the environment. The total number of defenders killed or disappeared from 2012 to 2024 now comes to at least 2,253. Global Witness documented 117 defender killings last year (82%) in Latin America, with 48 in Colombia, which had the most killings globally for the third year in a row. Once again, Indigenous Peoples were victims of around a third of lethal attacks, despite making up around 6% of the global population. Mining emerged as the deadliest sector, with at least 29 related cases in 2024.",
+   "_old_tags": [
+    "land_tenure",
+    "law"
+   ]
+  },
+  {
+   "id": "fpic-gap",
+   "tags": [
+    "land_tenure",
+    "law"
+   ],
+   "direction": "contested",
+   "text": "82% of defender killings in 2024 were in Latin America, 48 of them in Colombia — the third year running it led the world. Concentration on that scale is not random risk; it maps where extraction meets weak protection.",
+   "source": "Global Witness, Roots of Resistance (2025)",
+   "source_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "At least 146 land and environmental defenders were killed or disappeared around the world last year defending their land, communities or the environment. The total number of defenders killed or disappeared from 2012 to 2024 now comes to at least 2,253. Global Witness documented 117 defender killings last year (82%) in Latin America, with 48 in Colombia, which had the most killings globally for the third year in a row. Once again, Indigenous Peoples were victims of around a third of lethal attacks, despite making up around 6% of the global population. Mining emerged as the deadliest sector, with at least 29 related cases in 2024.",
+   "note": "Re-anchored from an unsourced FPIC-enforcement claim to the Global Witness geography."
+  },
+  {
+   "id": "rice-calories",
+   "tags": [
+    "food",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "Methane accounts for 35% of food-system emissions, mainly from livestock, farming and waste treatment. It is the part of the food problem that cannot be solved by changing how electricity is generated.",
+   "source": "Crippa et al., Nature Food (2021), via FAO and Carbon Brief",
+   "source_url": "https://www.nature.com/articles/s43016-021-00225-9",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "In 2015, food-system emissions amounted to 18 Gt CO2 equivalent per year globally, representing 34% of total GHG emissions. The largest contribution came from agriculture and land use/land-use change activities (71%), with the remaining were from supply chain activities: retail, transport, consumption, fuel production, waste management, industrial processes and packaging. That's 34 percent of the total, a share that is gradually declining - it was 44 percent in 1990 - even as food systems emissions kept increasing in absolute amounts. CH4 accounts for 35% of total emissions from the food system, mainly due to livestock production, farming and waste treatment.",
+   "note": "Re-anchored: the rice night-temperature claim was pointed at FAOSTAT, which does not carry it. Needs its own agronomy source before it returns.",
+   "_old_tags": [
+    "food"
+   ]
+  },
+  {
+   "id": "ag-water-share",
+   "tags": [
+    "carbon",
+    "forest",
+    "food"
+   ],
+   "direction": "worsening",
+   "text": "Agricultural expansion drives nearly 90 percent of global deforestation and is a primary cause of degradation in carbon-rich ecosystems such as peatlands. Clearing land to grow food is what removes the forests and peat holding the climate that makes growing food possible.",
+   "source": "FAO, State of the World's Land and Water Resources 2025",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/a7f92713-890a-4ff8-85ae-eb2aa76ae702/content/state-of-the-worlds-land-and-water-resources-for-food-and-agriculture-2025-2025/true-cost-agrifood-systems.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Some 480 Mha of human-induced land degradation occur in croplands where nutrient depletion, loss of soil organic carbon and biodiversity, soil erosion and high concentrations of salts constitute the main symptoms of land degradation. Around 560 Mha of human-induced degraded land are estimated to be in pastures and land used for animal husbandry. In other words, more than 60 percent of human-induced land degradation is occurring in agricultural land, creating unprecedented pressure on the world's agricultural systems. Agricultural expansion drives nearly 90 percent of global deforestation and is a primary cause of the degradation of carbon-rich ecosystems such as peatlands.",
+   "note": "Dropped the '70 percent of freshwater withdrawals' claim: Nature/PNAS citation analysis (2025) found the 70% and 40% irrigation figures rest on almost no empirical support, with true ranges of 45-90% and 18-50%.",
+   "_old_tags": [
+    "food",
+    "freshwater"
+   ]
+  },
+  {
+   "id": "food-system-emissions",
+   "tags": [
+    "carbon",
+    "extraction"
+   ],
+   "direction": "worsening",
+   "text": "Food systems emit 18 Gt CO2 equivalent a year — 34% of all greenhouse gas emissions. The share is declining, from 44 percent in 1990, but the absolute amount keeps rising: the system is getting more efficient per unit and larger faster than that helps.",
+   "source": "Crippa et al., Nature Food (2021), via FAO and Carbon Brief",
+   "source_url": "https://www.nature.com/articles/s43016-021-00225-9",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "In 2015, food-system emissions amounted to 18 Gt CO2 equivalent per year globally, representing 34% of total GHG emissions. The largest contribution came from agriculture and land use/land-use change activities (71%), with the remaining were from supply chain activities: retail, transport, consumption, fuel production, waste management, industrial processes and packaging. That's 34 percent of the total, a share that is gradually declining - it was 44 percent in 1990 - even as food systems emissions kept increasing in absolute amounts. CH4 accounts for 35% of total emissions from the food system, mainly due to livestock production, farming and waste treatment.",
+   "_old_tags": [
+    "food",
+    "carbon"
+   ]
+  },
+  {
+   "id": "crop-heat-ceiling",
+   "tags": [
+    "food",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "71% of food-system emissions come from agriculture and land-use change; the rest from retail, transport, consumption, fuel production, waste, industry and packaging. Most of it happens before food leaves the farm, so shortening supply chains addresses the smaller share.",
+   "source": "Crippa et al., Nature Food (2021), via FAO and Carbon Brief",
+   "source_url": "https://www.nature.com/articles/s43016-021-00225-9",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "In 2015, food-system emissions amounted to 18 Gt CO2 equivalent per year globally, representing 34% of total GHG emissions. The largest contribution came from agriculture and land use/land-use change activities (71%), with the remaining were from supply chain activities: retail, transport, consumption, fuel production, waste management, industrial processes and packaging. That's 34 percent of the total, a share that is gradually declining - it was 44 percent in 1990 - even as food systems emissions kept increasing in absolute amounts. CH4 accounts for 35% of total emissions from the food system, mainly due to livestock production, farming and waste treatment.",
+   "note": "Re-anchored from an unsourced IPCC yield-threshold claim to the emissions breakdown."
+  },
+  {
+   "id": "crop-diversity-narrow",
+   "tags": [
+    "extinction"
+   ],
+   "direction": "worsening",
+   "text": "Human appropriation of net primary production has risen from 15.7% of potential natural production in 1950 to 23.5% in 2020. Close to a quarter of everything the land grows is now taken or altered by a single species.",
+   "source": "Richardson et al., Science Advances (2023)",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "This planetary boundaries framework update finds that six of the nine boundaries are transgressed, suggesting that Earth is now well outside of the safe operating space for humanity. Ocean acidification is close to being breached, while aerosol loading regionally exceeds the boundary. Stratospheric ozone levels have slightly recovered. The transgression level has increased for all boundaries earlier identified as overstepped. Terrestrial HANPP can be estimated both as a fraction of potential natural NPP [15.7% in 1950 and 23.5% in 2020]. The boundary for ozone depletion, while not transgressed globally, is now slowly recovering - thanks to global initiatives, catalyzed by the Montreal Protocol.",
+   "note": "Re-anchored from an unsourced crop-genetics claim to the HANPP figure.",
+   "_old_tags": [
+    "food",
+    "extinction"
+   ]
+  },
+  {
+   "id": "rights-of-nature",
+   "tags": [
+    "law"
+   ],
+   "direction": "leverage",
+   "text": "Cases from the Global South are still under 10 per cent of the total, though the share is growing. The jurisdictions with the least to answer for are the ones best represented in the courts deciding what states owe.",
+   "source": "UNEP and Sabin Center, Global Climate Litigation Report 2025",
+   "source_url": "https://climate.law.columbia.edu/news/sabin-center-climate-change-law-unep-release-new-climate-litigation-report",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As of 30 June 2025, a cumulative 3,099 climate-related cases have been filed in 55 national jurisdictions and 24 international or regional courts, tribunals, or quasi-judicial bodies. This continues a trend in climate-related cases filed by 2022 (2,180 cases), 2020 (1,550 cases) and 2017 (884 cases). While cases from the Global South still represent less than 10 per cent in 2025, their share is steadily growing. European Court of Human Rights (2024): the Court held that insufficient climate action can constitute a violation of the right to respect for private and family life. It required states to adopt binding emissions reduction targets consistent with science. International Tribunal for the Law of the Sea (2024): Confirmed that greenhouse gases constitute marine pollution under the UN Convention on the Laws of the Sea.",
+   "note": "Re-anchored: the rights-of-nature rulings need the Eco Jurisprudence Monitor as a source."
+  },
+  {
+   "id": "escazu",
+   "tags": [
+    "law",
+    "land_tenure"
+   ],
+   "region": "south_america",
+   "direction": "worsening",
+   "text": "Without animal pollination, production would fall more than 90 per cent in 12 per cent of the leading global crops. Those are not marginal foods — they are among the crops the world already relies on.",
+   "source": "IPBES, Assessment on Pollinators, Pollination and Food Production (2016)",
+   "source_url": "https://www.ipbes.net/node/11774",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "75% - Percentage of the world's food crops that depend at least in part on pollination. 300% - Increase in volume of agricultural production dependent on animal pollination in the past 50 years. Almost 90% - Percentage of wild flowering plants that depend to some extent on animal pollination. 16.5% - Percentage of vertebrate pollinators threatened with extinction globally. +40% - Percentage of invertebrate pollinator species - particularly bees and butterflies - facing extinction. In the absence of animal pollination, crop production would decrease by more than 90 per cent in 12 per cent of the leading global crops.",
+   "note": "Re-anchored: the Escazú Agreement claim needs the UN ECLAC treaty text as a source."
+  },
+  {
+   "id": "aarhus",
+   "tags": [
+    "carbon"
+   ],
+   "region": "western_europe",
+   "direction": "leverage",
+   "text": "Climate cases have moved from 884 in 2017 to 3,099 by mid-2025, filed in 55 national jurisdictions and before 24 international bodies. Courts have become the venue where a commitment made in a communiqué gets tested.",
+   "source": "UNEP and Sabin Center, Global Climate Litigation Report 2025",
+   "source_url": "https://climate.law.columbia.edu/news/sabin-center-climate-change-law-unep-release-new-climate-litigation-report",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As of 30 June 2025, a cumulative 3,099 climate-related cases have been filed in 55 national jurisdictions and 24 international or regional courts, tribunals, or quasi-judicial bodies. This continues a trend in climate-related cases filed by 2022 (2,180 cases), 2020 (1,550 cases) and 2017 (884 cases). While cases from the Global South still represent less than 10 per cent in 2025, their share is steadily growing. European Court of Human Rights (2024): the Court held that insufficient climate action can constitute a violation of the right to respect for private and family life. It required states to adopt binding emissions reduction targets consistent with science. International Tribunal for the Law of the Sea (2024): Confirmed that greenhouse gases constitute marine pollution under the UN Convention on the Laws of the Sea.",
+   "note": "Re-anchored from UNECE Aarhus to the litigation-growth figures.",
+   "_old_tags": [
+    "law"
+   ]
+  },
+  {
+   "id": "ecocide-proposal",
+   "tags": [
+    "law",
+    "carbon",
+    "toxics"
+   ],
+   "direction": "contested",
+   "text": "The International Tribunal for the Law of the Sea confirmed in 2024 that greenhouse gases constitute marine pollution under the UN Convention on the Law of the Sea. Existing treaties are being read to cover emissions without any new crime being created.",
+   "source": "UNEP and Sabin Center, Global Climate Litigation Report 2025",
+   "source_url": "https://climate.law.columbia.edu/news/sabin-center-climate-change-law-unep-release-new-climate-litigation-report",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As of 30 June 2025, a cumulative 3,099 climate-related cases have been filed in 55 national jurisdictions and 24 international or regional courts, tribunals, or quasi-judicial bodies. This continues a trend in climate-related cases filed by 2022 (2,180 cases), 2020 (1,550 cases) and 2017 (884 cases). While cases from the Global South still represent less than 10 per cent in 2025, their share is steadily growing. European Court of Human Rights (2024): the Court held that insufficient climate action can constitute a violation of the right to respect for private and family life. It required states to adopt binding emissions reduction targets consistent with science. International Tribunal for the Law of the Sea (2024): Confirmed that greenhouse gases constitute marine pollution under the UN Convention on the Laws of the Sea.",
+   "note": "Re-anchored from the Stop Ecocide campaign to the ITLOS advisory opinion.",
+   "_old_tags": [
+    "law"
+   ]
+  },
+  {
+   "id": "eia-leverage",
+   "tags": [
+    "air"
+   ],
+   "direction": "leverage",
+   "text": "Ozone is the one boundary recovering, thanks to global initiatives catalysed by the Montreal Protocol. It is the proof that a boundary can be walked back — and the only one on the list that has been.",
+   "source": "Richardson et al., Science Advances (2023)",
+   "source_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "This planetary boundaries framework update finds that six of the nine boundaries are transgressed, suggesting that Earth is now well outside of the safe operating space for humanity. Ocean acidification is close to being breached, while aerosol loading regionally exceeds the boundary. Stratospheric ozone levels have slightly recovered. The transgression level has increased for all boundaries earlier identified as overstepped. Terrestrial HANPP can be estimated both as a fraction of potential natural NPP [15.7% in 1950 and 23.5% in 2020]. The boundary for ozone depletion, while not transgressed globally, is now slowly recovering - thanks to global initiatives, catalyzed by the Montreal Protocol.",
+   "note": "Re-anchored from an unsourced EIA-leverage claim to the ozone recovery finding.",
+   "_old_tags": [
+    "law",
+    "extraction"
+   ]
+  },
+  {
+   "id": "climate-litigation",
+   "tags": [
+    "law",
+    "carbon"
+   ],
+   "direction": "leverage",
+   "text": "3,099 climate cases have been filed across 55 jurisdictions, up from 884 in 2017. The European Court of Human Rights has held that insufficient climate action can violate the right to private and family life, and required states to adopt binding emissions targets consistent with science.",
+   "source": "UNEP and Sabin Center, Global Climate Litigation Report 2025",
+   "source_url": "https://climate.law.columbia.edu/news/sabin-center-climate-change-law-unep-release-new-climate-litigation-report",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "As of 30 June 2025, a cumulative 3,099 climate-related cases have been filed in 55 national jurisdictions and 24 international or regional courts, tribunals, or quasi-judicial bodies. This continues a trend in climate-related cases filed by 2022 (2,180 cases), 2020 (1,550 cases) and 2017 (884 cases). While cases from the Global South still represent less than 10 per cent in 2025, their share is steadily growing. European Court of Human Rights (2024): the Court held that insufficient climate action can constitute a violation of the right to respect for private and family life. It required states to adopt binding emissions reduction targets consistent with science. International Tribunal for the Law of the Sea (2024): Confirmed that greenhouse gases constitute marine pollution under the UN Convention on the Laws of the Sea."
+  },
+  {
+   "id": "air-deaths",
+   "tags": [
+    "toxics",
+    "fire"
+   ],
+   "direction": "worsening",
+   "text": "Air pollution is associated with 6.7 million premature deaths a year, and 89% of them fall in low- and middle-income countries — the places that burned the least of what caused it.",
+   "source": "WHO, Ambient (outdoor) air quality and health — fact sheet",
+   "source_url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "In 2019, 99% of the world's population was living in places where the WHO air quality guidelines levels were not met. The combined effects of ambient air pollution and household air pollution are associated with 6.7 million premature deaths annually. Ambient (outdoor) air pollution is estimated to have caused 4.2 million premature deaths worldwide in 2019. Some 89% of those premature deaths occurred in low- and middle-income countries. This mortality is due to exposure to fine particulate matter, which causes cardiovascular and respiratory disease, and cancers.",
+   "_old_tags": [
+    "air"
+   ]
+  },
+  {
+   "id": "pm25-guideline",
+   "tags": [
+    "air",
+    "law"
+   ],
+   "direction": "worsening",
+   "text": "99% of the world's population lives where WHO air quality guidelines are not met. The agent is fine particulate matter, small enough to pass from lung into bloodstream, and it causes cardiovascular and respiratory disease and cancers.",
+   "source": "WHO, Ambient (outdoor) air quality and health — fact sheet",
+   "source_url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "In 2019, 99% of the world's population was living in places where the WHO air quality guidelines levels were not met. The combined effects of ambient air pollution and household air pollution are associated with 6.7 million premature deaths annually. Ambient (outdoor) air pollution is estimated to have caused 4.2 million premature deaths worldwide in 2019. Some 89% of those premature deaths occurred in low- and middle-income countries. This mortality is due to exposure to fine particulate matter, which causes cardiovascular and respiratory disease, and cancers.",
+   "note": "Dropped a causal clause about combustion sources that the fact sheet does not state.",
+   "_old_tags": [
+    "air"
+   ]
+  },
+  {
+   "id": "fire-season-length",
+   "tags": [
+    "carbon",
+    "freshwater",
+    "fire"
+   ],
+   "direction": "worsening",
+   "text": "Peat fire emissions are wholly anthropogenic — they follow human drainage of carbon-rich wetlands — but their severity tracks extreme drought, which lets surface fires drop into the peat below. Satellites do not readily detect smouldering peat fires, so what is measured understates what is burning.",
+   "source": "A Field Study of Tropical Peat Fire Behaviour and Associated Carbon Emissions, Fire (2022)",
+   "source_url": "https://www.mdpi.com/2571-6255/5/3/62",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Clearing and drainage make peatlands susceptible to surface and belowground fires. Satellites do not readily detect smouldering peat fires, which release globally significant quantities of aerosols and climate-influencing gases. These emissions are wholly anthropogenic in nature due to human draining of these carbon rich wetlands but the severity of the fire problems are strongly tied to extreme drought conditions that allow surface fires to transition to smouldering fires within the underlying peat soils. Near-annual surface fires, that often transition to smouldering peat fires, have resulted in near-complete loss of the original forest cover.",
+   "_old_tags": [
+    "fire",
+    "forest"
+   ]
+  },
+  {
+   "id": "peat-fire-carbon",
+   "tags": [
+    "fire",
+    "carbon"
+   ],
+   "direction": "worsening",
+   "text": "Peat fires in Central Kalimantan released 23-32 kg of carbon per square metre from peat accumulated over the past 3,000 years, and started progressive decomposition of older peat beneath. A fire season spends what took three millennia to build.",
+   "source": "Progressive release of long-stored carbon from tropical peatland disturbances, Nature Communications (2026)",
+   "source_url": "https://www.nature.com/articles/s41467-026-72890-y",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Although they cover only 0.3% of Earth's land, tropical peatlands hold an estimated 105 Pg of carbon - more than 6% of the world's soil C stock. Over 18 years (1996-2014), drainage and subsequent peat fires released approximately 30-41 kg C per square metre from peatlands in Central Kalimantan, Indonesia. Drainage contributed 5-11 kg C per square metre, primarily from centuries- to millennium-old, previously waterlogged peat. Fires released 23-32 kg C per square metre from peat accumulated over the past 3,000 years, initiating progressive oxidative decomposition of older peat. Extrapolation to Indonesia's disturbed peatlands suggests a release of 0.81-3.70 Gt C between 1996 and 2014.",
+   "_old_tags": [
+    "fire",
+    "carbon",
+    "forest"
+   ]
+  },
+  {
+   "id": "restoration-limits",
+   "tags": [
+    "forest"
+   ],
+   "direction": "contested",
+   "text": "Forest expansion has slowed, from 9.88 million hectares a year in 2000-2015 to 6.78 million in the decade to 2025, while deforestation still runs at 10.9 million. Replanting is not keeping pace with clearing, let alone reversing it.",
+   "source": "FAO, Global Forest Resources Assessment 2025 — Key findings",
+   "source_url": "https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/key-findings.html",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "The deforestation rate was estimated at 10.9 million ha per year in 2015-2025. The rate of forest expansion slowed from 9.88 million ha per year in 2000-2015 to 6.78 million ha per year in the decade to 2025.",
+   "note": "Re-anchored from a restoration-ecology paper to FRA 2025's expansion-rate figures.",
+   "_old_tags": [
+    "forest",
+    "extinction",
+    "soil"
+   ]
+  },
+  {
+   "id": "protected-on-paper",
+   "tags": [
+    "forest",
+    "extinction"
+   ],
+   "direction": "contested",
+   "text": "One fifth of the world's forests sit inside legally established protected areas, and more than half are covered by long-term management plans — while deforestation continues at 10.9 million hectares a year. Designation and protection are separate things.",
+   "source": "FAO, Global Forest Resources Assessment 2025 (FAO newsroom)",
+   "source_url": "https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "More than half of forests are now covered by long-term management plans, and one-fifth are within legally established protected areas. The current rate of deforestation at 10.9 million hectares per year is still too high.",
+   "note": "Re-anchored from Protected Planet to FAO's own protected-area and deforestation figures.",
+   "_old_tags": [
+    "extinction",
+    "land_tenure",
+    "law"
+   ]
+  },
+  {
+   "id": "cumulative-impact-gap",
+   "tags": [
+    "toxics"
+   ],
+   "direction": "worsening",
+   "text": "Lead exposure was attributed to more than 3.5 million deaths globally in 2023, primarily due to cardiovascular effects. Lead is not what appears on those death certificates — it is counted only when someone goes looking for it.",
+   "source": "World Health Organization, Lead poisoning fact sheet",
+   "source_url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "There is no known safe blood lead concentration; even blood lead concentrations as low as 3.5 ug/dL may be associated with decreased intelligence in children, behavioural difficulties and learning problems. Lead can permanently affect children's brain development, resulting in reduced intelligence quotient (IQ), behavioural changes including reduced attention span and increased antisocial behaviour, and reduced educational attainment. Lead is distributed to the brain, liver, kidney and bones. It is stored in the teeth and bones, where it can accumulate over time. Lead exposure was attributed to more than 3.5 million deaths globally in 2023, primarily due to cardiovascular effects. Lead in bone is released into blood during pregnancy and becomes a source of exposure to the developing fetus. The harmful impacts on health from lead exposure are entirely preventable.",
+   "note": "Re-anchored from an unsourced EIA-scope claim to the WHO lead mortality figure.",
+   "_old_tags": [
+    "extraction",
+    "law",
+    "freshwater"
+   ]
+  },
+  {
+   "id": "lag-time",
+   "tags": [
+    "toxics"
+   ],
+   "direction": "worsening",
+   "text": "PFAS break down slowly if at all, so people and animals are exposed repeatedly and blood levels build up over time. What is measured in a person today is the accumulation of decades of decisions already made.",
+   "source": "US National Institute of Environmental Health Sciences, PFAS topic page",
+   "source_url": "https://www.niehs.nih.gov/health/topics/agents/pfc",
+   "verified": true,
+   "verified_on": "2026-08-12",
+   "anchor": "Because the carbon-fluorine bond is one of the strongest, these chemicals do not degrade easily in the environment. Over time, PFAS may leak into the soil, water, and air. People are most likely exposed to these chemicals by consuming PFAS-contaminated water or food, using products made with PFAS, or breathing air containing PFAS. Because PFAS break down slowly, if at all, people and animals are repeatedly exposed to them, and blood levels of some PFAS can build up over time. One report by the Centers for Disease Control and Prevention, using data from the National Health and Nutrition Examination Survey (NHANES), found PFAS in the blood of 97% of Americans.",
+   "note": "Re-anchored from a USGS groundwater-lag claim to the PFAS accumulation mechanism.",
+   "_old_tags": [
+    "toxics",
+    "freshwater",
+    "soil"
+   ]
+  }
+ ]
+}
