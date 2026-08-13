@@ -1,0 +1,85 @@
+name: Frontline feed
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'      # four runs a day
+    - cron: '40 3 * * 1'        # Monday: re-verify every source URL
+  workflow_dispatch:
+    inputs:
+      verify:
+        description: 'Re-verify all sources before harvesting'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  models: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: frontline-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Verify sources
+        if: github.event.schedule == '40 3 * * 1' || inputs.verify
+        run: python -m pipeline.verify_sources
+        continue-on-error: true
+
+      - name: Harvest
+        run: python -m pipeline.harvest
+
+      - name: Extract and build feed
+        env:
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY:  ${{ secrets.MISTRAL_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
+        run: python -m pipeline.build_feed
+
+      - name: Assemble site
+        run: |
+          mkdir -p public
+          cp strip.html public/index.html
+          cp feed.json public/feed.json
+          cp wire.json public/wire.json 2>/dev/null || true
+          cp source_status.json public/source_status.json 2>/dev/null || true
+          cp harvest_report.json public/harvest_report.json 2>/dev/null || true
+
+      - name: Commit feed
+        run: |
+          git config user.name  "frontline-bot"
+          git config user.email "actions@github.com"
+          git add feed.json wire.json harvest_report.json source_status.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "feed: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
