@@ -1,0 +1,4007 @@
+# Frontline Feed — source roster
+#
+# EVERY url in this file must pass `python -m pipeline.verify_sources` before it
+# ships. Sources that fail are written to source_status.json with the reason and
+# are skipped by the harvester until fixed. Nothing enters the feed unverified.
+#
+# tier:    peer_reviewed | preprint | institutional | journalism
+# regions: hint only. Real region tags come from place extraction in tagger.py.
+#          Used to balance the harvest budget, not to label the output.
+# lang:    source language. Non-English sources are extracted in-language and the
+#          resulting fact is translated; the anchor stays in the original.
+
+defaults:
+  lookback_days: 30
+  # null here means take everything in the window. OpenAlex pages with a
+  # cursor; RSS returns whatever the feed carries. Set a number to cap.
+  max_items_per_source: null
+
+sources:
+
+  # ─────────────────────────────────────────────────────────────────────
+  # PEER-REVIEWED — place-keyed, not author-keyed.
+  # OpenAlex is the main lever against geographic bias: it finds papers
+  # ABOUT a region regardless of where the authors are based.
+  # ─────────────────────────────────────────────────────────────────────
+
+  - id: openalex-congo-basin
+    name: OpenAlex — Congo Basin
+    kind: openalex
+    max_items_per_source: 150
+    query: "Congo Basin OR Cuvette Centrale OR Salonga OR Sangha Trinational"
+    concepts: [environmental science, ecology, forestry]
+    tier: peer_reviewed
+    regions: [middle_africa]
+    lang: "en"
+  - id: openalex-central-asia
+    name: OpenAlex — Central Asia
+    kind: openalex
+    max_items_per_source: 150
+    query: "Aral Sea OR Amu Darya OR Syr Darya OR Kazakhstan steppe OR Tien Shan glacier"
+    concepts: [environmental science, hydrology]
+    tier: peer_reviewed
+    regions: [central_asia]
+    lang: "en"
+  - id: openalex-myanmar
+    name: OpenAlex — Myanmar
+    kind: openalex
+    max_items_per_source: 150
+    query: "Myanmar OR Irrawaddy OR Ayeyarwady OR Tanintharyi OR Salween"
+    concepts: [environmental science, ecology]
+    tier: peer_reviewed
+    regions: [south_eastern_asia]
+    lang: "en"
+  - id: openalex-new-guinea
+    name: OpenAlex — New Guinea
+    kind: openalex
+    max_items_per_source: 150
+    query: "New Guinea OR Papua OR West Papua OR Sepik OR Lorentz"
+    concepts: [environmental science, ecology, biodiversity]
+    tier: peer_reviewed
+    regions: [melanesia]
+    lang: "en"
+  - id: openalex-sahel
+    name: OpenAlex — Sahel & West Africa
+    kind: openalex
+    max_items_per_source: 150
+    query: "Sahel OR Lake Chad OR Niger Delta OR Volta Basin"
+    concepts: [environmental science, ecology, hydrology]
+    tier: peer_reviewed
+    regions: [western_africa]
+    lang: "en"
+  - id: openalex-andes-amazon
+    name: OpenAlex — Andes & Amazon
+    kind: openalex
+    max_items_per_source: 150
+    query: "Amazon OR Gran Chaco OR Cerrado OR Andean glacier OR Orinoco"
+    concepts: [environmental science, ecology]
+    tier: peer_reviewed
+    regions: [south_america]
+    lang: "en"
+  - id: openalex-mekong
+    name: OpenAlex — Mekong & SE Asia
+    kind: openalex
+    max_items_per_source: 150
+    query: "Mekong OR Tonle Sap OR Borneo OR Sumatra OR Sundaland"
+    concepts: [environmental science, ecology, hydrology]
+    tier: peer_reviewed
+    regions: [south_eastern_asia]
+    lang: "en"
+  - id: openalex-pacific-islands
+    name: OpenAlex — Pacific Islands
+    kind: openalex
+    max_items_per_source: 150
+    query: "Pacific Island OR atoll OR Micronesia OR Melanesia OR Polynesia"
+    concepts: [environmental science, oceanography]
+    tier: peer_reviewed
+    regions: [oceania]
+    lang: "en"
+  - id: europepmc-env-health
+    name: Europe PMC — environmental exposure
+    kind: europepmc
+    query: '(environmental contamination OR pollutant exposure) AND (FIRST_PDATE:[{since} TO {now}])'
+    tier: peer_reviewed
+    regions: [global]
+    lang: "en"
+  - id: crossref-env-journals
+    name: Crossref — environmental journals
+    kind: crossref
+    issn:
+      - 1748-9326   # Environmental Research Letters
+      - 1758-6798   # Nature Climate Change
+      - 2398-9629   # Nature Sustainability
+      - 1755-263X   # Conservation Letters
+      - 1365-2486   # Global Change Biology
+      - 1520-5851   # Environmental Science & Technology
+      - 0048-9697   # Science of the Total Environment
+      - 0006-3207   # Biological Conservation
+      - 2351-9894   # Global Ecology and Conservation
+    tier: peer_reviewed
+    regions: [global]
+    lang: "en"
+  - id: biorxiv-ecology
+    name: bioRxiv — ecology
+    kind: biorxiv
+    server: biorxiv
+    subject: ecology
+    tier: preprint
+    regions: [global]
+    lang: "en"
+  # ─────────────────────────────────────────────────────────────────────
+  # INSTITUTIONAL — slower cadence, but reaches places no newsroom covers.
+  # ─────────────────────────────────────────────────────────────────────
+
+  - id: reliefweb-environment
+    name: ReliefWeb — environment & disasters
+    kind: reliefweb
+    query: "environment OR pollution OR deforestation OR drought OR mining"
+    tier: institutional
+    regions: [global]
+    lang: "en"
+  - id: worldbank-projects
+    name: World Bank — project disclosures
+    kind: worldbank
+    tier: institutional
+    regions: [global]
+    lang: "en"
+  - id: unesco-soc
+    lookback_days: 90
+    name: UNESCO World Heritage
+    kind: rss
+    url: https://whc.unesco.org/en/news/rss
+    tier: institutional
+    regions: [global]
+    lang: "en"
+  - id: iucn-news
+    lookback_days: 90
+    name: IUCN
+    kind: rss
+    url: https://iucn.org/rss.xml
+    tier: institutional
+    regions: [global]
+    lang: "en"
+  - id: unep-news
+    lookback_days: 90
+    name: UNEP
+    kind: rss
+    url: https://www.unep.org/rss.xml
+    tier: institutional
+    regions: [global]
+    lang: "en"
+  # ─────────────────────────────────────────────────────────────────────
+  # JOURNALISM — global desks
+  # ─────────────────────────────────────────────────────────────────────
+
+  - id: mongabay-global
+    name: Mongabay
+    kind: rss
+    url: https://news.mongabay.com/feed/
+    tier: journalism
+    regions: [global]
+    lang: "en"
+  - id: dialogue-earth
+    name: Dialogue Earth
+    kind: rss
+    url: https://dialogue.earth/en/feed/
+    tier: journalism
+    regions: [southern_asia, eastern_asia]
+    lang: "en"
+  - id: climate-home
+    name: Climate Home News
+    kind: rss
+    url: https://www.climatechangenews.com/feed/
+    tier: journalism
+    regions: [global]
+    lang: "en"
+  - id: inside-climate
+    name: Inside Climate News
+    kind: rss
+    url: https://insideclimatenews.org/feed/
+    tier: journalism
+    regions: [northern_america]
+    lang: "en"
+  # ─────────────────────────────────────────────────────────────────────
+  # JOURNALISM — regional desks. This block is the coverage strategy.
+  # Do not prune it for tidiness; it is the only thing standing between
+  # this feed and a North-Atlantic mirror.
+  # ─────────────────────────────────────────────────────────────────────
+
+  # Africa
+  - id: infonile
+    lookback_days: 90
+    name: InfoNile
+    kind: rss
+    url: https://infonile.org/en/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+  - id: oxpeckers
+    lookback_days: 90
+    name: Oxpeckers
+    kind: rss
+    url: https://oxpeckers.org/feed/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+  - id: daily-maverick-env
+    general_news: true
+    name: Daily Maverick — Our Burning Planet
+    kind: rss
+    url: https://www.dailymaverick.co.za/rss/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+  - id: the-continent
+    general_news: true
+    name: The Continent
+    kind: rss
+    url: https://mg.co.za/atom/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+  - id: actualite-cd
+    general_news: true
+    name: Actualite.cd
+    kind: rss
+    url: https://actualite.cd/feed
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+  - id: mongabay-africa-fr
+    name: Mongabay Afrique
+    kind: rss
+    url: https://fr.mongabay.com/feed/
+    tier: journalism
+    regions: [middle_africa, western_africa]
+    lang: "fr"
+  # Latin America
+  - id: mongabay-latam
+    name: Mongabay Latam
+    kind: rss
+    url: https://es.mongabay.com/feed/
+    tier: journalism
+    regions: [south_america, central_america]
+    lang: "es"
+  - id: mongabay-brasil
+    name: Mongabay Brasil
+    kind: rss
+    url: https://brasil.mongabay.com/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+  - id: agencia-publica
+    name: Agência Pública
+    kind: rss
+    url: https://apublica.org/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+  - id: oeco
+    name: ((o))eco
+    kind: rss
+    url: https://oeco.org.br/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+  # South & Southeast Asia
+  - id: mongabay-india
+    name: Mongabay India
+    kind: rss
+    url: https://india.mongabay.com/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+  - id: scroll-in
+    general_news: true
+    name: Scroll.in
+    kind: rss
+    url: https://feeds.feedburner.com/ScrollinArticles.rss
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+  - id: rappler-env
+    general_news: true
+    name: Rappler
+    kind: rss
+    url: https://www.rappler.com/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+  - id: irrawaddy
+    general_news: true
+    name: The Irrawaddy
+    kind: rss
+    url: https://www.irrawaddy.com/feed
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+  - id: myanmar-now
+    general_news: true
+    name: Myanmar Now
+    kind: rss
+    url: https://myanmar-now.org/en/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+  # Central Asia
+  - id: eurasianet
+    general_news: true
+    name: Eurasianet
+    kind: rss
+    url: https://eurasianet.org/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "en"
+  - id: vlast-kz
+    general_news: true
+    name: Vlast.kz
+    kind: rss
+    url: https://vlast.kz/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+  - id: cabar-asia
+    general_news: true
+    name: CABAR.asia
+    kind: rss
+    url: https://cabar.asia/en/feed
+    tier: journalism
+    regions: [central_asia]
+    lang: "en"
+  - id: kloop
+    general_news: true
+    name: Kloop
+    kind: rss
+    url: https://kloop.kg/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+  # Pacific & Papua
+  - id: rnz-pacific
+    lookback_days: 90
+    general_news: true
+    name: RNZ Pacific
+    kind: rss
+    url: https://www.rnz.co.nz/rss/pacific.xml
+    tier: journalism
+    regions: [oceania, melanesia]
+    lang: "en"
+  - id: jubi
+    lookback_days: 90
+    general_news: true
+    name: Jubi
+    kind: rss
+    url: https://en.jubi.id/feed/
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+  - id: islands-business
+    lookback_days: 90
+    general_news: true
+    name: Islands Business
+    kind: rss
+    url: https://islandsbusiness.com/feed/
+    tier: journalism
+    regions: [oceania]
+    lang: "en"
+  # Arctic
+
+
+  # Europe — added after the first live run showed all four European
+  # subregions at zero, which was a roster gap rather than a coverage fact.
+
+  - id: euractiv-env
+    name: Euractiv
+    kind: rss
+    url: https://www.euractiv.com/rss
+    tier: journalism
+    regions: [western_europe]
+    lang: "en"
+    general_news: true
+
+  - id: clean-energy-wire
+    lookback_days: 90
+    name: Clean Energy Wire
+    kind: rss
+    url: https://www.cleanenergywire.org/rss.xml
+    tier: journalism
+    regions: [western_europe]
+    lang: "en"
+  - id: balkan-insight
+    name: Balkan Insight
+    kind: rss
+    url: https://balkaninsight.com/feed/
+    tier: journalism
+    regions: [southern_europe, eastern_europe]
+    lang: "en"
+    general_news: true
+
+  - id: reporterre
+    name: Reporterre
+    kind: rss
+    url: https://reporterre.net/spip.php?page=backend
+    tier: journalism
+    regions: [western_europe]
+    lang: "fr"
+  - id: bellona
+    lookback_days: 90
+    name: Bellona
+    kind: rss
+    url: https://bellona.org/feed
+    tier: journalism
+    regions: [northern_europe, eastern_europe]
+    lang: "en"
+  # Replacements for retired sources, and cover for the three subregions the
+  # roster never reached. Some of these will fail verification — that is what
+  # the verifier is for.
+
+
+  - id: eye-on-the-arctic
+    name: Eye on the Arctic
+    kind: rss
+    url: https://www.rcinet.ca/eye-on-the-arctic/feed/
+    tier: journalism
+    regions: [polar]
+    lang: "en"
+  - id: convoca
+    lookback_days: 90
+    name: Convoca
+    kind: rss
+    url: https://www.convoca.pe/rss.xml
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+  - id: pina
+    lookback_days: 90
+    name: Pacific Islands News Association
+    kind: rss
+    url: https://pina.com.fj/feed/
+    tier: journalism
+    regions: [micronesia, polynesia, melanesia]
+    lang: "en"
+    general_news: true
+
+  - id: middle-east-eye
+    name: Middle East Eye
+    kind: rss
+    url: https://www.middleeasteye.net/rss
+    tier: journalism
+    regions: [western_asia, northern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: egypt-independent
+    name: Egypt Independent
+    kind: rss
+    url: https://egyptindependent.com/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "en"
+    general_news: true
+
+
+  - id: cari-bois
+    lookback_days: 90
+    name: Cari-Bois Environmental News
+    kind: rss
+    url: https://caribois.org/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+  # ─────────────────────────────────────────────────────────────────────
+  # Literature by place. This is the lever that reaches regions with no
+  # press: OpenAlex finds work ABOUT a place regardless of author country.
+  # ─────────────────────────────────────────────────────────────────────
+
+  - id: openalex-east-africa
+    name: OpenAlex — East Africa & Rift
+    kind: openalex
+    max_items_per_source: 150
+    query: "Lake Victoria OR Lake Turkana OR Ethiopian Highlands OR Serengeti OR Rift Valley"
+    tier: peer_reviewed
+    regions: [eastern_africa]
+    lang: "en"
+  - id: openalex-southern-africa
+    name: OpenAlex — Southern Africa
+    kind: openalex
+    max_items_per_source: 150
+    query: "Zambezi OR Okavango OR Kalahari OR Karoo OR Limpopo Basin"
+    tier: peer_reviewed
+    regions: [southern_africa]
+    lang: "en"
+  - id: openalex-north-africa
+    name: OpenAlex — North Africa & Sahara
+    kind: openalex
+    max_items_per_source: 150
+    query: "Sahara OR Nile Delta OR Maghreb OR Atlas Mountains OR Lake Nasser"
+    tier: peer_reviewed
+    regions: [northern_africa]
+    lang: "en"
+  - id: openalex-west-asia
+    name: OpenAlex — West Asia
+    kind: openalex
+    max_items_per_source: 150
+    query: "Tigris OR Euphrates OR Dead Sea OR Arabian Peninsula OR Anatolia"
+    tier: peer_reviewed
+    regions: [western_asia]
+    lang: "en"
+  - id: openalex-caucasus-caspian
+    name: OpenAlex — Caucasus & Caspian
+    kind: openalex
+    max_items_per_source: 150
+    query: "Caspian Sea OR Caucasus OR Kura River OR Lake Sevan"
+    tier: peer_reviewed
+    regions: [western_asia]
+    lang: "en"
+  - id: openalex-himalaya
+    name: OpenAlex — Himalaya & Tibetan Plateau
+    kind: openalex
+    max_items_per_source: 150
+    query: "Himalaya OR Tibetan Plateau OR Hindu Kush OR Karakoram OR Ganges Basin"
+    tier: peer_reviewed
+    regions: [southern_asia]
+    lang: "en"
+  - id: openalex-east-asia
+    name: OpenAlex — East Asia
+    kind: openalex
+    max_items_per_source: 150
+    query: "Yangtze OR Yellow River OR Loess Plateau OR Gobi Desert OR Bohai Sea"
+    tier: peer_reviewed
+    regions: [eastern_asia]
+    lang: "en"
+  - id: openalex-siberia
+    name: OpenAlex — Siberia & Russian Arctic
+    kind: openalex
+    max_items_per_source: 150
+    query: "Siberia OR Lake Baikal OR Yamal OR Lena River OR Taimyr"
+    tier: peer_reviewed
+    regions: [polar]
+    lang: "en"
+  - id: openalex-mesoamerica
+    name: OpenAlex — Mesoamerica & Caribbean
+    kind: openalex
+    max_items_per_source: 150
+    query: "Mesoamerican Reef OR Yucatan OR Petén OR Caribbean Sea OR Greater Antilles"
+    tier: peer_reviewed
+    regions: [central_america, caribbean]
+    lang: "en"
+  - id: openalex-southern-cone
+    name: OpenAlex — Southern Cone & Patagonia
+    kind: openalex
+    max_items_per_source: 150
+    query: "Patagonia OR Pampas OR Atacama OR Paraná River OR Tierra del Fuego"
+    tier: peer_reviewed
+    regions: [south_america]
+    lang: "en"
+  - id: openalex-australia
+    name: OpenAlex — Australia & Great Barrier Reef
+    kind: openalex
+    max_items_per_source: 150
+    query: "Great Barrier Reef OR Murray-Darling OR Australian outback OR Tasmania"
+    tier: peer_reviewed
+    regions: [australia_nz]
+    lang: "en"
+  - id: openalex-mediterranean
+    name: OpenAlex — Mediterranean
+    kind: openalex
+    max_items_per_source: 150
+    query: "Mediterranean Sea OR Iberian Peninsula OR Aegean OR Adriatic OR Po Valley"
+    tier: peer_reviewed
+    regions: [southern_europe]
+    lang: "en"
+  - id: openalex-boreal
+    name: OpenAlex — Boreal & Northern Europe
+    kind: openalex
+    max_items_per_source: 150
+    query: "boreal forest OR Fennoscandia OR Baltic Sea OR taiga"
+    tier: peer_reviewed
+    regions: [northern_europe]
+    lang: "en"
+  # ─────────────────────────────────────────────────────────────────────
+  # Additional regional desks
+  # ─────────────────────────────────────────────────────────────────────
+
+  # East & Southeast Asia
+  - id: sixth-tone
+    name: Sixth Tone
+    kind: rss
+    url: https://www.sixthtone.com/rss
+    tier: journalism
+    regions: [eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: the-diplomat
+    name: The Diplomat
+    kind: rss
+    url: https://thediplomat.com/feed/
+    tier: journalism
+    regions: [eastern_asia, south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: mongabay-indonesia
+    name: Mongabay Indonesia
+    kind: rss
+    url: https://www.mongabay.co.id/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "id"
+  - id: vnexpress
+    name: VnExpress International
+    kind: rss
+    url: https://e.vnexpress.net/rss/news.rss
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  # South Asia
+  - id: dawn
+    name: Dawn
+    kind: rss
+    url: https://www.dawn.com/feeds/home
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: dhaka-tribune
+    name: Dhaka Tribune
+    kind: rss
+    url: https://www.dhakatribune.com/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+
+
+  # West Asia & Caucasus
+  - id: oc-media
+    name: OC Media
+    kind: rss
+    url: https://oc-media.org/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "en"
+    general_news: true
+
+
+  - id: iranwire
+    name: IranWire
+    kind: rss
+    url: https://iranwire.com/en/feed/
+    tier: journalism
+    regions: [southern_asia, western_asia]
+    lang: "en"
+    general_news: true
+
+  # Africa
+
+
+  - id: sahelien
+    lookback_days: 90
+    name: Sahelien
+    kind: rss
+    url: https://sahelien.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+  - id: myjoyonline
+    name: MyJoyOnline
+    kind: rss
+    url: https://www.myjoyonline.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: zitamar
+    lookback_days: 90
+    name: Zitamar News
+    kind: rss
+    url: https://zitamar.com/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  # Latin America
+  - id: el-faro
+    name: El Faro
+    kind: rss
+    url: https://elfaro.net/en/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: prensa-comunitaria
+    lookback_days: 90
+    name: Prensa Comunitaria
+    kind: rss
+    url: https://prensacomunitaria.org/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+  - id: tierra-viva
+    lookback_days: 90
+    name: Agencia Tierra Viva
+    kind: rss
+    url: https://agenciatierraviva.com.ar/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+  # Europe
+  - id: kyiv-independent
+    name: The Kyiv Independent
+    kind: rss
+    url: https://kyivindependent.com/news-archive/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "en"
+    general_news: true
+
+  - id: oko-press
+    name: OKO.press
+    kind: rss
+    url: https://oko.press/feed/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "pl"
+    general_news: true
+
+  - id: klimareporter
+    lookback_days: 90
+    name: Klimareporter
+    kind: rss
+    url: https://klimareporter.de/?format=feed&type=rss
+    tier: journalism
+    regions: [western_europe]
+    lang: "de"
+  # Pacific
+  - id: vanuatu-daily-post
+    lookback_days: 90
+    name: Vanuatu Daily Post
+    kind: rss
+    url: https://www.dailypost.vu/search/?f=rss
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+
+
+
+  # Filling the last regional gaps: East Asia in-language, the Caucasus,
+  # Lusophone and Francophone Africa, the Horn, and the small-island Pacific.
+
+  - id: mongabay-brasil-agua
+    name: Mongabay — Nordeste & Caatinga
+    kind: openalex
+    max_items_per_source: 150
+    query: "Caatinga OR São Francisco River OR Brazilian Northeast"
+    tier: peer_reviewed
+    regions: [south_america]
+    lang: "en"
+  - id: openalex-central-africa-atlantic
+    name: OpenAlex — Gulf of Guinea
+    kind: openalex
+    max_items_per_source: 150
+    query: "Gulf of Guinea OR Niger Delta mangrove OR Cross River OR Korup"
+    tier: peer_reviewed
+    regions: [western_africa, middle_africa]
+    lang: "en"
+  - id: openalex-horn-of-africa
+    name: OpenAlex — Horn of Africa
+    kind: openalex
+    max_items_per_source: 150
+    query: "Horn of Africa OR Somali OR Ogaden OR Awash River OR Danakil"
+    tier: peer_reviewed
+    regions: [eastern_africa]
+    lang: "en"
+  - id: openalex-korea-japan
+    name: OpenAlex — Japan & Korea
+    kind: openalex
+    max_items_per_source: 150
+    query: "Sea of Japan OR Korean Peninsula OR Ryukyu OR Hokkaido OR Seto Inland Sea"
+    tier: peer_reviewed
+    regions: [eastern_asia]
+    lang: "en"
+  - id: openalex-indian-ocean-islands
+    name: OpenAlex — Indian Ocean islands
+    kind: openalex
+    max_items_per_source: 150
+    query: "Madagascar OR Mascarene OR Seychelles OR Maldives OR Chagos"
+    tier: peer_reviewed
+    regions: [eastern_africa, southern_asia]
+    lang: "en"
+  - id: openalex-black-sea
+    name: OpenAlex — Black Sea & Danube
+    kind: openalex
+    max_items_per_source: 150
+    query: "Black Sea OR Danube Delta OR Dnipro OR Sea of Azov"
+    tier: peer_reviewed
+    regions: [eastern_europe]
+    lang: "en"
+  - id: jamnews
+    name: JAMnews
+    kind: rss
+    url: https://jam-news.net/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "en"
+    general_news: true
+
+  - id: hakai-magazine
+    name: Hakai Magazine
+    kind: rss
+    url: https://hakaimagazine.com/feed/
+    tier: journalism
+    regions: [northern_america, ocean]
+    lang: "en"
+  - id: china-water-risk
+    name: China Water Risk
+    kind: rss
+    url: https://chinawaterrisk.org/feed/
+    tier: journalism
+    regions: [eastern_asia]
+    lang: "en"
+  - id: verde-azul
+    name: Mongabay Brasil — Amazônia
+    kind: rss
+    url: https://brasil.mongabay.com/tag/amazonia/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+  - id: cook-islands-news
+    lookback_days: 90
+    name: Cook Islands News
+    kind: rss
+    url: https://www.cookislandsnews.com/feed/
+    tier: journalism
+    regions: [polynesia]
+    lang: "en"
+    general_news: true
+
+
+  - id: marianas-variety
+    lookback_days: 90
+    name: Marianas Variety
+    kind: rss
+    url: https://www.mvariety.com/search/?f=rss
+    tier: journalism
+    regions: [micronesia]
+    lang: "en"
+    general_news: true
+
+  - id: allafrica-environment
+    name: AllAfrica — Environment
+    kind: rss
+    url: https://allafrica.com/tools/headlines/rdf/environment/headlines.rdf
+    tier: journalism
+    regions: [western_africa, eastern_africa, middle_africa, northern_africa, southern_africa]
+    lang: "en"
+  # Replacements for the eight retired above, covering the same regions.
+
+  - id: prachatai
+    name: Prachatai English
+    kind: rss
+    url: https://prachataienglish.com/rss.xml
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: tempo-en
+    name: Tempo English
+    kind: rss
+    url: https://rss.tempo.co/en
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: kathmandu-post
+    name: The Kathmandu Post
+    kind: rss
+    url: https://kathmandupost.com/rss
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: png-post-courier
+    name: PNG Post-Courier
+    kind: rss
+    url: https://www.postcourier.com.pg/feed/
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+    lookback_days: 90
+
+  - id: tahiti-infos
+    name: Tahiti Infos
+    kind: rss
+    url: https://www.tahiti-infos.com/xml/syndication.rss
+    tier: journalism
+    regions: [polynesia]
+    lang: "fr"
+    general_news: true
+    lookback_days: 90
+
+  - id: syria-direct
+    name: Syria Direct
+    kind: rss
+    url: https://syriadirect.org/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "en"
+    general_news: true
+    lookback_days: 90
+
+  - id: the-citizen-tz
+    name: The Citizen
+    kind: rss
+    url: https://www.thecitizen.co.tz/rss.xml
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  # In-language feeds. The gazetteer already reads place names in 45+
+  # languages; what was missing was sources publishing in them. Model tiers
+  # translate at extraction, so each of these costs one line.
+
+  - id: dialogue-earth-zh
+    name: 中外对话 Dialogue Earth
+    kind: rss
+    url: https://dialogue.earth/zh/feed/
+    tier: journalism
+    regions: [eastern_asia]
+    lang: "zh"
+  - id: sustainable-japan
+    name: Sustainable Japan
+    kind: rss
+    url: https://sustainablejapan.jp/feed
+    tier: journalism
+    regions: [eastern_asia]
+    lang: "ja"
+  - id: hankyoreh-env
+    name: 한겨레 환경
+    kind: rss
+    url: https://www.hani.co.kr/rss/
+    tier: journalism
+    regions: [eastern_asia]
+    lang: "ko"
+
+  - id: mongabay-hindi
+    name: Mongabay हिन्दी
+    kind: rss
+    url: https://hindi.mongabay.com/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "hi"
+  - id: prothom-alo
+    name: প্রথম আলো
+    kind: rss
+    url: https://www.prothomalo.com/feed
+    tier: journalism
+    regions: [southern_asia]
+    lang: "bn"
+    general_news: true
+
+  - id: vnexpress-vi
+    name: VnExpress Khoa học
+    kind: rss
+    url: https://vnexpress.net/rss/khoa-hoc.rss
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+
+  - id: greennews-th
+    name: GreenNews Thailand
+    kind: rss
+    url: https://greennews.agency/?feed=rss2
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "th"
+  - id: yesil-gazete
+    name: Yeşil Gazete
+    kind: rss
+    url: https://yesilgazete.org/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "tr"
+
+  - id: voa-amharic
+    name: VOA Amharic
+    kind: rss
+    url: https://amharic.voanews.com/api/epiqq
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "am"
+    general_news: true
+
+  - id: radio-zamaneh
+    name: رادیو زمانه
+    kind: rss
+    url: https://en.radiozamaneh.com/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "fa"
+    general_news: true
+
+  - id: rinnovabili
+    name: Rinnovabili
+    kind: rss
+    url: https://www.rinnovabili.it/feed/
+    tier: journalism
+    regions: [southern_europe]
+    lang: "it"
+  - id: duurzaamnieuws
+    name: Duurzaamnieuws
+    kind: rss
+    url: https://www.duurzaamnieuws.nl/feed/
+    tier: journalism
+    regions: [western_europe]
+    lang: "nl"
+  - id: energi-og-klima
+    name: Energi og Klima
+    kind: rss
+    url: https://energiogklima.no/feed/
+    tier: journalism
+    regions: [northern_europe]
+    lang: "no"   # quoted: YAML would read bare no as false
+  - id: supermiljobloggen
+    name: Supermiljöbloggen
+    kind: rss
+    url: https://www.supermiljobloggen.se/feed
+    tier: journalism
+    regions: [northern_europe]
+    lang: "sv"
+  - id: ecopolitic-ua
+    name: EcoPolitic
+    kind: rss
+    url: https://ecopolitic.com.ua/feed/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "uk"
+  - id: green-report-ro
+    name: Green Report
+    kind: rss
+    url: https://www.green-report.ro/news/feed/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ro"
+  - id: conversation-au
+    name: The Conversation Australia — Environment
+    kind: rss
+    url: https://theconversation.com/au/environment/articles.atom
+    tier: journalism
+    regions: [australia_nz]
+    lang: "en"
+  - id: aljazeera-ar
+    name: الجزيرة
+    kind: rss
+    url: https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9
+    tier: journalism
+    regions: [western_asia, northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: bbc-swahili
+    name: BBC Swahili
+    kind: rss
+    url: https://feeds.bbci.co.uk/swahili/rss.xml
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "sw"
+    general_news: true
+
+
+  # Discovered by pipeline.discover_sources — Central Africa sweep.
+
+  - id: investiraucameroun-com
+    name: investiraucameroun.com
+    kind: rss
+    url: https://investiraucameroun.com/index.php/component/obrss/fullrss
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: actucameroun-com
+    name: actucameroun.com
+    kind: rss
+    url: https://actucameroun.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: ecomatin-net
+    name: ecomatin.net
+    kind: rss
+    url: https://ecomatin.net/feed.xml
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: radiookapi-net
+    name: radiookapi.net
+    kind: rss
+    url: https://radiookapi.net/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: zoom-eco-net
+    name: zoom-eco.net
+    kind: rss
+    url: https://zoom-eco.net/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: congoquotidien-com
+    name: congoquotidien.com
+    kind: rss
+    url: https://www.congoquotidien.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: adiac-congo-com
+    name: adiac-congo.com
+    kind: rss
+    url: https://adiac-congo.com/rss.xml
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: lesechos-congobrazza-com
+    name: lesechos-congobrazza.com
+    kind: rss
+    url: https://lesechos-congobrazza.com/?format=feed&type=rss
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: vivafrik-com
+    name: vivafrik.com
+    kind: rss
+    url: https://www.vivafrik.com/feed
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: journaldebrazza-com
+    name: journaldebrazza.com
+    kind: rss
+    url: https://www.journaldebrazza.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: gabonreview-com
+    name: gabonreview.com
+    kind: rss
+    url: https://www.gabonreview.com/feed
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: gabonactu-com
+    name: gabonactu.com
+    kind: rss
+    url: https://gabonactu.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: fr-infosgabon-com
+    name: fr.infosgabon.com
+    kind: rss
+    url: https://fr.infosgabon.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: alwihdainfo-com
+    name: alwihdainfo.com
+    kind: rss
+    url: https://www.alwihdainfo.com/rss/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: tchadinfos-com
+    name: tchadinfos.com
+    kind: rss
+    url: https://tchadinfos.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: journaldutchad-com
+    name: journaldutchad.com
+    kind: rss
+    url: https://journaldutchad.com/feed/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: expansao-co-ao
+    name: expansao.co.ao
+    kind: rss
+    url: https://expansao.co.ao/rss/
+    tier: journalism
+    regions: [middle_africa]
+    lang: "pt"
+    general_news: true
+
+  # Discovered — West Africa sweep.
+
+  - id: businessday-ng
+    name: businessday.ng
+    kind: rss
+    url: https://businessday.ng/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: thecable-ng
+    name: thecable.ng
+    kind: rss
+    url: https://www.thecable.ng/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: leadership-ng
+    name: leadership.ng
+    kind: rss
+    url: https://leadership.ng/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: aps-sn
+    name: aps.sn
+    kind: rss
+    url: https://aps.sn/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: lequotidien-sn
+    name: lequotidien.sn
+    kind: rss
+    url: https://lequotidien.sn/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: aip-ci
+    name: aip.ci
+    kind: rss
+    url: https://www.aip.ci/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: maliactu
+    name: maliactu.net
+    kind: rss
+    url: https://maliactu.net/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: bamada
+    name: bamada.net
+    kind: rss
+    url: https://bamada.net/feed
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: journaldumali
+    name: journaldumali.com
+    kind: rss
+    url: https://journaldumali.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: lefaso
+    name: lefaso.net
+    kind: rss
+    url: https://lefaso.net/spip.php?page=backend
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: sidwaya
+    name: sidwaya.info
+    kind: rss
+    url: https://www.sidwaya.info/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: burkina24
+    name: burkina24.com
+    kind: rss
+    url: https://burkina24.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: voaafrique
+    name: voaafrique.com
+    kind: rss
+    url: https://voaafrique.com/rss/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: lesahel-ne
+    name: lesahel.org
+    kind: rss
+    url: https://www.lesahel.org/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: anp-ne
+    name: anp.ne
+    kind: rss
+    url: https://anp.ne/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  # Discovered — Southeast Asia sweep.
+
+  - id: inquirer-ph
+    name: newsinfo.inquirer.net
+    kind: rss
+    url: https://newsinfo.inquirer.net/feed
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: tuoitre-vn
+    name: tuoitre.vn
+    kind: rss
+    url: https://tuoitre.vn/home.rss
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+
+  - id: astroawani
+    name: astroawani.com
+    kind: rss
+    url: https://astroawani.com/rss.xml
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+
+  - id: utusan-my
+    name: utusan.com.my
+    kind: rss
+    url: https://www.utusan.com.my/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+
+  - id: hmetro-my
+    name: hmetro.com.my
+    kind: rss
+    url: https://hmetro.com.my/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+
+  - id: voa-burmese
+    name: burmese.voanews.com
+    kind: rss
+    url: https://burmese.voanews.com/rss/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "my"
+    general_news: true
+
+  # Discovered — West Africa, second pass (Google News fallback for
+  # outlets that publish no feed of their own).
+
+  - id: thisdaylive-com
+    name: thisdaylive.com
+    kind: rss
+    url: https://thisdaylive.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: punchng-com
+    name: punchng.com
+    kind: rss
+    url: https://punchng.com/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+
+  - id: independent-ng
+    name: independent.ng
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aindependent.ng&hl=en&gl=NG&ceid=NG:en
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: gna-org-gh
+    name: gna.org.gh
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Agna.org.gh&hl=en&gl=GH&ceid=GH:en
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: citinewsroom-com
+    name: citinewsroom.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Acitinewsroom.com&hl=en&gl=GH&ceid=GH:en
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: graphic-com-gh
+    name: graphic.com.gh
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Agraphic.com.gh&hl=en&gl=GH&ceid=GH:en
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: modernghana-com
+    name: modernghana.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amodernghana.com&hl=en&gl=GH&ceid=GH:en
+    tier: journalism
+    regions: [western_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: rts-sn
+    name: rts.sn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Arts.sn&hl=fr&gl=SN&ceid=SN:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: sudquotidien-sn
+    name: sudquotidien.sn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Asudquotidien.sn&hl=fr&gl=SN&ceid=SN:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: pressafrik-com
+    name: pressafrik.com
+    kind: rss
+    url: https://pressafrik.com/xml/syndication.rss
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: dakaractu-com
+    name: dakaractu.com
+    kind: rss
+    url: https://dakaractu.com/xml/syndication.rss
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: koaci-com
+    name: koaci.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Akoaci.com&hl=fr&gl=CI&ceid=CI:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: news-abidjan-net
+    name: news.abidjan.net
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anews.abidjan.net&hl=fr&gl=CI&ceid=CI:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: fratmat-info
+    name: fratmat.info
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Afratmat.info&hl=fr&gl=CI&ceid=CI:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: studiotamani-org
+    name: studiotamani.org
+    kind: rss
+    url: https://studiotamani.org/feed/
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: news-aniamey-com
+    name: news.aniamey.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anews.aniamey.com&hl=fr&gl=NE&ceid=NE:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: actuniger-com
+    name: actuniger.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aactuniger.com&hl=fr&gl=NE&ceid=NE:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: journalduniger-com
+    name: journalduniger.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ajournalduniger.com&hl=fr&gl=NE&ceid=NE:fr
+    tier: journalism
+    regions: [western_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  # Discovered — Southeast Asia, second pass.
+
+  - id: kompas-id
+    name: kompas.id
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Akompas.id&hl=id&gl=ID&ceid=ID:id
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "id"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: databoks-katadata-co-id
+    name: databoks.katadata.co.id
+    kind: rss
+    url: https://databoks.katadata.co.id/rss/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "id"
+    general_news: true
+
+  - id: cnbcindonesia-com
+    name: cnbcindonesia.com
+    kind: rss
+    url: https://cnbcindonesia.com/rss/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "id"
+    general_news: true
+
+  - id: mb-com-ph
+    name: mb.com.ph
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amb.com.ph&hl=en&gl=PH&ceid=PH:en
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: tribune-net-ph
+    name: tribune.net.ph
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atribune.net.ph&hl=en&gl=PH&ceid=PH:en
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: philstar-com
+    name: philstar.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aphilstar.com&hl=en&gl=PH&ceid=PH:en
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: business-inquirer-net
+    name: business.inquirer.net
+    kind: rss
+    url: https://business.inquirer.net/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: vietnam-vn
+    name: vietnam.vn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Avietnam.vn&hl=vi&gl=VN&ceid=VN:vi
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: laodong-vn
+    name: laodong.vn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alaodong.vn&hl=vi&gl=VN&ceid=VN:vi
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: moitruong-net-vn
+    name: moitruong.net.vn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amoitruong.net.vn&hl=vi&gl=VN&ceid=VN:vi
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: vietnamnet-vn
+    name: vietnamnet.vn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Avietnamnet.vn&hl=vi&gl=VN&ceid=VN:vi
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "vi"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: thairath-co-th
+    name: thairath.co.th
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Athairath.co.th&hl=th&gl=TH&ceid=TH:th
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "th"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: khaosod-co-th
+    name: khaosod.co.th
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Akhaosod.co.th&hl=th&gl=TH&ceid=TH:th
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "th"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: dailynews-co-th
+    name: dailynews.co.th
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Adailynews.co.th&hl=th&gl=TH&ceid=TH:th
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "th"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: matichon-co-th
+    name: matichon.co.th
+    kind: rss
+    url: https://www.matichon.co.th/feed
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "th"
+    general_news: true
+
+  - id: buletintv3-my
+    name: buletintv3.my
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Abuletintv3.my&hl=ms&gl=MY&ceid=MY:ms
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: bharian-com-my
+    name: bharian.com.my
+    kind: rss
+    url: https://bharian.com.my/feed/
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+
+  - id: sinarharian-com-my
+    name: sinarharian.com.my
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Asinarharian.com.my&hl=ms&gl=MY&ceid=MY:ms
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: utusanborneo-com-my
+    name: utusanborneo.com.my
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Autusanborneo.com.my&hl=ms&gl=MY&ceid=MY:ms
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "ms"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: khmertimeskh-com
+    name: khmertimeskh.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Akhmertimeskh.com&hl=km&gl=KH&ceid=KH:km
+    tier: journalism
+    regions: [south_eastern_asia]
+    lang: "km"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  # Discovered by pipeline.discover_sources — full global sweep.
+
+  - id: downtoearth-org-in
+    name: downtoearth.org.in
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Adowntoearth.org.in&hl=en&gl=IN&ceid=IN:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: indiatoday-in
+    name: indiatoday.in
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aindiatoday.in&hl=en&gl=IN&ceid=IN:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: theprint-in
+    name: theprint.in
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atheprint.in&hl=en&gl=IN&ceid=IN:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: timesofindia-indiatimes-com
+    name: timesofindia.indiatimes.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atimesofindia.indiatimes.com&hl=en&gl=IN&ceid=IN:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: tribune-com-pk
+    name: tribune.com.pk
+    kind: rss
+    url: https://tribune.com.pk/feed/rss/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ur"
+    general_news: true
+
+  - id: gwadarpro-pk
+    name: gwadarpro.pk
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Agwadarpro.pk&hl=ur&gl=PK&ceid=PK:ur
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ur"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: pothwar-com
+    name: pothwar.com
+    kind: rss
+    url: https://pothwar.com/?feed=rss2
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ur"
+    general_news: true
+
+  - id: urdupoint-com
+    name: urdupoint.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aurdupoint.com&hl=ur&gl=PK&ceid=PK:ur
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ur"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: bssnews-net
+    name: bssnews.net
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Abssnews.net&hl=bn&gl=BD&ceid=BD:bn
+    tier: journalism
+    regions: [southern_asia]
+    lang: "bn"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: bd-pratidin-com
+    name: bd-pratidin.com
+    kind: rss
+    url: https://bd-pratidin.com/rss.xml
+    tier: journalism
+    regions: [southern_asia]
+    lang: "bn"
+    general_news: true
+
+  - id: ittefaq-com-bd
+    name: ittefaq.com.bd
+    kind: rss
+    url: https://ittefaq.com.bd/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "bn"
+    general_news: true
+
+  - id: jugantor-com
+    name: jugantor.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ajugantor.com&hl=bn&gl=BD&ceid=BD:bn
+    tier: journalism
+    regions: [southern_asia]
+    lang: "bn"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: island-lk
+    name: island.lk
+    kind: rss
+    url: https://island.lk/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: adaderana-lk
+    name: adaderana.lk
+    kind: rss
+    url: https://adaderana.lk/rss.xml
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+
+  - id: sundaytimes-lk
+    name: sundaytimes.lk
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Asundaytimes.lk&hl=en&gl=LK&ceid=LK:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: dailymirror-lk
+    name: dailymirror.lk
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Adailymirror.lk&hl=en&gl=LK&ceid=LK:en
+    tier: journalism
+    regions: [southern_asia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: thehimalayantimes-com
+    name: thehimalayantimes.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Athehimalayantimes.com&hl=ne&gl=NP&ceid=NP:ne
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ne"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: english-nepalnews-com
+    name: english.nepalnews.com
+    kind: rss
+    url: https://english.nepalnews.com/feed/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ne"
+    general_news: true
+
+  - id: risingnepaldaily-com
+    name: risingnepaldaily.com
+    kind: rss
+    url: https://risingnepaldaily.com/rss/
+    tier: journalism
+    regions: [southern_asia]
+    lang: "ne"
+    general_news: true
+
+  - id: the-star-co-ke
+    name: the-star.co.ke
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Athe-star.co.ke&hl=en&gl=KE&ceid=KE:en
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: eastleighvoice-co-ke
+    name: eastleighvoice.co.ke
+    kind: rss
+    url: https://eastleighvoice.co.ke/rss
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: kenyans-co-ke
+    name: kenyans.co.ke
+    kind: rss
+    url: https://www.kenyans.co.ke/feeds/news
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: standardmedia-co-ke
+    name: standardmedia.co.ke
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Astandardmedia.co.ke&hl=en&gl=KE&ceid=KE:en
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: dailynews-co-tz
+    name: dailynews.co.tz
+    kind: rss
+    url: https://dailynews.co.tz/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "sw"
+    general_news: true
+
+  - id: mabumbe-com
+    name: mabumbe.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amabumbe.com&hl=sw&gl=TZ&ceid=TZ:sw
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "sw"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: monitor-co-ug
+    name: monitor.co.ug
+    kind: rss
+    url: https://www.monitor.co.ug/rss.xml
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: independent-co-ug
+    name: independent.co.ug
+    kind: rss
+    url: https://independent.co.ug/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: newvision-co-ug
+    name: newvision.co.ug
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anewvision.co.ug&hl=en&gl=UG&ceid=UG:en
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: ntv-co-ug
+    name: ntv.co.ug
+    kind: rss
+    url: https://ntv.co.ug/feed
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: borkena-com
+    name: borkena.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aborkena.com&hl=am&gl=ET&ceid=ET:am
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "am"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: mznews-co-mz
+    name: mznews.co.mz
+    kind: rss
+    url: https://mznews.co.mz/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "pt"
+    general_news: true
+
+  - id: integritymagazine-co-mz
+    name: integritymagazine.co.mz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aintegritymagazine.co.mz&hl=pt&gl=MZ&ceid=MZ:pt
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "pt"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: rm-co-mz
+    name: rm.co.mz
+    kind: rss
+    url: https://www.rm.co.mz/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "pt"
+    general_news: true
+
+  - id: aimnews-org
+    name: aimnews.org
+    kind: rss
+    url: https://aimnews.org/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "pt"
+    general_news: true
+
+  - id: moov-mg
+    name: moov.mg
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amoov.mg&hl=fr&gl=MG&ceid=MG:fr
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: midi-madagasikara-mg
+    name: midi-madagasikara.mg
+    kind: rss
+    url: https://midi-madagasikara.mg/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: 2424-mg
+    name: 2424.mg
+    kind: rss
+    url: https://2424.mg/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "fr"
+    general_news: true
+
+  - id: newsday-co-zw
+    name: newsday.co.zw
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anewsday.co.zw&hl=en&gl=ZW&ceid=ZW:en
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: newzimbabwe-com
+    name: newzimbabwe.com
+    kind: rss
+    url: https://www.newzimbabwe.com/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: hiiraan-com
+    name: hiiraan.com
+    kind: rss
+    url: https://hiiraan.com/news.xml
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "so"
+    general_news: true
+
+  - id: garoweonline-com
+    name: garoweonline.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Agaroweonline.com&hl=so&gl=SO&ceid=SO:so
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "so"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: shabellemedia-com
+    name: shabellemedia.com
+    kind: rss
+    url: https://shabellemedia.com/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "so"
+    general_news: true
+
+  - id: horseedmedia-net
+    name: horseedmedia.net
+    kind: rss
+    url: https://horseedmedia.net/feed/
+    tier: journalism
+    regions: [eastern_africa]
+    lang: "so"
+    general_news: true
+
+  - id: cnnbrasil-com-br
+    name: cnnbrasil.com.br
+    kind: rss
+    url: https://cnnbrasil.com.br/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+    general_news: true
+
+  - id: brasildefato-com-br
+    name: brasildefato.com.br
+    kind: rss
+    url: https://www.brasildefato.com.br/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+    general_news: true
+
+  - id: reporterbrasil-org-br
+    name: reporterbrasil.org.br
+    kind: rss
+    url: https://reporterbrasil.org.br/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+    general_news: true
+
+  - id: noticiasagricolas-com-br
+    name: noticiasagricolas.com.br
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anoticiasagricolas.com.br&hl=pt&gl=BR&ceid=BR:pt
+    tier: journalism
+    regions: [south_america]
+    lang: "pt"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: pescare-com-ar
+    name: pescare.com.ar
+    kind: rss
+    url: https://pescare.com.ar/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: tn-com-ar
+    name: tn.com.ar
+    kind: rss
+    url: https://tn.com.ar/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: lagaceta-com-ar
+    name: lagaceta.com.ar
+    kind: rss
+    url: https://feeds.feedburner.com/LaGacetaUltimoMomento?format=xml
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: biobiochile-cl
+    name: biobiochile.cl
+    kind: rss
+    url: https://feeds.feedburner.com/radiobiobio/NNeJ
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: eldesconcierto-cl
+    name: eldesconcierto.cl
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aeldesconcierto.cl&hl=es&gl=CL&ceid=CL:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: uchile-cl
+    name: uchile.cl
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Auchile.cl&hl=es&gl=CL&ceid=CL:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: reporteminero-cl
+    name: reporteminero.cl
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Areporteminero.cl&hl=es&gl=CL&ceid=CL:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: rpp-pe
+    name: rpp.pe
+    kind: rss
+    url: https://rpp.pe/rss
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: agroperu-pe
+    name: agroperu.pe
+    kind: rss
+    url: https://www.agroperu.pe/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: actualidadambiental-pe
+    name: actualidadambiental.pe
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aactualidadambiental.pe&hl=es&gl=PE&ceid=PE:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: elperuano-pe
+    name: elperuano.pe
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aelperuano.pe&hl=es&gl=PE&ceid=PE:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: portafolio-co
+    name: portafolio.co
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aportafolio.co&hl=es&gl=CO&ceid=CO:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: caracol-com-co
+    name: caracol.com.co
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Acaracol.com.co&hl=es&gl=CO&ceid=CO:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: eltiempo-com
+    name: eltiempo.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aeltiempo.com&hl=es&gl=CO&ceid=CO:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: reduno-com-bo
+    name: reduno.com.bo
+    kind: rss
+    url: https://reduno.com.bo/rss/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: lapatria-bo
+    name: lapatria.bo
+    kind: rss
+    url: https://lapatria.bo/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: laregion-bo
+    name: laregion.bo
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alaregion.bo&hl=es&gl=BO&ceid=BO:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: eldiario-net
+    name: eldiario.net
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aeldiario.net&hl=es&gl=BO&ceid=BO:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: expreso-ec
+    name: expreso.ec
+    kind: rss
+    url: https://www.expreso.ec/rss/home.xml
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: primicias-ec
+    name: primicias.ec
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aprimicias.ec&hl=es&gl=EC&ceid=EC:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: eluniverso-com
+    name: eluniverso.com
+    kind: rss
+    url: https://www.eluniverso.com/arc/outboundfeeds/rss/?outputType=xml
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: primicia-com-ve
+    name: primicia.com.ve
+    kind: rss
+    url: https://primicia.com.ve/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: ultimasnoticias-com-ve
+    name: ultimasnoticias.com.ve
+    kind: rss
+    url: https://ultimasnoticias.com.ve/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: radiomiraflores-net-ve
+    name: radiomiraflores.net.ve
+    kind: rss
+    url: https://radiomiraflores.net.ve/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: abc-com-py
+    name: abc.com.py
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aabc.com.py&hl=es&gl=PY&ceid=PY:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: lanacion-com-py
+    name: lanacion.com.py
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alanacion.com.py&hl=es&gl=PY&ceid=PY:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: elnacional-com-py
+    name: elnacional.com.py
+    kind: rss
+    url: https://elnacional.com.py/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+
+  - id: infonegocios-com-py
+    name: infonegocios.com.py
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ainfonegocios.com.py&hl=es&gl=PY&ceid=PY:es
+    tier: journalism
+    regions: [south_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: guyanachronicle-com
+    name: guyanachronicle.com
+    kind: rss
+    url: https://guyanachronicle.com/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "en"
+    general_news: true
+
+  - id: newsroom-gy
+    name: newsroom.gy
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anewsroom.gy&hl=en&gl=GY&ceid=GY:en
+    tier: journalism
+    regions: [south_america]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: stabroeknews-com
+    name: stabroeknews.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Astabroeknews.com&hl=en&gl=GY&ceid=GY:en
+    tier: journalism
+    regions: [south_america]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: demerarawaves-com
+    name: demerarawaves.com
+    kind: rss
+    url: https://demerarawaves.com/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "en"
+    general_news: true
+
+  - id: srherald-com
+    name: srherald.com
+    kind: rss
+    url: https://www.srherald.com/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "nl"
+    general_news: true
+
+  - id: dbsuriname-com
+    name: dbsuriname.com
+    kind: rss
+    url: https://www.dbsuriname.com/feed/
+    tier: journalism
+    regions: [south_america]
+    lang: "nl"
+    general_news: true
+
+  - id: inbusiness-kz
+    name: inbusiness.kz
+    kind: rss
+    url: https://inbusiness.kz/ru/rss
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: ulysmedia-kz
+    name: ulysmedia.kz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aulysmedia.kz&hl=ru&gl=KZ&ceid=KZ:ru
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: dknews-kz
+    name: dknews.kz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Adknews.kz&hl=ru&gl=KZ&ceid=KZ:ru
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: podrobno-uz
+    name: podrobno.uz
+    kind: rss
+    url: https://podrobno.uz/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: gazeta-uz
+    name: gazeta.uz
+    kind: rss
+    url: https://www.gazeta.uz/oz/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: anhor-uz
+    name: anhor.uz
+    kind: rss
+    url: https://anhor.uz/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: uzdaily-uz
+    name: uzdaily.uz
+    kind: rss
+    url: https://www.uzdaily.uz/ru/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: 24-kg
+    name: 24.kg
+    kind: rss
+    url: https://24.kg/vybory/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: open-kg
+    name: open.kg
+    kind: rss
+    url: https://open.kg/rss.xml
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: vb-kg
+    name: vb.kg
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Avb.kg&hl=ru&gl=KG&ceid=KG:ru
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: khovar-tj
+    name: khovar.tj
+    kind: rss
+    url: https://khovar.tj/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: asiaplus-news
+    name: asiaplus.news
+    kind: rss
+    url: https://asiaplus.news/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: avesta-tj
+    name: avesta.tj
+    kind: rss
+    url: https://avesta.tj/feed/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: vecherka-tj
+    name: vecherka.tj
+    kind: rss
+    url: https://vecherka.tj/feed
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: business-com-tm
+    name: business.com.tm
+    kind: rss
+    url: https://business.com.tm/rss/
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+
+  - id: turkmenportal-com
+    name: turkmenportal.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aturkmenportal.com&hl=ru&gl=TM&ceid=TM:ru
+    tier: journalism
+    regions: [central_asia]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: cumhuriyet-com-tr
+    name: cumhuriyet.com.tr
+    kind: rss
+    url: https://cumhuriyet.com.tr/rss/
+    tier: journalism
+    regions: [western_asia]
+    lang: "tr"
+    general_news: true
+
+  - id: turkiyegazetesi-com-tr
+    name: turkiyegazetesi.com.tr
+    kind: rss
+    url: https://www.turkiyegazetesi.com.tr/rss/son-dakika-haberleri
+    tier: journalism
+    regions: [western_asia]
+    lang: "tr"
+    general_news: true
+
+  - id: ntv-com-tr
+    name: ntv.com.tr
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Antv.com.tr&hl=tr&gl=TR&ceid=TR:tr
+    tier: journalism
+    regions: [western_asia]
+    lang: "tr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: diken-com-tr
+    name: diken.com.tr
+    kind: rss
+    url: https://www.diken.com.tr/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "tr"
+    general_news: true
+
+  - id: shafaq-com
+    name: shafaq.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ashafaq.com&hl=ar&gl=IQ&ceid=IQ:ar
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: ina-iq
+    name: ina.iq
+    kind: rss
+    url: https://ina.iq/rss.xml
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+
+  - id: baghdadtoday-news
+    name: baghdadtoday.news
+    kind: rss
+    url: https://baghdadtoday.news/rss.xml
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+
+  - id: okaz-com-sa
+    name: okaz.com.sa
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aokaz.com.sa&hl=ar&gl=SA&ceid=SA:ar
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: alwatan-com-sa
+    name: alwatan.com.sa
+    kind: rss
+    url: https://alwatan.com.sa/feed/
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+
+  - id: ajel-sa
+    name: ajel.sa
+    kind: rss
+    url: https://ajel.sa/rss.xml
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+
+  - id: albayan-ae
+    name: albayan.ae
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aalbayan.ae&hl=ar&gl=AE&ceid=AE:ar
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: alkhaleej-ae
+    name: alkhaleej.ae
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aalkhaleej.ae&hl=ar&gl=AE&ceid=AE:ar
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: alwatan-ae
+    name: alwatan.ae
+    kind: rss
+    url: https://alwatan.ae/feed
+    tier: journalism
+    regions: [western_asia]
+    lang: "ar"
+    general_news: true
+
+  - id: israelhayom-co-il
+    name: israelhayom.co.il
+    kind: rss
+    url: https://israelhayom.co.il/rss.xml
+    tier: journalism
+    regions: [western_asia]
+    lang: "he"
+    general_news: true
+
+  - id: ynet-co-il
+    name: ynet.co.il
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aynet.co.il&hl=he&gl=IL&ceid=IL:he
+    tier: journalism
+    regions: [western_asia]
+    lang: "he"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: haaretz-co-il
+    name: haaretz.co.il
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ahaaretz.co.il&hl=he&gl=IL&ceid=IL:he
+    tier: journalism
+    regions: [western_asia]
+    lang: "he"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: calcalist-co-il
+    name: calcalist.co.il
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Acalcalist.co.il&hl=he&gl=IL&ceid=IL:he
+    tier: journalism
+    regions: [western_asia]
+    lang: "he"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: past-am
+    name: past.am
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Apast.am&hl=hy&gl=AM&ceid=AM:hy
+    tier: journalism
+    regions: [western_asia]
+    lang: "hy"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: news-day-az
+    name: news.day.az
+    kind: rss
+    url: https://news.day.az/rss/
+    tier: journalism
+    regions: [western_asia]
+    lang: "az"
+    general_news: true
+
+  - id: report-az
+    name: report.az
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Areport.az&hl=az&gl=AZ&ceid=AZ:az
+    tier: journalism
+    regions: [western_asia]
+    lang: "az"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: fins-az
+    name: fins.az
+    kind: rss
+    url: https://fins.az/rss.xml
+    tier: journalism
+    regions: [western_asia]
+    lang: "az"
+    general_news: true
+
+  - id: media-az
+    name: media.az
+    kind: rss
+    url: https://media.az/rss/
+    tier: journalism
+    regions: [western_asia]
+    lang: "az"
+    general_news: true
+
+  - id: interfax-ru
+    name: interfax.ru
+    kind: rss
+    url: https://www.interfax.ru/rss
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ru"
+    general_news: true
+
+  - id: ecologyofrussia-ru
+    name: ecologyofrussia.ru
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aecologyofrussia.ru&hl=ru&gl=RU&ceid=RU:ru
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: interfax-russia-ru
+    name: interfax-russia.ru
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ainterfax-russia.ru&hl=ru&gl=RU&ceid=RU:ru
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: finance-mail-ru
+    name: finance.mail.ru
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Afinance.mail.ru&hl=ru&gl=RU&ceid=RU:ru
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ru"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: rbc-ua
+    name: rbc.ua
+    kind: rss
+    url: https://www.rbc.ua/static/rss/all.rus.rss.xml
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "uk"
+    general_news: true
+
+  - id: ukr-net
+    name: ukr.net
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aukr.net&hl=uk&gl=UA&ceid=UA:uk
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "uk"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: ukrinform-ua
+    name: ukrinform.ua
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aukrinform.ua&hl=uk&gl=UA&ceid=UA:uk
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "uk"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: epravda-com-ua
+    name: epravda.com.ua
+    kind: rss
+    url: https://epravda.com.ua/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "uk"
+    general_news: true
+
+  - id: tvn24-pl
+    name: tvn24.pl
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atvn24.pl&hl=pl&gl=PL&ceid=PL:pl
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "pl"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: zielona-interia-pl
+    name: zielona.interia.pl
+    kind: rss
+    url: https://zielona.interia.pl/feed
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "pl"
+    general_news: true
+
+  - id: digi24-ro
+    name: digi24.ro
+    kind: rss
+    url: https://www.digi24.ro/rss
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ro"
+    general_news: true
+
+  - id: stirileprotv-ro
+    name: stirileprotv.ro
+    kind: rss
+    url: https://stirileprotv.ro/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ro"
+    general_news: true
+
+  - id: antena3-ro
+    name: antena3.ro
+    kind: rss
+    url: https://www.antena3.ro/rss
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ro"
+    general_news: true
+
+  - id: romania-actualitati-ro
+    name: romania-actualitati.ro
+    kind: rss
+    url: https://romania-actualitati.ro/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "ro"
+    general_news: true
+
+  - id: btvnovinite-bg
+    name: btvnovinite.bg
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Abtvnovinite.bg&hl=bg&gl=BG&ceid=BG:bg
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "bg"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: novinite-bg
+    name: novinite.bg
+    kind: rss
+    url: https://novinite.bg/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "bg"
+    general_news: true
+
+  - id: bgonair-bg
+    name: bgonair.bg
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Abgonair.bg&hl=bg&gl=BG&ceid=BG:bg
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "bg"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: marica-bg
+    name: marica.bg
+    kind: rss
+    url: https://marica.bg/rss/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "bg"
+    general_news: true
+
+  - id: ct24-ceskatelevize-cz
+    name: ct24.ceskatelevize.cz
+    kind: rss
+    url: https://ct24.ceskatelevize.cz/rss
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "cs"
+    general_news: true
+
+  - id: irozhlas-cz
+    name: irozhlas.cz
+    kind: rss
+    url: https://irozhlas.cz/rss.xml
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "cs"
+    general_news: true
+
+  - id: idnes-cz
+    name: idnes.cz
+    kind: rss
+    url: https://servis.idnes.cz/rss.aspx
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "cs"
+    general_news: true
+
+  - id: ceskenoviny-cz
+    name: ceskenoviny.cz
+    kind: rss
+    url: https://www.ceskenoviny.cz/sluzby/rss/zpravy.php
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "cs"
+    general_news: true
+
+  - id: 24-hu
+    name: 24.hu
+    kind: rss
+    url: https://24.hu/feed/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "hu"
+    general_news: true
+
+  - id: portfolio-hu
+    name: portfolio.hu
+    kind: rss
+    url: https://www.portfolio.hu/rss/all.xml
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "hu"
+    general_news: true
+
+  - id: magyarmezogazdasag-hu
+    name: magyarmezogazdasag.hu
+    kind: rss
+    url: https://magyarmezogazdasag.hu/feed/
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "hu"
+    general_news: true
+
+  - id: vg-hu
+    name: vg.hu
+    kind: rss
+    url: https://www.vg.hu/publicapi/hu/rss/vilaggazdasag/articles
+    tier: journalism
+    regions: [eastern_europe]
+    lang: "hu"
+    general_news: true
+
+  - id: cibercuba-com
+    name: cibercuba.com
+    kind: rss
+    url: https://cibercuba.com/rss.xml
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+
+  - id: cubadebate-cu
+    name: cubadebate.cu
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Acubadebate.cu&hl=es&gl=CU&ceid=CU:es
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: radiorebelde-cu
+    name: radiorebelde.cu
+    kind: rss
+    url: https://www.radiorebelde.cu/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+
+  - id: misiones-cubaminrex-cu
+    name: misiones.cubaminrex.cu
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amisiones.cubaminrex.cu&hl=es&gl=CU&ceid=CU:es
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: acento-com-do
+    name: acento.com.do
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aacento.com.do&hl=es&gl=DO&ceid=DO:es
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: elnuevodiario-com-do
+    name: elnuevodiario.com.do
+    kind: rss
+    url: https://elnuevodiario.com.do/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+
+  - id: eldia-com-do
+    name: eldia.com.do
+    kind: rss
+    url: https://eldia.com.do/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "es"
+    general_news: true
+
+  - id: haitilibre-com
+    name: haitilibre.com
+    kind: rss
+    url: https://www.haitilibre.com/rss-flash.php
+    tier: journalism
+    regions: [caribbean]
+    lang: "fr"
+    general_news: true
+
+  - id: juno7-ht
+    name: juno7.ht
+    kind: rss
+    url: https://www.juno7.ht/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "fr"
+    general_news: true
+
+  - id: rezonodwes-com
+    name: rezonodwes.com
+    kind: rss
+    url: https://rezonodwes.com/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "fr"
+    general_news: true
+
+  - id: newsday-co-tt
+    name: newsday.co.tt
+    kind: rss
+    url: https://newsday.co.tt/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+    general_news: true
+
+  - id: trinidadexpress-com
+    name: trinidadexpress.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atrinidadexpress.com&hl=en&gl=TT&ceid=TT:en
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: jamaicaobserver-com
+    name: jamaicaobserver.com
+    kind: rss
+    url: https://jamaicaobserver.com/feed/
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+    general_news: true
+
+  - id: jamaica-gleaner-com
+    name: jamaica-gleaner.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ajamaica-gleaner.com&hl=en&gl=JM&ceid=JM:en
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: jamaica-star-com
+    name: jamaica-star.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ajamaica-star.com&hl=en&gl=JM&ceid=JM:en
+    tier: journalism
+    regions: [caribbean]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: heraldodemexico-com-mx
+    name: heraldodemexico.com.mx
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aheraldodemexico.com.mx&hl=es&gl=MX&ceid=MX:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: jornada-com-mx
+    name: jornada.com.mx
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ajornada.com.mx&hl=es&gl=MX&ceid=MX:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: oem-com-mx
+    name: oem.com.mx
+    kind: rss
+    url: https://oem.com.mx/rss.xml
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: prensalibre-com
+    name: prensalibre.com
+    kind: rss
+    url: https://www.prensalibre.com/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: agn-gt
+    name: agn.gt
+    kind: rss
+    url: https://agn.gt/rss.xml
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: lahora-gt
+    name: lahora.gt
+    kind: rss
+    url: https://lahora.gt/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: laprensa-hn
+    name: laprensa.hn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alaprensa.hn&hl=es&gl=HN&ceid=HN:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: elheraldo-hn
+    name: elheraldo.hn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aelheraldo.hn&hl=es&gl=HN&ceid=HN:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: latribuna-hn
+    name: latribuna.hn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alatribuna.hn&hl=es&gl=HN&ceid=HN:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: criterio-hn
+    name: criterio.hn
+    kind: rss
+    url: https://criterio.hn/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: delfino-cr
+    name: delfino.cr
+    kind: rss
+    url: https://delfino.cr/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: observador-cr
+    name: observador.cr
+    kind: rss
+    url: https://observador.cr/feed/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: larepublica-net
+    name: larepublica.net
+    kind: rss
+    url: https://larepublica.net/rss.xml
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: teletica-com
+    name: teletica.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ateletica.com&hl=es&gl=CR&ceid=CR:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: laestrella-com-pa
+    name: laestrella.com.pa
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Alaestrella.com.pa&hl=es&gl=PA&ceid=PA:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: panamaamerica-com-pa
+    name: panamaamerica.com.pa
+    kind: rss
+    url: https://www.panamaamerica.com.pa/rss/recent/index.xml
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: tvn-2-com
+    name: tvn-2.com
+    kind: rss
+    url: https://tvn-2.com/rss/
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+
+  - id: elsiglo-com-pa
+    name: elsiglo.com.pa
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aelsiglo.com.pa&hl=es&gl=PA&ceid=PA:es
+    tier: journalism
+    regions: [central_america]
+    lang: "es"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: thenational-com-pg
+    name: thenational.com.pg
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Athenational.com.pg&hl=en&gl=PG&ceid=PG:en
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: fbcnews-com-fj
+    name: fbcnews.com.fj
+    kind: rss
+    url: https://www.fbcnews.com.fj/feed/
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+
+  - id: fijisun-com-fj
+    name: fijisun.com.fj
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Afijisun.com.fj&hl=en&gl=FJ&ceid=FJ:en
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: fijivillage-com
+    name: fijivillage.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Afijivillage.com&hl=en&gl=FJ&ceid=FJ:en
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: sibconline-com-sb
+    name: sibconline.com.sb
+    kind: rss
+    url: https://www.sibconline.com.sb/feed/
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+
+  - id: solomontimes-com
+    name: solomontimes.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Asolomontimes.com&hl=en&gl=SB&ceid=SB:en
+    tier: journalism
+    regions: [melanesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: actu-nc
+    name: actu.nc
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aactu.nc&hl=fr&gl=NC&ceid=NC:fr
+    tier: journalism
+    regions: [melanesia]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: samoaobserver-ws
+    name: samoaobserver.ws
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Asamoaobserver.ws&hl=en&gl=WS&ceid=WS:en
+    tier: journalism
+    regions: [polynesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: samoaglobalnews-com
+    name: samoaglobalnews.com
+    kind: rss
+    url: https://samoaglobalnews.com/feed/
+    tier: journalism
+    regions: [polynesia]
+    lang: "en"
+    general_news: true
+
+  - id: matangitonga-to
+    name: matangitonga.to
+    kind: rss
+    url: https://matangitonga.to/rss.xml
+    tier: journalism
+    regions: [polynesia]
+    lang: "en"
+    general_news: true
+
+  - id: radio1-pf
+    name: radio1.pf
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aradio1.pf&hl=fr&gl=PF&ceid=PF:fr
+    tier: journalism
+    regions: [polynesia]
+    lang: "fr"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: lnc-nc
+    name: lnc.nc
+    kind: rss
+    url: https://feeds.feedburner.com/LesNouvellesCaledoniennes
+    tier: journalism
+    regions: [polynesia]
+    lang: "fr"
+    general_news: true
+
+  - id: postguam-com
+    name: postguam.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Apostguam.com&hl=en&gl=FM&ceid=FM:en
+    tier: journalism
+    regions: [micronesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: guampdn-com
+    name: guampdn.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aguampdn.com&hl=en&gl=FM&ceid=FM:en
+    tier: journalism
+    regions: [micronesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: discoverwildlife-com
+    name: discoverwildlife.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Adiscoverwildlife.com&hl=en&gl=MH&ceid=MH:en
+    tier: journalism
+    regions: [micronesia]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: youm7-com
+    name: youm7.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ayoum7.com&hl=ar&gl=EG&ceid=EG:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: masrawy-com
+    name: masrawy.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Amasrawy.com&hl=ar&gl=EG&ceid=EG:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: almasryalyoum-com
+    name: almasryalyoum.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aalmasryalyoum.com&hl=ar&gl=EG&ceid=EG:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: petro-news-com
+    name: petro-news.com
+    kind: rss
+    url: https://petro-news.com/feed
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: hespress-com
+    name: hespress.com
+    kind: rss
+    url: https://hespress.com/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: thevoice-ma
+    name: thevoice.ma
+    kind: rss
+    url: https://thevoice.ma/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: inews-ma
+    name: inews.ma
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ainews.ma&hl=ar&gl=MA&ceid=MA:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: al3omk-com
+    name: al3omk.com
+    kind: rss
+    url: https://al3omk.com/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: aps-dz
+    name: aps.dz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aaps.dz&hl=ar&gl=DZ&ceid=DZ:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: news-radioalgerie-dz
+    name: news.radioalgerie.dz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Anews.radioalgerie.dz&hl=ar&gl=DZ&ceid=DZ:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: attaqa-net
+    name: attaqa.net
+    kind: rss
+    url: https://attaqa.net/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: tadamsanews-dz
+    name: tadamsanews.dz
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atadamsanews.dz&hl=ar&gl=DZ&ceid=DZ:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: mosaiquefm-net
+    name: mosaiquefm.net
+    kind: rss
+    url: https://mosaiquefm.net/rss/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: assabahnews-tn
+    name: assabahnews.tn
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Aassabahnews.tn&hl=ar&gl=TN&ceid=TN:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: tuniscope-com
+    name: tuniscope.com
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Atuniscope.com&hl=ar&gl=TN&ceid=TN:ar
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: kapitalis-com
+    name: kapitalis.com
+    kind: rss
+    url: https://kapitalis.com/tunisie/feed/
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: sudantribune-net
+    name: sudantribune.net
+    kind: rss
+    url: https://sudantribune.net/feed
+    tier: journalism
+    regions: [northern_africa]
+    lang: "ar"
+    general_news: true
+
+  - id: iol-co-za
+    name: iol.co.za
+    kind: rss
+    url: https://iol.co.za/rss/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: businesstech-co-za
+    name: businesstech.co.za
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Abusinesstech.co.za&hl=en&gl=ZA&ceid=ZA:en
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: namibian-com-na
+    name: namibian.com.na
+    kind: rss
+    url: https://www.namibian.com.na/feed/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: observer24-com-na
+    name: observer24.com.na
+    kind: rss
+    url: https://observer24.com.na/feed/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: informante-web-na
+    name: informante.web.na
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ainformante.web.na&hl=en&gl=NA&ceid=NA:en
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: neweralive-na
+    name: neweralive.na
+    kind: rss
+    url: https://neweralive.na/feed/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+
+  - id: mmegi-bw
+    name: mmegi.bw
+    kind: rss
+    url: https://news.google.com/rss/search?q=site%3Ammegi.bw&hl=en&gl=BW&ceid=BW:en
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
+    headlines_only: true
+    max_items_per_source: 25
+
+  - id: thevoicebw-com
+    name: thevoicebw.com
+    kind: rss
+    url: https://thevoicebw.com/feed/
+    tier: journalism
+    regions: [southern_africa]
+    lang: "en"
+    general_news: true
