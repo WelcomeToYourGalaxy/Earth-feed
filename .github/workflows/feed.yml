@@ -66,9 +66,28 @@ jobs:
         run: |
           git config user.name  "frontline-bot"
           git config user.email "actions@github.com"
-          git add feed.json wire.json harvest_report.json source_status.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "feed: $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+
+          # Show what the run actually produced. The previous version piped
+          # git add to /dev/null and appended "|| true", which hid the reason
+          # nothing was staged — the job then reported success while silently
+          # discarding a completed harvest.
+          echo "--- files produced ---"
+          ls -la feed.json wire.json harvest_report.json source_status.json || true
+
+          # -f overrides any ignore rule. These are outputs the embeds read;
+          # they belong in the repo regardless of what .gitignore says.
+          git add -f feed.json wire.json harvest_report.json source_status.json
+
+          echo "--- staged ---"
+          git diff --staged --name-only
+
+          if git diff --staged --quiet; then
+            echo "nothing changed since the last run"
+          else
+            git commit -m "feed: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash origin main
+            git push
+          fi
 
       - uses: actions/upload-pages-artifact@v3
         with:
