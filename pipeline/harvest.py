@@ -117,8 +117,8 @@ def _environmentally_relevant(text):
     on unrelated subjects. Section feeds are preferable where they exist; where
     they do not, an item has to at least mention the subject.
     """
-    from .tagger import detect_topics
-    return bool(detect_topics(text))
+    from .tagger import is_environmental
+    return is_environmental(text)
 
 
 def fetch_rss(source, cfg):
@@ -141,7 +141,9 @@ def fetch_rss(source, cfg):
         title = entry.get("title", "")
         # Only gate English sources: the keyword patterns are English, and a
         # non-English item is translated later in the pipeline, not here.
-        if source.get("general_news") and source.get("lang", "en") == "en":
+        # Applies in every language now. The English-only condition here is
+        # why Malay football and Angolan music reached the wire.
+        if source.get("general_news"):
             if not _environmentally_relevant(f"{title} {_clean(body)}"):
                 continue
         rec = _record(source, title, body, entry.get("link", ""),
@@ -208,12 +210,16 @@ def fetch_openalex(source, cfg):
     since = _since(cfg["lookback_days"]).date().isoformat()
     cap = source.get("max_items_per_source", cfg["max_items_per_source"])
     terms = "|".join(_phrase(t) for t in source["query"].split(" OR "))
+    # Two search filters AND together in OpenAlex, so this reads as
+    # "about this place" AND "about the environment".
     params = {
         # type:article drops the supplementary-material and abstract-only
         # component records that were eating the per-source budget: the Congo
         # Basin source returned 40 items that were four papers, duplicated.
-        "filter": (f"title_and_abstract.search:{terms},type:article,"
-                   f"from_publication_date:{since},has_abstract:true"),
+        "filter": (f"title_and_abstract.search:{terms},"
+                   f"title_and_abstract.search:{OPENALEX_SUBJECT},"
+                   f"type:article,from_publication_date:{since},"
+                   f"has_abstract:true"),
         "per-page": 200 if cap is None else min(cap, 200),
         "cursor": "*",
     }
@@ -259,6 +265,20 @@ PARATEXT = re.compile(
     r"correction to|corrigendum|erratum|retraction|editorial|"
     r"table of contents|front matter|back matter|index to volume)",
     re.I)
+
+
+# Subject constraint for the place-keyed literature queries. Without it,
+# "Horn of Africa" returned corporate governance and telemedicine papers —
+# correctly matching the place and having nothing to do with the feed.
+OPENALEX_SUBJECT = (
+    'deforestation|pollution|contamination|biodiversity|ecosystem|ecology|'
+    'conservation|"climate change"|drought|flooding|wildfire|erosion|'
+    '"land use"|"water quality"|groundwater|aquifer|fisheries|overfishing|'
+    'emissions|carbon|methane|mining|tailings|pesticide|"heavy metals"|'
+    'microplastic|"habitat loss"|extinction|"protected area"|wetland|'
+    'mangrove|peatland|glacier|permafrost|"soil degradation"|salinization|'
+    'eutrophication|"air quality"|deforested|logging|"land degradation"'
+)
 
 
 def _phrase(term):

@@ -581,6 +581,64 @@ INFLECTING = re.compile(
 NO_BOUNDARY = re.compile(r"[\u4E00-\u9FFF\u3040-\u30FF\uAC00-\uD7AF]")
 
 
+# Subject vocabulary in the harvest languages. Enough to answer "is this item
+# about the environment at all", which is all the harvest gate needs; the
+# fine-grained English patterns still do the topic tagging after translation.
+MULTILINGUAL_TOPIC = re.compile(
+    "|".join([
+    # French
+    r"pollution|déforestation|deforestation|forêt|environnement|climat|sécheresse",
+    r"inondation|barrage|mine\b|minier|pétrole|charbon|déchets|pesticide|espèce",
+    r"biodiversité|écolog|eau potable|nappe|glacier|incendie|émission",
+    # Spanish / Portuguese
+    r"contaminación|contaminação|deforestación|desmatamento|desflorestação",
+    r"medio ambiente|meio ambiente|clima|sequía|seca\b|inundac|represa|barragem",
+    r"miner|miner[ií]a|mina\b|minas\b|minério|mineração|garimp|petróleo|petrolero",
+    r"carbón|carvão|residuos|resíduos|plaguicida|agrotóxico|tierras raras",
+    r"terras raras|acuífer|manglar|mangue|selva|bosque|floresta|desmonte",
+    r"biodiversidad|biodiversidade|ecolog|acuífero|aquífero|glaciar|geleira",
+    r"incendio|incêndio|emision|emissõ|vertido|derrame|garimpo",
+    # German / Dutch / Nordic
+    r"umwelt|verschmutzung|abholzung|klima|dürre|hochwasser|bergbau|kohle",
+    r"artenvielfalt|emission|milieu|vervuiling|ontbossing|droogte|mijnbouw",
+    r"förorening|miljö|avskogning|forurensning|forurening|saastuminen|ympäristö",
+    # Slavic
+    r"загрязн|экологи|вырубк|засух|наводнен|добыч|уголь|выброс|отход",
+    r"забруднен|екологі|довкілл|вирубк|zanieczyszcz|środowisk|wylesian",
+    r"poluare|mediu|defrișă|замърсяван|околна среда|znečišt|szennyez|környezet",
+    # Turkish / Greek / Italian
+    r"kirlilik|çevre|ormansızlaş|maden|kuraklık|ρύπανση|περιβάλλον|αποψίλωση",
+    r"inquinamento|ambiente|deforestazione|siccità|rifiuti",
+    # Indonesian / Malay / Vietnamese / Thai / Khmer / Burmese
+    r"pencemaran|lingkungan|deforestasi|hutan|tambang|kekeringan|banjir|limbah",
+    r"alam sekitar|penyahutanan|perlombongan|kemarau|sisa",
+    r"ô nhiễm|môi trường|phá rừng|khai khoáng|hạn hán|lũ lụt|chất thải",
+    r"มลพิษ|สิ่งแวดล้อม|ป่า|เหมือง|ภัยแล้ง|น้ำท่วม|ขยะ",
+    r"បរិស្ថាន|ព្រៃឈើ|ពុល|ပတ်ဝန်းကျင်|သစ်တော|ညစ်ညမ်း",
+    # Arabic / Persian / Hebrew / Urdu
+    r"تلوث|بيئة|إزالة الغابات|جفاف|فيضان|تعدين|نفايات|مبيدات|انبعاث",
+    r"محیط زیست|آلودگی|خشکسالی|جنگل|معدن|زباله",
+    r"זיהום|סביבה|בצורת|יער|כרייה|פסולת|آلودگی|ماحول|جنگلات",
+    # Hindi / Bengali / Chinese / Japanese / Korean / Swahili / Amharic
+    r"प्रदूषण|पर्यावरण|वन|खनन|सूखा|बाढ़|कचरा|अपशिष्ट",
+    r"দূষণ|পরিবেশ|বন|খনি|খরা|বন্যা|বর্জ্য",
+    r"污染|环境|毁林|森林|采矿|干旱|洪水|废物|排放|生态|環境|汚染|森林|鉱山",
+    r"환경|오염|산림|광산|가뭄|홍수|폐기물|생태",
+    r"uchafuzi|mazingira|misitu|madini|ukame|mafuriko|taka",
+    r"ብክለት|አካባቢ|ደን|ማዕድን|ድርቅ|ጎርፍ",
+    ]), re.I)
+
+
+def is_environmental(text):
+    """
+    Coarse yes/no for the harvest gate, in any harvested language.
+
+    detect_topics is English-only, so gating relied on it and non-English
+    general-news sources were passed through ungated entirely.
+    """
+    return bool(detect_topics(text) or MULTILINGUAL_TOPIC.search(text or ""))
+
+
 def _norm(text):
     text = unicodedata.normalize("NFKD", text or "")
     # Drop combining marks so "Amazônia" and "Amazonia" are the same string.
