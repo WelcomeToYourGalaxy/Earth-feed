@@ -1,0 +1,2092 @@
+{
+ "run_at": "2026-08-17T04:41:31.210319+00:00",
+ "raw": 2130,
+ "deduped": 1901,
+ "sources": [
+  {
+   "source": "openalex-congo-basin",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-central-asia",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-myanmar",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-new-guinea",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-sahel",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-andes-amazon",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-mekong",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-pacific-islands",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "europepmc-env-health",
+   "count": 25,
+   "note": null
+  },
+  {
+   "source": "crossref-env-journals",
+   "count": 66,
+   "note": null
+  },
+  {
+   "source": "biorxiv-ecology",
+   "count": 0,
+   "note": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "source": "reliefweb-environment",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "worldbank-projects",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "unesco-soc",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "iucn-news",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "unep-news",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "mongabay-global",
+   "count": 32,
+   "note": null
+  },
+  {
+   "source": "dialogue-earth",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "climate-home",
+   "count": 27,
+   "note": null
+  },
+  {
+   "source": "inside-climate",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "infonile",
+   "count": 12,
+   "note": null
+  },
+  {
+   "source": "oxpeckers",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "daily-maverick-env",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "the-continent",
+   "count": 12,
+   "note": null
+  },
+  {
+   "source": "actualite-cd",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "mongabay-africa-fr",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "mongabay-latam",
+   "count": 30,
+   "note": null
+  },
+  {
+   "source": "mongabay-brasil",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "agencia-publica",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "oeco",
+   "count": 12,
+   "note": null
+  },
+  {
+   "source": "mongabay-india",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "scroll-in",
+   "count": 54,
+   "note": null
+  },
+  {
+   "source": "rappler-env",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "irrawaddy",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "myanmar-now",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "eurasianet",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "vlast-kz",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "cabar-asia",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "kloop",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "rnz-pacific",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "jubi",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "islands-business",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "euractiv-env",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "clean-energy-wire",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "balkan-insight",
+   "count": 21,
+   "note": null
+  },
+  {
+   "source": "reporterre",
+   "count": 60,
+   "note": null
+  },
+  {
+   "source": "bellona",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "eye-on-the-arctic",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "convoca",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "pina",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "middle-east-eye",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "egypt-independent",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "cari-bois",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-east-africa",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-southern-africa",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-north-africa",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-west-asia",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-caucasus-caspian",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-himalaya",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-east-asia",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-siberia",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-mesoamerica",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-southern-cone",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-australia",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-mediterranean",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-boreal",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "sixth-tone",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "the-diplomat",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "mongabay-indonesia",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "vnexpress",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "dawn",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "dhaka-tribune",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "oc-media",
+   "count": 13,
+   "note": null
+  },
+  {
+   "source": "iranwire",
+   "count": 66,
+   "note": null
+  },
+  {
+   "source": "sahelien",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "myjoyonline",
+   "count": 31,
+   "note": null
+  },
+  {
+   "source": "zitamar",
+   "count": 13,
+   "note": null
+  },
+  {
+   "source": "el-faro",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "prensa-comunitaria",
+   "count": 12,
+   "note": null
+  },
+  {
+   "source": "tierra-viva",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "kyiv-independent",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "oko-press",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "klimareporter",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "vanuatu-daily-post",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "mongabay-brasil-agua",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-central-africa-atlantic",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-horn-of-africa",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-korea-japan",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-indian-ocean-islands",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "openalex-black-sea",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "jamnews",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "hakai-magazine",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "china-water-risk",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "verde-azul",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "cook-islands-news",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "marianas-variety",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "allafrica-environment",
+   "count": 30,
+   "note": null
+  },
+  {
+   "source": "prachatai",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "tempo-en",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "kathmandu-post",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "png-post-courier",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "tahiti-infos",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "syria-direct",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "the-citizen-tz",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "dialogue-earth-zh",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "sustainable-japan",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "hankyoreh-env",
+   "count": 30,
+   "note": null
+  },
+  {
+   "source": "mongabay-hindi",
+   "count": 30,
+   "note": null
+  },
+  {
+   "source": "prothom-alo",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "vnexpress-vi",
+   "count": 13,
+   "note": null
+  },
+  {
+   "source": "greennews-th",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "yesil-gazete",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "voa-amharic",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "radio-zamaneh",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "rinnovabili",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "duurzaamnieuws",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "energi-og-klima",
+   "count": 25,
+   "note": null
+  },
+  {
+   "source": "supermiljobloggen",
+   "count": 17,
+   "note": null
+  },
+  {
+   "source": "ecopolitic-ua",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "green-report-ro",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "conversation-au",
+   "count": 25,
+   "note": null
+  },
+  {
+   "source": "aljazeera-ar",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "bbc-swahili",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "investiraucameroun-com",
+   "count": 12,
+   "note": null
+  },
+  {
+   "source": "actucameroun-com",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "ecomatin-net",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "radiookapi-net",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "zoom-eco-net",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "congoquotidien-com",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "adiac-congo-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "lesechos-congobrazza-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "vivafrik-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "journaldebrazza-com",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "gabonreview-com",
+   "count": 19,
+   "note": null
+  },
+  {
+   "source": "gabonactu-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "fr-infosgabon-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "alwihdainfo-com",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "tchadinfos-com",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "journaldutchad-com",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "expansao-co-ao",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "businessday-ng",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "thecable-ng",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "leadership-ng",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "aps-sn",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "lequotidien-sn",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "aip-ci",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "maliactu",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "bamada",
+   "count": 16,
+   "note": null
+  },
+  {
+   "source": "journaldumali",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "lefaso",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "sidwaya",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "burkina24",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "voaafrique",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "lesahel-ne",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "anp-ne",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "inquirer-ph",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "tuoitre-vn",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "astroawani",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "utusan-my",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "hmetro-my",
+   "count": 15,
+   "note": null
+  },
+  {
+   "source": "voa-burmese",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "thisdaylive-com",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "punchng-com",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "independent-ng",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "gna-org-gh",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "citinewsroom-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "graphic-com-gh",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "modernghana-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "rts-sn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "sudquotidien-sn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "pressafrik-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "dakaractu-com",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "koaci-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "news-abidjan-net",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "fratmat-info",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "studiotamani-org",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "news-aniamey-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "actuniger-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "journalduniger-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "kompas-id",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "databoks-katadata-co-id",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "cnbcindonesia-com",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "mb-com-ph",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "tribune-net-ph",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "philstar-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "business-inquirer-net",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "vietnam-vn",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "laodong-vn",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "moitruong-net-vn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "vietnamnet-vn",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "thairath-co-th",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "khaosod-co-th",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "dailynews-co-th",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "matichon-co-th",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "buletintv3-my",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "bharian-com-my",
+   "count": 16,
+   "note": null
+  },
+  {
+   "source": "sinarharian-com-my",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "utusanborneo-com-my",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "khmertimeskh-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "downtoearth-org-in",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "indiatoday-in",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "theprint-in",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "timesofindia-indiatimes-com",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "tribune-com-pk",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "gwadarpro-pk",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "pothwar-com",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "urdupoint-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "bssnews-net",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "bd-pratidin-com",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "ittefaq-com-bd",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "jugantor-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "island-lk",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "adaderana-lk",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "sundaytimes-lk",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "dailymirror-lk",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "thehimalayantimes-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "english-nepalnews-com",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "risingnepaldaily-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "the-star-co-ke",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "eastleighvoice-co-ke",
+   "count": 24,
+   "note": null
+  },
+  {
+   "source": "kenyans-co-ke",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "standardmedia-co-ke",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "dailynews-co-tz",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "mabumbe-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "monitor-co-ug",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "independent-co-ug",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "newvision-co-ug",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "ntv-co-ug",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "borkena-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "mznews-co-mz",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "integritymagazine-co-mz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "rm-co-mz",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "aimnews-org",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "moov-mg",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "midi-madagasikara-mg",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "2424-mg",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "newsday-co-zw",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "newzimbabwe-com",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "hiiraan-com",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "garoweonline-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "shabellemedia-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "horseedmedia-net",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "cnnbrasil-com-br",
+   "count": 21,
+   "note": null
+  },
+  {
+   "source": "brasildefato-com-br",
+   "count": 19,
+   "note": null
+  },
+  {
+   "source": "reporterbrasil-org-br",
+   "count": 10,
+   "note": null
+  },
+  {
+   "source": "noticiasagricolas-com-br",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "pescare-com-ar",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "tn-com-ar",
+   "count": 38,
+   "note": null
+  },
+  {
+   "source": "lagaceta-com-ar",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "biobiochile-cl",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "eldesconcierto-cl",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "uchile-cl",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "reporteminero-cl",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "rpp-pe",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "agroperu-pe",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "actualidadambiental-pe",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "elperuano-pe",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "portafolio-co",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "caracol-com-co",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "eltiempo-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "reduno-com-bo",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "lapatria-bo",
+   "count": 39,
+   "note": null
+  },
+  {
+   "source": "laregion-bo",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "eldiario-net",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "expreso-ec",
+   "count": 59,
+   "note": null
+  },
+  {
+   "source": "primicias-ec",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "eluniverso-com",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "primicia-com-ve",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "ultimasnoticias-com-ve",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "radiomiraflores-net-ve",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "abc-com-py",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "lanacion-com-py",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "elnacional-com-py",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "infonegocios-com-py",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "guyanachronicle-com",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "newsroom-gy",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "stabroeknews-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "demerarawaves-com",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "srherald-com",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "dbsuriname-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "inbusiness-kz",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "ulysmedia-kz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "dknews-kz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "podrobno-uz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "gazeta-uz",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "anhor-uz",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "uzdaily-uz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "24-kg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "open-kg",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "vb-kg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "khovar-tj",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "asiaplus-news",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "avesta-tj",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "vecherka-tj",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "business-com-tm",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "turkmenportal-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "cumhuriyet-com-tr",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "turkiyegazetesi-com-tr",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "ntv-com-tr",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "diken-com-tr",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "shafaq-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "ina-iq",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "baghdadtoday-news",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "okaz-com-sa",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "alwatan-com-sa",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "ajel-sa",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "albayan-ae",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "alkhaleej-ae",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "alwatan-ae",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "israelhayom-co-il",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "ynet-co-il",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "haaretz-co-il",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "calcalist-co-il",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "past-am",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "news-day-az",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "report-az",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "fins-az",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "media-az",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "interfax-ru",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "ecologyofrussia-ru",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "interfax-russia-ru",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "finance-mail-ru",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "rbc-ua",
+   "count": 31,
+   "note": null
+  },
+  {
+   "source": "ukr-net",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "ukrinform-ua",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "epravda-com-ua",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "tvn24-pl",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "zielona-interia-pl",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "digi24-ro",
+   "count": 16,
+   "note": null
+  },
+  {
+   "source": "stirileprotv-ro",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "antena3-ro",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "romania-actualitati-ro",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "btvnovinite-bg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "novinite-bg",
+   "count": 0,
+   "note": "403 Client Error: Forbidden for url: https://novinite.bg/rss/"
+  },
+  {
+   "source": "bgonair-bg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "marica-bg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "ct24-ceskatelevize-cz",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "irozhlas-cz",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "idnes-cz",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "ceskenoviny-cz",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "24-hu",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "portfolio-hu",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "magyarmezogazdasag-hu",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "vg-hu",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "cibercuba-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "cubadebate-cu",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "radiorebelde-cu",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "misiones-cubaminrex-cu",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "acento-com-do",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "elnuevodiario-com-do",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "eldia-com-do",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "haitilibre-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "juno7-ht",
+   "count": 4,
+   "note": null
+  },
+  {
+   "source": "rezonodwes-com",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "newsday-co-tt",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "trinidadexpress-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "jamaicaobserver-com",
+   "count": 20,
+   "note": null
+  },
+  {
+   "source": "jamaica-gleaner-com",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "jamaica-star-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "heraldodemexico-com-mx",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "jornada-com-mx",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "oem-com-mx",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "prensalibre-com",
+   "count": 47,
+   "note": null
+  },
+  {
+   "source": "agn-gt",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "lahora-gt",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "laprensa-hn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "elheraldo-hn",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "latribuna-hn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "criterio-hn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "delfino-cr",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "observador-cr",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "larepublica-net",
+   "count": 6,
+   "note": null
+  },
+  {
+   "source": "teletica-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "laestrella-com-pa",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "panamaamerica-com-pa",
+   "count": 11,
+   "note": null
+  },
+  {
+   "source": "tvn-2-com",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "elsiglo-com-pa",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "thenational-com-pg",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "fbcnews-com-fj",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "fijisun-com-fj",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "fijivillage-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "sibconline-com-sb",
+   "count": 7,
+   "note": null
+  },
+  {
+   "source": "solomontimes-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "actu-nc",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "samoaobserver-ws",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "samoaglobalnews-com",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "matangitonga-to",
+   "count": 0,
+   "note": "skipped \u2014 failed verification"
+  },
+  {
+   "source": "radio1-pf",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "lnc-nc",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "postguam-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "guampdn-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "discoverwildlife-com",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "youm7-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "masrawy-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "almasryalyoum-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "petro-news-com",
+   "count": 9,
+   "note": null
+  },
+  {
+   "source": "hespress-com",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "thevoice-ma",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "inews-ma",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "al3omk-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "aps-dz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "news-radioalgerie-dz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "attaqa-net",
+   "count": 3,
+   "note": null
+  },
+  {
+   "source": "tadamsanews-dz",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "mosaiquefm-net",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "assabahnews-tn",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "tuniscope-com",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "kapitalis-com",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "sudantribune-net",
+   "count": 1,
+   "note": null
+  },
+  {
+   "source": "iol-co-za",
+   "count": 2,
+   "note": null
+  },
+  {
+   "source": "businesstech-co-za",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "namibian-com-na",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "observer24-com-na",
+   "count": 5,
+   "note": null
+  },
+  {
+   "source": "informante-web-na",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "neweralive-na",
+   "count": 8,
+   "note": null
+  },
+  {
+   "source": "mmegi-bw",
+   "count": 0,
+   "note": null
+  },
+  {
+   "source": "thevoicebw-com",
+   "count": 11,
+   "note": null
+  }
+ ]
+}

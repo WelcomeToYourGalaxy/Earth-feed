@@ -1,0 +1,4609 @@
+{
+ "openalex-congo-basin": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Congo Basin",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781563+00:00"
+ },
+ "openalex-central-asia": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Central Asia",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781680+00:00"
+ },
+ "openalex-myanmar": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Myanmar",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781775+00:00"
+ },
+ "openalex-new-guinea": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 New Guinea",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781824+00:00"
+ },
+ "openalex-sahel": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Sahel & West Africa",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781863+00:00"
+ },
+ "openalex-andes-amazon": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Andes & Amazon",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781899+00:00"
+ },
+ "openalex-mekong": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Mekong & SE Asia",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781934+00:00"
+ },
+ "openalex-pacific-islands": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Pacific Islands",
+  "regions": [
+   "oceania"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:17.781970+00:00"
+ },
+ "europepmc-env-health": {
+  "ok": true,
+  "transient": false,
+  "note": "HTTP 200",
+  "name": "Europe PMC \u2014 environmental exposure",
+  "regions": [
+   "global"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:19.330663+00:00"
+ },
+ "crossref-env-journals": {
+  "ok": true,
+  "transient": false,
+  "note": "9 ISSN live",
+  "name": "Crossref \u2014 environmental journals",
+  "regions": [
+   "global"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:23:22.093455+00:00"
+ },
+ "biorxiv-ecology": {
+  "ok": true,
+  "transient": false,
+  "note": "HTTP 200",
+  "name": "bioRxiv \u2014 ecology",
+  "regions": [
+   "global"
+  ],
+  "tier": "preprint",
+  "checked_at": "2026-08-17T04:23:22.503978+00:00"
+ },
+ "reliefweb-environment": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 400",
+  "name": "ReliefWeb \u2014 environment & disasters",
+  "regions": [
+   "global"
+  ],
+  "tier": "institutional",
+  "checked_at": "2026-08-17T04:23:22.814785+00:00"
+ },
+ "worldbank-projects": {
+  "ok": true,
+  "transient": false,
+  "note": "HTTP 200",
+  "name": "World Bank \u2014 project disclosures",
+  "regions": [
+   "global"
+  ],
+  "tier": "institutional",
+  "checked_at": "2026-08-17T04:23:23.200853+00:00"
+ },
+ "unesco-soc": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "UNESCO World Heritage",
+  "regions": [
+   "global"
+  ],
+  "tier": "institutional",
+  "checked_at": "2026-08-17T04:23:23.694601+00:00"
+ },
+ "iucn-news": {
+  "ok": true,
+  "transient": false,
+  "note": "4 entries",
+  "name": "IUCN",
+  "regions": [
+   "global"
+  ],
+  "tier": "institutional",
+  "checked_at": "2026-08-17T04:23:24.745824+00:00"
+ },
+ "unep-news": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "UNEP",
+  "regions": [
+   "global"
+  ],
+  "tier": "institutional",
+  "checked_at": "2026-08-17T04:23:25.231046+00:00"
+ },
+ "mongabay-global": {
+  "ok": true,
+  "transient": false,
+  "note": "32 entries",
+  "name": "Mongabay",
+  "regions": [
+   "global"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:25.503700+00:00"
+ },
+ "dialogue-earth": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Dialogue Earth",
+  "regions": [
+   "southern_asia",
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:25.717307+00:00"
+ },
+ "climate-home": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "Climate Home News",
+  "regions": [
+   "global"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:28.255416+00:00"
+ },
+ "inside-climate": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Inside Climate News",
+  "regions": [
+   "northern_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:28.463452+00:00"
+ },
+ "infonile": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "InfoNile",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:29.801786+00:00"
+ },
+ "oxpeckers": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Oxpeckers",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:30.347475+00:00"
+ },
+ "daily-maverick-env": {
+  "ok": true,
+  "transient": false,
+  "note": "53 entries",
+  "name": "Daily Maverick \u2014 Our Burning Planet",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:30.458912+00:00"
+ },
+ "the-continent": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "The Continent",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:30.898177+00:00"
+ },
+ "actualite-cd": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Actualite.cd",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:40.466229+00:00"
+ },
+ "mongabay-africa-fr": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Mongabay Afrique",
+  "regions": [
+   "middle_africa",
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:40.776133+00:00"
+ },
+ "mongabay-latam": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Mongabay Latam",
+  "regions": [
+   "south_america",
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:41.118077+00:00"
+ },
+ "mongabay-brasil": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Mongabay Brasil",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:41.465546+00:00"
+ },
+ "agencia-publica": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Ag\u00eancia P\u00fablica",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:43.289587+00:00"
+ },
+ "oeco": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "((o))eco",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:48.279783+00:00"
+ },
+ "mongabay-india": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Mongabay India",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:48.611308+00:00"
+ },
+ "scroll-in": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "Scroll.in",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:49.349377+00:00"
+ },
+ "rappler-env": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Rappler",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:50.800832+00:00"
+ },
+ "irrawaddy": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "The Irrawaddy",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:51.060793+00:00"
+ },
+ "myanmar-now": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Myanmar Now",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:52.160472+00:00"
+ },
+ "eurasianet": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Eurasianet",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:52.542111+00:00"
+ },
+ "vlast-kz": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "Vlast.kz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:54.101040+00:00"
+ },
+ "cabar-asia": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "CABAR.asia",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:55.438062+00:00"
+ },
+ "kloop": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "Kloop",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:56.640121+00:00"
+ },
+ "rnz-pacific": {
+  "ok": true,
+  "transient": false,
+  "note": "17 entries",
+  "name": "RNZ Pacific",
+  "regions": [
+   "oceania",
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:56.775398+00:00"
+ },
+ "jubi": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Jubi",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:56.953848+00:00"
+ },
+ "islands-business": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "Islands Business",
+  "regions": [
+   "oceania"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:23:58.363429+00:00"
+ },
+ "euractiv-env": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "Euractiv",
+  "regions": [
+   "western_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:46.188923+00:00"
+ },
+ "clean-energy-wire": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Clean Energy Wire",
+  "regions": [
+   "western_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:47.527661+00:00"
+ },
+ "balkan-insight": {
+  "ok": true,
+  "transient": false,
+  "note": "90 entries",
+  "name": "Balkan Insight",
+  "regions": [
+   "southern_europe",
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:48.607177+00:00"
+ },
+ "reporterre": {
+  "ok": true,
+  "transient": false,
+  "note": "60 entries",
+  "name": "Reporterre",
+  "regions": [
+   "western_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:49.513783+00:00"
+ },
+ "bellona": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Bellona",
+  "regions": [
+   "northern_europe",
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:50.812231+00:00"
+ },
+ "eye-on-the-arctic": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Eye on the Arctic",
+  "regions": [
+   "polar"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:53.998187+00:00"
+ },
+ "convoca": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Convoca",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:54.615455+00:00"
+ },
+ "pina": {
+  "ok": true,
+  "transient": false,
+  "note": "1 entries",
+  "name": "Pacific Islands News Association",
+  "regions": [
+   "micronesia",
+   "polynesia",
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:55.492354+00:00"
+ },
+ "middle-east-eye": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Middle East Eye",
+  "regions": [
+   "western_asia",
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:55.682654+00:00"
+ },
+ "egypt-independent": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Egypt Independent",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:24:57.487163+00:00"
+ },
+ "cari-bois": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "Cari-Bois Environmental News",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:09.505818+00:00"
+ },
+ "openalex-east-africa": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 East Africa & Rift",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.505895+00:00"
+ },
+ "openalex-southern-africa": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Southern Africa",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.505942+00:00"
+ },
+ "openalex-north-africa": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 North Africa & Sahara",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.505986+00:00"
+ },
+ "openalex-west-asia": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 West Asia",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506023+00:00"
+ },
+ "openalex-caucasus-caspian": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Caucasus & Caspian",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506059+00:00"
+ },
+ "openalex-himalaya": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Himalaya & Tibetan Plateau",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506095+00:00"
+ },
+ "openalex-east-asia": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 East Asia",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506131+00:00"
+ },
+ "openalex-siberia": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Siberia & Russian Arctic",
+  "regions": [
+   "polar"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506168+00:00"
+ },
+ "openalex-mesoamerica": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Mesoamerica & Caribbean",
+  "regions": [
+   "central_america",
+   "caribbean"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506204+00:00"
+ },
+ "openalex-southern-cone": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Southern Cone & Patagonia",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506239+00:00"
+ },
+ "openalex-australia": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Australia & Great Barrier Reef",
+  "regions": [
+   "australia_nz"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506274+00:00"
+ },
+ "openalex-mediterranean": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Mediterranean",
+  "regions": [
+   "southern_europe"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506309+00:00"
+ },
+ "openalex-boreal": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Boreal & Northern Europe",
+  "regions": [
+   "northern_europe"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:09.506344+00:00"
+ },
+ "sixth-tone": {
+  "ok": true,
+  "transient": false,
+  "note": "51 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Sixth Tone",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:10.459164+00:00"
+ },
+ "the-diplomat": {
+  "ok": true,
+  "transient": false,
+  "note": "96 entries",
+  "name": "The Diplomat",
+  "regions": [
+   "eastern_asia",
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:10.592587+00:00"
+ },
+ "mongabay-indonesia": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Mongabay Indonesia",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:11.349487+00:00"
+ },
+ "vnexpress": {
+  "ok": true,
+  "transient": false,
+  "note": "60 entries",
+  "name": "VnExpress International",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:12.560448+00:00"
+ },
+ "dawn": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"",
+  "name": "Dawn",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:24.503617+00:00"
+ },
+ "dhaka-tribune": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "Dhaka Tribune",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:35.026694+00:00"
+ },
+ "oc-media": {
+  "ok": true,
+  "transient": false,
+  "note": "16 entries",
+  "name": "OC Media",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:35.886607+00:00"
+ },
+ "iranwire": {
+  "ok": true,
+  "transient": false,
+  "note": "472 entries",
+  "name": "IranWire",
+  "regions": [
+   "southern_asia",
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:36.319040+00:00"
+ },
+ "sahelien": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Sahelien",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:37.109450+00:00"
+ },
+ "myjoyonline": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "MyJoyOnline",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:37.958834+00:00"
+ },
+ "zitamar": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "Zitamar News",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:38.970073+00:00"
+ },
+ "el-faro": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "El Faro",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:39.262189+00:00"
+ },
+ "prensa-comunitaria": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "Prensa Comunitaria",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:40.236267+00:00"
+ },
+ "tierra-viva": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Agencia Tierra Viva",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:41.036602+00:00"
+ },
+ "kyiv-independent": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "The Kyiv Independent",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:41.255353+00:00"
+ },
+ "oko-press": {
+  "ok": true,
+  "transient": false,
+  "note": "89 entries",
+  "name": "OKO.press",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:41.831362+00:00"
+ },
+ "klimareporter": {
+  "ok": true,
+  "transient": false,
+  "note": "11 entries",
+  "name": "Klimareporter",
+  "regions": [
+   "western_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:44.143351+00:00"
+ },
+ "vanuatu-daily-post": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Vanuatu Daily Post",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:46.907368+00:00"
+ },
+ "mongabay-brasil-agua": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "Mongabay \u2014 Nordeste & Caatinga",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907443+00:00"
+ },
+ "openalex-central-africa-atlantic": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Gulf of Guinea",
+  "regions": [
+   "western_africa",
+   "middle_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907489+00:00"
+ },
+ "openalex-horn-of-africa": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Horn of Africa",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907531+00:00"
+ },
+ "openalex-korea-japan": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Japan & Korea",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907569+00:00"
+ },
+ "openalex-indian-ocean-islands": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Indian Ocean islands",
+  "regions": [
+   "eastern_africa",
+   "southern_asia"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907605+00:00"
+ },
+ "openalex-black-sea": {
+  "ok": false,
+  "transient": false,
+  "note": "OPENALEX_API_KEY is not set. Keys are mandatory since Feb 2026 \u2014 create a free account at openalex.org and copy the key from openalex.org/settings/api",
+  "name": "OpenAlex \u2014 Black Sea & Danube",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "peer_reviewed",
+  "checked_at": "2026-08-17T04:25:46.907641+00:00"
+ },
+ "jamnews": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "JAMnews",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:47.290919+00:00"
+ },
+ "hakai-magazine": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Hakai Magazine",
+  "regions": [
+   "northern_america",
+   "ocean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:25:48.503245+00:00"
+ },
+ "china-water-risk": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 202 | text/html | got: <html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" ",
+  "name": "China Water Risk",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:06.846804+00:00"
+ },
+ "verde-azul": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Mongabay Brasil \u2014 Amaz\u00f4nia",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:07.782197+00:00"
+ },
+ "cook-islands-news": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "Cook Islands News",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:18.059189+00:00"
+ },
+ "marianas-variety": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Marianas Variety",
+  "regions": [
+   "micronesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:20.989199+00:00"
+ },
+ "allafrica-environment": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "AllAfrica \u2014 Environment",
+  "regions": [
+   "western_africa",
+   "eastern_africa",
+   "middle_africa",
+   "northern_africa",
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:21.254195+00:00"
+ },
+ "prachatai": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Prachatai English",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:22.057461+00:00"
+ },
+ "tempo-en": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "Tempo English",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:29.277395+00:00"
+ },
+ "kathmandu-post": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "The Kathmandu Post",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:30.153568+00:00"
+ },
+ "png-post-courier": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "PNG Post-Courier",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:30.617180+00:00"
+ },
+ "tahiti-infos": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Tahiti Infos",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:31.131084+00:00"
+ },
+ "syria-direct": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Syria Direct",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:32.336394+00:00"
+ },
+ "the-citizen-tz": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "The Citizen",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:32.740803+00:00"
+ },
+ "dialogue-earth-zh": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "\u4e2d\u5916\u5bf9\u8bdd Dialogue Earth",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:33.826443+00:00"
+ },
+ "sustainable-japan": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "Sustainable Japan",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:35.060359+00:00"
+ },
+ "hankyoreh-env": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "\ud55c\uaca8\ub808 \ud658\uacbd",
+  "regions": [
+   "eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:36.137280+00:00"
+ },
+ "mongabay-hindi": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "Mongabay \u0939\u093f\u0928\u094d\u0926\u0940",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:36.483009+00:00"
+ },
+ "prothom-alo": {
+  "ok": true,
+  "transient": false,
+  "note": "45 entries",
+  "name": "\u09aa\u09cd\u09b0\u09a5\u09ae \u0986\u09b2\u09cb",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:36.817965+00:00"
+ },
+ "vnexpress-vi": {
+  "ok": true,
+  "transient": false,
+  "note": "60 entries",
+  "name": "VnExpress Khoa h\u1ecdc",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:26:38.899676+00:00"
+ },
+ "greennews-th": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 202 | text/html | got: <html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" ",
+  "name": "GreenNews Thailand",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:19.341141+00:00"
+ },
+ "yesil-gazete": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Ye\u015fil Gazete",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:19.813576+00:00"
+ },
+ "voa-amharic": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "VOA Amharic",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:20.907277+00:00"
+ },
+ "radio-zamaneh": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "\u0631\u0627\u062f\u06cc\u0648 \u0632\u0645\u0627\u0646\u0647",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:23.693596+00:00"
+ },
+ "rinnovabili": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "Rinnovabili",
+  "regions": [
+   "southern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:25.765123+00:00"
+ },
+ "duurzaamnieuws": {
+  "ok": true,
+  "transient": false,
+  "note": "11 entries",
+  "name": "Duurzaamnieuws",
+  "regions": [
+   "western_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:26.968801+00:00"
+ },
+ "energi-og-klima": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "Energi og Klima",
+  "regions": [
+   "northern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:27.896186+00:00"
+ },
+ "supermiljobloggen": {
+  "ok": true,
+  "transient": false,
+  "note": "18 entries",
+  "name": "Supermilj\u00f6bloggen",
+  "regions": [
+   "northern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:29.796344+00:00"
+ },
+ "ecopolitic-ua": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "EcoPolitic",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:30.815238+00:00"
+ },
+ "green-report-ro": {
+  "ok": true,
+  "transient": false,
+  "note": "6 entries",
+  "name": "Green Report",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:33.824684+00:00"
+ },
+ "conversation-au": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "The Conversation Australia \u2014 Environment",
+  "regions": [
+   "australia_nz"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:34.115778+00:00"
+ },
+ "aljazeera-ar": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "\u0627\u0644\u062c\u0632\u064a\u0631\u0629",
+  "regions": [
+   "western_asia",
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:34.282656+00:00"
+ },
+ "bbc-swahili": {
+  "ok": true,
+  "transient": false,
+  "note": "45 entries",
+  "name": "BBC Swahili",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:34.605583+00:00"
+ },
+ "investiraucameroun-com": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "investiraucameroun.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:35.556653+00:00"
+ },
+ "actucameroun-com": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "actucameroun.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:35.669061+00:00"
+ },
+ "ecomatin-net": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "ecomatin.net",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:36.658288+00:00"
+ },
+ "radiookapi-net": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "radiookapi.net",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:38.278291+00:00"
+ },
+ "zoom-eco-net": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "zoom-eco.net",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:38.876339+00:00"
+ },
+ "congoquotidien-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "congoquotidien.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:44.314119+00:00"
+ },
+ "adiac-congo-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "adiac-congo.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:45.868812+00:00"
+ },
+ "lesechos-congobrazza-com": {
+  "ok": true,
+  "transient": false,
+  "note": "6 entries",
+  "name": "lesechos-congobrazza.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:47.744665+00:00"
+ },
+ "vivafrik-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "vivafrik.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:48.494468+00:00"
+ },
+ "journaldebrazza-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "journaldebrazza.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:27:59.728280+00:00"
+ },
+ "gabonreview-com": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "gabonreview.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:01.776341+00:00"
+ },
+ "gabonactu-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "gabonactu.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:03.599903+00:00"
+ },
+ "fr-infosgabon-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "fr.infosgabon.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:05.128894+00:00"
+ },
+ "alwihdainfo-com": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "alwihdainfo.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:05.352215+00:00"
+ },
+ "tchadinfos-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "tchadinfos.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:06.926842+00:00"
+ },
+ "journaldutchad-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "journaldutchad.com",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:12.473676+00:00"
+ },
+ "expansao-co-ao": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "expansao.co.ao",
+  "regions": [
+   "middle_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:13.416402+00:00"
+ },
+ "businessday-ng": {
+  "ok": true,
+  "transient": false,
+  "note": "5 entries",
+  "name": "businessday.ng",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:13.514883+00:00"
+ },
+ "thecable-ng": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "thecable.ng",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:13.899960+00:00"
+ },
+ "leadership-ng": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "leadership.ng",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:16.599688+00:00"
+ },
+ "aps-sn": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "aps.sn",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:17.790187+00:00"
+ },
+ "lequotidien-sn": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "lequotidien.sn",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:20.547992+00:00"
+ },
+ "aip-ci": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "aip.ci",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:21.190696+00:00"
+ },
+ "maliactu": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "maliactu.net",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:21.474502+00:00"
+ },
+ "bamada": {
+  "ok": true,
+  "transient": false,
+  "note": "44 entries",
+  "name": "bamada.net",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:22.473641+00:00"
+ },
+ "journaldumali": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "journaldumali.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:23.904980+00:00"
+ },
+ "lefaso": {
+  "ok": true,
+  "transient": false,
+  "note": "61 entries",
+  "name": "lefaso.net",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:25.960870+00:00"
+ },
+ "sidwaya": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "sidwaya.info",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:26.628023+00:00"
+ },
+ "burkina24": {
+  "ok": true,
+  "transient": false,
+  "note": "6 entries",
+  "name": "burkina24.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:27.217570+00:00"
+ },
+ "voaafrique": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "voaafrique.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:27.920546+00:00"
+ },
+ "lesahel-ne": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "lesahel.org",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:29.924308+00:00"
+ },
+ "anp-ne": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "anp.ne",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:31.709656+00:00"
+ },
+ "inquirer-ph": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "newsinfo.inquirer.net",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:32.088857+00:00"
+ },
+ "tuoitre-vn": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "tuoitre.vn",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:32.784247+00:00"
+ },
+ "astroawani": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "astroawani.com",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:34.944501+00:00"
+ },
+ "utusan-my": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "utusan.com.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:35.291510+00:00"
+ },
+ "hmetro-my": {
+  "ok": true,
+  "transient": false,
+  "note": "51 entries",
+  "name": "hmetro.com.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:36.244572+00:00"
+ },
+ "voa-burmese": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "burmese.voanews.com",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:36.921806+00:00"
+ },
+ "thisdaylive-com": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "thisdaylive.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:37.802816+00:00"
+ },
+ "punchng-com": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "punchng.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:38.626709+00:00"
+ },
+ "independent-ng": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "independent.ng",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:39.164793+00:00"
+ },
+ "gna-org-gh": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "gna.org.gh",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:39.745933+00:00"
+ },
+ "citinewsroom-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "citinewsroom.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:40.296375+00:00"
+ },
+ "graphic-com-gh": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "graphic.com.gh",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:40.813942+00:00"
+ },
+ "modernghana-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "modernghana.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:41.347163+00:00"
+ },
+ "rts-sn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "rts.sn",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:41.887105+00:00"
+ },
+ "sudquotidien-sn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "sudquotidien.sn",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:42.305433+00:00"
+ },
+ "pressafrik-com": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "pressafrik.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:44.820550+00:00"
+ },
+ "dakaractu-com": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "dakaractu.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:47.893694+00:00"
+ },
+ "koaci-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "koaci.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:48.440678+00:00"
+ },
+ "news-abidjan-net": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "news.abidjan.net",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:48.977952+00:00"
+ },
+ "fratmat-info": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "fratmat.info",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:49.629663+00:00"
+ },
+ "studiotamani-org": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "studiotamani.org",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:52.811647+00:00"
+ },
+ "news-aniamey-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "news.aniamey.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:53.286058+00:00"
+ },
+ "actuniger-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "actuniger.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:53.770656+00:00"
+ },
+ "journalduniger-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "journalduniger.com",
+  "regions": [
+   "western_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:54.235218+00:00"
+ },
+ "kompas-id": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "kompas.id",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:54.711540+00:00"
+ },
+ "databoks-katadata-co-id": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "databoks.katadata.co.id",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:28:55.530622+00:00"
+ },
+ "cnbcindonesia-com": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!doctype html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"",
+  "name": "cnbcindonesia.com",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:06.199022+00:00"
+ },
+ "mb-com-ph": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "mb.com.ph",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:06.624159+00:00"
+ },
+ "tribune-net-ph": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "tribune.net.ph",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:07.129494+00:00"
+ },
+ "philstar-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "philstar.com",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:07.693222+00:00"
+ },
+ "business-inquirer-net": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "business.inquirer.net",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:08.244096+00:00"
+ },
+ "vietnam-vn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "vietnam.vn",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:08.724943+00:00"
+ },
+ "laodong-vn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "laodong.vn",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:09.191053+00:00"
+ },
+ "moitruong-net-vn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "moitruong.net.vn",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:09.789363+00:00"
+ },
+ "vietnamnet-vn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "vietnamnet.vn",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:10.276328+00:00"
+ },
+ "thairath-co-th": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "thairath.co.th",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:10.842593+00:00"
+ },
+ "khaosod-co-th": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "khaosod.co.th",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:11.436033+00:00"
+ },
+ "dailynews-co-th": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "dailynews.co.th",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:11.977393+00:00"
+ },
+ "matichon-co-th": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "matichon.co.th",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:12.810647+00:00"
+ },
+ "buletintv3-my": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "buletintv3.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:13.328369+00:00"
+ },
+ "bharian-com-my": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "bharian.com.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:14.333988+00:00"
+ },
+ "sinarharian-com-my": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "sinarharian.com.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:14.937882+00:00"
+ },
+ "utusanborneo-com-my": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "utusanborneo.com.my",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:15.396233+00:00"
+ },
+ "khmertimeskh-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "khmertimeskh.com",
+  "regions": [
+   "south_eastern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:15.837410+00:00"
+ },
+ "downtoearth-org-in": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "downtoearth.org.in",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:16.334037+00:00"
+ },
+ "indiatoday-in": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "indiatoday.in",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:16.918673+00:00"
+ },
+ "theprint-in": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "theprint.in",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:17.454755+00:00"
+ },
+ "timesofindia-indiatimes-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "timesofindia.indiatimes.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:18.031989+00:00"
+ },
+ "tribune-com-pk": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "tribune.com.pk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:18.459628+00:00"
+ },
+ "gwadarpro-pk": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "gwadarpro.pk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:18.924844+00:00"
+ },
+ "pothwar-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "pothwar.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:19.885806+00:00"
+ },
+ "urdupoint-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "urdupoint.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:20.356537+00:00"
+ },
+ "bssnews-net": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "bssnews.net",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:20.857046+00:00"
+ },
+ "bd-pratidin-com": {
+  "ok": true,
+  "transient": false,
+  "note": "182 entries",
+  "name": "bd-pratidin.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:21.274849+00:00"
+ },
+ "ittefaq-com-bd": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "ittefaq.com.bd",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:36.473712+00:00"
+ },
+ "jugantor-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "jugantor.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:36.973378+00:00"
+ },
+ "island-lk": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "island.lk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:37.974273+00:00"
+ },
+ "adaderana-lk": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "adaderana.lk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:38.679698+00:00"
+ },
+ "sundaytimes-lk": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "sundaytimes.lk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:39.155436+00:00"
+ },
+ "dailymirror-lk": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "dailymirror.lk",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:39.746846+00:00"
+ },
+ "thehimalayantimes-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "thehimalayantimes.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:40.305572+00:00"
+ },
+ "english-nepalnews-com": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "english.nepalnews.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:40.703289+00:00"
+ },
+ "risingnepaldaily-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "risingnepaldaily.com",
+  "regions": [
+   "southern_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:41.961783+00:00"
+ },
+ "the-star-co-ke": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "the-star.co.ke",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:42.532839+00:00"
+ },
+ "eastleighvoice-co-ke": {
+  "ok": true,
+  "transient": false,
+  "note": "150 entries",
+  "name": "eastleighvoice.co.ke",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:43.362346+00:00"
+ },
+ "kenyans-co-ke": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "kenyans.co.ke",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:44.742193+00:00"
+ },
+ "standardmedia-co-ke": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "standardmedia.co.ke",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:45.307592+00:00"
+ },
+ "dailynews-co-tz": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "dailynews.co.tz",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:48.222817+00:00"
+ },
+ "mabumbe-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "mabumbe.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:48.872751+00:00"
+ },
+ "monitor-co-ug": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "monitor.co.ug",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:49.227057+00:00"
+ },
+ "independent-co-ug": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "independent.co.ug",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:51.648238+00:00"
+ },
+ "newvision-co-ug": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "newvision.co.ug",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:52.138897+00:00"
+ },
+ "ntv-co-ug": {
+  "ok": true,
+  "transient": false,
+  "note": "6 entries",
+  "name": "ntv.co.ug",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:53.246768+00:00"
+ },
+ "borkena-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "borkena.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:53.755169+00:00"
+ },
+ "mznews-co-mz": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "mznews.co.mz",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:54.250445+00:00"
+ },
+ "integritymagazine-co-mz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "integritymagazine.co.mz",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:54.758189+00:00"
+ },
+ "rm-co-mz": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "rm.co.mz",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:29:58.038233+00:00"
+ },
+ "aimnews-org": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "aimnews.org",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:01.454981+00:00"
+ },
+ "moov-mg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "moov.mg",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:01.982035+00:00"
+ },
+ "midi-madagasikara-mg": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "midi-madagasikara.mg",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:02.647110+00:00"
+ },
+ "2424-mg": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "2424.mg",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:04.780651+00:00"
+ },
+ "newsday-co-zw": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "newsday.co.zw",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:05.627200+00:00"
+ },
+ "newzimbabwe-com": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 202 | text/html | got: <html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" ",
+  "name": "newzimbabwe.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:41.044349+00:00"
+ },
+ "hiiraan-com": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "hiiraan.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:41.310767+00:00"
+ },
+ "garoweonline-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "garoweonline.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:41.759047+00:00"
+ },
+ "shabellemedia-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "shabellemedia.com",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:42.255266+00:00"
+ },
+ "horseedmedia-net": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "horseedmedia.net",
+  "regions": [
+   "eastern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:42.587271+00:00"
+ },
+ "cnnbrasil-com-br": {
+  "ok": true,
+  "transient": false,
+  "note": "60 entries",
+  "name": "cnnbrasil.com.br",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:43.949531+00:00"
+ },
+ "brasildefato-com-br": {
+  "ok": true,
+  "transient": false,
+  "note": "99 entries",
+  "name": "brasildefato.com.br",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:44.654537+00:00"
+ },
+ "reporterbrasil-org-br": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "reporterbrasil.org.br",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:45.806186+00:00"
+ },
+ "noticiasagricolas-com-br": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "noticiasagricolas.com.br",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:46.488928+00:00"
+ },
+ "pescare-com-ar": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "pescare.com.ar",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:46.967227+00:00"
+ },
+ "tn-com-ar": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "tn.com.ar",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:47.811708+00:00"
+ },
+ "lagaceta-com-ar": {
+  "ok": true,
+  "transient": false,
+  "note": "112 entries",
+  "name": "lagaceta.com.ar",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:48.345167+00:00"
+ },
+ "biobiochile-cl": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "biobiochile.cl",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:48.593854+00:00"
+ },
+ "eldesconcierto-cl": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "eldesconcierto.cl",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:49.208413+00:00"
+ },
+ "uchile-cl": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "uchile.cl",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:49.816883+00:00"
+ },
+ "reporteminero-cl": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "reporteminero.cl",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:50.333770+00:00"
+ },
+ "rpp-pe": {
+  "ok": true,
+  "transient": false,
+  "note": "60 entries",
+  "name": "rpp.pe",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:51.032488+00:00"
+ },
+ "agroperu-pe": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "agroperu.pe",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:53.982181+00:00"
+ },
+ "actualidadambiental-pe": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "actualidadambiental.pe",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:54.511739+00:00"
+ },
+ "elperuano-pe": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "elperuano.pe",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:54.992583+00:00"
+ },
+ "portafolio-co": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "portafolio.co",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:55.670331+00:00"
+ },
+ "caracol-com-co": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "caracol.com.co",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:56.277016+00:00"
+ },
+ "eltiempo-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "eltiempo.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:56.830630+00:00"
+ },
+ "reduno-com-bo": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "reduno.com.bo",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:57.806969+00:00"
+ },
+ "lapatria-bo": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "lapatria.bo",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:30:59.616619+00:00"
+ },
+ "laregion-bo": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "laregion.bo",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:00.125744+00:00"
+ },
+ "eldiario-net": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "eldiario.net",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:00.815023+00:00"
+ },
+ "expreso-ec": {
+  "ok": true,
+  "transient": false,
+  "note": "91 entries",
+  "name": "expreso.ec",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:02.172650+00:00"
+ },
+ "primicias-ec": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "primicias.ec",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:02.682821+00:00"
+ },
+ "eluniverso-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "eluniverso.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:03.137461+00:00"
+ },
+ "primicia-com-ve": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "primicia.com.ve",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:04.458955+00:00"
+ },
+ "ultimasnoticias-com-ve": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 202 | text/html | got: <html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" ",
+  "name": "ultimasnoticias.com.ve",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:36.800986+00:00"
+ },
+ "radiomiraflores-net-ve": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "radiomiraflores.net.ve",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:38.141022+00:00"
+ },
+ "abc-com-py": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "abc.com.py",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:38.740637+00:00"
+ },
+ "lanacion-com-py": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "lanacion.com.py",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:39.328125+00:00"
+ },
+ "elnacional-com-py": {
+  "ok": true,
+  "transient": false,
+  "note": "65 entries",
+  "name": "elnacional.com.py",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:40.211023+00:00"
+ },
+ "infonegocios-com-py": {
+  "ok": true,
+  "transient": false,
+  "note": "85 entries",
+  "name": "infonegocios.com.py",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:40.813734+00:00"
+ },
+ "guyanachronicle-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "guyanachronicle.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:41.128268+00:00"
+ },
+ "newsroom-gy": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "newsroom.gy",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:41.580772+00:00"
+ },
+ "stabroeknews-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "stabroeknews.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:42.019819+00:00"
+ },
+ "demerarawaves-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "demerarawaves.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:42.380497+00:00"
+ },
+ "srherald-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "srherald.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:42.966774+00:00"
+ },
+ "dbsuriname-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "dbsuriname.com",
+  "regions": [
+   "south_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:43.602383+00:00"
+ },
+ "inbusiness-kz": {
+  "ok": true,
+  "transient": false,
+  "note": "65 entries",
+  "name": "inbusiness.kz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:45.538149+00:00"
+ },
+ "ulysmedia-kz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ulysmedia.kz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:46.109881+00:00"
+ },
+ "dknews-kz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "dknews.kz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:46.611347+00:00"
+ },
+ "podrobno-uz": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "podrobno.uz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:49.601502+00:00"
+ },
+ "gazeta-uz": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "gazeta.uz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:50.653183+00:00"
+ },
+ "anhor-uz": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "anhor.uz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:52.639870+00:00"
+ },
+ "uzdaily-uz": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "uzdaily.uz",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:53.791767+00:00"
+ },
+ "24-kg": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "24.kg",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:55.852420+00:00"
+ },
+ "open-kg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "open.kg",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:57.388416+00:00"
+ },
+ "vb-kg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "vb.kg",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:58.000511+00:00"
+ },
+ "khovar-tj": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "khovar.tj",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:31:59.736187+00:00"
+ },
+ "asiaplus-news": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "asiaplus.news",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:00.948571+00:00"
+ },
+ "avesta-tj": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "avesta.tj",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:01.762801+00:00"
+ },
+ "vecherka-tj": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "vecherka.tj",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:03.215644+00:00"
+ },
+ "business-com-tm": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "business.com.tm",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:05.975825+00:00"
+ },
+ "turkmenportal-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "turkmenportal.com",
+  "regions": [
+   "central_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:06.434237+00:00"
+ },
+ "cumhuriyet-com-tr": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "cumhuriyet.com.tr",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:07.312114+00:00"
+ },
+ "turkiyegazetesi-com-tr": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "turkiyegazetesi.com.tr",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:08.362714+00:00"
+ },
+ "ntv-com-tr": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ntv.com.tr",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:08.923941+00:00"
+ },
+ "diken-com-tr": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "diken.com.tr",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:09.267371+00:00"
+ },
+ "shafaq-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "shafaq.com",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:09.913743+00:00"
+ },
+ "ina-iq": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "ina.iq",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:20.565548+00:00"
+ },
+ "baghdadtoday-news": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "baghdadtoday.news",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:21.362171+00:00"
+ },
+ "okaz-com-sa": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "okaz.com.sa",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:21.875802+00:00"
+ },
+ "alwatan-com-sa": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "alwatan.com.sa",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:23.069757+00:00"
+ },
+ "ajel-sa": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "ajel.sa",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:23.313291+00:00"
+ },
+ "albayan-ae": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "albayan.ae",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:23.837081+00:00"
+ },
+ "alkhaleej-ae": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "alkhaleej.ae",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:24.457739+00:00"
+ },
+ "alwatan-ae": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "alwatan.ae",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:28.764548+00:00"
+ },
+ "israelhayom-co-il": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "israelhayom.co.il",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:30.782737+00:00"
+ },
+ "ynet-co-il": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ynet.co.il",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:31.257294+00:00"
+ },
+ "haaretz-co-il": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "haaretz.co.il",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:31.778359+00:00"
+ },
+ "calcalist-co-il": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "calcalist.co.il",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:32.274916+00:00"
+ },
+ "past-am": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "past.am",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:32.800310+00:00"
+ },
+ "news-day-az": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "news.day.az",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:33.707365+00:00"
+ },
+ "report-az": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "report.az",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:34.331967+00:00"
+ },
+ "fins-az": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "fins.az",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:35.098292+00:00"
+ },
+ "media-az": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "media.az",
+  "regions": [
+   "western_asia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:36.275488+00:00"
+ },
+ "interfax-ru": {
+  "ok": true,
+  "transient": false,
+  "note": "25 entries",
+  "name": "interfax.ru",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:37.507652+00:00"
+ },
+ "ecologyofrussia-ru": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ecologyofrussia.ru",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:37.978636+00:00"
+ },
+ "interfax-russia-ru": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "interfax-russia.ru",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:38.505281+00:00"
+ },
+ "finance-mail-ru": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "finance.mail.ru",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:38.977567+00:00"
+ },
+ "rbc-ua": {
+  "ok": true,
+  "transient": false,
+  "note": "377 entries",
+  "name": "rbc.ua",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:40.664937+00:00"
+ },
+ "ukr-net": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ukr.net",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:41.231995+00:00"
+ },
+ "ukrinform-ua": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "ukrinform.ua",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:41.830400+00:00"
+ },
+ "epravda-com-ua": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "epravda.com.ua",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:54.762154+00:00"
+ },
+ "tvn24-pl": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "tvn24.pl",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:55.273513+00:00"
+ },
+ "zielona-interia-pl": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "zielona.interia.pl",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:32:56.490296+00:00"
+ },
+ "digi24-ro": {
+  "ok": true,
+  "transient": false,
+  "note": "147 entries",
+  "name": "digi24.ro",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:00.072640+00:00"
+ },
+ "stirileprotv-ro": {
+  "ok": true,
+  "transient": false,
+  "note": "179 entries",
+  "name": "stirileprotv.ro",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:01.133691+00:00"
+ },
+ "antena3-ro": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "antena3.ro",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:01.629818+00:00"
+ },
+ "romania-actualitati-ro": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "romania-actualitati.ro",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:03.201280+00:00"
+ },
+ "btvnovinite-bg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "btvnovinite.bg",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:03.714362+00:00"
+ },
+ "novinite-bg": {
+  "ok": false,
+  "transient": true,
+  "note": "HTTP 403 | text/html | WORKING URL -> https://www.novinite.bg/rss/ (50 entries) [transient \u2014 not benched]",
+  "name": "novinite.bg",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:11.677120+00:00"
+ },
+ "bgonair-bg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "bgonair.bg",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:12.180626+00:00"
+ },
+ "marica-bg": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "marica.bg",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:13.988340+00:00"
+ },
+ "ct24-ceskatelevize-cz": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "ct24.ceskatelevize.cz",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:14.860404+00:00"
+ },
+ "irozhlas-cz": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "irozhlas.cz",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:15.561139+00:00"
+ },
+ "idnes-cz": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "idnes.cz",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:16.780925+00:00"
+ },
+ "ceskenoviny-cz": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "ceskenoviny.cz",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:18.013943+00:00"
+ },
+ "24-hu": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "24.hu",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:18.168925+00:00"
+ },
+ "portfolio-hu": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "portfolio.hu",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:19.254964+00:00"
+ },
+ "magyarmezogazdasag-hu": {
+  "ok": true,
+  "transient": false,
+  "note": "11 entries",
+  "name": "magyarmezogazdasag.hu",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:21.184341+00:00"
+ },
+ "vg-hu": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "vg.hu",
+  "regions": [
+   "eastern_europe"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:21.806023+00:00"
+ },
+ "cibercuba-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "cibercuba.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:22.097684+00:00"
+ },
+ "cubadebate-cu": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "cubadebate.cu",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:22.719394+00:00"
+ },
+ "radiorebelde-cu": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "radiorebelde.cu",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:30.084742+00:00"
+ },
+ "misiones-cubaminrex-cu": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "misiones.cubaminrex.cu",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:30.579368+00:00"
+ },
+ "acento-com-do": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "acento.com.do",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:31.134344+00:00"
+ },
+ "elnuevodiario-com-do": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "elnuevodiario.com.do",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:31.322211+00:00"
+ },
+ "eldia-com-do": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "eldia.com.do",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:31.627430+00:00"
+ },
+ "haitilibre-com": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "haitilibre.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:32.386147+00:00"
+ },
+ "juno7-ht": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "juno7.ht",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:33.270974+00:00"
+ },
+ "rezonodwes-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "rezonodwes.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:34.002077+00:00"
+ },
+ "newsday-co-tt": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "newsday.co.tt",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:34.635971+00:00"
+ },
+ "trinidadexpress-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "trinidadexpress.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:35.256370+00:00"
+ },
+ "jamaicaobserver-com": {
+  "ok": true,
+  "transient": false,
+  "note": "37 entries",
+  "name": "jamaicaobserver.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:36.315185+00:00"
+ },
+ "jamaica-gleaner-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "jamaica-gleaner.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:36.916638+00:00"
+ },
+ "jamaica-star-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "jamaica-star.com",
+  "regions": [
+   "caribbean"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:37.420987+00:00"
+ },
+ "heraldodemexico-com-mx": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "heraldodemexico.com.mx",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:37.944819+00:00"
+ },
+ "jornada-com-mx": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "jornada.com.mx",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:38.466765+00:00"
+ },
+ "oem-com-mx": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "oem.com.mx",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:39.150756+00:00"
+ },
+ "prensalibre-com": {
+  "ok": true,
+  "transient": false,
+  "note": "99 entries",
+  "name": "prensalibre.com",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:45.312879+00:00"
+ },
+ "agn-gt": {
+  "ok": true,
+  "transient": false,
+  "note": "50 entries",
+  "name": "agn.gt",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:46.902282+00:00"
+ },
+ "lahora-gt": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "lahora.gt",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:47.390486+00:00"
+ },
+ "laprensa-hn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "laprensa.hn",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:47.888007+00:00"
+ },
+ "elheraldo-hn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "elheraldo.hn",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:48.423776+00:00"
+ },
+ "latribuna-hn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "latribuna.hn",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:49.162389+00:00"
+ },
+ "criterio-hn": {
+  "ok": true,
+  "transient": false,
+  "note": "5 entries",
+  "name": "criterio.hn",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:49.983006+00:00"
+ },
+ "delfino-cr": {
+  "ok": true,
+  "transient": false,
+  "note": "21 entries",
+  "name": "delfino.cr",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:50.491080+00:00"
+ },
+ "observador-cr": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "observador.cr",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:52.043492+00:00"
+ },
+ "larepublica-net": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "larepublica.net",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:52.310531+00:00"
+ },
+ "teletica-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "teletica.com",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:52.879874+00:00"
+ },
+ "laestrella-com-pa": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "laestrella.com.pa",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:53.348032+00:00"
+ },
+ "panamaamerica-com-pa": {
+  "ok": true,
+  "transient": false,
+  "note": "23 entries (no dates \u2014 lookback filter cannot apply)",
+  "name": "panamaamerica.com.pa",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:55.047014+00:00"
+ },
+ "tvn-2-com": {
+  "ok": true,
+  "transient": false,
+  "note": "150 entries",
+  "name": "tvn-2.com",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:56.513084+00:00"
+ },
+ "elsiglo-com-pa": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "elsiglo.com.pa",
+  "regions": [
+   "central_america"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:57.024743+00:00"
+ },
+ "thenational-com-pg": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "thenational.com.pg",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:33:57.599162+00:00"
+ },
+ "fbcnews-com-fj": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "fbcnews.com.fj",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:17.324886+00:00"
+ },
+ "fijisun-com-fj": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "fijisun.com.fj",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:17.796999+00:00"
+ },
+ "fijivillage-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "fijivillage.com",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:18.278706+00:00"
+ },
+ "sibconline-com-sb": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "sibconline.com.sb",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:19.408328+00:00"
+ },
+ "solomontimes-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "solomontimes.com",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:19.839012+00:00"
+ },
+ "actu-nc": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "actu.nc",
+  "regions": [
+   "melanesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:20.257324+00:00"
+ },
+ "samoaobserver-ws": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "samoaobserver.ws",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:20.726950+00:00"
+ },
+ "samoaglobalnews-com": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 202 | text/html | got: <html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" ",
+  "name": "samoaglobalnews.com",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:30.969969+00:00"
+ },
+ "matangitonga-to": {
+  "ok": false,
+  "transient": false,
+  "note": "HTTP 403 | text/html | got: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title",
+  "name": "matangitonga.to",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:37.173446+00:00"
+ },
+ "radio1-pf": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "radio1.pf",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:37.733603+00:00"
+ },
+ "lnc-nc": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "lnc.nc",
+  "regions": [
+   "polynesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:37.933920+00:00"
+ },
+ "postguam-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "postguam.com",
+  "regions": [
+   "micronesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:38.467705+00:00"
+ },
+ "guampdn-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "guampdn.com",
+  "regions": [
+   "micronesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:38.986477+00:00"
+ },
+ "discoverwildlife-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "discoverwildlife.com",
+  "regions": [
+   "micronesia"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:39.547422+00:00"
+ },
+ "youm7-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "youm7.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:40.024929+00:00"
+ },
+ "masrawy-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "masrawy.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:40.809595+00:00"
+ },
+ "almasryalyoum-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "almasryalyoum.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:41.315400+00:00"
+ },
+ "petro-news-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "petro-news.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:42.168572+00:00"
+ },
+ "hespress-com": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "hespress.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:42.748813+00:00"
+ },
+ "thevoice-ma": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "thevoice.ma",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:43.971202+00:00"
+ },
+ "inews-ma": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "inews.ma",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:44.431766+00:00"
+ },
+ "al3omk-com": {
+  "ok": true,
+  "transient": false,
+  "note": "20 entries",
+  "name": "al3omk.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:45.217562+00:00"
+ },
+ "aps-dz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "aps.dz",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:45.854741+00:00"
+ },
+ "news-radioalgerie-dz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "news.radioalgerie.dz",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:46.369848+00:00"
+ },
+ "attaqa-net": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "attaqa.net",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:47.043476+00:00"
+ },
+ "tadamsanews-dz": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "tadamsanews.dz",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:47.529065+00:00"
+ },
+ "mosaiquefm-net": {
+  "ok": true,
+  "transient": false,
+  "note": "40 entries",
+  "name": "mosaiquefm.net",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:48.053911+00:00"
+ },
+ "assabahnews-tn": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "assabahnews.tn",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:48.589566+00:00"
+ },
+ "tuniscope-com": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "tuniscope.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:49.247142+00:00"
+ },
+ "kapitalis-com": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "kapitalis.com",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:50.281202+00:00"
+ },
+ "sudantribune-net": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "sudantribune.net",
+  "regions": [
+   "northern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:51.108272+00:00"
+ },
+ "iol-co-za": {
+  "ok": true,
+  "transient": false,
+  "note": "30 entries",
+  "name": "iol.co.za",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:51.350030+00:00"
+ },
+ "businesstech-co-za": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "businesstech.co.za",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:51.868320+00:00"
+ },
+ "namibian-com-na": {
+  "ok": true,
+  "transient": false,
+  "note": "12 entries",
+  "name": "namibian.com.na",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:52.108816+00:00"
+ },
+ "observer24-com-na": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "observer24.com.na",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:52.949985+00:00"
+ },
+ "informante-web-na": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "informante.web.na",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:53.452577+00:00"
+ },
+ "neweralive-na": {
+  "ok": true,
+  "transient": false,
+  "note": "10 entries",
+  "name": "neweralive.na",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:55.863891+00:00"
+ },
+ "mmegi-bw": {
+  "ok": true,
+  "transient": false,
+  "note": "100 entries",
+  "name": "mmegi.bw",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:56.420162+00:00"
+ },
+ "thevoicebw-com": {
+  "ok": true,
+  "transient": false,
+  "note": "15 entries",
+  "name": "thevoicebw.com",
+  "regions": [
+   "southern_africa"
+  ],
+  "tier": "journalism",
+  "checked_at": "2026-08-17T04:34:57.177085+00:00"
+ }
+}
