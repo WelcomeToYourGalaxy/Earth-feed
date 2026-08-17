@@ -1,30 +1,83 @@
 {
- "generated_at": "2026-08-17T04:51:14.860552+00:00",
+ "generated_at": "2026-08-17T07:40:19.617960+00:00",
  "rows": [
   {
-   "id": "2c14b7ab9cb6fbd9-0",
-   "fact": "‘No CCTV, no biz permit’ pushed anew as Baguio crime rises 16.5%.",
+   "id": "626aaeaf2ccccf71-9",
+   "fact": "Pradip said the project is expected to displace about 38,000 tonnes of carbon dioxide equivalent greenhouse gas each year and reduce diesel consumption.",
+   "fact_type": "projection",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Pradip said the project is expected to displace about 38,000 tonnes of carbon dioxide equivalent greenhouse gas each year and reduce diesel consumption.",
+   "region": "melanesia",
+   "region_label": "Melanesia",
+   "place": "solomon islands",
+   "topics": [
+    "carbon",
+    "land_tenure",
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "sibconline.com.sb",
+   "url": "https://www.sibconline.com.sb/tina-river-hydro-project-tbm-named-rotima-as-the-project-reaches-35-percent-progress/",
+   "published": "2026-08-17T06:45:04+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "5adffa1c8e88286b-36",
+   "fact": "His regional tenure, however, came to an abrupt and dramatic interruption when an Accra High Court convicted him in July 2026 over illegal-mining-related offences connected to the Samreboi concession and sentenced him to 20 years’ imprisonment.",
    "fact_type": "magnitude",
    "scope": "",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "‘No CCTV, no biz permit’ pushed anew as Baguio crime rises 16.5%.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
+   "anchor": "His regional tenure, however, came to an abrupt and dramatic interruption when an Accra High Court convicted him in July 2026 over illegal-mining-related offences connected to the Samreboi concession and sentenced him to 20 years’ imprisonment.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "ghana",
    "topics": [
+    "extraction",
     "law"
    ],
    "tier": "journalism",
-   "source_name": "newsinfo.inquirer.net",
-   "url": "https://newsinfo.inquirer.net/2285815/no-cctv-no-biz-permit-pushed-anew-as-baguio-crime-rises-16-5",
-   "published": "2026-08-17T07:02:23+00:00",
+   "source_name": "MyJoyOnline",
+   "url": "https://www.myjoyonline.com/wontumi-out-coka-in-how-npps-new-ashanti-chairman-differs-from-his-predecessor/",
+   "published": "2026-08-17T06:00:00+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "1a82251a11a590cf-1",
+   "fact": "Ten years after construction, a house built by two women in Ariège using raw materials like wood, earth, and straw remains occupied by its owners, who are now in their seventies.",
+   "fact_type": "magnitude",
+   "scope": "Ariège",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Un couple d'Ariégeoises a construit sa propre maison avec des matériaux bruts ou très peu transformés. Dix ans après, bois, terre et paille tiennent leurs promesses et accueillent toujours ces deux femmes, désormais septuagénaires.",
+   "region": "northern_america",
+   "region_label": "North America",
+   "place": "massachusetts",
+   "topics": [
+    "extinction"
+   ],
+   "tier": "journalism",
+   "source_name": "Reporterre",
+   "url": "https://reporterre.net/Bois-terre-paille-elles-ont-construit-leur-maison-avec-des-materiaux-compostables",
+   "published": "2026-08-17T05:00:00+00:00",
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "ff71bc6db1cd46be-15",
@@ -46,56 +99,6 @@
    "source_name": "MyJoyOnline",
    "url": "https://www.myjoyonline.com/if-meta-loses-this-trial-instagram-and-facebook-could-change-forever/",
    "published": "2026-08-17T03:26:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "19fa4714d64a6b04-13",
-   "fact": "Concession periods vary according to the type of activity, with hunting concessions typically running for five years, while tourism and lodge-development concessions can extend for 20 to 25 years.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Concession periods vary according to the type of activity, with hunting concessions typically running for five years, while tourism and lodge-development concessions can extend for 20 to 25 years.",
-   "region": "southern_africa",
-   "region_label": "Southern Africa",
-   "place": "namibia",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "observer24.com.na",
-   "url": "https://observer24.com.na/nacc-investigates-competition-concerns-in-namibias-tourism-concessions-and-joint-ventures/",
-   "published": "2026-08-17T02:26:18+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "e30777e444a5b8f7-37",
-   "fact": "A chieftain representative from the indigenous community said there are about 75 households and 300 families, and added that current figures from the BCDA may be old and inaccurate.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "A chieftain representative from the indigenous community said there are about 75 households and 300 families, and added that current figures from the BCDA may be old and inaccurate.",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "philippines",
-   "topics": [
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "Rappler",
-   "url": "https://www.rappler.com/philippines/senate-pax-silica-hearing-august-14-2026/",
-   "published": "2026-08-17T01:55:23+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -177,31 +180,6 @@
    "engine": "scorer"
   },
   {
-   "id": "1b2f4aa5d99f01ab-2",
-   "fact": "About 200 firefighters were working to keep the twin fires from converging on the island of Salamina, which was under a high wildfire risk on Sunday.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "About 200 firefighters were working to keep the twin fires from converging on the island of Salamina, which was under a high wildfire risk on Sunday.",
-   "region": "northern_europe",
-   "region_label": "Northern Europe",
-   "place": "island",
-   "topics": [
-    "fire"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/two-dead-and-hundreds-evacuated-as-twin-fires-break-out-on-greek-island/",
-   "published": "2026-08-16T18:48:43+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "d5bd72283d35867c-42",
    "fact": "Further drilling—beyond the existing 250 meters—could also contaminate the groundwater, he added.",
    "fact_type": "magnitude",
@@ -248,31 +226,6 @@
    "source_name": "namibian.com.na",
    "url": "https://www.namibian.com.na/we-manufacture-heroes-at-gravesides/",
    "published": "2026-08-16T17:44:36+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "6d08a9d860ade773-9",
-   "fact": "While COVID-19 prompted extensive government spending on public education, restrictions and enforcement measures, Mr Adomako said road safety had not received a comparable level of investment despite the continuous loss of lives.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "While COVID-19 prompted extensive government spending on public education, restrictions and enforcement measures, Mr Adomako said road safety had not received a comparable level of investment despite the continuous loss of lives.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "ghana",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/ghana-must-move-beyond-enforcement-to-tackle-road-deaths-appiah-kusi-adomako/",
-   "published": "2026-08-16T15:03:16+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -661,6 +614,52 @@
    "engine": "scorer"
   },
   {
+   "id": "e5fbab03c82959e6-3",
+   "fact": "July 2026 reached an average temperature of 24,85 °C across France, making it the hottest month ever recorded by Météo-France since records began in 1900.",
+   "fact_type": "magnitude",
+   "scope": "à l'échelle de la France",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Avec une température moyenne de 24,85 °C à l'échelle de la France, juillet 2026 est devenu le mois le plus chaud jamais enregistré par Météo-France depuis le début des relevés en 1900.",
+   "region": "western_europe",
+   "region_label": "Western Europe",
+   "place": "france",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Reporterre",
+   "url": "https://reporterre.net/Des-etes-toujours-plus-chauds-visualisez-l-explosion-des-temperatures-depuis-40-ans",
+   "published": "2026-08-14T14:19:18+00:00",
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "e5fbab03c82959e6-4",
+   "fact": "The previous temperature record established in 2003 was 24,8 °C.",
+   "fact_type": "magnitude",
+   "scope": "en France",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Le précédent record, établi en 2003, était de 24,8 °C.",
+   "region": "western_europe",
+   "region_label": "Western Europe",
+   "place": "france",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Reporterre",
+   "url": "https://reporterre.net/Des-etes-toujours-plus-chauds-visualisez-l-explosion-des-temperatures-depuis-40-ans",
+   "published": "2026-08-14T14:19:18+00:00",
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "6022a9d3dab696b4-6",
    "fact": "According to Mine Action Review, an international de-mining watchdog, Azerbaijan’s Mine Action Agency (ANAMA) reported in 2024 that it cleared a total of 4,286 mines in an area of 5.3 square kilometres.",
    "fact_type": "magnitude",
@@ -735,6 +734,31 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "18224264af9e5589-1",
+   "fact": "Kazakhstan’s government has accused a major consortium of international oil companies of corruptly issuing $10.7 billion worth of contracts relating to the Kashagan oil field.",
+   "fact_type": "attribution",
+   "scope": "Kashagan oil field",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Kazakhstan’s government has accused a major consortium of international oil companies of corruptly issuing $10.7 billion worth of contracts relating to the Kashagan oil field, the International Consortium of Investigative Journalists reported on August 14, citing multiple anonymous sources.",
+   "region": "central_asia",
+   "region_label": "Central Asia",
+   "place": "kazakhstan",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "Vlast.kz",
+   "url": "https://vlast.kz/english/70479-kazakhstan-says-corruption-behind-107-billion-in-kashagan-contracts.html",
+   "published": "2026-08-14T13:10:00+00:00",
+   "lang": "ru",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "6068b4b807e3a099-4",
@@ -1220,6 +1244,31 @@
    "engine": "scorer"
   },
   {
+   "id": "a8509c90dff7f3a1-0",
+   "fact": "Indigenous murders rose 22% in 2025.",
+   "fact_type": "rate",
+   "scope": "Brazil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Sob Lula, assassinatos de indígenas sobem 22% em 2025 e superam média da era Bolsonaro.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "mato grosso",
+   "topics": [
+    "land_tenure"
+   ],
+   "tier": "journalism",
+   "source_name": "Agência Pública",
+   "url": "https://apublica.org/2026/08/sob-lula-assassinatos-de-indigenas-sobem-22-em-2025-e-superam-media-da-era-bolsonaro/",
+   "published": "2026-08-13T18:00:00+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "32f5d90ed87908bb-54",
    "fact": "Nevertheless, deforestation on Indigenous lands in the Amazon – generally caused by landgrabs – reached 483 km2 between August 2024 and July 2025, according to data from the National Institute for Space Research (INPE), which monitors deforestation.",
    "fact_type": "attribution",
@@ -1269,6 +1318,29 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "6784dcc8468f030f-0",
+   "fact": "Four piping guans born at Parque das Aves will undergo an adaptation period before being released into the interior of São Paulo to reinforce the wild population.",
+   "fact_type": "magnitude",
+   "scope": "no interior de São Paulo",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Quatro jacutingas se preparam para reforçar população na natureza. As jacutingas, ameaçadas de extinção no país, nasceram no Parque das Aves, e passarão por um período de adaptação antes da soltura no interior de São Paulo",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "((o))eco",
+   "url": "https://oeco.org.br/salada-verde/quatro-jacutingas-se-preparam-para-reforcar-populacao-na-natureza/",
+   "published": "2026-08-13T17:09:16+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "289d43428712d8f5-10",
@@ -1861,9 +1933,9 @@
    "fact": "For example, the critically endangered Kolar roundleaf bat (Hipposideros hypophyllus) that survives in a single cave in Karnataka is known to munch on 4,100 species of insects, including mosquitoes that transmit dengue and malaria.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "75% of the world's food crops depend at least in part on pollination, and the volume of production that needs animal pollination has risen 300% in 50 years. Meanwhile more than 40% of invertebrate pollinator species face extinction — demand rising, supply falling.",
-   "context_source": "IPBES, Assessment on Pollinators, Pollination and Food Production (2016)",
-   "context_url": "https://www.ipbes.net/node/11774",
+   "context": "Human appropriation of net primary production has risen from 15.7% of potential natural production in 1950 to 23.5% in 2020. Close to a quarter of everything the land grows is now taken or altered by a single species.",
+   "context_source": "Richardson et al., Science Advances (2023)",
+   "context_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
    "context_direction": "worsening",
    "anchor": "For example, the critically endangered Kolar roundleaf bat (Hipposideros hypophyllus) that survives in a single cave in Karnataka is known to munch on 4,100 species of insects, including mosquitoes that transmit dengue and malaria.",
    "region": "southern_asia",
@@ -2417,6 +2489,31 @@
    "engine": "scorer"
   },
   {
+   "id": "12ea8f8b64104a88-9",
+   "fact": "In 2021, Gawand was offered financial incentives to protect the mangroves on his land by a Pune-based NGO working in partnership with the Indian arm of US tech company Apple to aid mangrove conservation in Maharashtra.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "In 2021, Gawand was offered financial incentives to protect the mangroves on his land by a Pune-based NGO working in partnership with the Indian arm of US tech company Apple to aid mangrove conservation in Maharashtra.",
+   "region": "southern_asia",
+   "region_label": "South Asia",
+   "place": "maharashtra",
+   "topics": [
+    "forest"
+   ],
+   "tier": "journalism",
+   "source_name": "Dialogue Earth",
+   "url": "https://dialogue.earth/en/forests/what-makes-multinational-companies-conserve-mangroves-in-india/",
+   "published": "2026-08-06T19:02:47+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
    "id": "12ea8f8b64104a88-29",
    "fact": "Conservation before accreditation makes business sense Mangroves are among the most carbon-efficient ecosystems, with studies estimating they can sequester 6-8 tonnes of CO2 equivalent per hectare, or about four times more than terrestrial forests.",
    "fact_type": "magnitude",
@@ -2431,31 +2528,6 @@
    "place": "amazon",
    "topics": [
     "carbon",
-    "forest"
-   ],
-   "tier": "journalism",
-   "source_name": "Dialogue Earth",
-   "url": "https://dialogue.earth/en/forests/what-makes-multinational-companies-conserve-mangroves-in-india/",
-   "published": "2026-08-06T19:02:47+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "12ea8f8b64104a88-9",
-   "fact": "In 2021, Gawand was offered financial incentives to protect the mangroves on his land by a Pune-based NGO working in partnership with the Indian arm of US tech company Apple to aid mangrove conservation in Maharashtra.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "In 2021, Gawand was offered financial incentives to protect the mangroves on his land by a Pune-based NGO working in partnership with the Indian arm of US tech company Apple to aid mangrove conservation in Maharashtra.",
-   "region": "southern_asia",
-   "region_label": "South Asia",
-   "place": "maharashtra",
-   "topics": [
     "forest"
    ],
    "tier": "journalism",
@@ -2665,6 +2737,31 @@
    "source_name": "The Conversation Australia — Environment",
    "url": "https://theconversation.com/we-dont-know-how-well-threatened-species-fight-off-bird-flu-but-we-need-to-288920",
    "published": "2026-08-05T20:10:05+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "bbd7b82704ebcb67-12",
+   "fact": "According to the International Union for Conservation of Nature (IUCN), the smooth-coated otter is listed as vulnerable, based on ongoing population declines driven by habitat loss and hunting pressure.",
+   "fact_type": "attribution",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "According to the International Union for Conservation of Nature (IUCN), the smooth-coated otter is listed as vulnerable, based on ongoing population declines driven by habitat loss and hunting pressure.",
+   "region": "global",
+   "region_label": "Global / multi-region",
+   "place": null,
+   "topics": [
+    "extinction"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay India",
+   "url": "https://india.mongabay.com/short-article/2026/08/whiskered-swimmers-with-webbed-feet/",
+   "published": "2026-08-05T14:27:08+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -3179,6 +3276,31 @@
    "engine": "scorer"
   },
   {
+   "id": "1a0054035b9373c0-7",
+   "fact": "In 2018, 59 mil arms had been bought by CACs.",
+   "fact_type": "magnitude",
+   "scope": "Brazil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Segundo o levantamento, 59 mil armas haviam sido compradas por CACs em 2018.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Brasil",
+   "url": "https://brasil.mongabay.com/2026/07/liberacao-de-armas-por-bolsonaro-impulsionou-caca-ilegal-indica-estudo/",
+   "published": "2026-07-22T13:16:03+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [
+    "Mongabay Brasil — Amazônia"
+   ],
+   "engine": "gemini"
+  },
+  {
    "id": "7fb15b9498eca3e0-9",
    "fact": "Allegations of harms on the rise BHRC’s latest analysis – including data for the period 2023-2025 – covered mining, smelting and refining projects for 11 minerals considered key to manufacturing clean energy technologies such as batteries, EVs and solar panels needed to move away from climate-heating fossil fuels.",
    "fact_type": "magnitude",
@@ -3288,10 +3410,10 @@
    "fact": "The TASLL Northern Uganda project targeted the critical conservation of over 65,548 hectares of natural forest in the Agoro-Agu landscape, an area in the Acholi sub-region spanning the districts of Lamwo, Pader, Kitgum, and Agago.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "Forest expansion has slowed, from 9.88 million hectares a year in 2000-2015 to 6.78 million in the decade to 2025, while deforestation still runs at 10.9 million. Replanting is not keeping pace with clearing, let alone reversing it.",
-   "context_source": "FAO, Global Forest Resources Assessment 2025 — Key findings",
-   "context_url": "https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/key-findings.html",
-   "context_direction": "contested",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
    "anchor": "The TASLL Northern Uganda project targeted the critical conservation of over 65,548 hectares of natural forest in the Agoro-Agu landscape, an area in the Acholi sub-region spanning the districts of Lamwo, Pader, Kitgum, and Agago.",
    "region": "eastern_africa",
    "region_label": "East Africa",
@@ -3487,56 +3609,6 @@
    "source_name": "Oxpeckers",
    "url": "https://oxpeckers.org/2026/07/plastic-regulations-zimbabwe/",
    "published": "2026-07-14T05:51:27+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "fea84ada684b0a74-21",
-   "fact": "In 2020, the state had seven million hectares of natural forest covering 89 percent of its land area, but it lost 4,700 hectares of natural forest in 2025 alone.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "Forest expansion has slowed, from 9.88 million hectares a year in 2000-2015 to 6.78 million in the decade to 2025, while deforestation still runs at 10.9 million. Replanting is not keeping pace with clearing, let alone reversing it.",
-   "context_source": "FAO, Global Forest Resources Assessment 2025 — Key findings",
-   "context_url": "https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/key-findings.html",
-   "context_direction": "contested",
-   "anchor": "In 2020, the state had seven million hectares of natural forest covering 89 percent of its land area, but it lost 4,700 hectares of natural forest in 2025 alone.",
-   "region": "northern_africa",
-   "region_label": "North Africa",
-   "place": "nile",
-   "topics": [
-    "forest"
-   ],
-   "tier": "journalism",
-   "source_name": "InfoNile",
-   "url": "https://infonile.org/en/2026/07/african-mahogany-wood-flows-from-south-sudan-through-uganda/",
-   "published": "2026-07-13T07:32:54+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "fea84ada684b0a74-23",
-   "fact": "Between 2001 and 2025, the three Equatorial states have lost about 120,000 hectares of tree cover, underscoring growing pressure on South Sudan’s forests, partly caused by logging.",
-   "fact_type": "rate",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Between 2001 and 2025, the three Equatorial states have lost about 120,000 hectares of tree cover, underscoring growing pressure on South Sudan’s forests, partly caused by logging.",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "south sudan",
-   "topics": [
-    "forest"
-   ],
-   "tier": "journalism",
-   "source_name": "InfoNile",
-   "url": "https://infonile.org/en/2026/07/african-mahogany-wood-flows-from-south-sudan-through-uganda/",
-   "published": "2026-07-13T07:32:54+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -3797,7 +3869,7 @@
   },
   {
    "id": "84e99b1f09ae914c-7",
-   "fact": "This is the 13th birth recorded among the mountain gorillas in the reserve since the beginning of the year 2026.",
+   "fact": "Thirteen mountain gorilla births have been recorded in the reserve since the beginning of the year 2026.",
    "fact_type": "magnitude",
    "scope": "Virunga National Park",
    "context": null,
@@ -3821,24 +3893,22 @@
    "engine": "gemini"
   },
   {
-   "id": "89fdb9ffabd28bc1-3",
-   "fact": "The fire consumed a large part of the garden",
-   "fact_type": "magnitude",
-   "scope": "the garden",
+   "id": "59a76c10096099ee-3",
+   "fact": "Nine dolphins remain in the facilities operated by Dolphin Discovery in Ventura Park, Cancún.",
+   "fact_type": "actor",
+   "scope": "Ventura Park, Cancún",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "A dos años y medio del mortífero incendio forestal de febrero de 2024, que cobró la vida de 131 personas en la región y consumió gran parte del jardín botánico, el paisaje parece haber olvidado la catástrofe.",
-   "region": "polynesia",
-   "region_label": "Polynesia",
-   "place": "rapa nui",
-   "topics": [
-    "extinction"
-   ],
+   "anchor": "Los nueve delfines permanecen en las instalaciones que la empresa turística Dolphin Discovery operaba en Ventura Park, en Cancún.",
+   "region": "central_america",
+   "region_label": "Central America",
+   "place": "mexico",
+   "topics": [],
    "tier": "journalism",
    "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/chile-jardin-botanico-vina-del-mar-resurge-cenizas-laboratorio-adaptacion-climatica/",
+   "url": "https://es.mongabay.com/2026/08/limbo-legal-delfines-mantenidos-cautiverio-mexico/",
    "published": null,
    "lang": "es",
    "doi": null,
@@ -3846,20 +3916,20 @@
    "engine": "groq"
   },
   {
-   "id": "1d7a4255544fab01-1",
-   "fact": "In the territory of Kipushi in Haut-Katanga, the villages of Kipopo, Kibunduka and Kashimbala are affected by effluent runoffs from mining origins.",
-   "fact_type": "magnitude",
-   "scope": "Haut-Katanga, République démocratique du Congo",
-   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
-   "context_source": "Lavoie et al., Scientific Reports (2018)",
-   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
-   "context_direction": "worsening",
-   "anchor": "Au cœur du territoire de Kipushi, dans le sud-ouest du Haut-Katanga, en République démocratique du Congo (RDC), les villages de Kipopo, Kibunduka et Kashimbala subissent les écoulements d’effluents d’origine minière.",
+   "id": "1d7a4255544fab01-9",
+   "fact": "The water is toxic, but people are using it anyway.",
+   "fact_type": "attribution",
+   "scope": "in Kipopo",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Que voulez-vous que les gens fassent d’autre ? ».",
    "region": "middle_africa",
    "region_label": "Central Africa",
    "place": "katanga",
    "topics": [
-    "extraction"
+    "toxics"
    ],
    "tier": "journalism",
    "source_name": "Mongabay Afrique",
@@ -3868,27 +3938,25 @@
    "lang": "fr",
    "doi": null,
    "also_reported_by": [],
-   "engine": "gemini"
+   "engine": "groq"
   },
   {
-   "id": "89fdb9ffabd28bc1-4",
-   "fact": "The toromiro is an endemic species of Rapa Nui",
-   "fact_type": "attribution",
-   "scope": "Rapa Nui",
-   "context": "Human appropriation of net primary production has risen from 15.7% of potential natural production in 1950 to 23.5% in 2020. Close to a quarter of everything the land grows is now taken or altered by a single species.",
-   "context_source": "Richardson et al., Science Advances (2023)",
-   "context_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
-   "context_direction": "worsening",
-   "anchor": "En el corazón del recinto, el histórico invernadero del siglo XIX resguarda en un microclima húmedo y templado una de las colecciones botánicas más valiosas del cono sur, con plantas de climas tropicales y el emblemático toromiro (Sophora toromiro), un árbol endémico de la Isla de Pascua, en Rapa Nui, extinto en su hábitat natural. Todomiro, especie endémica de Rapa Nui, en el invernadero del Jardín Botánico de Viña del Mar.",
-   "region": "polynesia",
-   "region_label": "Polynesia",
-   "place": "rapa nui",
-   "topics": [
-    "extinction"
-   ],
+   "id": "59a76c10096099ee-9",
+   "fact": "The country initiated the transition towards the end of the model of dolphinaria based on the reproduction and commercial exploitation of these animals.",
+   "fact_type": "projection",
+   "scope": "the country",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Con ello, el país inició la transición hacia el fin del modelo de delfinarios basado en la reproducción y explotación comercial de estos animales.",
+   "region": "central_america",
+   "region_label": "Central America",
+   "place": "mexico",
+   "topics": [],
    "tier": "journalism",
    "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/chile-jardin-botanico-vina-del-mar-resurge-cenizas-laboratorio-adaptacion-climatica/",
+   "url": "https://es.mongabay.com/2026/08/limbo-legal-delfines-mantenidos-cautiverio-mexico/",
    "published": null,
    "lang": "es",
    "doi": null,
@@ -3896,10 +3964,106 @@
    "engine": "groq"
   },
   {
+   "id": "1d7a4255544fab01-10",
+   "fact": "The water is so acidic that soap no longer foams when used for laundry.",
+   "fact_type": "magnitude",
+   "scope": "in Kipopo",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Cette même acidité complique le quotidien. « À la lessive, le savon ne mousse plus.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "katanga",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/rdc-les-rejets-miniers-soupconnes-de-polluer-les-eaux-de-trois-villages-du-haut-katanga/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "groq"
+  },
+  {
+   "id": "d6caf6856ad13e10-3",
+   "fact": "Cameroon marketed 247 914 tonnes of cocoa beans compared to 309 518 tonnes during the previous season, representing 61 604 tonnes less.",
+   "fact_type": "magnitude",
+   "scope": "Cameroun",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Le pays n’a mis sur le marché que 247 914 tonnes de fèves contre 309 518 tonnes lors de la campagne précédente, soit 61 604 tonnes de moins.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "cameroon",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-le-changement-climatique-fait-chuter-la-production-de-cacao-de-19-en-2025-2026/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "bee5724031305167-8",
+   "fact": "225 litres of seawater brine yield 11 kilograms of salt.",
+   "fact_type": "magnitude",
+   "scope": "Djika and Djègbadji",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Selon les explications des producteurs, 225 litres de saumure d’eau de mer permettent d’avoir 11 kilogrammes de sel.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "benin",
+   "topics": [
+    "food"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/benin-produire-du-sel-grace-a-lenergie-solaire-pour-preserver-les-mangroves/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "ee4d4c1381dfc6a2-4",
+   "fact": "The community forest of the Association Bantou-Pygmées de Zoebefam-Mintom covers 5000 hectares.",
+   "fact_type": "magnitude",
+   "scope": "Zoebefam-Mintom, Cameroon",
+   "context": "Forest expansion has slowed, from 9.88 million hectares a year in 2000-2015 to 6.78 million in the decade to 2025, while deforestation still runs at 10.9 million. Replanting is not keeping pace with clearing, let alone reversing it.",
+   "context_source": "FAO, Global Forest Resources Assessment 2025 — Key findings",
+   "context_url": "https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/key-findings.html",
+   "context_direction": "contested",
+   "anchor": "Elle se trouve dans la forêt communautaire de l’Association Bantou-Pygmées de Zoebefam-Mintom (ABAPY), couvrant 5000 hectares (12 3555 acres), et appartient aux communautés locales Bantou et aux autochtones Baka de la localité.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "bassin du congo",
+   "topics": [
+    "forest"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/cameroun-les-forets-communautaires-hebergent-les-cacaoyeres-et-contribuent-a-attenuer-les-effets-du-changement-climatique/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "60fd57a32f6f73a1-1",
    "fact": "The use of GPS technology reduces conflicts between humans and lions.",
    "fact_type": "magnitude",
-   "scope": "parcs nationaux de Waza et de Bouba Ndjida",
+   "scope": "Cameroon",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -3922,13 +4086,13 @@
   },
   {
    "id": "7ecbeee694209ff2-3",
-   "fact": "The census will cover plantations in both state-owned permanent forest domain and non-permanent forest domain, including community forests and areas that can be used for agricultural purposes.",
-   "fact_type": "magnitude",
+   "fact": "The census will cover plantations in protected state forests and other non-permanent forest areas, including community forests and areas that can be used for agricultural purposes.",
+   "fact_type": "scope",
    "scope": "Cameroun",
-   "context": "Plants and soils take up 21% of the carbon dioxide humans emit. Clearing a forest removes that uptake and releases the carbon already stored in it, in the same stroke — and the land sink would already be 25% higher without the carbon-climate feedback now working against it.",
-   "context_source": "Friedlingstein et al., Nature (2025), via Ocean Carbon & Biogeochemistry",
-   "context_url": "https://www.nature.com/articles/s41586-025-09802-5",
-   "context_direction": "worsening",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
    "anchor": "Cette note signée par le secrétaire général du ministère, Joseph Nyongwen, demande aux délégués régionaux des Forêts et de la faune des régions du Centre, de l’Est, du Littoral, de l’Ouest et du Sud du pays de recenser et de caractériser les plantations de cacao situées aussi bien dans les forêts protégées de l’État relevant du domaine forestier permanent que dans les autres espaces appartenant au domaine forestier non permanent, notamment les forêts communautaires et les zones pouvant être affectées à des usages agricoles.",
    "region": "middle_africa",
    "region_label": "Central Africa",
@@ -3947,59 +4111,8 @@
    "engine": "groq"
   },
   {
-   "id": "bee5724031305167-8",
-   "fact": "225 litres of brine water produce 11 kilograms of salt",
-   "fact_type": "magnitude",
-   "scope": "per production cycle",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Selon les explications des producteurs, 225 litres de saumure d’eau de mer permettent d’avoir 11 kilogrammes de sel.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "benin",
-   "topics": [
-    "forest"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/2026/08/benin-produire-du-sel-grace-a-lenergie-solaire-pour-preserver-les-mangroves/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "groq"
-  },
-  {
-   "id": "68449004ecca6afc-0",
-   "fact": "The Cameroun uses three agricultural calendars to adapt to the climate.",
-   "fact_type": "magnitude",
-   "scope": "Cameroun",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Cameroun : Trois calendriers agricoles pour mieux faire face au climat.",
-   "region": "middle_africa",
-   "region_label": "Central Africa",
-   "place": "cameroun",
-   "topics": [
-    "food",
-    "carbon"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-trois-calendriers-agricoles-pour-mieux-faire-face-au-climat/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "groq"
-  },
-  {
    "id": "68449004ecca6afc-1",
-   "fact": "The Cameroun is transitioning from a single agricultural calendar to multiple calendars adapted to different agroecological zones.",
+   "fact": "Cameroon is shifting from a single agricultural calendar to multiple calendars adapted to the country's main agroecological zones.",
    "fact_type": "magnitude",
    "scope": "Cameroun",
    "context": null,
@@ -4009,7 +4122,7 @@
    "anchor": "Le Cameroun « abandonne progressivement le modèle d’un calendrier agricole unique au profit de calendriers agricoles adaptés aux principales zones agroécologiques du pays.",
    "region": "middle_africa",
    "region_label": "Central Africa",
-   "place": "cameroun",
+   "place": "cameroon",
    "topics": [
     "food"
    ],
@@ -4020,55 +4133,32 @@
    "lang": "fr",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
   },
   {
-   "id": "68449004ecca6afc-5",
-   "fact": "The ONACC publishes seasonal bulletins presenting climate trends for the next three months in different agroecological zones of the Cameroun, and decadal bulletins every ten days.",
-   "fact_type": "magnitude",
-   "scope": "Cameroun",
+   "id": "862f23dd082186d9-1",
+   "fact": "Rwanda created a new structure named Rwanda Nature Foundation to strengthen conservation efforts.",
+   "fact_type": "actor",
+   "scope": "Rwanda",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Il explique à Mongabay que l’ONACC publie également des bulletins saisonniers, qui présentent les tendances climatiques pour les trois mois à venir dans les différentes zones agroécologiques du Cameroun, ainsi que des bulletins décadaires diffusés tous les dix jours. « Le climat change.",
-   "region": "middle_africa",
-   "region_label": "Central Africa",
-   "place": "cameroun",
+   "anchor": "Le Rwanda vient de créer une nouvelle structure pour la gestion de la faune sauvage et des parcs nationaux. Dénommée « Rwanda Nature Foundation », cette structure ambitionne de renforcer les efforts de conservation à travers la recherche scientifique, l’innovation et une gestion durable des écosystèmes.",
+   "region": "eastern_africa",
+   "region_label": "East Africa",
+   "place": "rwanda",
    "topics": [
-    "carbon"
+    "food"
    ],
    "tier": "journalism",
    "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-trois-calendriers-agricoles-pour-mieux-faire-face-au-climat/",
+   "url": "https://fr.mongabay.com/2026/08/une-nouvelle-structure-creee-pour-renforcer-les-efforts-de-conservation-dans-les-parcs-nationaux-au-rwanda/",
    "published": null,
    "lang": "fr",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
-  },
-  {
-   "id": "1d345868d0861c7b-2",
-   "fact": "A partera indígena has observed the moon and recognized medicinal plants to alleviate a mother's pain before a baby's first breath.",
-   "fact_type": "magnitude",
-   "scope": "a partera indígena's practice",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Ha observado la luna y reconocido las plantas medicinales que aliviarán a su madre del dolor, ha preparado infusiones, encendido el fuego y convocado un conocimiento transmitido durante generaciones.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [],
-   "tier": "journalism",
-   "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/dia-de-los-pueblos-indigenas-2026-la-parteria-indigena-como-defensa-de-la-vida-y-la-naturaleza/",
-   "published": null,
-   "lang": "es",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
   },
   {
    "id": "de836129036c4672-8",
@@ -4097,7 +4187,7 @@
    "id": "de836129036c4672-3",
    "fact": "A pico of effects from El Niño is expected between octubre and febrero.",
    "fact_type": "projection",
-   "scope": "octubre y febrero",
+   "scope": "octubre and febrero",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4140,10 +4230,60 @@
    "engine": "groq"
   },
   {
+   "id": "dc3c779d5b5fd230-7",
+   "fact": "The Tribunal Constitucional confirmed that micro-relocalizations of salmon centers cannot be left without a new environmental impact assessment.",
+   "fact_type": "attribution",
+   "scope": "salmon centers",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "El Tribunal Constitucional confirmó que las micro-relocalizaciones de centros salmoneros no pueden quedar…This article was originally published on Mongabay",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/short-article/2026/08/reves-kast-chile-tribunal-constitucional-impugna-normativa-ambiental/",
+   "published": null,
+   "lang": "es",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "groq"
+  },
+  {
+   "id": "76bc6bf75a58327b-3",
+   "fact": "The proportion of people suffering from hunger worldwide decreased from 8,6 % in 2022 to 7,8 % in 2025.",
+   "fact_type": "rate",
+   "scope": "worldwide",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Le rapport de la FAO estime que 20 % des Africains souffraient de la faim en 2025, contre 6 % en Asie et près de 5 % en Amérique latine et dans les Caraïbes. À l’échelle mondiale, la proportion de personnes souffrant de la faim est passée de 8,6 % en 2022 à 7,8 % en 2025.",
+   "region": "global",
+   "region_label": "Global / multi-region",
+   "place": null,
+   "topics": [
+    "food"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/la-faim-recule-dans-le-monde-mais-lafrique-reste-a-la-traine/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "dc3c779d5b5fd230-1",
-   "fact": "The Tribunal Constitucional impugnó la norma que establecía el derecho a una indemnización fiscal a privados.",
-   "fact_type": "actor",
-   "scope": "Chile",
+   "fact": "The Tribunal Constitucional impugned the norm that established the right to a fiscal indemnization for private individuals in case of cancellation of environmental permits.",
+   "fact_type": "attribution",
+   "scope": "environmental permits",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4165,35 +4305,36 @@
    "engine": "groq"
   },
   {
-   "id": "c8e1b6707db39582-7",
-   "fact": "The coalition recommends using non-lethal deterrents, protecting habitats, and investing in conflict prevention to protect both populations and biodiversity.",
-   "fact_type": "projection",
-   "scope": "worldwide",
+   "id": "0c83905094ca3931-2",
+   "fact": "The deforestation was facilitated by administrative decrees and procedures that bypassed national regulations.",
+   "fact_type": "attribution",
+   "scope": "Chaco province, Argentina.",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Elle recommande comme solution le recours à des moyens de dissuasion non létaux, la protection des habitats, ainsi que des investissements dans la prévention des conflits, afin de protéger à la fois les populations et la biodiversité.",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "ethiopie",
+   "anchor": "No fue necesario modificar la Ley Nacional de Bosques para alentar la deforestación, ya que se utilizaron decretos y trámites administrativos para perforar la normativa nacional y dar vía libre al desmonte, según detalla el estudio realizado por los científicos.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
    "topics": [
-    "extinction"
+    "law",
+    "forest"
    ],
    "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/ethiopie-une-coalition-soppose-au-projet-dabattage-de-babouins-au-parc-national-de-nech-sar/",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/08/argentina-burlaron-ley-bosques-provincia-chaco-deforestar-medio-millon-hectareas-estudio/",
    "published": null,
-   "lang": "fr",
+   "lang": "es",
    "doi": null,
    "also_reported_by": [],
    "engine": "groq"
   },
   {
    "id": "6ac506b663449719-3",
-   "fact": "The pájaro brujo de Ecuador reached a record 57 volantones in 2026.",
+   "fact": "The vermilion flycatcher reached a record 57 fledglings in Ecuador in 2026.",
    "fact_type": "magnitude",
-   "scope": "Ecuador in 2026",
+   "scope": "Ecuador",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4212,36 +4353,38 @@
    "lang": "es",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
   },
   {
-   "id": "c8e1b6707db39582-4",
-   "fact": "Baboons play a vital role in maintaining healthy ecosystems.",
+   "id": "cce088ddcbe53b1d-2",
+   "fact": "The study analyzed 492 insects of nine taxones across three locations in Madre de Dios with different levels of mining impact.",
    "fact_type": "magnitude",
-   "scope": "ecosystems",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "La coalition rappelle que les primates occupent une place essentielle dans les écosystèmes et rejette toute solution reposant sur leur élimination. « Les primates sont des êtres intelligents et sociaux qui jouent un rôle vital dans le maintien d’écosystèmes sains.",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "ethiopie",
-   "topics": [],
+   "scope": "Madre de Dios, Peruvian Amazon",
+   "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
+   "context_source": "Global Witness, Roots of Resistance (2025)",
+   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "context_direction": "worsening",
+   "anchor": "La investigación, que se realizó en Madre de Dios, consistió en analizar 492 insectos de nueve taxones –grupo de organismos– en tres lugares con diferentes niveles de impacto por minería.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "madre de dios",
+   "topics": [
+    "extraction"
+   ],
    "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/ethiopie-une-coalition-soppose-au-projet-dabattage-de-babouins-au-parc-national-de-nech-sar/",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/short-article/2026/08/estudio-mercurio-insectos-amazonia-peruana/",
    "published": null,
-   "lang": "fr",
+   "lang": "es",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
   },
   {
    "id": "1e55aa31fd4f656a-1",
-   "fact": "The Cerros de Mavicure, Mono and Pajarito are afloramientos of the Guayanés shield that protrude between the Guainía jungle and the Inírida river, in the Colombian Amazon.",
+   "fact": "The Cerros de Mavicure, Mono and Pajarito are afloramientos of the Escudo Guayanés that rise above the Guainía jungle and the Inírida river in the Colombian Amazon.",
    "fact_type": "magnitude",
-   "scope": "the Guainía jungle and the Inírida river, in the Colombian Amazon.",
+   "scope": "the Guainía jungle and the Inírida river in the Colombian Amazon.",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4263,35 +4406,10 @@
    "engine": "groq"
   },
   {
-   "id": "76bc6bf75a58327b-5",
-   "fact": "510 to 520 million people worldwide will be in food insecurity by 2030.",
-   "fact_type": "projection",
-   "scope": "worldwide by 2030",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "D’ici à 2030, le rapport prévoit que 510 à 520 millions de personnes seront en situation d’insécurité alimentaire dans le monde, dont plus de la moitié (56 %) en Afrique.",
-   "region": "global",
-   "region_label": "Global / multi-region",
-   "place": null,
-   "topics": [
-    "food"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/2026/08/la-faim-recule-dans-le-monde-mais-lafrique-reste-a-la-traine/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "groq"
-  },
-  {
    "id": "1e55aa31fd4f656a-10",
    "fact": "The Cerros de Mavicure, Mono and Pajarito are located in two indigenous reserves.",
    "fact_type": "magnitude",
-   "scope": "two indigenous reserves",
+   "scope": "two indigenous reserves.",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4313,10 +4431,33 @@
    "engine": "groq"
   },
   {
-   "id": "e4c5529915c49236-6",
-   "fact": "The proposed law includes modifications to areas of natural protected resources and natural resources such as hydrocarbons.",
+   "id": "f4a8f8b70104d0a0-1",
+   "fact": "The Unzen, a 92-meter-long fishing vessel, is as tall as a 23-story building.",
    "fact_type": "magnitude",
-   "scope": "areas of natural protected resources and natural resources such as hydrocarbons",
+   "scope": "the Unzen",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Unzen es el nombre de un barco pesquero que mide casi 92 metros de largo: el tamaño de un edificio de unos 23 pisos.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/08/descartes-ilegales-camaras-revelan-operaciones-prohibidas-pesca-industrial-chilena/",
+   "published": null,
+   "lang": "es",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "groq"
+  },
+  {
+   "id": "e4c5529915c49236-6",
+   "fact": "The proposed law includes modifications to areas of natural protected resources and hydrocarbons.",
+   "fact_type": "magnitude",
+   "scope": "areas of natural protected resources and hydrocarbons",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -4340,9 +4481,9 @@
    "fact": "The proposed law includes issues related to mining.",
    "fact_type": "magnitude",
    "scope": "mining",
-   "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
-   "context_source": "Global Witness, Roots of Resistance (2025)",
-   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
+   "context_source": "Lavoie et al., Scientific Reports (2018)",
+   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
    "context_direction": "worsening",
    "anchor": "En el pedido de facultades también incluye cuestiones sobre minería.",
    "region": "south_america",
@@ -4387,9 +4528,9 @@
   },
   {
    "id": "0d66aa6ba87326b6-8",
-   "fact": "The deforestation in Colombia increased by 5.2% in 2025 and is concentrated in the Amazon region.",
+   "fact": "Deforestation increased by 5.2 % in 2025 in Colombia and is concentrated again in the Amazon.",
    "fact_type": "rate",
-   "scope": "Colombia, Amazon region",
+   "scope": "Colombia",
    "context": "Researchers put the Amazon's tipping point at 20-25% deforestation, beyond which eastern, southern and central Amazonia flip to non-forest ecosystems. Their advice is not to find the precise threshold: there is no point in discovering it by tipping it.",
    "context_source": "Lovejoy & Nobre, Science Advances (2018)",
    "context_url": "https://www.science.org/doi/10.1126/sciadv.aat2340",
@@ -4408,11 +4549,11 @@
    "lang": "es",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
   },
   {
    "id": "0d66aa6ba87326b6-8",
-   "fact": "Three of the nine identified nucles concentrated 41% of the deforestation in Colombia.",
+   "fact": "Three hubs out of nine identified by Ideam concentrated 41 % of the deforestation at the national level in Colombia.",
    "fact_type": "magnitude",
    "scope": "Colombia",
    "context": "Researchers put the Amazon's tipping point at 20-25% deforestation, beyond which eastern, southern and central Amazonia flip to non-forest ecosystems. Their advice is not to find the precise threshold: there is no point in discovering it by tipping it.",
@@ -4433,15 +4574,42 @@
    "lang": "es",
    "doi": null,
    "also_reported_by": [],
-   "engine": "groq"
+   "engine": "gemini"
+  },
+  {
+   "id": "0be8ec02ee9c1296-1",
+   "fact": "A Justiça Federal gave the União and Funai 24 meses to conclude the demarcation of the traditional territory of the Kajkwakratxi-Tapayuna indigenous people, in the northwest of Mato Grosso.",
+   "fact_type": "magnitude",
+   "scope": "no noroeste de Mato Grosso",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "A Justiça Federal deu à União e à Funai 24 meses para concluir a demarcação do território tradicional do povo indígena Kajkwakratxi-Tapayuna, no noroeste de Mato Grosso.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "mato grosso",
+   "topics": [
+    "land_tenure"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Brasil",
+   "url": "https://brasil.mongabay.com/short-article/2026/08/justica-manda-demarcar-terra-e-pedir-desculpas-aos-kajkwakratxi-tapayuna/",
+   "published": null,
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [
+    "Mongabay Brasil — Amazônia"
+   ],
+   "engine": "gemini"
   }
  ],
  "coverage": [
   {
    "region": "northern_africa",
    "label": "North Africa",
-   "count": 2,
-   "available": 2
+   "count": 1,
+   "available": 1
   },
   {
    "region": "western_africa",
@@ -4452,32 +4620,32 @@
   {
    "region": "middle_africa",
    "label": "Central Africa",
-   "count": 7,
-   "available": 7
+   "count": 8,
+   "available": 8
   },
   {
    "region": "eastern_africa",
    "label": "East Africa",
-   "count": 15,
-   "available": 15
+   "count": 13,
+   "available": 13
   },
   {
    "region": "southern_africa",
    "label": "Southern Africa",
-   "count": 11,
-   "available": 11
+   "count": 10,
+   "available": 10
   },
   {
    "region": "northern_america",
    "label": "North America",
-   "count": 6,
-   "available": 6
+   "count": 7,
+   "available": 7
   },
   {
    "region": "central_america",
    "label": "Central America",
-   "count": 1,
-   "available": 1
+   "count": 3,
+   "available": 3
   },
   {
    "region": "caribbean",
@@ -4488,14 +4656,14 @@
   {
    "region": "south_america",
    "label": "South America",
-   "count": 21,
-   "available": 21
+   "count": 29,
+   "available": 29
   },
   {
    "region": "central_asia",
    "label": "Central Asia",
-   "count": 0,
-   "available": 0
+   "count": 1,
+   "available": 1
   },
   {
    "region": "eastern_asia",
@@ -4512,8 +4680,8 @@
   {
    "region": "south_eastern_asia",
    "label": "Southeast Asia",
-   "count": 20,
-   "available": 20
+   "count": 19,
+   "available": 19
   },
   {
    "region": "western_asia",
@@ -4530,8 +4698,8 @@
   {
    "region": "northern_europe",
    "label": "Northern Europe",
-   "count": 7,
-   "available": 7
+   "count": 6,
+   "available": 6
   },
   {
    "region": "southern_europe",
@@ -4542,8 +4710,8 @@
   {
    "region": "western_europe",
    "label": "Western Europe",
-   "count": 5,
-   "available": 5
+   "count": 7,
+   "available": 7
   },
   {
    "region": "australia_nz",
@@ -4554,8 +4722,8 @@
   {
    "region": "melanesia",
    "label": "Melanesia",
-   "count": 3,
-   "available": 3
+   "count": 4,
+   "available": 4
   },
   {
    "region": "micronesia",
@@ -4566,8 +4734,8 @@
   {
    "region": "polynesia",
    "label": "Polynesia",
-   "count": 2,
-   "available": 2
+   "count": 0,
+   "available": 0
   },
   {
    "region": "polar",
@@ -4584,25 +4752,25 @@
   {
    "region": "global",
    "label": "Global / multi-region",
-   "count": 16,
-   "available": 16
+   "count": 17,
+   "available": 17
   },
   {
    "region": "unlocated",
    "label": "No place identified",
-   "count": 7,
-   "available": 7
+   "count": 5,
+   "available": 5
   }
  ],
  "stats": {
-  "documents_harvested": 1901,
-  "documents_yielding_nothing": 1763,
-  "facts_published": 175,
+  "documents_harvested": 1885,
+  "documents_yielding_nothing": 1736,
+  "facts_published": 182,
   "by_engine": {
-   "gemini": 2,
-   "groq": 24,
-   "scorer": 149
+   "gemini": 19,
+   "groq": 18,
+   "scorer": 145
   },
-  "context_lines_attached": 47
+  "context_lines_attached": 44
  }
 }
