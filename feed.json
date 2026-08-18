@@ -1,26 +1,151 @@
 {
- "generated_at": "2026-08-17T19:04:44.474478+00:00",
+ "generated_at": "2026-08-18T02:03:15.717138+00:00",
  "rows": [
   {
-   "id": "13af803ca263e0c8-1",
-   "fact": "LUCENA CITY — The water level of Laguna de Bay rose to 12.25 meters on Monday afternoon (Aug. 17) after a slight decline earlier in the day, bringing it closer to the lake’s critical high-water threshold, the Laguna Lake Development Authority (LLDA) reported.",
+   "id": "fa7cb178aba9052f-2",
+   "fact": "In an advisory, Phivolcs said SO₂ emissions from the summit crater reached a very high rate of 8,393 tonnes per day, just days",
+   "fact_type": "rate",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "In an advisory, Phivolcs said SO₂ emissions from the summit crater reached a very high rate of 8,393 tonnes per day, just days",
+   "region": "unlocated",
+   "region_label": "No place identified",
+   "place": null,
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "newsinfo.inquirer.net",
+   "url": "https://newsinfo.inquirer.net/2286873/phivolcs-braces-for-renewed-eruptive-activity-in-mayon",
+   "published": "2026-08-18T07:54:46+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "d25f1ffcb7db0fad-10",
+   "fact": "The House of Representatives ad hoc committee on illegal mining recently estimated the money lost to unregulated mining operations at $9 billion yearly.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
+   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
+   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
+   "context_direction": "worsening",
+   "anchor": "The House of Representatives ad hoc committee on illegal mining recently estimated the money lost to unregulated mining operations at $9 billion yearly.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "niger",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/18/death-and-the-artisanal-miners/",
+   "published": "2026-08-18T00:52:53+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "d25f1ffcb7db0fad-14",
+   "fact": "According to the government spokesman, Mustapha Kaura, there are about 20,000 illegal miners from within and outside of the country who had taken over the mining sites in the state.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
+   "context_source": "Lavoie et al., Scientific Reports (2018)",
+   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "context_direction": "worsening",
+   "anchor": "According to the government spokesman, Mustapha Kaura, there are about 20,000 illegal miners from within and outside of the country who had taken over the mining sites in the state.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "niger",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/18/death-and-the-artisanal-miners/",
+   "published": "2026-08-18T00:52:53+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "3b5dd524ecbf2442-7",
+   "fact": "The water level of the La Mesa Dam in Quezon City was at 79.69 meters as of 5 am on Tuesday — still above its critical level of 79.50 meters but below its spilling level of 80.15 meters.",
    "fact_type": "magnitude",
    "scope": "",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "LUCENA CITY — The water level of Laguna de Bay rose to 12.25 meters on Monday afternoon (Aug. 17) after a slight decline earlier in the day, bringing it closer to the lake’s critical high-water threshold, the Laguna Lake Development Authority (LLDA) reported.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
+   "anchor": "The water level of the La Mesa Dam in Quezon City was at 79.69 meters as of 5 am on Tuesday — still above its critical level of 79.50 meters but below its spilling level of 80.15 meters.",
+   "region": "south_eastern_asia",
+   "region_label": "Southeast Asia",
+   "place": "philippines",
    "topics": [
     "freshwater"
    ],
    "tier": "journalism",
-   "source_name": "newsinfo.inquirer.net",
-   "url": "https://newsinfo.inquirer.net/2286596/laguna-lake-water-level-rises-again",
-   "published": "2026-08-17T19:57:57+00:00",
+   "source_name": "Rappler",
+   "url": "https://www.rappler.com/philippines/weather/southwest-monsoon-lpa-update-pagasa-forecast-august-18-2026-5am/",
+   "published": "2026-08-17T23:10:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "95e1cf034ca790d0-4",
+   "fact": "The mine generated a $65.1 million net loss in the first quarter of 2026, and a net loss of about $280 million for all of 2025.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The mine generated a $65.1 million net loss in the first quarter of 2026, and a net loss of about $280 million for all of 2025.",
+   "region": "polar",
+   "region_label": "Arctic & Antarctic",
+   "place": "greenland",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "Eye on the Arctic",
+   "url": "https://www.rcinet.ca/eye-on-the-arctic/2026/08/17/gahcho-kue-sees-encouraging-diamond-sale-despite-120-6m-net-loss-in-second-quarter/",
+   "published": "2026-08-17T19:56:21+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "0223e00119102833-0",
+   "fact": "Lake Powell hits record low, threatening key water and electricity supply for millions.",
+   "fact_type": "threshold",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Lake Powell hits record low, threatening key water and electricity supply for millions.",
+   "region": "northern_america",
+   "region_label": "North America",
+   "place": "colorado river",
+   "topics": [
+    "freshwater"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay",
+   "url": "https://news.mongabay.com/short-article/2026/08/lake-powell-hits-record-low-threatening-key-water-and-electricity-supply-for-millions/",
+   "published": "2026-08-17T19:41:46+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -102,31 +227,6 @@
    "engine": "scorer"
   },
   {
-   "id": "3ef006042d9f9a7a-1",
-   "fact": "The NDLEA Edo State Command has destroyed two cannabis farms worth 4,628.9kg and arrested 10 suspected drug traffickers in various operations across the st Read More: https://punchng.com/ndlea-destroys-two-cannabis-farms-in-edo-arrests-10/",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The NDLEA Edo State Command has destroyed two cannabis farms worth 4,628.9kg and arrested 10 suspected drug traffickers in various operations across the st Read More: https://punchng.com/ndlea-destroys-two-cannabis-farms-in-edo-arrests-10/",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "food"
-   ],
-   "tier": "journalism",
-   "source_name": "punchng.com",
-   "url": "https://punchng.com/ndlea-destroys-two-cannabis-farms-in-edo-arrests-10/?utm_source=rss.punchng.com&utm_medium=web",
-   "published": "2026-08-17T17:56:26+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "eba6b16a35770a40-20",
    "fact": "Nsor-Ambala pointed out that the bank estimated that the investment required to achieve the expected impact in the oil palm sector exceeded $1 billion.",
    "fact_type": "threshold",
@@ -146,31 +246,6 @@
    "source_name": "MyJoyOnline",
    "url": "https://www.myjoyonline.com/dbg-to-develop-tailored-financing-tools-to-drive-ghanas-oil-palm-industry/",
    "published": "2026-08-17T17:41:18+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "c6f61591cab90707-1",
-   "fact": "Oman intensifies efforts to contain oil spill from stranded ship Oman increased its efforts to mitigate the potential environmental impacts from a ship's oil spill, which covers an area of over 2,000 square kilometres, according to a statement released by the country’s Ministry of Transport, Communications and Information Technology on Monday.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Oman intensifies efforts to contain oil spill from stranded ship Oman increased its efforts to mitigate the potential environmental impacts from a ship's oil spill, which covers an area of over 2,000 square kilometres, according to a statement released by the country’s Ministry of Transport, Communications and Information Technology on Monday.",
-   "region": "western_asia",
-   "region_label": "West Asia",
-   "place": "oman",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oman-intensifies-efforts-contain-oil-spill-stranded-ship",
-   "published": "2026-08-17T17:40:27+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -227,38 +302,13 @@
    "engine": "scorer"
   },
   {
-   "id": "b05d6bd4416a3c8e-15",
-   "fact": "“Because as we speak, about 60 percent of rural populations still do not have access to clean water.” Call for urgent action The experts therefore urged government and other stakeholders to treat illegal mining as an immediate public health concern rather than waiting for the full effects of prolonged exposure to emerge.",
-   "fact_type": "attribution",
-   "scope": "",
-   "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
-   "context_source": "Global Witness, Roots of Resistance (2025)",
-   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
-   "context_direction": "worsening",
-   "anchor": "“Because as we speak, about 60 percent of rural populations still do not have access to clean water.” Call for urgent action The experts therefore urged government and other stakeholders to treat illegal mining as an immediate public health concern rather than waiting for the full effects of prolonged exposure to emerge.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "ghana",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/galamsey-could-trigger-major-health-crisis-within-five-years-medical-experts-warn/",
-   "published": "2026-08-17T15:44:41+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "2f1dec2432d7832c-8",
    "fact": "The brands available under the partnership include the GWM Tank 500, GWM P300 SX pickup and HAVAL H6 GT Plug-in Hybrid Electric Vehicle, as well as SINOTRUK commercial trucks, XCMG construction and mining equipment and Heli electric forklifts.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
-   "context_source": "Lavoie et al., Scientific Reports (2018)",
-   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
+   "context_source": "Global Witness, Roots of Resistance (2025)",
+   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
    "context_direction": "worsening",
    "anchor": "The brands available under the partnership include the GWM Tank 500, GWM P300 SX pickup and HAVAL H6 GT Plug-in Hybrid Electric Vehicle, as well as SINOTRUK commercial trucks, XCMG construction and mining equipment and Heli electric forklifts.",
    "region": "eastern_africa",
@@ -271,31 +321,6 @@
    "source_name": "independent.co.ug",
    "url": "https://www.independent.co.ug/dfcu-double-q-move-to-ease-access-to-vehicles-and-equipment/",
    "published": "2026-08-17T15:13:43+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "13d8a74b22ae04e7-41",
-   "fact": "The UN estimates that about 1.9 million people – 90% of Gaza’s population – have been displaced since the war started.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The UN estimates that about 1.9 million people – 90% of Gaza’s population – have been displaced since the war started.",
-   "region": "western_asia",
-   "region_label": "West Asia",
-   "place": "saudi arabia",
-   "topics": [
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/trump-envoy-kushner-arrives-in-israel-after-rare-hamas-talks-on-gaza-peace-plan/",
-   "published": "2026-08-17T14:47:58+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -352,57 +377,6 @@
    "engine": "scorer"
   },
   {
-   "id": "8461ec5d13ca64b5-1",
-   "fact": "KINGSTON, Jamaica — The Association of Christian Communicators and Media (ACCM) is urging the ministers of justice and social security to work together to establish clear protocols for carrying out court-ordered evictions involving families, following the recent demolition of dwellings in Cooper’s Pen, Trelawny.",
-   "fact_type": "actor",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "KINGSTON, Jamaica — The Association of Christian Communicators and Media (ACCM) is urging the ministers of justice and social security to work together to establish clear protocols for carrying out court-ordered evictions involving families, following the recent demolition of dwellings in Cooper’s Pen, Trelawny.",
-   "region": "caribbean",
-   "region_label": "Caribbean",
-   "place": "jamaica",
-   "topics": [
-    "law",
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "jamaicaobserver.com",
-   "url": "https://www.jamaicaobserver.com/2026/08/17/time-fix-massively-unjust-post-slavery-landlessness-says-accm/",
-   "published": "2026-08-17T13:24:16+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "fe6f60aef557c705-7",
-   "fact": "Baqaei said on Monday that French authorities should apologise, arguing that the pair had violated the Vienna Convention.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Baqaei said on Monday that French authorities should apologise, arguing that the pair had violated the Vienna Convention.",
-   "region": "western_europe",
-   "region_label": "Western Europe",
-   "place": "france",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-bars-two-french-diplomats-returning",
-   "published": "2026-08-17T13:21:59+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "4b54b925724eb1ba-4",
    "fact": "Trump has been President, has been unthreatening and respectful.” South Korea has been a close American ally for over 70 years and the two nations have a mutual defense treaty, primarily designed to protect it from North Korea –– a burgeoning military power that now posses nuclear warheads and intercontinental ballistic missiles.",
    "fact_type": "magnitude",
@@ -422,56 +396,6 @@
    "source_name": "Egypt Independent",
    "url": "https://www.egyptindependent.com/trump-says-us-will-reduce-joint-military-exercises-with-key-ally-south-korea/",
    "published": "2026-08-17T12:46:43+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "0444bd90cac15cc3-33",
-   "fact": "URC itself had only resumed direct control of its own network in 2017–2018, after a decade- long private concession (Rift Valley Railways) collapsed and left the corporation to rebuild both its infrastructure and its institutional capacity from a standing start.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "URC itself had only resumed direct control of its own network in 2017–2018, after a decade- long private concession (Rift Valley Railways) collapsed and left the corporation to rebuild both its infrastructure and its institutional capacity from a standing start.",
-   "region": "western_asia",
-   "region_label": "West Asia",
-   "place": "saudi arabia",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "independent.co.ug",
-   "url": "https://www.independent.co.ug/why-consultrans-are-the-right-partners-to-revive-uganda-railways/",
-   "published": "2026-08-17T12:38:27+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "74c10256e858eece-1",
-   "fact": "MANILA, Philippines – The Senate impeachment court on Monday, August 17, postponed the impeachment trial of Vice President Sara Duterte scheduled for Tuesday, August 18, citing the forecast of heavy rain and flooding due to the southwest monsoon or habagat .",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "MANILA, Philippines – The Senate impeachment court on Monday, August 17, postponed the impeachment trial of Vice President Sara Duterte scheduled for Tuesday, August 18, citing the forecast of heavy rain and flooding due to the southwest monsoon or habagat .",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "philippines",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "Rappler",
-   "url": "https://www.rappler.com/philippines/sara-duterte-impeachment-trial-postponed-bad-weather-august-18-2026/",
-   "published": "2026-08-17T12:30:17+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -630,56 +554,6 @@
    "source_name": "sibconline.com.sb",
    "url": "https://www.sibconline.com.sb/tina-river-hydro-project-tbm-named-rotima-as-the-project-reaches-35-percent-progress/",
    "published": "2026-08-17T06:45:04+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "7bcc95cffd373569-8",
-   "fact": "The Government has introduced several measures to strengthen human-elephant conflict management, including the recruitment of Elephant Fence Assistant Officers, 5,000 Civil Defence Force personnel and Multi-Purpose Development Officers for conservation-related activities.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The Government has introduced several measures to strengthen human-elephant conflict management, including the recruitment of Elephant Fence Assistant Officers, 5,000 Civil Defence Force personnel and Multi-Purpose Development Officers for conservation-related activities.",
-   "region": "southern_asia",
-   "region_label": "South Asia",
-   "place": "sri lanka",
-   "topics": [
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "island.lk",
-   "url": "http://island.lk/technology-vital-as-human-elephant-conflict-turns-deadly-activist/",
-   "published": "2026-08-17T00:02:08+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "ccb81024454a04fa-1",
-   "fact": "HAUTES FAGNES/BRUSSELS, Aug 16 (Reuters) - Firefighters battled with the aid of Dutch helicopters on Sunday to contain Belgium's biggest wildfire, which has already burned 3,000 hectares of land and which local authorities said was heading towards the German border.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "HAUTES FAGNES/BRUSSELS, Aug 16 (Reuters) - Firefighters battled with the aid of Dutch helicopters on Sunday to contain Belgium's biggest wildfire, which has already burned 3,000 hectares of land and which local authorities said was heading towards the German border.",
-   "region": "western_europe",
-   "region_label": "Western Europe",
-   "place": "belgium",
-   "topics": [
-    "fire"
-   ],
-   "tier": "journalism",
-   "source_name": "Daily Maverick — Our Burning Planet",
-   "url": "https://www.dailymaverick.co.za/article/2026-08-16-belgium-s-biggest-wildfire-on-record-heads-towards-germany/",
-   "published": "2026-08-16T21:44:37+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -1172,6 +1046,31 @@
    "engine": "scorer"
   },
   {
+   "id": "75e6cf08b068b77e-1",
+   "fact": "Nearly 90% of railway stations lack prescribed amenities, supplied drinking water found contaminated: CAG Down To Earth",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Nearly 90% of railway stations lack prescribed amenities, supplied drinking water found contaminated: CAG Down To Earth",
+   "region": "unlocated",
+   "region_label": "No place identified",
+   "place": null,
+   "topics": [
+    "toxics"
+   ],
+   "tier": "journalism",
+   "source_name": "downtoearth.org.in",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU2VTRm5UeXNYVERzV0NrR3VwUWtjYzE3eE8xVGRGTW1xSHJmSk10RWxuWGFGRTA1ODYzNFBUSVZMVnZmenlsc09TVXA5bWxaUlRHWUFfcF8ycjNWLUZMVE0yYkwtNkRaZ0xQdFlsLWFiX3l4bXI4aHo5SnpTSjhWYWNWZENDYTRBak1TNUdLZ1BwUFlYYVJSbS1HTEdiUXA1SHRfeTlJSW1JdjloRVNDWFZDS21ERF91TkVpLTNWY0pEWjdwN09kbUgwVjBScjZGYUlpZGdvMzJfa2dy0gHqAUFVX3lxTE1yM1ZKOFBYM3R2NXVLY1JlU3p0dDM5SGp6dUFBTVVZS1ZSY2FoV1BGN05NandjTmNrdFh2YUJMYjNFSHVBbnJsOGxDS3lNSkVheXNSRHZYRjBYdzJkaGM1WGVvSzFEeHJIUHN0aEplZmRubjgwUUE0SV9wQVZsTGQtUFd1NnFIWGVKUDQwR2xWSjBGV1pIS0hzS1pQN1NHYVh3NzI0WUl5NGJsMGxGdk9DY1Q0Nzc1NFJvd0Z3YUtrWXdEMWZoRGpJVUtHdXZaUkFaWXlTU3Y2d2llVkpobnEtU2pRNm84TUF1UQ?oc=5",
+   "published": "2026-08-14T11:33:14+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
    "id": "31dc9075cc595c32-1",
    "fact": "Widespread flooding in northeastern India that affected more than 500,000 people and claimed at least 99 lives between June and August 2026 was primarily driven by human factors like rapid urbanization, deforestation, and destruction of wetlands, new research says.",
    "fact_type": "attribution",
@@ -1498,82 +1397,6 @@
    "source_name": "Mongabay",
    "url": "https://news.mongabay.com/2026/08/a-mine-polluted-a-zambian-river-in-2025-residents-continue-to-live-with-the-impacts/",
    "published": "2026-08-13T16:13:34+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "f4d494310c35bdd3-5",
-   "fact": "According to Malaysia’s Air Pollutant Index Management System (APIMS), 11 areas in Sarawak recorded unhealthy API readings on Aug. 11, up from eight on Aug. 9.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "According to Malaysia’s Air Pollutant Index Management System (APIMS), 11 areas in Sarawak recorded unhealthy API readings on Aug. 11, up from eight on Aug. 9.",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "malaysia",
-   "topics": [
-    "toxics"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay",
-   "url": "https://news.mongabay.com/2026/08/indonesias-wildfire-season-surges-as-haze-spreads-into-malaysia/",
-   "published": "2026-08-13T14:23:57+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "f4d494310c35bdd3-3",
-   "fact": "IQAir, a Swiss-based air quality technology company, ranked Kuching, the capital of Malaysia’s Sarawak state, as the most polluted major city in the world on Aug. 11.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "IQAir, a Swiss-based air quality technology company, ranked Kuching, the capital of Malaysia’s Sarawak state, as the most polluted major city in the world on Aug. 11.",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "malaysia",
-   "topics": [
-    "toxics",
-    "air"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay",
-   "url": "https://news.mongabay.com/2026/08/indonesias-wildfire-season-surges-as-haze-spreads-into-malaysia/",
-   "published": "2026-08-13T14:23:57+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "2114b9ba369df514-4",
-   "fact": "“If I am a company, all I need to do is to hire a good mathematician and say like, ‘Hey, this is how much I want to show my progress.’” The analysis, published as a peer-reviewed perspective in the journal Nature Sustainability, looked at 401 European companies and found that 62.5% of their year-to-year variation in supply chain emissions could not be explained by changes to the business, industry, or emission intensity.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "“If I am a company, all I need to do is to hire a good mathematician and say like, ‘Hey, this is how much I want to show my progress.’” The analysis, published as a peer-reviewed perspective in the journal Nature Sustainability, looked at 401 European companies and found that 62.5% of their year-to-year variation in supply chain emissions could not be explained by changes to the business, industry, or emission intensity.",
-   "region": "western_europe",
-   "region_label": "Western Europe",
-   "place": "germany",
-   "topics": [
-    "carbon"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay",
-   "url": "https://news.mongabay.com/short-article/2026/08/carbon-accounting-differences-can-halve-a-companys-reported-footprint-study-finds/",
-   "published": "2026-08-13T14:06:42+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -2723,58 +2546,6 @@
    "engine": "scorer"
   },
   {
-   "id": "b2e89386e4755cf8-4",
-   "fact": "The chytrid fungus has caused the global extinction of 90 amphibian species and affected nearly 30% of all globally threatened amphibians .",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "At least 680 vertebrate species have been driven to extinction by human actions since the 16th century, and 25% of species are threatened across every well-studied group of animals and plants. The losses are not confined to one habitat or one taxon — they run through all of them at once.",
-   "context_source": "IPBES, Global Assessment media release (2019)",
-   "context_url": "https://www.ipbes.net/node/35234",
-   "context_direction": "leverage",
-   "anchor": "The chytrid fungus has caused the global extinction of 90 amphibian species and affected nearly 30% of all globally threatened amphibians .",
-   "region": "global",
-   "region_label": "Global / multi-region",
-   "place": null,
-   "topics": [
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "The Conversation Australia — Environment",
-   "url": "https://theconversation.com/we-can-help-frogs-beat-a-deadly-disease-but-can-they-still-reproduce-288085",
-   "published": "2026-08-04T23:53:59+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "cdeda0e6a036fc90-32",
-   "fact": "Henrik Karlsson/Getty For now, H5N1 has not yet reached Australia’s pinniped colonies, which are already under pressure from fishery nets and hooks, pollution, habitat destruction and climate change.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Henrik Karlsson/Getty For now, H5N1 has not yet reached Australia’s pinniped colonies, which are already under pressure from fishery nets and hooks, pollution, habitat destruction and climate change.",
-   "region": "australia_nz",
-   "region_label": "Australia & NZ",
-   "place": "australia",
-   "topics": [
-    "toxics",
-    "ocean",
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "The Conversation Australia — Environment",
-   "url": "https://theconversation.com/bird-flu-decimated-south-americas-marine-mammals-what-can-australia-do-differently-288800",
-   "published": "2026-08-04T20:05:05+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "197f130e45632351-8",
    "fact": "Even the Kyoto conference, which produced the first legally binding emissions agreement, hosted fewer than 10,000 people.",
    "fact_type": "magnitude",
@@ -3649,9 +3420,9 @@
   },
   {
    "id": "84e99b1f09ae914c-7",
-   "fact": "This marks the 13th birth recorded among mountain gorillas in the reserve since the beginning of the year 2026.",
+   "fact": "This is the 13th birth recorded among the mountain gorillas in the reserve since the beginning of 2026.",
    "fact_type": "magnitude",
-   "scope": "Parc national des Virunga",
+   "scope": "Virunga National Park",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -3674,7 +3445,7 @@
   },
   {
    "id": "60fd57a32f6f73a1-0",
-   "fact": "Using GPS technologies in the Waza and Bouba Ndjida national parks reduced human-lion conflicts by enabling real-time lion movement monitoring and community alerts via trained guards.",
+   "fact": "Using GPS technologies in the Waza and Bouba Ndjida national parks reduced human-lion conflicts by enabling real-time lion movement monitoring and community alerts via trained guards equipped with smartphones.",
    "fact_type": "magnitude",
    "scope": "in the Waza and Bouba Ndjida national parks, Cameroon",
    "context": null,
@@ -3733,8 +3504,8 @@
   {
    "region": "western_africa",
    "label": "West Africa",
-   "count": 6,
-   "available": 6
+   "count": 7,
+   "available": 7
   },
   {
    "region": "middle_africa",
@@ -3757,8 +3528,8 @@
   {
    "region": "northern_america",
    "label": "North America",
-   "count": 4,
-   "available": 4
+   "count": 5,
+   "available": 5
   },
   {
    "region": "central_america",
@@ -3769,8 +3540,8 @@
   {
    "region": "caribbean",
    "label": "Caribbean",
-   "count": 4,
-   "available": 4
+   "count": 3,
+   "available": 3
   },
   {
    "region": "south_america",
@@ -3793,20 +3564,20 @@
   {
    "region": "southern_asia",
    "label": "South Asia",
-   "count": 14,
-   "available": 14
+   "count": 13,
+   "available": 13
   },
   {
    "region": "south_eastern_asia",
    "label": "Southeast Asia",
-   "count": 20,
-   "available": 20
+   "count": 18,
+   "available": 18
   },
   {
    "region": "western_asia",
    "label": "West Asia",
-   "count": 13,
-   "available": 13
+   "count": 10,
+   "available": 10
   },
   {
    "region": "eastern_europe",
@@ -3829,14 +3600,14 @@
   {
    "region": "western_europe",
    "label": "Western Europe",
-   "count": 5,
-   "available": 5
+   "count": 2,
+   "available": 2
   },
   {
    "region": "australia_nz",
    "label": "Australia & NZ",
-   "count": 4,
-   "available": 4
+   "count": 3,
+   "available": 3
   },
   {
    "region": "melanesia",
@@ -3859,8 +3630,8 @@
   {
    "region": "polar",
    "label": "Arctic & Antarctic",
-   "count": 2,
-   "available": 2
+   "count": 3,
+   "available": 3
   },
   {
    "region": "ocean",
@@ -3871,8 +3642,8 @@
   {
    "region": "global",
    "label": "Global / multi-region",
-   "count": 15,
-   "available": 15
+   "count": 14,
+   "available": 14
   },
   {
    "region": "unlocated",
@@ -3883,12 +3654,12 @@
  ],
  "stats": {
   "documents_harvested": 1954,
-  "documents_yielding_nothing": 1831,
-  "facts_published": 146,
+  "documents_yielding_nothing": 1843,
+  "facts_published": 137,
   "by_engine": {
    "gemini": 1,
    "mistral": 1,
-   "scorer": 144
+   "scorer": 135
   },
   "context_lines_attached": 41
  }
