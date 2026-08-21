@@ -1,6 +1,31 @@
 {
- "generated_at": "2026-08-20T19:17:21.356530+00:00",
+ "generated_at": "2026-08-21T02:16:33.169103+00:00",
  "rows": [
+  {
+   "id": "ca5d798be0ae50c8-2",
+   "fact": "The local governments of the coastal towns of Calumpit, Hagonoy and Bulakan, which were swamped by as high as 1.82 meters (6 feet) of floodwaters,",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The local governments of the coastal towns of Calumpit, Hagonoy and Bulakan, which were swamped by as high as 1.82 meters (6 feet) of floodwaters,",
+   "region": "unlocated",
+   "region_label": "No place identified",
+   "place": null,
+   "topics": [
+    "ocean"
+   ],
+   "tier": "journalism",
+   "source_name": "newsinfo.inquirer.net",
+   "url": "https://newsinfo.inquirer.net/2289203/state-of-calamity-up-in-flood-hit-bulacan",
+   "published": "2026-08-21T05:06:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
   {
    "id": "f03e3c8e17bfed40-2",
    "fact": "In its quarterly report, the mining company said its net income reached P948.76 million from January to June, up 52.1 percent from P623.87 million in",
@@ -21,6 +46,82 @@
    "source_name": "business.inquirer.net",
    "url": "https://business.inquirer.net/606905/benguets-first-half-profit-jumps-52",
    "published": "2026-08-21T02:22:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "90532b6697221cf7-5",
+   "fact": "Shema traced the history of port economic regulation in Nigeria to the establishment of the Nigerian Shippers’ Council in 1978 and the concessioning of port terminals in 2006.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Shema traced the history of port economic regulation in Nigeria to the establishment of the Nigerian Shippers’ Council in 1978 and the concessioning of port terminals in 2006.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "nigeria",
+   "topics": [
+    "law",
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/21/npera-commences-operation-targets-fair-tariffs-faster-cargo-clearance/",
+   "published": "2026-08-21T00:40:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "83caa6d749d0052f-89",
+   "fact": "However, if presented with a number that says how confident, (rather than saying it is bound to cause cancer, 100%) you are of that fact, it would be an easier truth to digest. · Try to find common ground with indigenous knowledge Like mentioned earlier, scientific knowledge and traditional indigenous knowledge need not be foes.",
+   "fact_type": "attribution",
+   "scope": "",
+   "context": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
+   "context_source": "Global Witness, Roots of Resistance (2025)",
+   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "context_direction": "leverage",
+   "anchor": "However, if presented with a number that says how confident, (rather than saying it is bound to cause cancer, 100%) you are of that fact, it would be an easier truth to digest. · Try to find common ground with indigenous knowledge Like mentioned earlier, scientific knowledge and traditional indigenous knowledge need not be foes.",
+   "region": "southern_asia",
+   "region_label": "South Asia",
+   "place": "sri lanka",
+   "topics": [
+    "land_tenure"
+   ],
+   "tier": "journalism",
+   "source_name": "island.lk",
+   "url": "http://island.lk/when-science-challenges-tradition-what-should-we-do/",
+   "published": "2026-08-20T23:50:52+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "2a0e663d2add5f69-2",
+   "fact": "The Premier League champions, who ended a 22-year title drought last season under manager Mikel Arteta, also narrowly missed a domestic double after losing to Paris Saint-Germain on penalties in the FA Cup final.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The Premier League champions, who ended a 22-year title drought last season under manager Mikel Arteta, also narrowly missed a domestic double after losing to Paris Saint-Germain on penalties in the FA Cup final.",
+   "region": "unlocated",
+   "region_label": "No place identified",
+   "place": null,
+   "topics": [
+    "freshwater"
+   ],
+   "tier": "journalism",
+   "source_name": "leadership.ng",
+   "url": "https://leadership.ng/arsenal-now-worlds-3rd-most-valuable-football-club/",
+   "published": "2026-08-20T22:13:01+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -52,25 +153,51 @@
    "engine": "scorer"
   },
   {
-   "id": "faab0debe2568a39-1",
-   "fact": "SAN ANTONIO, Zambales — Initial agricultural damage in the Zambales town of San Marcelino has reached P2.54 million due to floods and heavy rains brought by recent weather disturbances and the southwest monsoon.",
+   "id": "e8d10293755d8737-7",
+   "fact": "And since 2019, essays on Indigenous monitoring and environment restoration from places like Clyde River, Nunavut and Sámi areas in northern Europe have also been included.",
+   "fact_type": "rate",
+   "scope": "",
+   "context": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
+   "context_source": "Global Witness, Roots of Resistance (2025)",
+   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "context_direction": "leverage",
+   "anchor": "And since 2019, essays on Indigenous monitoring and environment restoration from places like Clyde River, Nunavut and Sámi areas in northern Europe have also been included.",
+   "region": "polar",
+   "region_label": "Arctic & Antarctic",
+   "place": "nunavut",
+   "topics": [
+    "land_tenure",
+    "freshwater"
+   ],
+   "tier": "journalism",
+   "source_name": "Eye on the Arctic",
+   "url": "https://www.rcinet.ca/eye-on-the-arctic/2026/08/20/arctic-report-card-will-survive-2026-without-noaa-but-what-comes-next/",
+   "published": "2026-08-20T19:29:10+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "d7e7317b69ab2900-3",
+   "fact": "“As the ministry fine-tunes preparations ahead of the start of the 2026 to 2027 school year, the political executive in the ministry has embarked on a series of visits to schools that were considerably impacted by the passage of hurricane Melissa.",
    "fact_type": "magnitude",
    "scope": "",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "SAN ANTONIO, Zambales — Initial agricultural damage in the Zambales town of San Marcelino has reached P2.54 million due to floods and heavy rains brought by recent weather disturbances and the southwest monsoon.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
+   "anchor": "“As the ministry fine-tunes preparations ahead of the start of the 2026 to 2027 school year, the political executive in the ministry has embarked on a series of visits to schools that were considerably impacted by the passage of hurricane Melissa.",
+   "region": "caribbean",
+   "region_label": "Caribbean",
+   "place": "jamaica",
    "topics": [
-    "food"
+    "law"
    ],
    "tier": "journalism",
-   "source_name": "newsinfo.inquirer.net",
-   "url": "https://newsinfo.inquirer.net/2289069/agricultural-damage-in-zambales-town-reaches-over-p2-54-million",
-   "published": "2026-08-20T17:52:32+00:00",
+   "source_name": "jamaicaobserver.com",
+   "url": "https://www.jamaicaobserver.com/2026/08/20/schools-show-mixed-readiness-september-reopening/",
+   "published": "2026-08-20T19:11:24+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -152,6 +279,31 @@
    "engine": "scorer"
   },
   {
+   "id": "33cd536438cd1f17-0",
+   "fact": "Frigoríficos da Amazônia slaughtered 142 mil illegal cattle heads in 2023 and 2024.",
+   "fact_type": "magnitude",
+   "scope": "Amazônia",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Frigoríficos da Amazônia abateram 142 mil cabeças de gado ilegal em 2023 e 2024.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "amazonia",
+   "topics": [
+    "food"
+   ],
+   "tier": "journalism",
+   "source_name": "((o))eco",
+   "url": "https://oeco.org.br/reportagens/frigorificos-da-amazonia-abateram-134-mil-cabecas-de-gado-ilegal-em-2023-e-2024/",
+   "published": "2026-08-20T15:09:16+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "f5b8a0aff74e7ca4-36",
    "fact": "New coal mine openings slow as East Asian demand plateaus Climate finance constraints While developing countries are already seeking more funding to implement ocean-based conservation, carbon storage and clean energy measures, experts said this will be a “difficult discussion” at COP31, as developed countries will arrive in Antalya with shrinking aid budgets .",
    "fact_type": "projection",
@@ -173,83 +325,6 @@
    "source_name": "Climate Home News",
    "url": "https://www.climatechangenews.com/2026/08/20/marine-heat-records-countries-ocean-roadmap-australia-turkiye-cop31/",
    "published": "2026-08-20T15:07:29+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "0884678e958481cb-2",
-   "fact": "Head of Geology and Exploration, Ekow Taylor said the company had not received any formal notice outlining a material breach that could lead to the revocation of its mining lease.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Head of Geology and Exploration, Ekow Taylor said the company had not received any formal notice outlining a material breach that could lead to the revocation of its mining lease.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "ghana",
-   "topics": [
-    "toxics",
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/adamus-resources-challenges-revocation-of-mining-leases-says-it-was-not-notified-of-breaches/",
-   "published": "2026-08-20T14:58:26+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "0884678e958481cb-13",
-   "fact": "The dispute therefore remains focused on due process, the alleged regulatory breaches and the legal basis for the government’s decision to terminate Adamus Resources’ mining rights.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The dispute therefore remains focused on due process, the alleged regulatory breaches and the legal basis for the government’s decision to terminate Adamus Resources’ mining rights.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "ghana",
-   "topics": [
-    "law",
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/adamus-resources-challenges-revocation-of-mining-leases-says-it-was-not-notified-of-breaches/",
-   "published": "2026-08-20T14:58:26+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "383a9e1aa693e5ad-1",
-   "fact": "The Ghana Mineworkers’ Union (GMWU) of the Trades Union Congress (TUC) has petitioned the Finance Minister over more than GH¢380 million in locked-up funds belonging to over 19,000 mineworkers, warning that continued delays could trigger widespread industrial action across the mining sector.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
-   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
-   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
-   "context_direction": "worsening",
-   "anchor": "The Ghana Mineworkers’ Union (GMWU) of the Trades Union Congress (TUC) has petitioned the Finance Minister over more than GH¢380 million in locked-up funds belonging to over 19,000 mineworkers, warning that continued delays could trigger widespread industrial action across the mining sector.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "ghana",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/mineworkers-petition-finance-minister-over-gh%c2%a2380m-locked-up-funds-threaten-strikes/",
-   "published": "2026-08-20T14:56:35+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -301,31 +376,6 @@
    "source_name": "Eye on the Arctic",
    "url": "https://www.rcinet.ca/eye-on-the-arctic/2026/08/20/warming-climate-could-mean-more-harmful-bacteria-in-northern-water-sources-study-says/",
    "published": "2026-08-20T13:16:58+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "8eba4e821bff2cf1-1",
-   "fact": "KINGSTON, Jamaica — Opposition Spokesperson on Transport and Mining Mikael Phillips is renewing calls for Transport Minister Daryl Vaz to provide an update on the Government’s maintenance arrangements for the 100 rural school buses supplied by El Hydro Limited, as the new school year approaches.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
-   "context_source": "Global Witness, Roots of Resistance (2025)",
-   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
-   "context_direction": "worsening",
-   "anchor": "KINGSTON, Jamaica — Opposition Spokesperson on Transport and Mining Mikael Phillips is renewing calls for Transport Minister Daryl Vaz to provide an update on the Government’s maintenance arrangements for the 100 rural school buses supplied by El Hydro Limited, as the new school year approaches.",
-   "region": "caribbean",
-   "region_label": "Caribbean",
-   "place": "jamaica",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "jamaicaobserver.com",
-   "url": "https://www.jamaicaobserver.com/2026/08/20/phillips-demands-update-rural-school-bus-maintenance-ahead-new-term/",
-   "published": "2026-08-20T13:15:23+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -401,32 +451,6 @@
    "source_name": "VnExpress International",
    "url": "https://e.vnexpress.net/news/news/crime/hui-ka-yan-founder-of-troubled-property-developer-evergrande-sentenced-to-life-in-prison-5111331.html",
    "published": "2026-08-20T09:13:43+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "3caac4cec8da4600-1",
-   "fact": "The Nigerian Upstream Petroleum Regulatory Commission (NUPRC) says the deep offshore oil and gas project incentives (tax remission)… The post NUPRC: Deep offshore tax order to unlock $50bn investment, add 1m bpd to production appeared first on TheCable .",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The Nigerian Upstream Petroleum Regulatory Commission (NUPRC) says the deep offshore oil and gas project incentives (tax remission)… The post NUPRC: Deep offshore tax order to unlock $50bn investment, add 1m bpd to production appeared first on TheCable .",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "extraction",
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "thecable.ng",
-   "url": "https://www.thecable.ng/nuprc-deep-offshore-tax-order-to-unlock-50bn-investment-add-1m-bpd-to-production/",
-   "published": "2026-08-20T09:03:10+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -743,58 +767,6 @@
    "engine": "scorer"
   },
   {
-   "id": "1a6adb98106a84b6-1",
-   "fact": "While the government argued the challenge to its plan to build new power plants was premature and threatens grid security, youth climate leaders maintain that forced coal expansion directly violates children’s constitutional rights and locks the country into unnecessary health and environmental crises.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "While the government argued the challenge to its plan to build new power plants was premature and threatens grid security, youth climate leaders maintain that forced coal expansion directly violates children’s constitutional rights and locks the country into unnecessary health and environmental crises.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "extraction",
-    "carbon"
-   ],
-   "tier": "journalism",
-   "source_name": "Daily Maverick — Our Burning Planet",
-   "url": "https://www.dailymaverick.co.za/article/2026-08-19-cancelcoal-court-battle-threatens-future-of-young-south-africans-say-activists/",
-   "published": "2026-08-19T23:20:55+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "3ec992946df1e9f8-1",
-   "fact": "The DA’s Mark Burke has stepped down from Parliament’s most important financial oversight committees as the SA Reserve Bank continues to investigate a company he founded for alleged violation of foreign exchange control regulations.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The DA’s Mark Burke has stepped down from Parliament’s most important financial oversight committees as the SA Reserve Bank continues to investigate a company he founded for alleged violation of foreign exchange control regulations.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "law",
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "Daily Maverick — Our Burning Planet",
-   "url": "https://www.dailymaverick.co.za/article/2026-08-19-da-finance-chief-steps-aside-over-conflict-of-interest-concerns-in-r4bn-forex-probe/",
-   "published": "2026-08-19T22:45:30+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "afba455c2819d439-1",
    "fact": "Aug. 19 is World Orangutan Day, a day to honor the three species of Southeast Asian great apes, all of which are classified as critically endangered by the IUCN, the global conservation authority.",
    "fact_type": "rate",
@@ -896,7 +868,7 @@
   },
   {
    "id": "88e527ea6fd8d3ec-4",
-   "fact": "As forças de segurança dos estados recuperaram 6 mil aparelhos celulares a partir de ações de combate a roubos e furtos.",
+   "fact": "As forças de segurança dos estados recuperaram 6 mil aparelhos celulares a partir das ações realizadas.",
    "fact_type": "magnitude",
    "scope": "Brasil",
    "context": null,
@@ -922,10 +894,10 @@
    "fact": "Conducted by the Kaziranga Tiger Cell in collaboration with the Wildlife Conservation Trust (WCT) and The Fishing Cat Project, the assessment estimated a minimum of 55 greater hog badgers across the 1,100 square kilometres of surveyed area and found that the species occupies nearly half the landscape.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
+   "context": "At least 680 vertebrate species have been driven to extinction by human actions since the 16th century, and 25% of species are threatened across every well-studied group of animals and plants. The losses are not confined to one habitat or one taxon — they run through all of them at once.",
    "context_source": "IPBES, Global Assessment media release (2019)",
    "context_url": "https://www.ipbes.net/node/35234",
-   "context_direction": "worsening",
+   "context_direction": "leverage",
    "anchor": "Conducted by the Kaziranga Tiger Cell in collaboration with the Wildlife Conservation Trust (WCT) and The Fishing Cat Project, the assessment estimated a minimum of 55 greater hog badgers across the 1,100 square kilometres of surveyed area and found that the species occupies nearly half the landscape.",
    "region": "southern_asia",
    "region_label": "South Asia",
@@ -941,31 +913,6 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
-  },
-  {
-   "id": "ae8122dee5da237a-3",
-   "fact": "Women make up 51,5% of the country's population.",
-   "fact_type": "magnitude",
-   "scope": "Brazil",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Além do que, vamos combinar, somos 51,5% da população do país. É feio ser uma eleição presidencial só de homens no topo, e os candidatos do topo sabem que é feio.",
-   "region": "south_america",
-   "region_label": "South America",
-   "place": "para",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "Agência Pública",
-   "url": "https://apublica.org/2026/08/campanha-presidencial-um-aceno-as-mulheres-e-suficiente/",
-   "published": "2026-08-19T15:00:00+00:00",
-   "lang": "pt",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
   },
   {
    "id": "ef69fa720a1edc88-2",
@@ -1890,9 +1837,9 @@
    "fact": "For example, the critically endangered Kolar roundleaf bat (Hipposideros hypophyllus) that survives in a single cave in Karnataka is known to munch on 4,100 species of insects, including mosquitoes that transmit dengue and malaria.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "75% of the world's food crops depend at least in part on pollination, and the volume of production that needs animal pollination has risen 300% in 50 years. Meanwhile more than 40% of invertebrate pollinator species face extinction — demand rising, supply falling.",
-   "context_source": "IPBES, Assessment on Pollinators, Pollination and Food Production (2016)",
-   "context_url": "https://www.ipbes.net/node/11774",
+   "context": "Human appropriation of net primary production has risen from 15.7% of potential natural production in 1950 to 23.5% in 2020. Close to a quarter of everything the land grows is now taken or altered by a single species.",
+   "context_source": "Richardson et al., Science Advances (2023)",
+   "context_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
    "context_direction": "worsening",
    "anchor": "For example, the critically endangered Kolar roundleaf bat (Hipposideros hypophyllus) that survives in a single cave in Karnataka is known to munch on 4,100 species of insects, including mosquitoes that transmit dengue and malaria.",
    "region": "southern_asia",
@@ -2039,32 +1986,6 @@
    "engine": "scorer"
   },
   {
-   "id": "ffa8fd4e39f9f4f9-8",
-   "fact": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
-   "region": "southern_africa",
-   "region_label": "Southern Africa",
-   "place": "south africa",
-   "topics": [
-    "carbon",
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "Climate Home News",
-   "url": "https://www.climatechangenews.com/2026/08/11/south-africas-offshore-oil-push-ground-resistance-courts-litigation-ocean/",
-   "published": "2026-08-11T16:30:26+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "ffa8fd4e39f9f4f9-19",
    "fact": "Co-plaintiff Sinegugu Zukulu also said in 2022 that “oil and gas will lead to more emissions, and in the face of climate change, this is wholly irresponsible”.",
    "fact_type": "projection",
@@ -2081,6 +2002,32 @@
     "extraction",
     "carbon",
     "toxics"
+   ],
+   "tier": "journalism",
+   "source_name": "Climate Home News",
+   "url": "https://www.climatechangenews.com/2026/08/11/south-africas-offshore-oil-push-ground-resistance-courts-litigation-ocean/",
+   "published": "2026-08-11T16:30:26+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "ffa8fd4e39f9f4f9-8",
+   "fact": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
+   "fact_type": "threshold",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
+   "region": "southern_africa",
+   "region_label": "Southern Africa",
+   "place": "south africa",
+   "topics": [
+    "carbon",
+    "extraction"
    ],
    "tier": "journalism",
    "source_name": "Climate Home News",
@@ -2676,58 +2623,6 @@
    "engine": "scorer"
   },
   {
-   "id": "7fb15b9498eca3e0-9",
-   "fact": "Allegations of harms on the rise BHRC’s latest analysis – including data for the period 2023-2025 – covered mining, smelting and refining projects for 11 minerals considered key to manufacturing clean energy technologies such as batteries, EVs and solar panels needed to move away from climate-heating fossil fuels.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
-   "context_source": "Lavoie et al., Scientific Reports (2018)",
-   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
-   "context_direction": "worsening",
-   "anchor": "Allegations of harms on the rise BHRC’s latest analysis – including data for the period 2023-2025 – covered mining, smelting and refining projects for 11 minerals considered key to manufacturing clean energy technologies such as batteries, EVs and solar panels needed to move away from climate-heating fossil fuels.",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "indonesia",
-   "topics": [
-    "extraction",
-    "carbon"
-   ],
-   "tier": "journalism",
-   "source_name": "Climate Home News",
-   "url": "https://www.climatechangenews.com/2026/07/22/allegations-of-harms-at-china-backed-transition-minerals-projects-rise/",
-   "published": "2026-07-22T00:01:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "7fb15b9498eca3e0-5",
-   "fact": "The country has committed more than $120 billion in foreign direct investment into mineral mining and processing since 2023, Australian think-tank Climate Energy Finance recently found.",
-   "fact_type": "rate",
-   "scope": "",
-   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
-   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
-   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
-   "context_direction": "worsening",
-   "anchor": "The country has committed more than $120 billion in foreign direct investment into mineral mining and processing since 2023, Australian think-tank Climate Energy Finance recently found.",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "indonesia",
-   "topics": [
-    "extraction",
-    "carbon"
-   ],
-   "tier": "journalism",
-   "source_name": "Climate Home News",
-   "url": "https://www.climatechangenews.com/2026/07/22/allegations-of-harms-at-china-backed-transition-minerals-projects-rise/",
-   "published": "2026-07-22T00:01:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "58b18a078eaced26-18",
    "fact": "To drive the adoption of indigenous species, the team conducted 45 community meetings, resulting in the planting of 416,488 native trees across 1,041.22 hectares.",
    "fact_type": "magnitude",
@@ -3035,7 +2930,7 @@
   },
   {
    "id": "84e99b1f09ae914c-7",
-   "fact": "Thirteen births have been recorded among the mountain gorillas in the reserve since the beginning of 2026.",
+   "fact": "This birth is the 13th recorded among the mountain gorillas in the reserve since the beginning of the year 2026.",
    "fact_type": "magnitude",
    "scope": "Virunga National Park",
    "context": null,
@@ -3059,8 +2954,56 @@
    "engine": "gemini"
   },
   {
+   "id": "d6caf6856ad13e10-3",
+   "fact": "Cameroon marketed 247 914 tonnes of cocoa beans compared to 309 518 tonnes in the previous season.",
+   "fact_type": "magnitude",
+   "scope": "Cameroun",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Le pays n’a mis sur le marché que 247 914 tonnes de fèves contre 309 518 tonnes lors de la campagne précédente, soit 61 604 tonnes de moins.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "cameroon",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-le-changement-climatique-fait-chuter-la-production-de-cacao-de-19-en-2025-2026/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "bee5724031305167-8",
+   "fact": "225 litres of seawater brine yield 11 kilograms of salt.",
+   "fact_type": "magnitude",
+   "scope": "in Benin",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Selon les explications des producteurs, 225 litres de saumure d’eau de mer permettent d’avoir 11 kilogrammes de sel.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "benin",
+   "topics": [
+    "food"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/benin-produire-du-sel-grace-a-lenergie-solaire-pour-preserver-les-mangroves/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "5bba3b797625ebce-1",
-   "fact": "The grey crowned crane population in Rwanda increased from 487 in 2017 to 1438 in 2026.",
+   "fact": "Rwanda's grey crowned crane population increased from 487 in 2017 to 1438 in 2026.",
    "fact_type": "magnitude",
    "scope": "Rwanda",
    "context": null,
@@ -3084,38 +3027,13 @@
    "engine": "gemini"
   },
   {
-   "id": "bee5724031305167-8",
-   "fact": "225 litres of seawater brine yield 11 kilograms of salt.",
-   "fact_type": "magnitude",
-   "scope": "Djègbadji",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Selon les explications des producteurs, 225 litres de saumure d’eau de mer permettent d’avoir 11 kilogrammes de sel.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "benin",
-   "topics": [
-    "food"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/2026/08/benin-produire-du-sel-grace-a-lenergie-solaire-pour-preserver-les-mangroves/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
-  },
-  {
    "id": "372faf8cd0f61f5e-3",
-   "fact": "The family Kynotidae counts 23 identified species of the genus Kynotus.",
+   "fact": "With the addition of Kynotus insularis sp. nov., the endemic Kynotidae family now counts 23 identified species of the genus Kynotus.",
    "fact_type": "magnitude",
    "scope": "Madagascar",
-   "context": "Human appropriation of net primary production has risen from 15.7% of potential natural production in 1950 to 23.5% in 2020. Close to a quarter of everything the land grows is now taken or altered by a single species.",
-   "context_source": "Richardson et al., Science Advances (2023)",
-   "context_url": "https://www.science.org/doi/10.1126/sciadv.adh2458",
+   "context": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
+   "context_source": "IPBES, Global Assessment media release (2019)",
+   "context_url": "https://www.ipbes.net/node/35234",
    "context_direction": "worsening",
    "anchor": "Nommé Kynotus insularis sp. nov., le nouvel invertébré terrestre découvert par trois biologistes – un Hongrois, une Malgache et un Sud-Coréen –, appartient à la famille de Kynotidae, endémique de Madagascar, qui, avec le nouveau venu, compte 23 espèces du genre Kynotus identifiées.",
    "region": "eastern_africa",
@@ -3134,21 +3052,42 @@
    "engine": "gemini"
   },
   {
-   "id": "de836129036c4672-2",
-   "fact": "The El Niño climate phenomenon is beginning to have effects in Chile, Argentina, Perú, Ecuador, and Colombia.",
+   "id": "e38c6f5091c41c49-5",
+   "fact": "El Niño could be more intense than in the past in 2006 and early 2027.",
+   "fact_type": "projection",
+   "scope": "Mongabay Latam",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Mongabay Latam consultó a expertos en este fenómeno del clima que viene siendo registrado desde finales del siglo XIX y que en 2006 y principios de 2027 podría ser más intenso que en el pasado.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "argentina",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/08/el-nino-tormentas-olas-frio-efectos-especies-marinas-chile-peru-argentina-ecuador/",
+   "published": null,
+   "lang": "es",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "de836129036c4672-1",
+   "fact": "The 2026 El Niño phenomenon is beginning to have effects in Chile, Argentina, Perú, Ecuador, and Colombia.",
    "fact_type": "magnitude",
    "scope": "Chile, Argentina, Perú, Ecuador, and Colombia",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Este fenómeno climático, que ya le resta horas de sueño a las autoridades, empresarios y organizaciones científicas, está comenzando a tener sus efectos en países como Chile, Argentina, Perú, Ecuador y Colombia.",
+   "anchor": "“Super El Niño” es uno de los nombres con los que los medios han bautizado a la versión 2026 de este fenómeno climático, pero definirlo es mucho más complejo de lo que parece, explica a Mongabay Latam el doctor Ken Takahashi Guevara, investigador científico principal en el Instituto Geofísico del Perú, en esta entrevista para conocer lo que debemos saber sobre El Niño. Este fenómeno climático, que ya le resta horas de sueño a las autoridades, empresarios y organizaciones científicas, está comenzando a tener sus efectos en países como Chile, Argentina, Perú, Ecuador y Colombia.",
    "region": "south_america",
    "region_label": "South America",
    "place": "argentina",
-   "topics": [
-    "carbon"
-   ],
+   "topics": [],
    "tier": "journalism",
    "source_name": "Mongabay Latam",
    "url": "https://es.mongabay.com/2026/08/el-nino-origen-impactos-latinoamerica-entrevista/",
@@ -3160,7 +3099,7 @@
   },
   {
    "id": "6ac506b663449719-3",
-   "fact": "The vermilion flycatcher reached a record of 57 fledglings in Ecuador in 2026.",
+   "fact": "The pájaro brujo in Ecuador reached a record of 57 fledglings in 2026.",
    "fact_type": "magnitude",
    "scope": "Ecuador",
    "context": null,
@@ -3185,9 +3124,9 @@
   },
   {
    "id": "cce088ddcbe53b1d-2",
-   "fact": "Researchers analyzed 492 insects of nine taxa across three locations with different levels of mining impact in Madre de Dios.",
+   "fact": "The study analyzed 492 insects of nine taxa across three locations with different levels of mining impact in Madre de Dios.",
    "fact_type": "magnitude",
-   "scope": "Madre de Dios, Peru",
+   "scope": "en Madre de Dios",
    "context": "At least 146 land and environmental defenders were killed or disappeared in 2024, bringing the total to 2,253 since 2012. Mining was the deadliest sector with at least 29 cases. The cheapest way to clear opposition to a project is still to remove the people raising it.",
    "context_source": "Global Witness, Roots of Resistance (2025)",
    "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
@@ -3232,35 +3171,35 @@
    "engine": "gemini"
   },
   {
-   "id": "8b258e94424966be-1",
-   "fact": "At least 30 people were evacuated from the hotel as firefighters brought the blaze under control within an hour; authorities were still determining its cause and the nationalities of those killed.",
-   "fact_type": "attribution",
-   "scope": "",
+   "id": "76bc6bf75a58327b-3",
+   "fact": "The proportion of people suffering from hunger worldwide decreased from 8,6 % in 2022 to 7,8 % in 2025.",
+   "fact_type": "rate",
+   "scope": "worldwide",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "At least 30 people were evacuated from the hotel as firefighters brought the blaze under control within an hour; authorities were still determining its cause and the nationalities of those killed.",
-   "region": "unlocated",
-   "region_label": "No place identified",
+   "anchor": "Le rapport de la FAO estime que 20 % des Africains souffraient de la faim en 2025, contre 6 % en Asie et près de 5 % en Amérique latine et dans les Caraïbes. À l’échelle mondiale, la proportion de personnes souffrant de la faim est passée de 8,6 % en 2022 à 7,8 % en 2025.",
+   "region": "global",
+   "region_label": "Global / multi-region",
    "place": null,
    "topics": [
-    "fire"
+    "food"
    ],
    "tier": "journalism",
-   "source_name": "The Kathmandu Post",
-   "url": "https://kathmandupost.com/world/2026/08/19/at-least-nine-killed-in-hotel-fire-in-kolkata",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/2026/08/la-faim-recule-dans-le-monde-mais-lafrique-reste-a-la-traine/",
    "published": null,
-   "lang": "en",
+   "lang": "fr",
    "doi": null,
    "also_reported_by": [],
-   "engine": "scorer"
+   "engine": "gemini"
   },
   {
    "id": "059a1be3ea33a415-6",
-   "fact": "Global energy consumption by data centers is projected to double in the coming years and could reach 945 TWh by 2030, with artificial intelligence accounting for 40% of the total.",
+   "fact": "Global energy consumption of data centers is projected to reach 945 TWh by 2030, with artificial intelligence accounting for 40% of the total.",
    "fact_type": "projection",
-   "scope": "worldwide",
+   "scope": "global",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -3292,14 +3231,14 @@
   {
    "region": "western_africa",
    "label": "West Africa",
-   "count": 7,
-   "available": 7
+   "count": 5,
+   "available": 5
   },
   {
    "region": "middle_africa",
    "label": "Central Africa",
-   "count": 1,
-   "available": 1
+   "count": 2,
+   "available": 2
   },
   {
    "region": "eastern_africa",
@@ -3334,8 +3273,8 @@
   {
    "region": "south_america",
    "label": "South America",
-   "count": 14,
-   "available": 14
+   "count": 15,
+   "available": 15
   },
   {
    "region": "central_asia",
@@ -3352,14 +3291,14 @@
   {
    "region": "southern_asia",
    "label": "South Asia",
-   "count": 11,
-   "available": 11
+   "count": 12,
+   "available": 12
   },
   {
    "region": "south_eastern_asia",
    "label": "Southeast Asia",
-   "count": 12,
-   "available": 12
+   "count": 10,
+   "available": 10
   },
   {
    "region": "western_asia",
@@ -3418,8 +3357,8 @@
   {
    "region": "polar",
    "label": "Arctic & Antarctic",
-   "count": 4,
-   "available": 4
+   "count": 5,
+   "available": 5
   },
   {
    "region": "ocean",
@@ -3430,24 +3369,24 @@
   {
    "region": "global",
    "label": "Global / multi-region",
-   "count": 17,
-   "available": 17
+   "count": 18,
+   "available": 18
   },
   {
    "region": "unlocated",
    "label": "No place identified",
-   "count": 14,
-   "available": 14
+   "count": 11,
+   "available": 11
   }
  ],
  "stats": {
-  "documents_harvested": 1984,
-  "documents_yielding_nothing": 1872,
-  "facts_published": 129,
+  "documents_harvested": 1993,
+  "documents_yielding_nothing": 1881,
+  "facts_published": 127,
   "by_engine": {
-   "gemini": 11,
-   "scorer": 118
+   "gemini": 14,
+   "scorer": 113
   },
-  "context_lines_attached": 31
+  "context_lines_attached": 29
  }
 }
