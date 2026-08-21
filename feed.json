@@ -1,6 +1,181 @@
 {
- "generated_at": "2026-08-21T02:16:33.169103+00:00",
+ "generated_at": "2026-08-21T07:32:44.764980+00:00",
  "rows": [
+  {
+   "id": "10b5ce6d000997cb-3",
+   "fact": "The KWF estimates that the Philippines has around 135 indigenous languages.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
+   "context_source": "Global Witness, Roots of Resistance (2025)",
+   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
+   "context_direction": "leverage",
+   "anchor": "The KWF estimates that the Philippines has around 135 indigenous languages.",
+   "region": "south_eastern_asia",
+   "region_label": "Southeast Asia",
+   "place": "philippines",
+   "topics": [
+    "land_tenure"
+   ],
+   "tier": "journalism",
+   "source_name": "newsinfo.inquirer.net",
+   "url": "https://newsinfo.inquirer.net/2289443/40-indigenous-languages-in-ph-are-endangered-what-could-be-lost",
+   "published": "2026-08-21T13:06:37+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "29947d845043474b-62",
+   "fact": "Since 1850, the United States and Europe together account for nearly half of all cumulative CO2 emissions; Africa, home to nearly a fifth of humanity, accounts for under three percent — and inherits the worst of the damage regardless.",
+   "fact_type": "rate",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Since 1850, the United States and Europe together account for nearly half of all cumulative CO2 emissions; Africa, home to nearly a fifth of humanity, accounts for under three percent — and inherits the worst of the damage regardless.",
+   "region": "northern_america",
+   "region_label": "North America",
+   "place": "united states",
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/21/freedom-has-a-bill-and-nobody-wants-to-pay-it/",
+   "published": "2026-08-21T06:52:39+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "73cb6af08ce1ef39-1",
+   "fact": "The number of fatalities recorded in Ghana’s mining industry dropped significantly in 2025, falling from seven deaths in 2024 to three, representing a decline of more than 57 per cent.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
+   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
+   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
+   "context_direction": "worsening",
+   "anchor": "The number of fatalities recorded in Ghana’s mining industry dropped significantly in 2025, falling from seven deaths in 2024 to three, representing a decline of more than 57 per cent.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "ghana",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "MyJoyOnline",
+   "url": "https://www.myjoyonline.com/ghanas-mining-deaths-fall-sharply-but-chamber-insists-three-deaths-are-too-many/",
+   "published": "2026-08-21T06:14:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "bfda10ad1a696ef3-5",
+   "fact": "The trial Judge, Mr Jojo Amoah Hagan, declined a bail application filed by Maazi’s counsel, citing the nature of the charges and the failure of the defence to satisfy the court that the accused had a fixed place of abode within the jurisdiction.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The trial Judge, Mr Jojo Amoah Hagan, declined a bail application filed by Maazi’s counsel, citing the nature of the charges and the failure of the defence to satisfy the court that the accused had a fixed place of abode within the jurisdiction.",
+   "region": "western_africa",
+   "region_label": "West Africa",
+   "place": "ghana",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "MyJoyOnline",
+   "url": "https://www.myjoyonline.com/court-remands-man-over-alleged-labone-bank-robbery-attempt/",
+   "published": "2026-08-21T05:57:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "4e1ab62c369aece6-12",
+   "fact": "Indonesia received US$103.8 million in GCF funding after reducing emissions by 20.25 million tonnes of CO2 during that period, including payments for non-carbon benefits.",
+   "fact_type": "attribution",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Indonesia received US$103.8 million in GCF funding after reducing emissions by 20.25 million tonnes of CO2 during that period, including payments for non-carbon benefits.",
+   "region": "south_eastern_asia",
+   "region_label": "Southeast Asia",
+   "place": "indonesia",
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "Jubi",
+   "url": "https://en.jubi.id/south-papua-receives-rp26-8-billion-in-climate-funding-urged-to-involve-indigenous-communities/",
+   "published": "2026-08-21T05:48:10+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "4e1ab62c369aece6-11",
+   "fact": "Joko Tri Haryanto, president director of the Environmental Fund Management Agency (BPDLH) under the Ministry of Finance, said the Rp26.8 billion allocation was part of Green Climate Fund financing awarded to Indonesia based on emissions-reduction performance between 2014 and 2016.",
+   "fact_type": "rate",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Joko Tri Haryanto, president director of the Environmental Fund Management Agency (BPDLH) under the Ministry of Finance, said the Rp26.8 billion allocation was part of Green Climate Fund financing awarded to Indonesia based on emissions-reduction performance between 2014 and 2016.",
+   "region": "south_eastern_asia",
+   "region_label": "Southeast Asia",
+   "place": "indonesia",
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "Jubi",
+   "url": "https://en.jubi.id/south-papua-receives-rp26-8-billion-in-climate-funding-urged-to-involve-indigenous-communities/",
+   "published": "2026-08-21T05:48:10+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "7c23cfb6659e35e1-6",
+   "fact": "The defendants “intended to cause others to lose confidence in the CCP by stirring up hostility and causing division, so as to achieve the objective of undermining the fundamental basic system,” the judges stated in a 16-page ruling, referring to China’s ruling Communist Party.",
+   "fact_type": "attribution",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The defendants “intended to cause others to lose confidence in the CCP by stirring up hostility and causing division, so as to achieve the objective of undermining the fundamental basic system,” the judges stated in a 16-page ruling, referring to China’s ruling Communist Party.",
+   "region": "eastern_asia",
+   "region_label": "East Asia",
+   "place": "china",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "Rappler",
+   "url": "https://www.rappler.com/world/asia-pacific/hong-kong-court-convicts-tiananmen-vigil-group-inciting-subversion/",
+   "published": "2026-08-21T05:36:48+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
   {
    "id": "ca5d798be0ae50c8-2",
    "fact": "The local governments of the coastal towns of Calumpit, Hagonoy and Bulakan, which were swamped by as high as 1.82 meters (6 feet) of floodwaters,",
@@ -21,6 +196,106 @@
    "source_name": "newsinfo.inquirer.net",
    "url": "https://newsinfo.inquirer.net/2289203/state-of-calamity-up-in-flood-hit-bulacan",
    "published": "2026-08-21T05:06:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "8826b9c0d732981f-34",
+   "fact": "Tasmania – which runs almost entirely on renewable energy and has fewer office buildings per capita – is the only state or territory with annual emissions that sit consistently below the 1.5°C pathway.",
+   "fact_type": "threshold",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "We found Tasmania – which runs almost entirely on renewable energy and has fewer office buildings per capita – is the only state or territory with annual emissions that sit consistently below the 1.5°C pathway.",
+   "region": "northern_europe",
+   "region_label": "Northern Europe",
+   "place": "united kingdom",
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "The Conversation Australia — Environment",
+   "url": "https://theconversation.com/were-building-a-new-york-sized-city-every-month-thats-worrying-for-our-climate-289702",
+   "published": "2026-08-21T04:45:52+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "8826b9c0d732981f-36",
+   "fact": "Adapted from Craft et al. (2006) , CC BY Cutting carbon Our study measured several ways to reduce embodied carbon in office buildings, summarised below: We found combining these strategies could reduce total emissions by over 47 million tonnes, putting the office sector far closer to the 2.0°C emissions pathway target.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": "Peat fire emissions are wholly anthropogenic — they follow human drainage of carbon-rich wetlands — but their severity tracks extreme drought, which lets surface fires drop into the peat below. Satellites do not readily detect smouldering peat fires, so what is measured understates what is burning.",
+   "context_source": "A Field Study of Tropical Peat Fire Behaviour and Associated Carbon Emissions, Fire (2022)",
+   "context_url": "https://www.mdpi.com/2571-6255/5/3/62",
+   "context_direction": "worsening",
+   "anchor": "Adapted from Craft et al. (2006) , CC BY Cutting carbon Our study measured several ways to reduce embodied carbon in office buildings, summarised below: We found combining these strategies could reduce total emissions by over 47 million tonnes, putting the office sector far closer to the 2.0°C emissions pathway target.",
+   "region": "northern_europe",
+   "region_label": "Northern Europe",
+   "place": "united kingdom",
+   "topics": [
+    "carbon"
+   ],
+   "tier": "journalism",
+   "source_name": "The Conversation Australia — Environment",
+   "url": "https://theconversation.com/were-building-a-new-york-sized-city-every-month-thats-worrying-for-our-climate-289702",
+   "published": "2026-08-21T04:45:52+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "14d0e1bf61d74dd9-8",
+   "fact": "If he comes out, his life is in jeopardy” and “What about our money?” In addition to Hui’s sentence, the court said it had fined Evergrande 8.82 billion yuan ($1.31 billion) and its main subsidiary Hengda 7 billion yuan, and sentenced five other senior executives to fines and prison terms ranging from six to 18 years.",
+   "fact_type": "actor",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "If he comes out, his life is in jeopardy” and “What about our money?” In addition to Hui’s sentence, the court said it had fined Evergrande 8.82 billion yuan ($1.31 billion) and its main subsidiary Hengda 7 billion yuan, and sentenced five other senior executives to fines and prison terms ranging from six to 18 years.",
+   "region": "eastern_asia",
+   "region_label": "East Asia",
+   "place": "hong kong",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/21/china-sentences-evergrande-founder-to-life-imprisonment-after-300bn-default/",
+   "published": "2026-08-21T03:12:00+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "14d0e1bf61d74dd9-0",
+   "fact": "China Sentences Evergrande Founder to Life Imprisonment after $300bn Default. • Confiscates all his personal property, fines firm $1.31bn • 56 others also sentenced Emmanuel Addeh in Abuja The founder of China Evergrande Group, the world’s most-indebted property developer, Hui Ka Yan, was sentenced to life in prison by a Chinese court yesterday, five years after the firm’s collapse shook the nation’s economy and financial markets.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "China Sentences Evergrande Founder to Life Imprisonment after $300bn Default. • Confiscates all his personal property, fines firm $1.31bn • 56 others also sentenced Emmanuel Addeh in Abuja The founder of China Evergrande Group, the world’s most-indebted property developer, Hui Ka Yan, was sentenced to life in prison by a Chinese court yesterday, five years after the firm’s collapse shook the nation’s economy and financial markets.",
+   "region": "eastern_asia",
+   "region_label": "East Asia",
+   "place": "china",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "thisdaylive.com",
+   "url": "https://www.thisdaylive.com/2026/08/21/china-sentences-evergrande-founder-to-life-imprisonment-after-300bn-default/",
+   "published": "2026-08-21T03:12:00+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -52,107 +327,6 @@
    "engine": "scorer"
   },
   {
-   "id": "90532b6697221cf7-5",
-   "fact": "Shema traced the history of port economic regulation in Nigeria to the establishment of the Nigerian Shippers’ Council in 1978 and the concessioning of port terminals in 2006.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Shema traced the history of port economic regulation in Nigeria to the establishment of the Nigerian Shippers’ Council in 1978 and the concessioning of port terminals in 2006.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "nigeria",
-   "topics": [
-    "law",
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "thisdaylive.com",
-   "url": "https://www.thisdaylive.com/2026/08/21/npera-commences-operation-targets-fair-tariffs-faster-cargo-clearance/",
-   "published": "2026-08-21T00:40:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "83caa6d749d0052f-89",
-   "fact": "However, if presented with a number that says how confident, (rather than saying it is bound to cause cancer, 100%) you are of that fact, it would be an easier truth to digest. · Try to find common ground with indigenous knowledge Like mentioned earlier, scientific knowledge and traditional indigenous knowledge need not be foes.",
-   "fact_type": "attribution",
-   "scope": "",
-   "context": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
-   "context_source": "Global Witness, Roots of Resistance (2025)",
-   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
-   "context_direction": "leverage",
-   "anchor": "However, if presented with a number that says how confident, (rather than saying it is bound to cause cancer, 100%) you are of that fact, it would be an easier truth to digest. · Try to find common ground with indigenous knowledge Like mentioned earlier, scientific knowledge and traditional indigenous knowledge need not be foes.",
-   "region": "southern_asia",
-   "region_label": "South Asia",
-   "place": "sri lanka",
-   "topics": [
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "island.lk",
-   "url": "http://island.lk/when-science-challenges-tradition-what-should-we-do/",
-   "published": "2026-08-20T23:50:52+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "2a0e663d2add5f69-2",
-   "fact": "The Premier League champions, who ended a 22-year title drought last season under manager Mikel Arteta, also narrowly missed a domestic double after losing to Paris Saint-Germain on penalties in the FA Cup final.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The Premier League champions, who ended a 22-year title drought last season under manager Mikel Arteta, also narrowly missed a domestic double after losing to Paris Saint-Germain on penalties in the FA Cup final.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "freshwater"
-   ],
-   "tier": "journalism",
-   "source_name": "leadership.ng",
-   "url": "https://leadership.ng/arsenal-now-worlds-3rd-most-valuable-football-club/",
-   "published": "2026-08-20T22:13:01+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "f8dde6866bd7aefe-1",
-   "fact": "CAGAYAN DE ORO CITY — A joint anti-illegal mining task force dismantled an alleged illegal mining operation and seized P13.16 million worth of heavy equipment during a raid in the hinterlands of Iligan City, Lanao del Norte on Wednesday afternoon, Aug. 19.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "CAGAYAN DE ORO CITY — A joint anti-illegal mining task force dismantled an alleged illegal mining operation and seized P13.16 million worth of heavy equipment during a raid in the hinterlands of Iligan City, Lanao del Norte on Wednesday afternoon, Aug. 19.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "newsinfo.inquirer.net",
-   "url": "https://newsinfo.inquirer.net/2289145/p13-m-equipment-seized-3-nabbed-in-anti-illegal-mining-ops-in-iligan",
-   "published": "2026-08-20T20:30:35+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "e8d10293755d8737-7",
    "fact": "And since 2019, essays on Indigenous monitoring and environment restoration from places like Clyde River, Nunavut and Sámi areas in northern Europe have also been included.",
    "fact_type": "rate",
@@ -173,56 +347,6 @@
    "source_name": "Eye on the Arctic",
    "url": "https://www.rcinet.ca/eye-on-the-arctic/2026/08/20/arctic-report-card-will-survive-2026-without-noaa-but-what-comes-next/",
    "published": "2026-08-20T19:29:10+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "d7e7317b69ab2900-3",
-   "fact": "“As the ministry fine-tunes preparations ahead of the start of the 2026 to 2027 school year, the political executive in the ministry has embarked on a series of visits to schools that were considerably impacted by the passage of hurricane Melissa.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "“As the ministry fine-tunes preparations ahead of the start of the 2026 to 2027 school year, the political executive in the ministry has embarked on a series of visits to schools that were considerably impacted by the passage of hurricane Melissa.",
-   "region": "caribbean",
-   "region_label": "Caribbean",
-   "place": "jamaica",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "jamaicaobserver.com",
-   "url": "https://www.jamaicaobserver.com/2026/08/20/schools-show-mixed-readiness-september-reopening/",
-   "published": "2026-08-20T19:11:24+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "575c10cb36b4465a-4",
-   "fact": "Addressing a news conference in Sunyani, the acting commissioner warned that landlords and private hostel operators who breached the law were liable to a minimum fine of 200 penalty units or a six-month jail term or both.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Addressing a news conference in Sunyani, the acting commissioner warned that landlords and private hostel operators who breached the law were liable to a minimum fine of 200 penalty units or a six-month jail term or both.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/acting-rent-control-commissioner-directs-landlords-hostel-operators-to-issue-rent-cards/",
-   "published": "2026-08-20T17:49:04+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -585,31 +709,6 @@
    "engine": "scorer"
   },
   {
-   "id": "5c65366380252a9b-16",
-   "fact": "Once an application for the new permit has been approved, the applicant will be required to pay N$2,600, which is the same fee charged for a General Employment Permit.",
-   "fact_type": "projection",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Once an application for the new permit has been approved, the applicant will be required to pay N$2,600, which is the same fee charged for a General Employment Permit.",
-   "region": "southern_africa",
-   "region_label": "Southern Africa",
-   "place": "namibia",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "observer24.com.na",
-   "url": "https://observer24.com.na/new-permit-targets-investors-and-business-growth/",
-   "published": "2026-08-20T05:28:47+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "142a5b2972816e6f-6",
    "fact": "Dr Sophia Ramlal, director of veterinary services in the Ministry of Agriculture, Fisheries and Mining, confirmed that the cow was euthanised using chemicals on Wednesday at approximately 10:15 am after examinations revealed that her injuries were significant and she could not be treated back to health.",
    "fact_type": "magnitude",
@@ -870,7 +969,7 @@
    "id": "88e527ea6fd8d3ec-4",
    "fact": "As forças de segurança dos estados recuperaram 6 mil aparelhos celulares a partir das ações realizadas.",
    "fact_type": "magnitude",
-   "scope": "Brasil",
+   "scope": "Brazil",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -913,6 +1012,31 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "ae8122dee5da237a-3",
+   "fact": "As mulheres representam 51,5% da população do país.",
+   "fact_type": "magnitude",
+   "scope": "Brasil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Além do que, vamos combinar, somos 51,5% da população do país. É feio ser uma eleição presidencial só de homens no topo, e os candidatos do topo sabem que é feio.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "Agência Pública",
+   "url": "https://apublica.org/2026/08/campanha-presidencial-um-aceno-as-mulheres-e-suficiente/",
+   "published": "2026-08-19T15:00:00+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "ef69fa720a1edc88-2",
@@ -1415,31 +1539,6 @@
    "source_name": "Climate Home News",
    "url": "https://www.climatechangenews.com/2026/08/17/dangerous-consequences-how-ais-climate-framing-lets-big-tech-off-the-hook/",
    "published": "2026-08-17T14:09:40+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "c99c7ea87778a761-1",
-   "fact": "Myanmar military troops also torched over 330 homes during their three-month offensive, which has displaced tens of thousands in Myaing and Pauk townships",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Myanmar military troops also torched over 330 homes during their three-month offensive, which has displaced tens of thousands in Myaing and Pauk townships",
-   "region": "south_eastern_asia",
-   "region_label": "Southeast Asia",
-   "place": "myanmar",
-   "topics": [
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "Myanmar Now",
-   "url": "https://myanmar-now.org/en/news/myanmar-junta-column-kills-nearly-30-civilians-in-offensive-to-retake-magway-oil-field/",
-   "published": "2026-08-17T11:10:25+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -1986,6 +2085,32 @@
    "engine": "scorer"
   },
   {
+   "id": "ffa8fd4e39f9f4f9-8",
+   "fact": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
+   "fact_type": "threshold",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
+   "region": "southern_africa",
+   "region_label": "Southern Africa",
+   "place": "south africa",
+   "topics": [
+    "carbon",
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "Climate Home News",
+   "url": "https://www.climatechangenews.com/2026/08/11/south-africas-offshore-oil-push-ground-resistance-courts-litigation-ocean/",
+   "published": "2026-08-11T16:30:26+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
    "id": "ffa8fd4e39f9f4f9-19",
    "fact": "Co-plaintiff Sinegugu Zukulu also said in 2022 that “oil and gas will lead to more emissions, and in the face of climate change, this is wholly irresponsible”.",
    "fact_type": "projection",
@@ -2002,32 +2127,6 @@
     "extraction",
     "carbon",
     "toxics"
-   ],
-   "tier": "journalism",
-   "source_name": "Climate Home News",
-   "url": "https://www.climatechangenews.com/2026/08/11/south-africas-offshore-oil-push-ground-resistance-courts-litigation-ocean/",
-   "published": "2026-08-11T16:30:26+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "ffa8fd4e39f9f4f9-8",
-   "fact": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Aug 6, 2026 News Quarter of countries still missing UN climate plans 18 months after deadline Egypt, Vietnam, Argentina and the Philippines are among the 45 nations that have breached the Paris Agreement by not submitting a new NDC to the UN Read more Aug 5, 2026 News Santa Marta coalition tested as co-chair Colombia turns back to fossil fuels Despite a leadership gap, outgoing environment minister Irene Vélez Torres says the anti-fossil fuel coalition can “live without Colombia” Read more Aug 6, 2026 News China’s coal power rebounds as record clean energy goes to waste Long-term contracts guarantee coal plants buyers regardless of demand, crowding out renewables, report finds Read more Melissa Groenink-Groves, programme manager at legal nonprofit Natural Justice, said the cases in South Africa could set a precedent for the whole region.",
-   "region": "southern_africa",
-   "region_label": "Southern Africa",
-   "place": "south africa",
-   "topics": [
-    "carbon",
-    "extraction"
    ],
    "tier": "journalism",
    "source_name": "Climate Home News",
@@ -2623,57 +2722,6 @@
    "engine": "scorer"
   },
   {
-   "id": "58b18a078eaced26-18",
-   "fact": "To drive the adoption of indigenous species, the team conducted 45 community meetings, resulting in the planting of 416,488 native trees across 1,041.22 hectares.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "Indigenous Peoples were victims of around a third of lethal attacks on land defenders while making up around 6% of the global population. The people holding the line on the ground are the ones paying for it.",
-   "context_source": "Global Witness, Roots of Resistance (2025)",
-   "context_url": "https://globalwitness.org/en/press-releases/at-least-146-land-and-environmental-defenders-killed-or-disappeared-globally-in-2024/",
-   "context_direction": "leverage",
-   "anchor": "To drive the adoption of indigenous species, the team conducted 45 community meetings, resulting in the planting of 416,488 native trees across 1,041.22 hectares.",
-   "region": "northern_africa",
-   "region_label": "North Africa",
-   "place": "nile",
-   "topics": [
-    "land_tenure",
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "InfoNile",
-   "url": "https://infonile.org/en/2026/07/tasll-project-key-achievements-way-forward/",
-   "published": "2026-07-21T10:53:41+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "58b18a078eaced26-2",
-   "fact": "The TASLL Northern Uganda project targeted the critical conservation of over 65,548 hectares of natural forest in the Agoro-Agu landscape, an area in the Acholi sub-region spanning the districts of Lamwo, Pader, Kitgum, and Agago.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The TASLL Northern Uganda project targeted the critical conservation of over 65,548 hectares of natural forest in the Agoro-Agu landscape, an area in the Acholi sub-region spanning the districts of Lamwo, Pader, Kitgum, and Agago.",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "uganda",
-   "topics": [
-    "forest"
-   ],
-   "tier": "journalism",
-   "source_name": "InfoNile",
-   "url": "https://infonile.org/en/2026/07/tasll-project-key-achievements-way-forward/",
-   "published": "2026-07-21T10:53:41+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "5b97230b84ce3bc9-100",
    "fact": "The same agency told international partners in 2021 that plastic waste kills 5,000 animals annually, including elephants, donkeys and cattle; blocks stormwater drains causing urban flash flooding; and releases toxic gases, including dioxins and furans through dumpsite burning.",
    "fact_type": "rate",
@@ -2954,22 +3002,24 @@
    "engine": "gemini"
   },
   {
-   "id": "d6caf6856ad13e10-3",
-   "fact": "Cameroon marketed 247 914 tonnes of cocoa beans compared to 309 518 tonnes in the previous season.",
+   "id": "5bba3b797625ebce-1",
+   "fact": "Rwanda's grey crowned crane population increased from 487 in 2017 to 1438 in 2026.",
    "fact_type": "magnitude",
-   "scope": "Cameroun",
+   "scope": "Rwanda",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Le pays n’a mis sur le marché que 247 914 tonnes de fèves contre 309 518 tonnes lors de la campagne précédente, soit 61 604 tonnes de moins.",
-   "region": "middle_africa",
-   "region_label": "Central Africa",
-   "place": "cameroon",
-   "topics": [],
+   "anchor": "La population de grues couronnées grises (Balearica regulorum) du Rwanda est passée de 487 en 2017 à 1438 en 2026, selon les résultats du 10ᵉ recensement national des grues couronnées grises, rendus publics le 14 août dernier par Rwanda Wildlife Conservation Association (RWCA).",
+   "region": "eastern_africa",
+   "region_label": "East Africa",
+   "place": "rwanda",
+   "topics": [
+    "extinction"
+   ],
    "tier": "journalism",
    "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-le-changement-climatique-fait-chuter-la-production-de-cacao-de-19-en-2025-2026/",
+   "url": "https://fr.mongabay.com/short-article/2026/08/au-rwanda-la-population-de-grues-couronnees-grises-triple-en-moins-de-dix-ans/",
    "published": null,
    "lang": "fr",
    "doi": null,
@@ -3002,33 +3052,8 @@
    "engine": "gemini"
   },
   {
-   "id": "5bba3b797625ebce-1",
-   "fact": "Rwanda's grey crowned crane population increased from 487 in 2017 to 1438 in 2026.",
-   "fact_type": "magnitude",
-   "scope": "Rwanda",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "La population de grues couronnées grises (Balearica regulorum) du Rwanda est passée de 487 en 2017 à 1438 en 2026, selon les résultats du 10ᵉ recensement national des grues couronnées grises, rendus publics le 14 août dernier par Rwanda Wildlife Conservation Association (RWCA).",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "rwanda",
-   "topics": [
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/au-rwanda-la-population-de-grues-couronnees-grises-triple-en-moins-de-dix-ans/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
-  },
-  {
    "id": "372faf8cd0f61f5e-3",
-   "fact": "With the addition of Kynotus insularis sp. nov., the endemic Kynotidae family now counts 23 identified species of the genus Kynotus.",
+   "fact": "The Kynotus genus now counts 23 identified species with the addition of the newly discovered earthworm.",
    "fact_type": "magnitude",
    "scope": "Madagascar",
    "context": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
@@ -3052,45 +3077,24 @@
    "engine": "gemini"
   },
   {
-   "id": "e38c6f5091c41c49-5",
-   "fact": "El Niño could be more intense than in the past in 2006 and early 2027.",
-   "fact_type": "projection",
-   "scope": "Mongabay Latam",
+   "id": "29c46aab40d0d18b-2",
+   "fact": "Bolvian president Rodrigo Paz signed an agreement to start technical studies for the road connecting San Ignacio de Velasco with Marfil.",
+   "fact_type": "actor",
+   "scope": "San Ignacio de Velasco and the border with Brazil",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Mongabay Latam consultó a expertos en este fenómeno del clima que viene siendo registrado desde finales del siglo XIX y que en 2006 y principios de 2027 podría ser más intenso que en el pasado.",
+   "anchor": "Ese día, el presidente boliviano, Rodrigo Paz, firmó un acuerdo para el inicio de estudios técnicos de la carretera que conectará San Ignacio de Velasco con Marfil, en la frontera con Brasil.",
    "region": "south_america",
    "region_label": "South America",
-   "place": "argentina",
-   "topics": [],
+   "place": "para",
+   "topics": [
+    "forest"
+   ],
    "tier": "journalism",
    "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/el-nino-tormentas-olas-frio-efectos-especies-marinas-chile-peru-argentina-ecuador/",
-   "published": null,
-   "lang": "es",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
-  },
-  {
-   "id": "de836129036c4672-1",
-   "fact": "The 2026 El Niño phenomenon is beginning to have effects in Chile, Argentina, Perú, Ecuador, and Colombia.",
-   "fact_type": "magnitude",
-   "scope": "Chile, Argentina, Perú, Ecuador, and Colombia",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "“Super El Niño” es uno de los nombres con los que los medios han bautizado a la versión 2026 de este fenómeno climático, pero definirlo es mucho más complejo de lo que parece, explica a Mongabay Latam el doctor Ken Takahashi Guevara, investigador científico principal en el Instituto Geofísico del Perú, en esta entrevista para conocer lo que debemos saber sobre El Niño. Este fenómeno climático, que ya le resta horas de sueño a las autoridades, empresarios y organizaciones científicas, está comenzando a tener sus efectos en países como Chile, Argentina, Perú, Ecuador y Colombia.",
-   "region": "south_america",
-   "region_label": "South America",
-   "place": "argentina",
-   "topics": [],
-   "tier": "journalism",
-   "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/el-nino-origen-impactos-latinoamerica-entrevista/",
+   "url": "https://es.mongabay.com/2026/08/nueva-carretera-bolivia-brasil-promover-agronegocios-alerta-expertos-impactos-bosque-chiquitano/",
    "published": null,
    "lang": "es",
    "doi": null,
@@ -3099,7 +3103,7 @@
   },
   {
    "id": "6ac506b663449719-3",
-   "fact": "The pájaro brujo in Ecuador reached a record of 57 fledglings in 2026.",
+   "fact": "The vermilion flycatcher reached a record of 57 fledglings in 2026 in Ecuador.",
    "fact_type": "magnitude",
    "scope": "Ecuador",
    "context": null,
@@ -3171,8 +3175,35 @@
    "engine": "gemini"
   },
   {
+   "id": "0be8ec02ee9c1296-1",
+   "fact": "A Justiça Federal gave the União and Funai 24 meses to complete the demarcation of the traditional territory of the Kajkwakratxi-Tapayuna indigenous people, located in northwestern Mato Grosso.",
+   "fact_type": "magnitude",
+   "scope": "no noroeste de Mato Grosso",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "A Justiça Federal deu à União e à Funai 24 meses para concluir a demarcação do território tradicional do povo indígena Kajkwakratxi-Tapayuna, no noroeste de Mato Grosso.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "mato grosso",
+   "topics": [
+    "land_tenure"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Brasil",
+   "url": "https://brasil.mongabay.com/short-article/2026/08/justica-manda-demarcar-terra-e-pedir-desculpas-aos-kajkwakratxi-tapayuna/",
+   "published": null,
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [
+    "Mongabay Brasil — Amazônia"
+   ],
+   "engine": "gemini"
+  },
+  {
    "id": "76bc6bf75a58327b-3",
-   "fact": "The proportion of people suffering from hunger worldwide decreased from 8,6 % in 2022 to 7,8 % in 2025.",
+   "fact": "The proportion of people suffering from hunger worldwide decreased from 8,6 percent in 2022 to 7,8 percent in 2025.",
    "fact_type": "rate",
    "scope": "worldwide",
    "context": null,
@@ -3196,8 +3227,33 @@
    "engine": "gemini"
   },
   {
+   "id": "96eda758965695c3-1",
+   "fact": "Judge Philipe Silveira da Cunha sentenced former military police officer Francisco da Silva Sousa to 35 anos e quatro meses in prison in the Comarca de Bom Jardim, no Maranhão.",
+   "fact_type": "magnitude",
+   "scope": "Comarca de Bom Jardim, no Maranhão",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Por volta de 1 da manhã do dia 29 de abril de 2026, no salão do júri da Comarca de Bom Jardim, no Maranhão, o juiz Philipe Silveira da Cunha quantificou publicamente o destino do ex-policial militar Francisco da Silva Sousa: “Fica o réu definitivamente condenado a 35 anos e quatro meses de reclusão.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "maranhao",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Brasil",
+   "url": "https://brasil.mongabay.com/2026/08/como-e-a-vida-da-viuva-de-ambientalista-que-precisou-desaparecer-para-sobreviver/",
+   "published": null,
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [
+    "Mongabay Brasil — Amazônia"
+   ],
+   "engine": "gemini"
+  },
+  {
    "id": "059a1be3ea33a415-6",
-   "fact": "Global energy consumption of data centers is projected to reach 945 TWh by 2030, with artificial intelligence accounting for 40% of the total.",
+   "fact": "The Agência Internacional de Energia projects global energy consumption by data centers to reach 945 TWh by 2030, with artificial intelligence accounting for 40% of the total.",
    "fact_type": "projection",
    "scope": "global",
    "context": null,
@@ -3225,38 +3281,38 @@
   {
    "region": "northern_africa",
    "label": "North Africa",
-   "count": 1,
-   "available": 1
+   "count": 0,
+   "available": 0
   },
   {
    "region": "western_africa",
    "label": "West Africa",
-   "count": 5,
-   "available": 5
+   "count": 6,
+   "available": 6
   },
   {
    "region": "middle_africa",
    "label": "Central Africa",
-   "count": 2,
-   "available": 2
+   "count": 1,
+   "available": 1
   },
   {
    "region": "eastern_africa",
    "label": "East Africa",
-   "count": 8,
-   "available": 8
+   "count": 7,
+   "available": 7
   },
   {
    "region": "southern_africa",
    "label": "Southern Africa",
-   "count": 8,
-   "available": 8
+   "count": 7,
+   "available": 7
   },
   {
    "region": "northern_america",
    "label": "North America",
-   "count": 4,
-   "available": 4
+   "count": 5,
+   "available": 5
   },
   {
    "region": "central_america",
@@ -3267,14 +3323,14 @@
   {
    "region": "caribbean",
    "label": "Caribbean",
-   "count": 5,
-   "available": 5
+   "count": 4,
+   "available": 4
   },
   {
    "region": "south_america",
    "label": "South America",
-   "count": 15,
-   "available": 15
+   "count": 17,
+   "available": 17
   },
   {
    "region": "central_asia",
@@ -3285,20 +3341,20 @@
   {
    "region": "eastern_asia",
    "label": "East Asia",
-   "count": 6,
-   "available": 6
+   "count": 9,
+   "available": 9
   },
   {
    "region": "southern_asia",
    "label": "South Asia",
-   "count": 12,
-   "available": 12
+   "count": 11,
+   "available": 11
   },
   {
    "region": "south_eastern_asia",
    "label": "Southeast Asia",
-   "count": 10,
-   "available": 10
+   "count": 12,
+   "available": 12
   },
   {
    "region": "western_asia",
@@ -3315,8 +3371,8 @@
   {
    "region": "northern_europe",
    "label": "Northern Europe",
-   "count": 1,
-   "available": 1
+   "count": 3,
+   "available": 3
   },
   {
    "region": "southern_europe",
@@ -3375,18 +3431,18 @@
   {
    "region": "unlocated",
    "label": "No place identified",
-   "count": 11,
-   "available": 11
+   "count": 8,
+   "available": 8
   }
  ],
  "stats": {
-  "documents_harvested": 1993,
-  "documents_yielding_nothing": 1881,
-  "facts_published": 127,
+  "documents_harvested": 2006,
+  "documents_yielding_nothing": 1894,
+  "facts_published": 129,
   "by_engine": {
-   "gemini": 14,
-   "scorer": 113
+   "gemini": 15,
+   "scorer": 114
   },
-  "context_lines_attached": 29
+  "context_lines_attached": 30
  }
 }

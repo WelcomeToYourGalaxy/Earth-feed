@@ -1,7 +1,7 @@
 {
- "run_at": "2026-08-21T02:03:29.809622+00:00",
- "raw": 2223,
- "deduped": 1993,
+ "run_at": "2026-08-21T07:13:12.770327+00:00",
+ "raw": 2264,
+ "deduped": 2006,
  "sources": [
   {
    "source": "openalex-congo-basin",
@@ -160,12 +160,12 @@
   },
   {
    "source": "scroll-in",
-   "count": 60,
+   "count": 59,
    "note": null
   },
   {
    "source": "rappler-env",
-   "count": 5,
+   "count": 6,
    "note": null
   },
   {
@@ -175,7 +175,7 @@
   },
   {
    "source": "myanmar-now",
-   "count": 1,
+   "count": 0,
    "note": null
   },
   {
@@ -185,7 +185,7 @@
   },
   {
    "source": "vlast-kz",
-   "count": 7,
+   "count": 8,
    "note": null
   },
   {
@@ -205,7 +205,7 @@
   },
   {
    "source": "jubi",
-   "count": 8,
+   "count": 7,
    "note": null
   },
   {
@@ -225,7 +225,7 @@
   },
   {
    "source": "balkan-insight",
-   "count": 22,
+   "count": 21,
    "note": null
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "source": "myjoyonline",
-   "count": 26,
+   "count": 35,
    "note": null
   },
   {
@@ -505,12 +505,12 @@
   },
   {
    "source": "png-post-courier",
-   "count": 2,
+   "count": 1,
    "note": null
   },
   {
    "source": "tahiti-infos",
-   "count": 16,
+   "count": 15,
    "note": null
   },
   {
@@ -545,12 +545,12 @@
   },
   {
    "source": "prothom-alo",
-   "count": 1,
+   "count": 14,
    "note": null
   },
   {
    "source": "vnexpress-vi",
-   "count": 17,
+   "count": 16,
    "note": null
   },
   {
@@ -590,7 +590,7 @@
   },
   {
    "source": "supermiljobloggen",
-   "count": 15,
+   "count": 16,
    "note": null
   },
   {
@@ -610,7 +610,7 @@
   },
   {
    "source": "aljazeera-ar",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
@@ -625,7 +625,7 @@
   },
   {
    "source": "actucameroun-com",
-   "count": 4,
+   "count": 2,
    "note": null
   },
   {
@@ -635,7 +635,7 @@
   },
   {
    "source": "radiookapi-net",
-   "count": 7,
+   "count": 8,
    "note": null
   },
   {
@@ -645,7 +645,7 @@
   },
   {
    "source": "congoquotidien-com",
-   "count": 4,
+   "count": 5,
    "note": null
   },
   {
@@ -685,7 +685,7 @@
   },
   {
    "source": "alwihdainfo-com",
-   "count": 3,
+   "count": 5,
    "note": null
   },
   {
@@ -705,7 +705,7 @@
   },
   {
    "source": "businessday-ng",
-   "count": 1,
+   "count": 0,
    "note": null
   },
   {
@@ -715,7 +715,7 @@
   },
   {
    "source": "leadership-ng",
-   "count": 5,
+   "count": 7,
    "note": null
   },
   {
@@ -780,12 +780,12 @@
   },
   {
    "source": "inquirer-ph",
-   "count": 10,
+   "count": 14,
    "note": null
   },
   {
    "source": "tuoitre-vn",
-   "count": 9,
+   "count": 7,
    "note": null
   },
   {
@@ -800,7 +800,7 @@
   },
   {
    "source": "hmetro-my",
-   "count": 16,
+   "count": 17,
    "note": null
   },
   {
@@ -810,12 +810,12 @@
   },
   {
    "source": "thisdaylive-com",
-   "count": 19,
+   "count": 21,
    "note": null
   },
   {
    "source": "punchng-com",
-   "count": 8,
+   "count": 6,
    "note": null
   },
   {
@@ -855,7 +855,7 @@
   },
   {
    "source": "pressafrik-com",
-   "count": 1,
+   "count": 2,
    "note": null
   },
   {
@@ -905,7 +905,7 @@
   },
   {
    "source": "databoks-katadata-co-id",
-   "count": 0,
+   "count": 3,
    "note": null
   },
   {
@@ -930,7 +930,7 @@
   },
   {
    "source": "business-inquirer-net",
-   "count": 12,
+   "count": 13,
    "note": null
   },
   {
@@ -970,7 +970,7 @@
   },
   {
    "source": "matichon-co-th",
-   "count": 13,
+   "count": 17,
    "note": null
   },
   {
@@ -980,7 +980,7 @@
   },
   {
    "source": "bharian-com-my",
-   "count": 21,
+   "count": 14,
    "note": null
   },
   {
@@ -1015,7 +1015,7 @@
   },
   {
    "source": "timesofindia-indiatimes-com",
-   "count": 1,
+   "count": 0,
    "note": null
   },
   {
@@ -1040,12 +1040,12 @@
   },
   {
    "source": "bssnews-net",
-   "count": 2,
+   "count": 1,
    "note": null
   },
   {
    "source": "bd-pratidin-com",
-   "count": 11,
+   "count": 18,
    "note": null
   },
   {
@@ -1060,7 +1060,7 @@
   },
   {
    "source": "island-lk",
-   "count": 8,
+   "count": 5,
    "note": null
   },
   {
@@ -1085,7 +1085,7 @@
   },
   {
    "source": "english-nepalnews-com",
-   "count": 8,
+   "count": 9,
    "note": null
   },
   {
@@ -1100,7 +1100,7 @@
   },
   {
    "source": "eastleighvoice-co-ke",
-   "count": 33,
+   "count": 31,
    "note": null
   },
   {
@@ -1115,7 +1115,7 @@
   },
   {
    "source": "dailynews-co-tz",
-   "count": 3,
+   "count": 7,
    "note": null
   },
   {
@@ -1125,7 +1125,7 @@
   },
   {
    "source": "monitor-co-ug",
-   "count": 6,
+   "count": 4,
    "note": null
   },
   {
@@ -1150,7 +1150,7 @@
   },
   {
    "source": "mznews-co-mz",
-   "count": 2,
+   "count": 4,
    "note": null
   },
   {
@@ -1175,7 +1175,7 @@
   },
   {
    "source": "midi-madagasikara-mg",
-   "count": 15,
+   "count": 13,
    "note": null
   },
   {
@@ -1185,7 +1185,7 @@
   },
   {
    "source": "newsday-co-zw",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
@@ -1215,7 +1215,7 @@
   },
   {
    "source": "cnnbrasil-com-br",
-   "count": 29,
+   "count": 28,
    "note": null
   },
   {
@@ -1240,17 +1240,17 @@
   },
   {
    "source": "tn-com-ar",
-   "count": 44,
+   "count": 41,
    "note": null
   },
   {
    "source": "lagaceta-com-ar",
-   "count": 7,
+   "count": 0,
    "note": null
   },
   {
    "source": "biobiochile-cl",
-   "count": 6,
+   "count": 10,
    "note": null
   },
   {
@@ -1275,7 +1275,7 @@
   },
   {
    "source": "agroperu-pe",
-   "count": 3,
+   "count": 2,
    "note": null
   },
   {
@@ -1310,7 +1310,7 @@
   },
   {
    "source": "lapatria-bo",
-   "count": 49,
+   "count": 51,
    "note": null
   },
   {
@@ -1335,12 +1335,12 @@
   },
   {
    "source": "eluniverso-com",
-   "count": 11,
+   "count": 10,
    "note": null
   },
   {
    "source": "primicia-com-ve",
-   "count": 7,
+   "count": 9,
    "note": null
   },
   {
@@ -1375,7 +1375,7 @@
   },
   {
    "source": "guyanachronicle-com",
-   "count": 5,
+   "count": 4,
    "note": null
   },
   {
@@ -1395,7 +1395,7 @@
   },
   {
    "source": "srherald-com",
-   "count": 3,
+   "count": 2,
    "note": null
   },
   {
@@ -1405,7 +1405,7 @@
   },
   {
    "source": "inbusiness-kz",
-   "count": 11,
+   "count": 14,
    "note": null
   },
   {
@@ -1420,12 +1420,12 @@
   },
   {
    "source": "podrobno-uz",
-   "count": 1,
+   "count": 2,
    "note": null
   },
   {
    "source": "gazeta-uz",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
@@ -1435,7 +1435,7 @@
   },
   {
    "source": "uzdaily-uz",
-   "count": 1,
+   "count": 2,
    "note": null
   },
   {
@@ -1445,7 +1445,7 @@
   },
   {
    "source": "open-kg",
-   "count": 5,
+   "count": 4,
    "note": null
   },
   {
@@ -1460,12 +1460,12 @@
   },
   {
    "source": "asiaplus-news",
-   "count": 2,
+   "count": 3,
    "note": null
   },
   {
    "source": "avesta-tj",
-   "count": 1,
+   "count": 2,
    "note": null
   },
   {
@@ -1485,7 +1485,7 @@
   },
   {
    "source": "cumhuriyet-com-tr",
-   "count": 9,
+   "count": 4,
    "note": null
   },
   {
@@ -1530,7 +1530,7 @@
   },
   {
    "source": "ajel-sa",
-   "count": 1,
+   "count": 0,
    "note": null
   },
   {
@@ -1550,7 +1550,7 @@
   },
   {
    "source": "israelhayom-co-il",
-   "count": 5,
+   "count": 2,
    "note": null
   },
   {
@@ -1595,7 +1595,7 @@
   },
   {
    "source": "interfax-ru",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
@@ -1610,12 +1610,12 @@
   },
   {
    "source": "finance-mail-ru",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
    "source": "rbc-ua",
-   "count": 39,
+   "count": 38,
    "note": null
   },
   {
@@ -1645,22 +1645,22 @@
   },
   {
    "source": "digi24-ro",
-   "count": 24,
+   "count": 23,
    "note": null
   },
   {
    "source": "stirileprotv-ro",
-   "count": 16,
+   "count": 18,
    "note": null
   },
   {
    "source": "antena3-ro",
-   "count": 1,
+   "count": 3,
    "note": null
   },
   {
    "source": "romania-actualitati-ro",
-   "count": 2,
+   "count": 1,
    "note": null
   },
   {
@@ -1685,12 +1685,12 @@
   },
   {
    "source": "ct24-ceskatelevize-cz",
-   "count": 2,
+   "count": 3,
    "note": null
   },
   {
    "source": "irozhlas-cz",
-   "count": 3,
+   "count": 0,
    "note": null
   },
   {
@@ -1700,7 +1700,7 @@
   },
   {
    "source": "ceskenoviny-cz",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
@@ -1715,7 +1715,7 @@
   },
   {
    "source": "magyarmezogazdasag-hu",
-   "count": 4,
+   "count": 5,
    "note": null
   },
   {
@@ -1750,12 +1750,12 @@
   },
   {
    "source": "elnuevodiario-com-do",
-   "count": 2,
+   "count": 4,
    "note": null
   },
   {
    "source": "eldia-com-do",
-   "count": 3,
+   "count": 5,
    "note": null
   },
   {
@@ -1770,7 +1770,7 @@
   },
   {
    "source": "rezonodwes-com",
-   "count": 6,
+   "count": 7,
    "note": null
   },
   {
@@ -1785,7 +1785,7 @@
   },
   {
    "source": "jamaicaobserver-com",
-   "count": 24,
+   "count": 22,
    "note": null
   },
   {
@@ -1815,7 +1815,7 @@
   },
   {
    "source": "prensalibre-com",
-   "count": 38,
+   "count": 40,
    "note": null
   },
   {
@@ -1825,7 +1825,7 @@
   },
   {
    "source": "lahora-gt",
-   "count": 5,
+   "count": 2,
    "note": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "elheraldo-hn",
-   "count": 2,
+   "count": 1,
    "note": null
   },
   {
@@ -1850,18 +1850,18 @@
   },
   {
    "source": "delfino-cr",
-   "count": 4,
+   "count": 2,
    "note": null
   },
   {
    "source": "observador-cr",
-   "count": 5,
+   "count": 6,
    "note": null
   },
   {
    "source": "larepublica-net",
    "count": 0,
-   "note": "HTTPSConnectionPool(host='larepublica.net', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='larepublica.net', port=443) at 0x7f2d71a95010>, 'Co"
+   "note": "HTTPSConnectionPool(host='larepublica.net', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='larepublica.net', port=443) at 0x7f30ffe790a0>, 'Co"
   },
   {
    "source": "teletica-com",
@@ -1875,12 +1875,12 @@
   },
   {
    "source": "panamaamerica-com-pa",
-   "count": 7,
+   "count": 11,
    "note": null
   },
   {
    "source": "tvn-2-com",
-   "count": 9,
+   "count": 8,
    "note": null
   },
   {
@@ -1895,7 +1895,7 @@
   },
   {
    "source": "fbcnews-com-fj",
-   "count": 2,
+   "count": 3,
    "note": null
   },
   {
@@ -1910,7 +1910,7 @@
   },
   {
    "source": "sibconline-com-sb",
-   "count": 9,
+   "count": 10,
    "note": null
   },
   {
@@ -1940,7 +1940,7 @@
   },
   {
    "source": "radio1-pf",
-   "count": 3,
+   "count": 2,
    "note": null
   },
   {
@@ -1955,12 +1955,12 @@
   },
   {
    "source": "guampdn-com",
-   "count": 0,
+   "count": 1,
    "note": null
   },
   {
    "source": "discoverwildlife-com",
-   "count": 7,
+   "count": 9,
    "note": null
   },
   {
@@ -1980,17 +1980,17 @@
   },
   {
    "source": "petro-news-com",
-   "count": 4,
+   "count": 5,
    "note": null
   },
   {
    "source": "hespress-com",
-   "count": 2,
+   "count": 3,
    "note": null
   },
   {
    "source": "thevoice-ma",
-   "count": 1,
+   "count": 0,
    "note": null
   },
   {
@@ -2015,7 +2015,7 @@
   },
   {
    "source": "attaqa-net",
-   "count": 5,
+   "count": 7,
    "note": null
   },
   {
@@ -2040,7 +2040,7 @@
   },
   {
    "source": "kapitalis-com",
-   "count": 6,
+   "count": 7,
    "note": null
   },
   {
@@ -2050,7 +2050,7 @@
   },
   {
    "source": "iol-co-za",
-   "count": 5,
+   "count": 9,
    "note": null
   },
   {
@@ -2060,7 +2060,7 @@
   },
   {
    "source": "namibian-com-na",
-   "count": 9,
+   "count": 11,
    "note": null
   },
   {
@@ -2075,7 +2075,7 @@
   },
   {
    "source": "neweralive-na",
-   "count": 3,
+   "count": 2,
    "note": null
   },
   {
