@@ -1,6 +1,57 @@
 {
- "generated_at": "2026-08-22T02:04:31.305038+00:00",
+ "generated_at": "2026-08-22T07:17:32.258092+00:00",
  "rows": [
+  {
+   "id": "484dee0d8a38bcc3-1",
+   "fact": "The chairman of African Minerals Strategy Group (AMSG), Dele Alake, has called for stronger regulation and safer working conditions in Africa’s artisanal and small-scale mining sector following the reported deaths of more than 100 miners in a gold-mining site collapse in Zamboye, Central African Republic.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "The chairman of African Minerals Strategy Group (AMSG), Dele Alake, has called for stronger regulation and safer working conditions in Africa’s artisanal and small-scale mining sector following the reported deaths of more than 100 miners in a gold-mining site collapse in Zamboye, Central African Republic.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "central african republic",
+   "topics": [
+    "law",
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "leadership.ng",
+   "url": "https://leadership.ng/mine-deaths-alake-demands-protection-of-africas-artisanal-miners/",
+   "published": "2026-08-22T03:55:12+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
+  {
+   "id": "3ac563d7895d5300-25",
+   "fact": "Polls suggest a majority of Canadians would be unhappy if the Carney government made significant concessions to the US, with 56% surveyed by polling firm Leger saying they wanted Canada to take a hardline approach.",
+   "fact_type": "magnitude",
+   "scope": "",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Polls suggest a majority of Canadians would be unhappy if the Carney government made significant concessions to the US, with 56% surveyed by polling firm Leger saying they wanted Canada to take a hardline approach.",
+   "region": "northern_america",
+   "region_label": "North America",
+   "place": "canada",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "island.lk",
+   "url": "http://island.lk/we-have-more-work-to-do-says-canada-negotiator-as-us-trade-deadline-looms/",
+   "published": "2026-08-22T03:08:31+00:00",
+   "lang": "en",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "scorer"
+  },
   {
    "id": "a4c9d789cc945a5b-29",
    "fact": "Polls suggest a majority of Canadians would be unhappy if the Carney government made significant concessions to the US, with 56% surveyed by polling firm Leger saying they wanted Canada to take a hardline approach.",
@@ -21,56 +72,6 @@
    "source_name": "MyJoyOnline",
    "url": "https://www.myjoyonline.com/canada-should-fight-as-us-trade-deadline-looms-manitoba-premier-says/",
    "published": "2026-08-21T23:01:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "8a7e71681803e7a0-7",
-   "fact": "The prosecutor maintained that the offences violated Sections 14, 11(b), and 21(2)(4)(8) of the National Drug Law Enforcement Agency Act, Cap N30, Laws of the Federation of Nigeria 2004.",
-   "fact_type": "threshold",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "The prosecutor maintained that the offences violated Sections 14, 11(b), and 21(2)(4)(8) of the National Drug Law Enforcement Agency Act, Cap N30, Laws of the Federation of Nigeria 2004.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "nigeria",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "leadership.ng",
-   "url": "https://leadership.ng/78-year-old-freight-agent-faces-trial-over-alleged-20-4kg-cocaine-export/",
-   "published": "2026-08-21T21:55:37+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "96dfd49f05e446c2-6",
-   "fact": "The agreement followed the execution of a Sub-lease and Operations Agreement between the National Iron Ore Mining Company (NIOMCO), Itakpe, and PSML on August 20, 2026.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
-   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
-   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
-   "context_direction": "worsening",
-   "anchor": "The agreement followed the execution of a Sub-lease and Operations Agreement between the National Iron Ore Mining Company (NIOMCO), Itakpe, and PSML on August 20, 2026.",
-   "region": "western_africa",
-   "region_label": "West Africa",
-   "place": "nigeria",
-   "topics": [
-    "extraction"
-   ],
-   "tier": "journalism",
-   "source_name": "leadership.ng",
-   "url": "https://leadership.ng/federal-government-signs-1-3bn-delta-steel-plant-deal-eyes-20000-jobs/",
-   "published": "2026-08-21T21:39:43+00:00",
    "lang": "en",
    "doi": null,
    "also_reported_by": [],
@@ -252,57 +253,6 @@
    "engine": "scorer"
   },
   {
-   "id": "4fdf5468ecd2259c-5",
-   "fact": "Mr Boasiako, who is currently the NPP Ashanti Regional Chairman, was sentenced to 20 years imprisonment following his conviction by the Accra High Court over offences connected to illegal mining activities at the Samreboi concession in the Western Region.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Mr Boasiako, who is currently the NPP Ashanti Regional Chairman, was sentenced to 20 years imprisonment following his conviction by the Accra High Court over offences connected to illegal mining activities at the Samreboi concession in the Western Region.",
-   "region": "unlocated",
-   "region_label": "No place identified",
-   "place": null,
-   "topics": [
-    "extraction",
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/npp-acting-lawlessly-by-allowing-wontumi-to-pursue-chairmanship-rashid-tanko/",
-   "published": "2026-08-21T17:59:45+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
-   "id": "335d82a194d5a463-16",
-   "fact": "In addition, the fine of $321,000 includes a punishment for the Argentina team unveiling a “Las Malvinas son ­Argentinas” – the ­Malvinas are Argentinian – banner following their semi-final triumph against England.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "In addition, the fine of $321,000 includes a punishment for the Argentina team unveiling a “Las Malvinas son ­Argentinas” – the ­Malvinas are Argentinian – banner following their semi-final triumph against England.",
-   "region": "south_america",
-   "region_label": "South America",
-   "place": "argentina",
-   "topics": [
-    "law"
-   ],
-   "tier": "journalism",
-   "source_name": "MyJoyOnline",
-   "url": "https://www.myjoyonline.com/argentinas-paredes-banned-for-10-games/",
-   "published": "2026-08-21T17:48:13+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "54d4c182c91e3ea3-8",
    "fact": "For example, 21 major cities in India, including Delhi, Bengaluru and Hyderabad, are heading towards complete groundwater depletion, affecting access for 100 million people.",
    "fact_type": "magnitude",
@@ -429,6 +379,29 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "91a754ee4718b624-4",
+   "fact": "Brazil has 30 registered parties and another 23 in formation.",
+   "fact_type": "magnitude",
+   "scope": "Brasil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Atualmente, o Brasil tem 30 partidos registrados, e outros 23 em formação.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "brazil",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Agência Pública",
+   "url": "https://apublica.org/podcast/2026/08/podcast-pauta-publica/o-que-e-o-partido-digital-bolsonarista-com-marcos-nobre/",
+   "published": "2026-08-21T11:00:00+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "b581eb3115dad04b-4",
@@ -1218,14 +1191,37 @@
    "engine": "scorer"
   },
   {
+   "id": "88e527ea6fd8d3ec-4",
+   "fact": "As forças de segurança dos estados recuperaram 6 mil aparelhos celulares a partir das ações realizadas.",
+   "fact_type": "magnitude",
+   "scope": "Brasil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Nesta quarta-feira (19), o MJSP divulgou que 6 mil aparelhos celulares foram recuperados a partir das ações realizadas pelas forças de segurança dos estados.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Agência Pública",
+   "url": "https://apublica.org/nota/4-estados-ficam-de-fora-de-operacao-contra-roubos-de-celulares/",
+   "published": "2026-08-19T19:30:00+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
    "id": "f33b935301c29444-4",
    "fact": "Conducted by the Kaziranga Tiger Cell in collaboration with the Wildlife Conservation Trust (WCT) and The Fishing Cat Project, the assessment estimated a minimum of 55 greater hog badgers across the 1,100 square kilometres of surveyed area and found that the species occupies nearly half the landscape.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "At least 680 vertebrate species have been driven to extinction by human actions since the 16th century, and 25% of species are threatened across every well-studied group of animals and plants. The losses are not confined to one habitat or one taxon — they run through all of them at once.",
+   "context": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
    "context_source": "IPBES, Global Assessment media release (2019)",
    "context_url": "https://www.ipbes.net/node/35234",
-   "context_direction": "leverage",
+   "context_direction": "worsening",
    "anchor": "Conducted by the Kaziranga Tiger Cell in collaboration with the Wildlife Conservation Trust (WCT) and The Fishing Cat Project, the assessment estimated a minimum of 55 greater hog badgers across the 1,100 square kilometres of surveyed area and found that the species occupies nearly half the landscape.",
    "region": "southern_asia",
    "region_label": "South Asia",
@@ -1241,6 +1237,31 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "scorer"
+  },
+  {
+   "id": "ae8122dee5da237a-3",
+   "fact": "Women comprise 51,5% of the country's population.",
+   "fact_type": "magnitude",
+   "scope": "Brasil",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Além do que, vamos combinar, somos 51,5% da população do país. É feio ser uma eleição presidencial só de homens no topo, e os candidatos do topo sabem que é feio.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
+   "topics": [
+    "law"
+   ],
+   "tier": "journalism",
+   "source_name": "Agência Pública",
+   "url": "https://apublica.org/2026/08/campanha-presidencial-um-aceno-as-mulheres-e-suficiente/",
+   "published": "2026-08-19T15:00:00+00:00",
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
   },
   {
    "id": "ef69fa720a1edc88-2",
@@ -1471,31 +1492,6 @@
    "engine": "scorer"
   },
   {
-   "id": "c605be9770e7d105-14",
-   "fact": "Over 100 people have lost their lives and around seven lakh people displaced across the state in devastating floods.",
-   "fact_type": "magnitude",
-   "scope": "",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "Over 100 people have lost their lives and around seven lakh people displaced across the state in devastating floods.",
-   "region": "southern_asia",
-   "region_label": "South Asia",
-   "place": "brahmaputra",
-   "topics": [
-    "land_tenure"
-   ],
-   "tier": "journalism",
-   "source_name": "Scroll.in",
-   "url": "https://scroll.in/article/1095095/for-weeks-an-assam-district-stared-at-drought-then-it-got-hit-by-floods?utm_source=rss&utm_medium=public",
-   "published": "2026-08-18T01:00:00+00:00",
-   "lang": "en",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "scorer"
-  },
-  {
    "id": "95e1cf034ca790d0-4",
    "fact": "The mine generated a $65.1 million net loss in the first quarter of 2026, and a net loss of about $280 million for all of 2025.",
    "fact_type": "magnitude",
@@ -1550,9 +1546,9 @@
    "fact": "Mining here, at the the New Selected (NS) Dhori Underground Mine (UG), stopped about 15 years ago, after reportedly extracting around 1.8 million tonnes of coal.",
    "fact_type": "magnitude",
    "scope": "",
-   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
-   "context_source": "Lavoie et al., Scientific Reports (2018)",
-   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "context": "The mining industry produced an estimated 14 billion tonnes of tailings in 2010 alone, stored as slurry behind man-made earthen dams. Falling ore grades mean a massive volume of future tailings will need storing — more waste per unit of metal, indefinitely.",
+   "context_source": "Global-scale impact analysis of mine tailings dam failures 1915-2020, Global Environmental Change",
+   "context_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959378021001400",
    "context_direction": "worsening",
    "anchor": "Mining here, at the the New Selected (NS) Dhori Underground Mine (UG), stopped about 15 years ago, after reportedly extracting around 1.8 million tonnes of coal.",
    "region": "southern_asia",
@@ -3002,31 +2998,6 @@
    "engine": "scorer"
   },
   {
-   "id": "84e99b1f09ae914c-0",
-   "fact": "A new birth brings the total number of individuals in the Rugendo family to 20.",
-   "fact_type": "magnitude",
-   "scope": "Virunga National Park",
-   "context": null,
-   "context_source": null,
-   "context_url": null,
-   "context_direction": null,
-   "anchor": "RDC : Un bébé gorille porte à 20 individus l’effectif de la famille Rugendo dans le Parc national des Virunga.",
-   "region": "middle_africa",
-   "region_label": "Central Africa",
-   "place": "virunga",
-   "topics": [
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/rdc-un-bebe-gorille-porte-a-20-individus-leffectif-de-la-famille-rugendo-dans-le-parc-national-des-virunga/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
-  },
-  {
    "id": "84e99b1f09ae914c-7",
    "fact": "This birth is the 13th recorded among the mountain gorillas in the reserve since the beginning of the year 2026.",
    "fact_type": "magnitude",
@@ -3045,6 +3016,29 @@
    "tier": "journalism",
    "source_name": "Mongabay Afrique",
    "url": "https://fr.mongabay.com/short-article/2026/08/rdc-un-bebe-gorille-porte-a-20-individus-leffectif-de-la-famille-rugendo-dans-le-parc-national-des-virunga/",
+   "published": null,
+   "lang": "fr",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "d6caf6856ad13e10-3",
+   "fact": "Cameroon put 247 914 tonnes of cocoa beans on the market compared to 309 518 tonnes during the previous season, a decrease of 61 604 tonnes.",
+   "fact_type": "magnitude",
+   "scope": "Cameroun",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "Le pays n’a mis sur le marché que 247 914 tonnes de fèves contre 309 518 tonnes lors de la campagne précédente, soit 61 604 tonnes de moins.",
+   "region": "middle_africa",
+   "region_label": "Central Africa",
+   "place": "cameroon",
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Afrique",
+   "url": "https://fr.mongabay.com/short-article/2026/08/cameroun-le-changement-climatique-fait-chuter-la-production-de-cacao-de-19-en-2025-2026/",
    "published": null,
    "lang": "fr",
    "doi": null,
@@ -3077,49 +3071,24 @@
    "engine": "gemini"
   },
   {
-   "id": "372faf8cd0f61f5e-3",
-   "fact": "The Kynotus genus now counts 23 identified species with the addition of the new invertebrate.",
+   "id": "6ac506b663449719-3",
+   "fact": "The vermilion flycatcher in Ecuador reached a record of 57 fledglings in 2026.",
    "fact_type": "magnitude",
-   "scope": "Madagascar",
-   "context": "Up to 1 million species are threatened with extinction, many within decades, and the rate is running tens to hundreds of times the average of the last 10 million years. Extinction is the one environmental outcome with no reversal available at any price.",
-   "context_source": "IPBES, Global Assessment media release (2019)",
-   "context_url": "https://www.ipbes.net/node/35234",
-   "context_direction": "worsening",
-   "anchor": "Nommé Kynotus insularis sp. nov., le nouvel invertébré terrestre découvert par trois biologistes – un Hongrois, une Malgache et un Sud-Coréen –, appartient à la famille de Kynotidae, endémique de Madagascar, qui, avec le nouveau venu, compte 23 espèces du genre Kynotus identifiées.",
-   "region": "eastern_africa",
-   "region_label": "East Africa",
-   "place": "madagascar",
-   "topics": [
-    "extinction"
-   ],
-   "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/2026/08/decouverte-dune-nouvelle-espece-de-ver-de-terre-geant-a-madagascar/",
-   "published": null,
-   "lang": "fr",
-   "doi": null,
-   "also_reported_by": [],
-   "engine": "gemini"
-  },
-  {
-   "id": "29c46aab40d0d18b-2",
-   "fact": "Bolivian president Rodrigo Paz signed an agreement for technical studies on a road connecting San Ignacio de Velasco to Marfil.",
-   "fact_type": "actor",
-   "scope": "Bolivia and Brazil border",
+   "scope": "Ecuador",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Ese día, el presidente boliviano, Rodrigo Paz, firmó un acuerdo para el inicio de estudios técnicos de la carretera que conectará San Ignacio de Velasco con Marfil, en la frontera con Brasil.",
+   "anchor": "El pájaro brujo de Ecuador alcanzó en 2026 un récord de 57 volantones gracias a la restauración de su hábitat y a nuevas estrategias para proteger a sus crías de la mosca vampiro.",
    "region": "south_america",
    "region_label": "South America",
-   "place": "para",
+   "place": "ecuador",
    "topics": [
-    "forest"
+    "extinction"
    ],
    "tier": "journalism",
    "source_name": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/08/nueva-carretera-bolivia-brasil-promover-agronegocios-alerta-expertos-impactos-bosque-chiquitano/",
+   "url": "https://es.mongabay.com/custom-story/2026/08/extincion-esperanza-comunidades-cientificos-trabajan-salvar-aves-latinoamerica-reportaje-fotografico/",
    "published": null,
    "lang": "es",
    "doi": null,
@@ -3130,7 +3099,7 @@
    "id": "bee5724031305167-8",
    "fact": "225 litres of seawater brine yield 11 kilograms of salt.",
    "fact_type": "magnitude",
-   "scope": "in Benin",
+   "scope": "Djègbadji",
    "context": null,
    "context_source": null,
    "context_url": null,
@@ -3152,32 +3121,57 @@
    "engine": "gemini"
   },
   {
-   "id": "f599f3af8009041d-4",
-   "fact": "The global solar panel recycling industry will become profitable within a decade as waste volumes grow and recycling technologies improve.",
-   "fact_type": "threshold",
-   "scope": "",
+   "id": "cce088ddcbe53b1d-2",
+   "fact": "Researchers analyzed 492 insects from nine taxa across three locations with varying levels of mining impact in Madre de Dios.",
+   "fact_type": "magnitude",
+   "scope": "Madre de Dios, Peruvian Amazon",
+   "context": "Human activity has raised atmospheric mercury three to five-fold and surface ocean mercury two to three-fold since preindustrial times, largely from small-scale gold mining, coal burning and incineration. Mercury does not break down; those multiples are now the baseline.",
+   "context_source": "Lavoie et al., Scientific Reports (2018)",
+   "context_url": "https://www.nature.com/articles/s41598-018-24938-3",
+   "context_direction": "worsening",
+   "anchor": "La investigación, que se realizó en Madre de Dios, consistió en analizar 492 insectos de nueve taxones –grupo de organismos– en tres lugares con diferentes niveles de impacto por minería.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "madre de dios",
+   "topics": [
+    "extraction"
+   ],
+   "tier": "journalism",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/short-article/2026/08/estudio-mercurio-insectos-amazonia-peruana/",
+   "published": null,
+   "lang": "es",
+   "doi": null,
+   "also_reported_by": [],
+   "engine": "gemini"
+  },
+  {
+   "id": "f4a8f8b70104d0a0-4",
+   "fact": "The vessel Unzen set sail from Punta Arenas on May 31, 2020, to fish for hoki in the waters of Patagonia.",
+   "fact_type": "magnitude",
+   "scope": "Punta Arenas, Chile",
    "context": null,
    "context_source": null,
    "context_url": null,
    "context_direction": null,
-   "anchor": "Pour eux, cette activité, qui n’est pas encore rentable à l’échelle mondiale, devrait atteindre son seuil de rentabilité dans une dizaine d’années, à mesure que les volumes de panneaux arrivant en fin de vie augmenteront et que les technologies de traitement progresseront.",
-   "region": "global",
-   "region_label": "Global / multi-region",
-   "place": null,
+   "anchor": "El 31 de mayo de 2020, el Unzen zarpó desde Punta Arenas, en el extremo sur de Chile, para pescar en las aguas de la Patagonia merluza de cola (Macruronus magellanicus), considerada agotada por la Subsecretaría de Pesca.",
+   "region": "south_america",
+   "region_label": "South America",
+   "place": "para",
    "topics": [],
    "tier": "journalism",
-   "source_name": "Mongabay Afrique",
-   "url": "https://fr.mongabay.com/short-article/2026/08/le-marche-du-recyclage-des-panneaux-solaires-pourrait-echapper-a-lafrique/",
+   "source_name": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/08/descartes-ilegales-camaras-revelan-operaciones-prohibidas-pesca-industrial-chilena/",
    "published": null,
-   "lang": "fr",
+   "lang": "es",
    "doi": null,
    "also_reported_by": [],
-   "engine": "mistral"
+   "engine": "gemini"
   },
   {
    "id": "76bc6bf75a58327b-3",
-   "fact": "The proportion of people suffering from hunger worldwide decreased from 8,6 % in 2022 to 7,8 % in 2025.",
-   "fact_type": "magnitude",
+   "fact": "The global proportion of people suffering from hunger dropped from 8,6 % in 2022 to 7,8 % in 2025.",
+   "fact_type": "rate",
    "scope": "worldwide",
    "context": null,
    "context_source": null,
@@ -3198,6 +3192,31 @@
    "doi": null,
    "also_reported_by": [],
    "engine": "gemini"
+  },
+  {
+   "id": "059a1be3ea33a415-6",
+   "fact": "Global energy consumption of data centers is projected to reach 945 TWh by 2030, with artificial intelligence accounting for 40% of the total.",
+   "fact_type": "projection",
+   "scope": "global",
+   "context": null,
+   "context_source": null,
+   "context_url": null,
+   "context_direction": null,
+   "anchor": "A Agência Internacional de Energia projeta que o consumo global de energia de data centers deve dobrar nos próximos anos, podendo chegar a 945 TWh até 2030, o equivalente a todo o consumo do Japão — a inteligência artificial responderá por 40% do total.",
+   "region": "global",
+   "region_label": "Global / multi-region",
+   "place": null,
+   "topics": [],
+   "tier": "journalism",
+   "source_name": "Mongabay Brasil",
+   "url": "https://brasil.mongabay.com/2026/08/industria-de-energia-ignora-impacto-ambiental-e-impulsiona-data-centers-no-brasil/",
+   "published": null,
+   "lang": "pt",
+   "doi": null,
+   "also_reported_by": [
+    "Mongabay Brasil — Amazônia"
+   ],
+   "engine": "gemini"
   }
  ],
  "coverage": [
@@ -3210,20 +3229,20 @@
   {
    "region": "western_africa",
    "label": "West Africa",
-   "count": 12,
-   "available": 12
+   "count": 10,
+   "available": 10
   },
   {
    "region": "middle_africa",
    "label": "Central Africa",
-   "count": 2,
-   "available": 2
+   "count": 3,
+   "available": 3
   },
   {
    "region": "eastern_africa",
    "label": "East Africa",
-   "count": 8,
-   "available": 8
+   "count": 7,
+   "available": 7
   },
   {
    "region": "southern_africa",
@@ -3234,8 +3253,8 @@
   {
    "region": "northern_america",
    "label": "North America",
-   "count": 5,
-   "available": 5
+   "count": 6,
+   "available": 6
   },
   {
    "region": "central_america",
@@ -3252,8 +3271,8 @@
   {
    "region": "south_america",
    "label": "South America",
-   "count": 8,
-   "available": 8
+   "count": 12,
+   "available": 12
   },
   {
    "region": "central_asia",
@@ -3270,8 +3289,8 @@
   {
    "region": "southern_asia",
    "label": "South Asia",
-   "count": 14,
-   "available": 14
+   "count": 13,
+   "available": 13
   },
   {
    "region": "south_eastern_asia",
@@ -3354,19 +3373,18 @@
   {
    "region": "unlocated",
    "label": "No place identified",
-   "count": 8,
-   "available": 8
+   "count": 7,
+   "available": 7
   }
  ],
  "stats": {
-  "documents_harvested": 1978,
-  "documents_yielding_nothing": 1867,
-  "facts_published": 126,
+  "documents_harvested": 1962,
+  "documents_yielding_nothing": 1850,
+  "facts_published": 127,
   "by_engine": {
-   "gemini": 7,
-   "mistral": 1,
-   "scorer": 118
+   "gemini": 12,
+   "scorer": 115
   },
-  "context_lines_attached": 35
+  "context_lines_attached": 34
  }
 }
